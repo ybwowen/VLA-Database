@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block title %}Schema | VLA Database{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <div class="panel-header">
+    <h1>Schema and ER Explanation</h1>
+    <p>This page is designed for course presentation: it summarizes the normalized schema, relationship cardinalities, and current table coverage.</p>
+  </div>
+
+  <div class="stats-grid">
+    <article class="stat-card">
+      <span class="stat-label">Models</span>
+      <strong>{{ table_counts.models }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Papers</span>
+      <strong>{{ table_counts.papers }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Authors</span>
+      <strong>{{ table_counts.authors }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Affiliations</span>
+      <strong>{{ table_counts.affiliations }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Evaluation Rows</span>
+      <strong>{{ table_counts.results }}</strong>
+    </article>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="panel-header">
+    <h2>Offline ER Diagram</h2>
+    <p>A text-style ER map that works without any external JS library.</p>
+  </div>
+  <pre class="diagram-block">{{ diagram_text }}</pre>
+</section>
+
+<section class="panel">
+  <div class="panel-header">
+    <h2>Entity Overview</h2>
+    <p>Core entities, bridge tables, and fact tables used in the normalized design.</p>
+  </div>
+  <div class="schema-grid">
+    {% for entity in entities %}
+    <article class="schema-card">
+      <div class="schema-card-top">
+        <strong>{{ entity.name }}</strong>
+        <span class="tag">{{ entity.role }}</span>
+      </div>
+      <div class="schema-fields">
+        {% for field in entity.fields %}
+        <div class="schema-field">{{ field }}</div>
+        {% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="panel">
+  <div class="panel-header">
+    <h2>Relationship Explanation</h2>
+    <p>Cardinalities that you can directly explain during the demo.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Left Entity</th>
+          <th>Right Entity</th>
+          <th>Cardinality</th>
+          <th>Why It Is Designed This Way</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for left, right, cardinality, explanation in relationships %}
+        <tr>
+          <td>{{ left }}</td>
+          <td>{{ right }}</td>
+          <td>{{ cardinality }}</td>
+          <td>{{ explanation }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="content-grid">
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Normalization Highlights</h2>
+      <p>Key points for database-course evaluation.</p>
+    </div>
+    <div class="stack-list">
+      <div class="stack-item"><span>Paper and Model are separated</span><small class="subtle">Avoids mixing publication metadata with model metadata.</small></div>
+      <div class="stack-item"><span>Many-to-many relations use bridge tables</span><small class="subtle">PaperAuthor, AuthorAffiliation, ModelTopic, ModelDataSource.</small></div>
+      <div class="stack-item"><span>EvaluationResult is isolated</span><small class="subtle">Allows one model to have many benchmark rows with different metrics and settings.</small></div>
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Typical Demo Script</h2>
+      <p>A simple order for your presentation.</p>
+    </div>
+    <div class="stack-list">
+      <div class="stack-item"><span>1. Open `/schema`</span><small class="subtle">Explain entities and cardinalities.</small></div>
+      <div class="stack-item"><span>2. Open `/stats`</span><small class="subtle">Show grouped queries and aggregate results.</small></div>
+      <div class="stack-item"><span>3. Open `/models` and `/models/openvla`</span><small class="subtle">Show query and detail retrieval.</small></div>
+      <div class="stack-item"><span>4. Open `/admin/models/new`</span><small class="subtle">Demonstrate insert operations.</small></div>
+    </div>
+  </article>
+</section>
+{% endblock %}

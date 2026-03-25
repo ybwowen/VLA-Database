@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+MYSQL_APP_USER="${MYSQL_USER:-vla_user}"
+MYSQL_APP_PASSWORD="${MYSQL_PASSWORD:-change_me}"
+MYSQL_DATABASE_NAME="${MYSQL_DATABASE:-vla_database}"
+
+sudo systemctl enable --now mysql
+
+sudo mysql <<SQL
+CREATE DATABASE IF NOT EXISTS \`${MYSQL_DATABASE_NAME}\`
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+CREATE USER IF NOT EXISTS '${MYSQL_APP_USER}'@'localhost'
+  IDENTIFIED BY '${MYSQL_APP_PASSWORD}';
+
+CREATE USER IF NOT EXISTS '${MYSQL_APP_USER}'@'127.0.0.1'
+  IDENTIFIED BY '${MYSQL_APP_PASSWORD}';
+
+GRANT ALL PRIVILEGES ON \`${MYSQL_DATABASE_NAME}\`.* TO '${MYSQL_APP_USER}'@'localhost';
+GRANT ALL PRIVILEGES ON \`${MYSQL_DATABASE_NAME}\`.* TO '${MYSQL_APP_USER}'@'127.0.0.1';
+FLUSH PRIVILEGES;
+SQL
+
+echo "MySQL database '${MYSQL_DATABASE_NAME}' and user '${MYSQL_APP_USER}' are ready."

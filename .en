@@ -1,0 +1,7 @@
+MYSQL_HOST=127.0.0.1
+MYSQL_PORT=3306
+MYSQL_USER=vla_user
+MYSQL_PASSWORD=change_me
+MYSQL_DATABASE=vla_database
+SECRET_KEY=vla-course-project
+# DATABASE_URL=mysql+pymysql://vla_user:change_me@127.0.0.1:3306/vla_database?charset=utf8mb4

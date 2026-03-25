@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block title %}Stats | VLA Database{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <div class="panel-header">
+    <h1>Statistics Dashboard</h1>
+    <p>Aggregate query results for course presentation and database demo.</p>
+  </div>
+
+  <div class="stats-grid">
+    <article class="stat-card">
+      <span class="stat-label">Models</span>
+      <strong>{{ stats.model_count }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Open Source</span>
+      <strong>{{ stats.open_source_count }}</strong>
+      <small class="subtle">{{ open_source_ratio }}% of all models</small>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Papers</span>
+      <strong>{{ stats.paper_count }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Evaluation Rows</span>
+      <strong>{{ stats.result_row_count }}</strong>
+    </article>
+  </div>
+</section>
+
+<section class="content-grid">
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Paradigm Distribution</h2>
+      <p>How many models fall into each classic paradigm.</p>
+    </div>
+    <div class="bar-chart">
+      {% for row in paradigm_bars %}
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span>{{ row.label }}</span>
+          <strong>{{ row.count }}</strong>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width: {{ row.width }}%;"></div></div>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Topic Coverage</h2>
+      <p>Many-to-many aggregation over `ModelTopic`.</p>
+    </div>
+    <div class="bar-chart">
+      {% for row in topic_bars %}
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span>{{ row.label }}</span>
+          <strong>{{ row.count }}</strong>
+        </div>
+        <div class="bar-track"><div class="bar-fill bar-fill-alt" style="width: {{ row.width }}%;"></div></div>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+</section>
+
+<section class="content-grid">
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Data Source Distribution</h2>
+      <p>How seeded models connect to real robot, simulation, synthetic, or mixed data.</p>
+    </div>
+    <div class="bar-chart">
+      {% for row in data_source_bars %}
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span>{{ row.label }}</span>
+          <strong>{{ row.count }}</strong>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width: {{ row.width }}%;"></div></div>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Publication Type Distribution</h2>
+      <p>Counts grouped by paper publication type.</p>
+    </div>
+    <div class="bar-chart">
+      {% for row in publication_bars %}
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span>{{ row.label }}</span>
+          <strong>{{ row.count }}</strong>
+        </div>
+        <div class="bar-track"><div class="bar-fill bar-fill-alt" style="width: {{ row.width }}%;"></div></div>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+</section>
+
+<section class="content-grid">
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Benchmark Coverage</h2>
+      <p>Distinct model counts linked to each benchmark through `EvaluationResult`.</p>
+    </div>
+    <div class="bar-chart">
+      {% for row in benchmark_bars %}
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span>{{ row.label }}</span>
+          <strong>{{ row.count }}</strong>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width: {{ row.width }}%;"></div></div>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Models by Year</h2>
+      <p>Simple trend view for seeded model release years.</p>
+    </div>
+    <div class="bar-chart">
+      {% for row in year_bars %}
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span>{{ row.label }}</span>
+          <strong>{{ row.count }}</strong>
+        </div>
+        <div class="bar-track"><div class="bar-fill bar-fill-alt" style="width: {{ row.width }}%;"></div></div>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+</section>
+{% endblock %}

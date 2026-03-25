@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}Benchmarks | VLA Database{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <div class="panel-header">
+    <h1>Benchmark Results</h1>
+    <p>Browse seeded evaluation results from the benchmark perspective.</p>
+  </div>
+
+  <form method="get" class="filter-grid single-row">
+    <label>
+      <span>Benchmark</span>
+      <select name="benchmark">
+        <option value="">All</option>
+        {% for benchmark in filters.benchmarks %}
+        <option value="{{ benchmark.id }}" {% if selected_benchmark == benchmark.id %}selected{% endif %}>
+          {{ benchmark.name }}
+        </option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <div class="filter-actions">
+      <button class="button button-primary" type="submit">Apply</button>
+      <a class="button" href="{{ url_for('main.benchmark_list') }}">Reset</a>
+    </div>
+  </form>
+</section>
+
+<section class="stats-grid">
+  {% for benchmark in filters.benchmarks %}
+  <article class="stat-card">
+    <span class="stat-label">{{ benchmark.name }}</span>
+    <strong>{{ benchmark_counts.get(benchmark.id, 0) }}</strong>
+    <small class="subtle">models with seeded rows</small>
+  </article>
+  {% endfor %}
+</section>
+
+{% for benchmark in benchmarks %}
+<section class="panel">
+  <div class="panel-header">
+    <h2>{{ benchmark.name }}</h2>
+    <p>{{ benchmark.description or 'No description available.' }}</p>
+  </div>
+
+  {% if benchmark.evaluation_results %}
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Paradigm</th>
+          <th>Split</th>
+          <th>Metric</th>
+          <th>Value</th>
+          <th>Summary</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for result in benchmark.evaluation_results %}
+        <tr>
+          <td>
+            <a href="{{ url_for('main.model_detail', slug=result.model.slug) }}">{{ result.model.name }}</a>
+          </td>
+          <td>{{ result.model.paradigm.name if result.model and result.model.paradigm else 'N/A' }}</td>
+          <td>{{ result.split_name or 'N/A' }}</td>
+          <td>{{ result.metric_name or 'N/A' }}</td>
+          <td>
+            {% if result.metric_value is not none %}
+              {{ result.metric_value|metric }}{{ result.metric_unit or '' }}
+            {% else %}
+              <span class="subtle">N/A</span>
+            {% endif %}
+          </td>
+          <td>
+            {{ result.result_summary or 'N/A' }}
+            {% if result.source_url %}
+            <div class="subtle"><a href="{{ result.source_url }}" target="_blank" rel="noreferrer">Source</a></div>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No seeded result rows for this benchmark yet.</p>
+  </div>
+  {% endif %}
+</section>
+{% endfor %}
+{% endblock %}

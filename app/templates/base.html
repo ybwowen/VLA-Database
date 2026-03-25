@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}VLA Database{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-block">
+          <a class="brand" href="{{ url_for('main.index') }}">VLA Database System</a>
+          <p class="brand-subtitle">A MySQL-backed course project for Vision-Language-Action model management</p>
+        </div>
+        <nav class="site-nav">
+          <a href="{{ url_for('main.index') }}">Home</a>
+          <a href="{{ url_for('main.model_list') }}">Models</a>
+          <a href="{{ url_for('main.benchmark_list') }}">Benchmarks</a>
+          <a href="{{ url_for('main.stats_dashboard') }}">Stats</a>
+          <a href="{{ url_for('main.schema_page') }}">Schema</a>
+          <a href="{{ url_for('main.admin_model_create') }}">Admin</a>
+        </nav>
+      </header>
+
+      <main class="main-content">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+          <section class="flash-stack">
+            {% for category, message in messages %}
+            <div class="flash flash-{{ category }}">{{ message }}</div>
+            {% endfor %}
+          </section>
+          {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+      </main>
+
+      <footer class="site-footer">
+        <p>Database course MVP • Flask + SQLAlchemy + MySQL • seed data is intentionally conservative</p>
+      </footer>
+    </div>
+  </body>
+</html>

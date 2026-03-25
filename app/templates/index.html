@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block title %}Home | VLA Database{% endblock %}
+
+{% block content %}
+<section class="hero-card">
+  <div class="hero-copy">
+    <span class="eyebrow">Database Course Project</span>
+    <h1>VLA model metadata, normalized and queryable</h1>
+    <p>
+      This prototype manages VLA model records, papers, selected authors, affiliations,
+      topics, data sources, and benchmark results in a relational MySQL database.
+    </p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="{{ url_for('main.model_list') }}">Browse Models</a>
+      <a class="button" href="{{ url_for('main.benchmark_list') }}">Browse Benchmarks</a>
+      <a class="button" href="{{ url_for('main.stats_dashboard') }}">View Stats</a>
+      <a class="button" href="{{ url_for('main.admin_model_create') }}">Add Model</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats-grid">
+  <article class="stat-card">
+    <span class="stat-label">Models</span>
+    <strong>{{ stats.model_count }}</strong>
+  </article>
+  <article class="stat-card">
+    <span class="stat-label">Papers</span>
+    <strong>{{ stats.paper_count }}</strong>
+  </article>
+  <article class="stat-card">
+    <span class="stat-label">Authors</span>
+    <strong>{{ stats.author_count }}</strong>
+  </article>
+  <article class="stat-card">
+    <span class="stat-label">Benchmarks</span>
+    <strong>{{ stats.benchmark_count }}</strong>
+  </article>
+</section>
+
+<section class="content-grid">
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Paradigm Distribution</h2>
+      <p>Simple aggregate query grouped by paradigm.</p>
+    </div>
+    <div class="stack-list">
+      {% for name, count in paradigm_stats %}
+      <div class="stack-item">
+        <span>{{ name }}</span>
+        <strong>{{ count }}</strong>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Popular Topics</h2>
+      <p>Simple aggregate query grouped by topic.</p>
+    </div>
+    <div class="tag-cloud">
+      {% for name, count in topic_stats %}
+      <span class="tag">{{ name }} · {{ count }}</span>
+      {% endfor %}
+    </div>
+  </article>
+</section>
+
+<section class="panel">
+  <div class="panel-header">
+    <h2>Seeded Representative Models</h2>
+    <p>Initial data is manually curated and keeps uncertain values empty instead of guessed.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Paradigm</th>
+          <th>Year</th>
+          <th>Topics</th>
+          <th>Open Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for model in recent_models %}
+        <tr>
+          <td>
+            <a href="{{ url_for('main.model_detail', slug=model.slug) }}">{{ model.name }}</a>
+            {% if model.paper %}
+            <div class="subtle">{{ model.paper.title }}</div>
+            {% endif %}
+          </td>
+          <td>{{ model.paradigm.name if model.paradigm else 'N/A' }}</td>
+          <td>{{ model.year or 'N/A' }}</td>
+          <td>
+            <div class="compact-tags">
+              {% for topic_name in model.topic_names %}
+              <span class="tag">{{ topic_name }}</span>
+              {% endfor %}
+            </div>
+          </td>
+          <td>{{ 'Yes' if model.open_source else 'No' }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

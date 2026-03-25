@@ -1,0 +1,268 @@
+{% extends "base.html" %}
+
+{% block title %}{{ model.name }} | VLA Database{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <div class="panel-header">
+    <h1>{{ model.name }}</h1>
+    <p>{{ model.summary or 'No summary available.' }}</p>
+  </div>
+  <div class="hero-actions">
+    <a class="button" href="{{ url_for('main.admin_model_edit', model_id=model.id) }}">Edit Model</a>
+    <a class="button button-primary" href="{{ url_for('main.admin_result_create', model_id=model.id) }}">Add Benchmark Result</a>
+    {% if model.paper %}
+    <a class="button" href="{{ url_for('main.admin_paper_author_create', paper_id=model.paper.id) }}">Add Author / Affiliation</a>
+    {% endif %}
+  </div>
+
+  <div class="detail-grid">
+    <article class="detail-card">
+      <h2>Basic Info</h2>
+      <dl class="detail-list">
+        <div>
+          <dt>Year</dt>
+          <dd>{{ model.year or 'N/A' }}</dd>
+        </div>
+        <div>
+          <dt>Paradigm</dt>
+          <dd>{{ model.paradigm.name if model.paradigm else 'N/A' }}</dd>
+        </div>
+        <div>
+          <dt>Open Source</dt>
+          <dd>{{ 'Yes' if model.open_source else 'No' }}</dd>
+        </div>
+        <div>
+          <dt>Project</dt>
+          <dd>
+            {% if model.website_url %}
+            <a href="{{ model.website_url }}" target="_blank" rel="noreferrer">Project Page</a>
+            {% else %}
+            N/A
+            {% endif %}
+          </dd>
+        </div>
+        <div>
+          <dt>Repository</dt>
+          <dd>
+            {% if model.repo_url %}
+            <a href="{{ model.repo_url }}" target="_blank" rel="noreferrer">Source Code</a>
+            {% else %}
+            N/A
+            {% endif %}
+          </dd>
+        </div>
+      </dl>
+    </article>
+
+    <article class="detail-card">
+      <h2>Paper</h2>
+      {% if model.paper %}
+      <dl class="detail-list">
+        <div>
+          <dt>Title</dt>
+          <dd>{{ model.paper.title }}</dd>
+        </div>
+        <div>
+          <dt>Venue</dt>
+          <dd>{{ model.paper.venue_name or 'N/A' }}</dd>
+        </div>
+        <div>
+          <dt>Publication Type</dt>
+          <dd>{{ model.paper.publication_type or 'N/A' }}</dd>
+        </div>
+        <div>
+          <dt>Status</dt>
+          <dd>{{ model.paper.publication_status or 'N/A' }}</dd>
+        </div>
+        <div>
+          <dt>Links</dt>
+          <dd class="link-row">
+            {% if model.paper.arxiv_url %}
+            <a href="{{ model.paper.arxiv_url }}" target="_blank" rel="noreferrer">arXiv</a>
+            {% endif %}
+            {% if model.paper.project_url %}
+            <a href="{{ model.paper.project_url }}" target="_blank" rel="noreferrer">Project</a>
+            {% endif %}
+            {% if model.paper.code_url %}
+            <a href="{{ model.paper.code_url }}" target="_blank" rel="noreferrer">Code</a>
+            {% endif %}
+            {% if not model.paper.arxiv_url and not model.paper.project_url and not model.paper.code_url %}
+            <span>N/A</span>
+            {% endif %}
+          </dd>
+        </div>
+      </dl>
+      {% if model.paper.notes %}
+      <p class="note-box">{{ model.paper.notes }}</p>
+      {% endif %}
+      {% else %}
+      <p class="empty-state">No linked paper record.</p>
+      {% endif %}
+    </article>
+  </div>
+</section>
+
+<section class="content-grid">
+  <article class="panel">
+  <div class="panel-header">
+    <h2>Authors and Affiliations</h2>
+    <p>Selected author records in seed data.</p>
+  </div>
+  {% if model.paper %}
+  <div class="section-actions">
+    <a class="button" href="{{ url_for('main.admin_paper_author_create', paper_id=model.paper.id) }}">Manage Authors</a>
+  </div>
+  {% endif %}
+
+    {% if model.paper and model.paper.paper_authors %}
+    <div class="table-wrap">
+      <table>
+        <thead>
+        <tr>
+          <th>Order</th>
+          <th>Author</th>
+          <th>Role</th>
+          <th>Affiliations</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+          {% for link in model.paper.paper_authors %}
+          <tr>
+            <td>{{ link.author_order }}</td>
+            <td>{{ link.author.full_name }}</td>
+            <td>
+              <div class="compact-tags">
+                {% if link.is_first_author %}
+                <span class="tag">First Author</span>
+                {% endif %}
+                {% if link.is_corresponding_author %}
+                <span class="tag">Corresponding</span>
+                {% endif %}
+                {% if not link.is_first_author and not link.is_corresponding_author %}
+                <span class="subtle">Author</span>
+                {% endif %}
+              </div>
+            </td>
+            <td>
+              {% if link.author.author_affiliations %}
+              <div class="compact-tags">
+                {% for author_aff in link.author.author_affiliations %}
+                <span class="tag">{{ author_aff.affiliation.name }}</span>
+                {% endfor %}
+              </div>
+              {% else %}
+              <span class="subtle">N/A</span>
+              {% endif %}
+            </td>
+            <td>
+              <form method="post" action="{{ url_for('main.admin_paper_author_delete', paper_id=model.paper.id, author_id=link.author.id) }}">
+                <button class="button button-danger" type="submit">Remove Link</button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <p>Seed data does not yet contain selected author rows for this model.</p>
+    </div>
+    {% endif %}
+  </article>
+
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Topics and Data Sources</h2>
+      <p>Many-to-many relationships represented with bridge tables.</p>
+    </div>
+
+    <div class="split-column">
+      <div>
+        <h3>Topics</h3>
+        <div class="tag-cloud">
+          {% for topic_name in model.topic_names %}
+          <span class="tag">{{ topic_name }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div>
+        <h3>Data Sources</h3>
+        <div class="stack-list">
+          {% for link in model.model_data_sources %}
+          <div class="stack-item">
+            <span>{{ link.data_source_type.name }}</span>
+            <small class="subtle">{{ link.notes or '' }}</small>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% if model.notes %}
+    <p class="note-box">{{ model.notes }}</p>
+    {% endif %}
+  </article>
+</section>
+
+<section class="panel">
+  <div class="panel-header">
+    <h2>Benchmark Results</h2>
+    <p>Numeric metrics are shown only when publicly verified in the seed.</p>
+  </div>
+  <div class="section-actions">
+    <a class="button" href="{{ url_for('main.admin_result_create', model_id=model.id) }}">Add Result Row</a>
+  </div>
+
+  {% if results %}
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Benchmark</th>
+          <th>Split / Setting</th>
+          <th>Metric</th>
+          <th>Value</th>
+          <th>Summary</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for result in results %}
+        <tr>
+          <td>{{ result.benchmark.name if result.benchmark else 'N/A' }}</td>
+          <td>{{ result.split_name or 'N/A' }}</td>
+          <td>{{ result.metric_name or 'N/A' }}</td>
+          <td>
+            {% if result.metric_value is not none %}
+              {{ result.metric_value|metric }}{{ result.metric_unit or '' }}
+            {% else %}
+              <span class="subtle">N/A</span>
+            {% endif %}
+          </td>
+          <td>
+            {{ result.result_summary or 'N/A' }}
+            {% if result.source_url %}
+            <div class="subtle"><a href="{{ result.source_url }}" target="_blank" rel="noreferrer">Source</a></div>
+            {% endif %}
+          </td>
+          <td>
+            <form method="post" action="{{ url_for('main.admin_result_delete', result_id=result.id) }}">
+              <button class="button button-danger" type="submit">Delete Row</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No benchmark result rows are seeded for this model yet.</p>
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

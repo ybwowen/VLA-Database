@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block title %}Models | VLA Database{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <div class="panel-header">
+    <h1>Model List</h1>
+    <p>Browse all seeded models and filter them by paradigm, topic, or benchmark.</p>
+  </div>
+
+  <form method="get" class="filter-grid">
+    <label>
+      <span>Keyword</span>
+      <input type="text" name="q" value="{{ selected.q }}" placeholder="model name or paper title">
+    </label>
+
+    <label>
+      <span>Paradigm</span>
+      <select name="paradigm">
+        <option value="">All</option>
+        {% for paradigm in filters.paradigms %}
+        <option value="{{ paradigm.id }}" {% if selected.paradigm == paradigm.id %}selected{% endif %}>
+          {{ paradigm.name }}
+        </option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <label>
+      <span>Topic</span>
+      <select name="topic">
+        <option value="">All</option>
+        {% for topic in filters.topics %}
+        <option value="{{ topic.id }}" {% if selected.topic == topic.id %}selected{% endif %}>
+          {{ topic.name }}
+        </option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <label>
+      <span>Benchmark</span>
+      <select name="benchmark">
+        <option value="">All</option>
+        {% for benchmark in filters.benchmarks %}
+        <option value="{{ benchmark.id }}" {% if selected.benchmark == benchmark.id %}selected{% endif %}>
+          {{ benchmark.name }}
+        </option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <div class="filter-actions">
+      <button class="button button-primary" type="submit">Apply Filters</button>
+      <a class="button" href="{{ url_for('main.model_list') }}">Reset</a>
+    </div>
+  </form>
+</section>
+
+<section class="panel">
+  <div class="panel-header">
+    <h2>{{ models|length }} Models</h2>
+    <p>Result set after conditional query filtering.</p>
+  </div>
+
+  {% if models %}
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Paradigm</th>
+          <th>Year</th>
+          <th>Open Source</th>
+          <th>Topics</th>
+          <th>Benchmarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for model in models %}
+        <tr>
+          <td>
+            <a href="{{ url_for('main.model_detail', slug=model.slug) }}">{{ model.name }}</a>
+            {% if model.paper %}
+            <div class="subtle">{{ model.paper.title }}</div>
+            {% endif %}
+          </td>
+          <td>{{ model.paradigm.name if model.paradigm else 'N/A' }}</td>
+          <td>{{ model.year or 'N/A' }}</td>
+          <td>{{ 'Yes' if model.open_source else 'No' }}</td>
+          <td>
+            <div class="compact-tags">
+              {% for topic_name in model.topic_names %}
+              <span class="tag">{{ topic_name }}</span>
+              {% endfor %}
+            </div>
+          </td>
+          <td>
+            <div class="compact-tags">
+              {% if model.benchmark_names %}
+                {% for benchmark_name in model.benchmark_names %}
+                <span class="tag">{{ benchmark_name }}</span>
+                {% endfor %}
+              {% else %}
+                <span class="subtle">No seeded result</span>
+              {% endif %}
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No models matched the current filter combination.</p>
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

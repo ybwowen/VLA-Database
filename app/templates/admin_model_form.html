@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+
+{% block title %}Admin | {{ page_title }}{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <div class="panel-header">
+    <h1>{{ page_title }}</h1>
+    <p>{{ page_description }}</p>
+  </div>
+
+  <form method="post" class="admin-form">
+    <div class="form-section">
+      <h2>Model Basics</h2>
+      <div class="form-grid">
+        <label>
+          <span>Model Name *</span>
+          <input type="text" name="name" value="{{ form_data.name }}" required>
+        </label>
+
+        <label>
+          <span>Slug</span>
+          <input type="text" name="slug" value="{{ form_data.slug }}" placeholder="leave blank to auto-generate">
+        </label>
+
+        <label>
+          <span>Year</span>
+          <input type="number" name="year" value="{{ form_data.year }}" min="2000" max="2100">
+        </label>
+
+        <label>
+          <span>Paradigm *</span>
+          <select name="paradigm_id" required>
+            <option value="">Select</option>
+            {% for paradigm in options.paradigms %}
+            <option value="{{ paradigm.id }}" {% if form_data.paradigm_id == paradigm.id|string %}selected{% endif %}>
+              {{ paradigm.name }}
+            </option>
+            {% endfor %}
+          </select>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" name="open_source" {% if form_data.open_source %}checked{% endif %}>
+          <span>Open source</span>
+        </label>
+
+        <label>
+          <span>Website URL</span>
+          <input type="url" name="website_url" value="{{ form_data.website_url }}">
+        </label>
+
+        <label>
+          <span>Repository URL</span>
+          <input type="url" name="repo_url" value="{{ form_data.repo_url }}">
+        </label>
+      </div>
+
+      <label>
+        <span>Summary</span>
+        <textarea name="summary" rows="4">{{ form_data.summary }}</textarea>
+      </label>
+
+      <label>
+        <span>Notes</span>
+        <textarea name="notes" rows="3">{{ form_data.notes }}</textarea>
+      </label>
+    </div>
+
+    <div class="form-section">
+      <h2>Paper Info</h2>
+      <p class="subtle">If the paper title already exists, the existing paper record will be reused.</p>
+      <div class="form-grid">
+        <label class="form-span-2">
+          <span>Paper Title</span>
+          <input type="text" name="paper_title" value="{{ form_data.paper_title }}">
+        </label>
+
+        <label>
+          <span>Paper Year</span>
+          <input type="number" name="paper_year" value="{{ form_data.paper_year }}" min="2000" max="2100">
+        </label>
+
+        <label>
+          <span>Venue</span>
+          <input type="text" name="venue_name" value="{{ form_data.venue_name }}">
+        </label>
+
+        <label>
+          <span>Publication Type</span>
+          <select name="publication_type">
+            <option value="">Unknown</option>
+            {% for item in options.publication_types %}
+            <option value="{{ item }}" {% if form_data.publication_type == item %}selected{% endif %}>{{ item }}</option>
+            {% endfor %}
+          </select>
+        </label>
+
+        <label>
+          <span>Publication Status</span>
+          <select name="publication_status">
+            <option value="">Unknown</option>
+            {% for item in options.publication_statuses %}
+            <option value="{{ item }}" {% if form_data.publication_status == item %}selected{% endif %}>{{ item }}</option>
+            {% endfor %}
+          </select>
+        </label>
+
+        <label>
+          <span>arXiv URL</span>
+          <input type="url" name="arxiv_url" value="{{ form_data.arxiv_url }}">
+        </label>
+
+        <label>
+          <span>Project URL</span>
+          <input type="url" name="project_url" value="{{ form_data.project_url }}">
+        </label>
+
+        <label class="form-span-2">
+          <span>Code URL</span>
+          <input type="url" name="code_url" value="{{ form_data.code_url }}">
+        </label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>Topics and Data Sources</h2>
+      <div class="form-grid">
+        <label>
+          <span>Topics</span>
+          <select name="topic_ids" multiple size="8" class="multi-select">
+            {% for topic in options.topics %}
+            <option value="{{ topic.id }}" {% if topic.id|string in form_data.topic_ids %}selected{% endif %}>
+              {{ topic.name }}
+            </option>
+            {% endfor %}
+          </select>
+        </label>
+
+        <label>
+          <span>Data Source Types</span>
+          <select name="data_source_ids" multiple size="6" class="multi-select">
+            {% for data_source in options.data_source_types %}
+            <option value="{{ data_source.id }}" {% if data_source.id|string in form_data.data_source_ids %}selected{% endif %}>
+              {{ data_source.name }}
+            </option>
+            {% endfor %}
+          </select>
+        </label>
+      </div>
+
+      <p class="subtle">Use Ctrl or Shift for multi-select on desktop.</p>
+    </div>
+
+    <div class="form-actions">
+      <button class="button button-primary" type="submit">{{ submit_label }}</button>
+      {% if current_model %}
+      <a class="button" href="{{ url_for('main.model_detail', slug=current_model.slug) }}">View Model</a>
+      {% endif %}
+      <a class="button" href="{{ url_for('main.schema_page') }}">View Schema</a>
+      <a class="button" href="{{ url_for('main.model_list') }}">Back to Models</a>
+    </div>
+  </form>
+</section>
+
+<section class="panel">
+  <div class="panel-header">
+    <h2>Recently Stored Models</h2>
+    <p>Quick check that new records are written to the database.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Paradigm</th>
+          <th>Year</th>
+          <th>Paper</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for model in recent_models %}
+        <tr>
+          <td><a href="{{ url_for('main.model_detail', slug=model.slug) }}">{{ model.name }}</a></td>
+          <td>{{ model.paradigm.name if model.paradigm else 'N/A' }}</td>
+          <td>{{ model.year or 'N/A' }}</td>
+          <td>{{ model.paper.title if model.paper else 'N/A' }}</td>
+          <td>
+            <div class="compact-tags">
+              <a class="tag" href="{{ url_for('main.admin_model_edit', model_id=model.id) }}">Edit</a>
+              <a class="tag" href="{{ url_for('main.admin_result_create', model_id=model.id) }}">Add Result</a>
+              {% if model.paper %}
+              <a class="tag" href="{{ url_for('main.admin_paper_author_create', paper_id=model.paper.id) }}">Add Author</a>
+              {% endif %}
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

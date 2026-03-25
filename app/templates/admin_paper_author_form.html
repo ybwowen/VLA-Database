@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+
+{% block title %}Admin | Add Author{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <div class="panel-header">
+    <h1>Add Author to Paper</h1>
+    <p>Use this page to add a selected author, assign order, and create or reuse affiliations.</p>
+  </div>
+
+  <div class="detail-grid">
+    <article class="detail-card">
+      <h2>Paper Context</h2>
+      <dl class="detail-list">
+        <div>
+          <dt>Title</dt>
+          <dd>{{ paper.title }}</dd>
+        </div>
+        <div>
+          <dt>Year</dt>
+          <dd>{{ paper.year or 'N/A' }}</dd>
+        </div>
+        <div>
+          <dt>Linked Model</dt>
+          <dd>
+            {% if linked_model %}
+            <a href="{{ url_for('main.model_detail', slug=linked_model.slug) }}">{{ linked_model.name }}</a>
+            {% else %}
+            N/A
+            {% endif %}
+          </dd>
+        </div>
+      </dl>
+    </article>
+
+    <article class="detail-card">
+      <h2>Entry Tips</h2>
+      <p class="subtle">If the author already exists, the existing record will be reused.</p>
+      <p class="subtle">Affiliations can be entered as comma-separated or line-separated names.</p>
+    </article>
+  </div>
+</section>
+
+<section class="panel">
+  <form method="post" class="admin-form">
+    <div class="form-section">
+      <h2>Author Link</h2>
+      <div class="form-grid">
+        <label>
+          <span>Author Full Name *</span>
+          <input type="text" name="full_name" value="{{ form_data.full_name }}" required>
+        </label>
+
+        <label>
+          <span>Author Order *</span>
+          <input type="number" name="author_order" value="{{ form_data.author_order }}" min="1" required>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" name="is_first_author" {% if form_data.is_first_author %}checked{% endif %}>
+          <span>First author</span>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" name="is_corresponding_author" {% if form_data.is_corresponding_author %}checked{% endif %}>
+          <span>Corresponding author</span>
+        </label>
+      </div>
+
+      <label>
+        <span>Affiliations</span>
+        <textarea name="affiliation_names" rows="4" placeholder="Example: Stanford University, Google DeepMind">{{ form_data.affiliation_names }}</textarea>
+      </label>
+
+      <label>
+        <span>Notes</span>
+        <textarea name="notes" rows="3">{{ form_data.notes }}</textarea>
+      </label>
+    </div>
+
+    <div class="form-actions">
+      <button class="button button-primary" type="submit">Add Author Link</button>
+      {% if linked_model %}
+      <a class="button" href="{{ url_for('main.model_detail', slug=linked_model.slug) }}">Back to Model</a>
+      {% endif %}
+    </div>
+  </form>
+</section>
+
+<section class="panel">
+  <div class="panel-header">
+    <h2>Current Authors</h2>
+    <p>Existing paper-author links stored in the database.</p>
+  </div>
+  {% if current_authors %}
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Order</th>
+          <th>Author</th>
+          <th>Role</th>
+          <th>Affiliations</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for link in current_authors %}
+        <tr>
+          <td>{{ link.author_order }}</td>
+          <td>{{ link.author.full_name }}</td>
+          <td>
+            <div class="compact-tags">
+              {% if link.is_first_author %}
+              <span class="tag">First</span>
+              {% endif %}
+              {% if link.is_corresponding_author %}
+              <span class="tag">Corresponding</span>
+              {% endif %}
+              {% if not link.is_first_author and not link.is_corresponding_author %}
+              <span class="subtle">Author</span>
+              {% endif %}
+            </div>
+          </td>
+          <td>
+            <div class="compact-tags">
+              {% for author_aff in link.author.author_affiliations %}
+              <span class="tag">{{ author_aff.affiliation.name }}</span>
+              {% endfor %}
+            </div>
+          </td>
+          <td>
+            <form method="post" action="{{ url_for('main.admin_paper_author_delete', paper_id=paper.id, author_id=link.author.id) }}">
+              <button class="button button-danger" type="submit">Remove Link</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No author rows are currently linked to this paper.</p>
+  </div>
+  {% endif %}
+</section>
+{% endblock %}
