@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720 1080" role="img" aria-labelledby="title desc">
+  <title id="title">VLA Database ER Diagram</title>
+  <desc id="desc">A clean entity relationship diagram for the VLA database system, covering models, papers, authors, affiliations, topics, data sources, benchmarks, and evaluation results.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#202b33" flood-opacity="0.08" />
+    </filter>
+    <style>
+      text {
+        font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", sans-serif;
+        fill: #20313d;
+      }
+      .title {
+        font-size: 40px;
+        font-weight: 800;
+      }
+      .subtitle {
+        font-size: 20px;
+        fill: #60707c;
+      }
+      .legend-text {
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .card {
+        fill: #ffffff;
+        stroke: #d8e0e6;
+        stroke-width: 1.5;
+      }
+      .head-ref { fill: #4f81ad; }
+      .head-core { fill: #c2663d; }
+      .head-bridge { fill: #2c877f; }
+      .head-fact { fill: #a68027; }
+      .card-title {
+        font-size: 22px;
+        font-weight: 800;
+        fill: #ffffff;
+      }
+      .field {
+        font-size: 15px;
+        fill: #314550;
+      }
+      .row-line {
+        stroke: #edf1f4;
+        stroke-width: 1;
+      }
+      .connector {
+        fill: none;
+        stroke: #6e7c86;
+        stroke-width: 3.2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .cardinality {
+        font-size: 16px;
+        font-weight: 800;
+        fill: #24588a;
+        stroke: #ffffff;
+        stroke-width: 4;
+        paint-order: stroke;
+      }
+      .frame {
+        fill: #fbfaf7;
+        stroke: #e4e9ee;
+        stroke-width: 1.5;
+      }
+      .footer-note {
+        font-size: 15px;
+        fill: #6a7781;
+      }
+    </style>
+  </defs>
+
+  <rect class="frame" x="16" y="16" width="1688" height="1048" rx="30" />
+
+  <text class="title" x="52" y="74">VLA Database ER Diagram</text>
+  <text class="subtitle" x="52" y="106">Normalized schema for VLA models, papers, topics, data sources, authors, affiliations, benchmarks, and evaluation results.</text>
+
+  <circle cx="1216" cy="70" r="10" fill="#4f81ad" />
+  <text class="legend-text" x="1236" y="76">Reference</text>
+  <circle cx="1330" cy="70" r="10" fill="#c2663d" />
+  <text class="legend-text" x="1350" y="76">Core</text>
+  <circle cx="1438" cy="70" r="10" fill="#2c877f" />
+  <text class="legend-text" x="1458" y="76">Bridge</text>
+  <circle cx="1538" cy="70" r="10" fill="#a68027" />
+  <text class="legend-text" x="1558" y="76">Fact</text>
+
+  <text class="footer-note" x="52" y="1028">Bridge tables implement many-to-many relationships. The 1 / N labels show parent-to-child cardinalities for each direct foreign-key link.</text>
+
+  <path class="connector" d="M330 258 H390" />
+  <path class="connector" d="M650 258 H710" />
+  <path class="connector" d="M520 336 V430" />
+  <path class="connector" d="M330 508 H390" />
+  <path class="connector" d="M434 336 V648 H520 V680" />
+  <path class="connector" d="M330 758 H390" />
+  <path class="connector" d="M840 336 V430" />
+  <path class="connector" d="M970 508 H1030" />
+  <path class="connector" d="M1160 586 V680" />
+  <path class="connector" d="M1160 680 V626 H1480 V586" />
+  <path class="connector" d="M606 336 V390 H1160 V336" />
+  <path class="connector" d="M1290 258 H1350" />
+
+  <text class="cardinality" x="342" y="248">1</text>
+  <text class="cardinality" x="376" y="248">N</text>
+
+  <text class="cardinality" x="662" y="248">N</text>
+  <text class="cardinality" x="696" y="248">1</text>
+
+  <text class="cardinality" x="534" y="352">1</text>
+  <text class="cardinality" x="534" y="420">N</text>
+
+  <text class="cardinality" x="342" y="498">1</text>
+  <text class="cardinality" x="376" y="498">N</text>
+
+  <text class="cardinality" x="420" y="352">1</text>
+  <text class="cardinality" x="534" y="670">N</text>
+
+  <text class="cardinality" x="342" y="748">1</text>
+  <text class="cardinality" x="376" y="748">N</text>
+
+  <text class="cardinality" x="854" y="352">1</text>
+  <text class="cardinality" x="854" y="420">N</text>
+
+  <text class="cardinality" x="984" y="498">N</text>
+  <text class="cardinality" x="1016" y="498">1</text>
+
+  <text class="cardinality" x="1174" y="602">1</text>
+  <text class="cardinality" x="1174" y="670">N</text>
+
+  <text class="cardinality" x="1144" y="670">N</text>
+  <text class="cardinality" x="1494" y="602">1</text>
+
+  <text class="cardinality" x="620" y="382">1</text>
+  <text class="cardinality" x="1174" y="382">N</text>
+
+  <text class="cardinality" x="1304" y="248">N</text>
+  <text class="cardinality" x="1338" y="248">1</text>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="70" y="180" width="260" height="156" rx="20" />
+    <rect class="head-ref" x="70" y="180" width="260" height="44" rx="20" />
+    <text class="card-title" x="88" y="208">Paradigm</text>
+    <line class="row-line" x1="88" y1="262" x2="312" y2="262" />
+    <line class="row-line" x1="88" y1="290" x2="312" y2="290" />
+    <text class="field" x="88" y="252">PK id</text>
+    <text class="field" x="88" y="280">name</text>
+    <text class="field" x="88" y="308">description</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="390" y="180" width="260" height="156" rx="20" />
+    <rect class="head-core" x="390" y="180" width="260" height="44" rx="20" />
+    <text class="card-title" x="408" y="208">Model</text>
+    <line class="row-line" x1="408" y1="262" x2="632" y2="262" />
+    <line class="row-line" x1="408" y1="290" x2="632" y2="290" />
+    <text class="field" x="408" y="252">PK id</text>
+    <text class="field" x="408" y="280">name, year, open_source</text>
+    <text class="field" x="408" y="308">FK paper_id, paradigm_id</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="710" y="180" width="260" height="156" rx="20" />
+    <rect class="head-core" x="710" y="180" width="260" height="44" rx="20" />
+    <text class="card-title" x="728" y="208">Paper</text>
+    <line class="row-line" x1="728" y1="262" x2="952" y2="262" />
+    <line class="row-line" x1="728" y1="290" x2="952" y2="290" />
+    <text class="field" x="728" y="252">PK id</text>
+    <text class="field" x="728" y="280">title, year</text>
+    <text class="field" x="728" y="308">venue_name, publication_type</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="1030" y="180" width="260" height="156" rx="20" />
+    <rect class="head-fact" x="1030" y="180" width="260" height="44" rx="20" />
+    <text class="card-title" x="1048" y="208">EvaluationResult</text>
+    <line class="row-line" x1="1048" y1="262" x2="1272" y2="262" />
+    <line class="row-line" x1="1048" y1="290" x2="1272" y2="290" />
+    <text class="field" x="1048" y="252">PK id</text>
+    <text class="field" x="1048" y="280">FK model_id, benchmark_id</text>
+    <text class="field" x="1048" y="308">metric_name, metric_value</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="1350" y="180" width="260" height="156" rx="20" />
+    <rect class="head-ref" x="1350" y="180" width="260" height="44" rx="20" />
+    <text class="card-title" x="1368" y="208">Benchmark</text>
+    <line class="row-line" x1="1368" y1="262" x2="1592" y2="262" />
+    <line class="row-line" x1="1368" y1="290" x2="1592" y2="290" />
+    <text class="field" x="1368" y="252">PK id</text>
+    <text class="field" x="1368" y="280">name, category</text>
+    <text class="field" x="1368" y="308">official_url</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="70" y="430" width="260" height="156" rx="20" />
+    <rect class="head-ref" x="70" y="430" width="260" height="44" rx="20" />
+    <text class="card-title" x="88" y="458">Topic</text>
+    <line class="row-line" x1="88" y1="512" x2="312" y2="512" />
+    <line class="row-line" x1="88" y1="540" x2="312" y2="540" />
+    <text class="field" x="88" y="502">PK id</text>
+    <text class="field" x="88" y="530">name</text>
+    <text class="field" x="88" y="558">description</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="390" y="430" width="260" height="156" rx="20" />
+    <rect class="head-bridge" x="390" y="430" width="260" height="44" rx="20" />
+    <text class="card-title" x="408" y="458">ModelTopic</text>
+    <line class="row-line" x1="408" y1="512" x2="632" y2="512" />
+    <line class="row-line" x1="408" y1="540" x2="632" y2="540" />
+    <text class="field" x="408" y="502">FK model_id</text>
+    <text class="field" x="408" y="530">FK topic_id</text>
+    <text class="field" x="408" y="558">composite PK</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="710" y="430" width="260" height="156" rx="20" />
+    <rect class="head-bridge" x="710" y="430" width="260" height="44" rx="20" />
+    <text class="card-title" x="728" y="458">PaperAuthor</text>
+    <line class="row-line" x1="728" y1="512" x2="952" y2="512" />
+    <line class="row-line" x1="728" y1="540" x2="952" y2="540" />
+    <text class="field" x="728" y="502">FK paper_id</text>
+    <text class="field" x="728" y="530">FK author_id, author_order</text>
+    <text class="field" x="728" y="558">first/corresponding flags</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="1030" y="430" width="260" height="156" rx="20" />
+    <rect class="head-core" x="1030" y="430" width="260" height="44" rx="20" />
+    <text class="card-title" x="1048" y="458">Author</text>
+    <line class="row-line" x1="1048" y1="512" x2="1272" y2="512" />
+    <line class="row-line" x1="1048" y1="540" x2="1272" y2="540" />
+    <text class="field" x="1048" y="502">PK id</text>
+    <text class="field" x="1048" y="530">full_name</text>
+    <text class="field" x="1048" y="558">notes</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="1350" y="430" width="260" height="156" rx="20" />
+    <rect class="head-core" x="1350" y="430" width="260" height="44" rx="20" />
+    <text class="card-title" x="1368" y="458">Affiliation</text>
+    <line class="row-line" x1="1368" y1="512" x2="1592" y2="512" />
+    <line class="row-line" x1="1368" y1="540" x2="1592" y2="540" />
+    <text class="field" x="1368" y="502">PK id</text>
+    <text class="field" x="1368" y="530">name, country</text>
+    <text class="field" x="1368" y="558">website_url</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="70" y="680" width="260" height="156" rx="20" />
+    <rect class="head-ref" x="70" y="680" width="260" height="44" rx="20" />
+    <text class="card-title" x="88" y="708">DataSourceType</text>
+    <line class="row-line" x1="88" y1="762" x2="312" y2="762" />
+    <line class="row-line" x1="88" y1="790" x2="312" y2="790" />
+    <text class="field" x="88" y="752">PK id</text>
+    <text class="field" x="88" y="780">name</text>
+    <text class="field" x="88" y="808">description</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="390" y="680" width="260" height="156" rx="20" />
+    <rect class="head-bridge" x="390" y="680" width="260" height="44" rx="20" />
+    <text class="card-title" x="408" y="708">ModelDataSource</text>
+    <line class="row-line" x1="408" y1="762" x2="632" y2="762" />
+    <line class="row-line" x1="408" y1="790" x2="632" y2="790" />
+    <text class="field" x="408" y="752">FK model_id</text>
+    <text class="field" x="408" y="780">FK data_source_type_id</text>
+    <text class="field" x="408" y="808">notes</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="1030" y="680" width="260" height="156" rx="20" />
+    <rect class="head-bridge" x="1030" y="680" width="260" height="44" rx="20" />
+    <text class="card-title" x="1048" y="708">AuthorAffiliation</text>
+    <line class="row-line" x1="1048" y1="762" x2="1272" y2="762" />
+    <line class="row-line" x1="1048" y1="790" x2="1272" y2="790" />
+    <text class="field" x="1048" y="752">FK author_id</text>
+    <text class="field" x="1048" y="780">FK affiliation_id</text>
+    <text class="field" x="1048" y="808">notes</text>
+  </g>
+</svg>

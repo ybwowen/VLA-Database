@@ -35,10 +35,28 @@
 
 <section class="panel">
   <div class="panel-header">
-    <h2>Offline ER Diagram</h2>
-    <p>A text-style ER map that works without any external JS library.</p>
+    <h2>ER Diagram</h2>
+    <p>A bundled SVG diagram for presentation use. It is stored inside the project, so it works offline and does not depend on external JS libraries.</p>
   </div>
-  <pre class="diagram-block">{{ diagram_text }}</pre>
+  <div class="section-actions">
+    <a class="button" href="{{ url_for('static', filename='img/er_diagram.svg') }}" target="_blank" rel="noopener">Open SVG</a>
+  </div>
+  <figure class="diagram-figure">
+    <div class="diagram-stage">
+      <img
+        class="diagram-image"
+        src="{{ url_for('static', filename='img/er_diagram.svg') }}"
+        alt="ER diagram for the VLA database schema showing Model, Paper, Author, Affiliation, Topic, Benchmark, and bridge tables."
+      >
+    </div>
+    <figcaption class="diagram-caption">
+      Colors distinguish reference tables, core business entities, bridge tables, and the evaluation fact table.
+    </figcaption>
+  </figure>
+  <details class="diagram-fallback">
+    <summary class="diagram-summary">Show text fallback</summary>
+    <pre class="diagram-block">{{ diagram_text }}</pre>
+  </details>
 </section>
 
 <section class="panel">
