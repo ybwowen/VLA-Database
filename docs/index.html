@@ -28,7 +28,7 @@
     <section class="hero section">
       <div class="hero__content">
         <p class="eyebrow">Database Course Project</p>
-        <h1>VLA（Vision-Language-Action）模型数据库系统</h1>
+        <h1>VLA模型数据库系统</h1>
         <p class="hero__lead">
           这个项目不把重点放在“做一个很花的网页”，而是聚焦于把分散的 VLA 模型资料
           规范化建模成一个可查询、可扩展、可维护的关系数据库系统。
@@ -260,52 +260,8 @@
       </div>
     </section>
 
-    <section id="deploy" class="section section--soft">
-      <div class="section-heading">
-        <p class="eyebrow">GitHub Pages</p>
-        <h2>静态展示页部署建议</h2>
-      </div>
-      <div class="deploy-grid">
-        <article class="deploy-card">
-          <h3>这页能部署到哪里</h3>
-          <p>
-            当前这套 <code>docs/</code> 是纯静态页面，可以直接部署到 GitHub Pages，
-            用来展示项目背景、设计思路、E-R 图和课程汇报内容。
-          </p>
-        </article>
-        <article class="deploy-card">
-          <h3>什么不能部署到 Pages</h3>
-          <p>
-            GitHub Pages 只能托管静态文件，不能直接运行 Flask，也不能直接托管 MySQL。
-            所以在线数据库查询系统仍需要单独部署后端服务。
-          </p>
-        </article>
-        <article class="deploy-card">
-          <h3>仓库要不要 public</h3>
-          <p>
-            如果你使用的是 GitHub Free，最稳妥的做法是把仓库设为 public 再启用 Pages。
-            如果你用的是 GitHub Pro、Team 或 Enterprise，私有仓库也支持 GitHub Pages。
-          </p>
-        </article>
-        <article class="deploy-card">
-          <h3>最简单的发布方式</h3>
-          <ol>
-            <li>把当前仓库推到 GitHub。</li>
-            <li>在仓库设置里打开 Pages。</li>
-            <li>Publishing source 选择当前分支的 <code>/docs</code> 目录。</li>
-            <li>等待 GitHub 自动发布静态站点。</li>
-          </ol>
-        </article>
-      </div>
-      <p class="deploy-note">
-        建议课程答辩时保留现在这套本地 Flask + MySQL 系统演示真实查询，
-        同时用 GitHub Pages 作为项目主页和设计展示页。
-      </p>
-    </section>
-  </main>
-
   <footer class="footer">
-    <p>VLA 模型数据库系统 · 课程项目静态展示页 · 适用于 GitHub Pages</p>
+    <p>VLA 模型数据库系统 · 课程项目静态展示页</p>
   </footer>
 </body>
 </html>
