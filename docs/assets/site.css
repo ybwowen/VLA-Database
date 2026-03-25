@@ -179,6 +179,25 @@ code {
   margin-top: 1.7rem;
 }
 
+.hero__links {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.hero__links a,
+.inline-link {
+  color: var(--blue-deep);
+  text-decoration: underline;
+  text-decoration-color: rgba(31, 58, 147, 0.28);
+  text-underline-offset: 0.18rem;
+}
+
+.hero__links a {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
 .button {
   display: inline-flex;
   align-items: center;
