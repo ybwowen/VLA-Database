@@ -51,6 +51,18 @@
       </select>
     </label>
 
+    <label>
+      <span>Year</span>
+      <select name="year">
+        <option value="">All</option>
+        {% for year in filters.years %}
+        <option value="{{ year }}" {% if selected.year == year %}selected{% endif %}>
+          {{ year }}
+        </option>
+        {% endfor %}
+      </select>
+    </label>
+
     <div class="filter-actions">
       <button class="button button-primary" type="submit">Apply Filters</button>
       <a class="button" href="{{ url_for('main.model_list') }}">Reset</a>

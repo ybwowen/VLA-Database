@@ -10,9 +10,11 @@ def format_metric(value):
     return f"{value:g}"
 
 
-def create_app():
+def create_app(test_config=None):
     app = Flask(__name__)
     app.config.from_object(Config)
+    if test_config:
+        app.config.update(test_config)
 
     init_engine(app.config["DATABASE_URL"])
     app.teardown_appcontext(remove_session)

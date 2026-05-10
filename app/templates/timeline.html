@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Timeline | VLA Database{% endblock %}
+
+{% block content %}
+<section class="panel timeline-hero">
+  <div class="panel-header">
+    <h1>VLA Timeline</h1>
+    <p>Representative VLA and VLA-adjacent robot policies in the seeded database, grouped by release year for poster-ready presentation.</p>
+  </div>
+
+  <div class="stats-grid">
+    <article class="stat-card">
+      <span class="stat-label">Models</span>
+      <strong>{{ stats.model_count }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Years</span>
+      <strong>{{ stats.year_count }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Latest Year</span>
+      <strong>{{ stats.latest_year or 'N/A' }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Open Source</span>
+      <strong>{{ stats.open_source_count }}</strong>
+    </article>
+  </div>
+</section>
+
+<section class="timeline">
+  {% for row in timeline_rows %}
+  <article class="timeline-row">
+    <div class="timeline-year">
+      <span>{{ row.year }}</span>
+    </div>
+    <div class="timeline-content panel">
+      <div class="panel-header">
+        <h2>{{ row.year }} Representative Models</h2>
+        <p>
+          {{ row.models|length }} seeded model{% if row.models|length != 1 %}s{% endif %}
+          across {{ row.paradigms|length }} paradigm bucket{% if row.paradigms|length != 1 %}s{% endif %}.
+        </p>
+      </div>
+
+      <div class="timeline-model-grid">
+        {% for model in row.models %}
+        <article class="timeline-model-card">
+          <div>
+            <a href="{{ url_for('main.model_detail', slug=model.slug) }}">{{ model.name }}</a>
+            {% if model.paper %}
+            <p class="subtle">{{ model.paper.title }}</p>
+            {% endif %}
+          </div>
+          <div class="compact-tags">
+            <span class="tag">{{ model.paradigm.name if model.paradigm else 'Unknown' }}</span>
+            {% if model.open_source %}
+            <span class="tag">open source</span>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+
+      <div class="timeline-footer">
+        <div class="compact-tags">
+          {% for topic in row.topics %}
+          <span class="tag">{{ topic }}</span>
+          {% endfor %}
+        </div>
+        <div class="compact-tags">
+          {% for paradigm, count in row.paradigms %}
+          <span class="tag">{{ paradigm }} · {{ count }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+{% endblock %}

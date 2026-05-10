@@ -3,6 +3,7 @@ import re
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import make_url
 from sqlalchemy.orm import declarative_base, scoped_session, sessionmaker
+from sqlalchemy.pool import StaticPool
 
 
 Base = declarative_base()
@@ -18,12 +19,15 @@ def init_engine(database_url):
     if _engine is not None and str(_engine.url) == database_url:
         return _engine
 
-    _engine = create_engine(
-        database_url,
-        future=True,
-        pool_pre_ping=True,
-        pool_recycle=280,
-    )
+    engine_kwargs = {"future": True, "pool_pre_ping": True, "pool_recycle": 280}
+    if database_url == "sqlite:///:memory:":
+        engine_kwargs = {
+            "future": True,
+            "connect_args": {"check_same_thread": False},
+            "poolclass": StaticPool,
+        }
+
+    _engine = create_engine(database_url, **engine_kwargs)
     SessionLocal.remove()
     SessionLocal.configure(bind=_engine)
     return _engine

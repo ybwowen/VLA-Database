@@ -83,6 +83,14 @@ def _filter_options(session):
         "paradigms": session.query(Paradigm).order_by(Paradigm.name.asc()).all(),
         "topics": session.query(Topic).order_by(Topic.name.asc()).all(),
         "benchmarks": session.query(Benchmark).order_by(Benchmark.name.asc()).all(),
+        "years": [
+            year
+            for (year,) in session.query(VlaModel.year)
+            .filter(VlaModel.year.is_not(None))
+            .distinct()
+            .order_by(VlaModel.year.desc())
+            .all()
+        ],
     }
 
 
@@ -542,6 +550,7 @@ def model_list():
     paradigm_id = request.args.get("paradigm", type=int)
     topic_id = request.args.get("topic", type=int)
     benchmark_id = request.args.get("benchmark", type=int)
+    year = request.args.get("year", type=int)
     keyword = request.args.get("q", "").strip()
 
     query = session.query(VlaModel).options(
@@ -562,6 +571,9 @@ def model_list():
             EvaluationResult.benchmark_id == benchmark_id
         )
 
+    if year:
+        query = query.filter(VlaModel.year == year)
+
     if keyword:
         query = query.outerjoin(VlaModel.paper).filter(
             or_(
@@ -581,8 +593,56 @@ def model_list():
             "paradigm": paradigm_id,
             "topic": topic_id,
             "benchmark": benchmark_id,
+            "year": year,
             "q": keyword,
         },
+    )
+
+
+@bp.route("/timeline")
+def timeline_page():
+    session = get_session()
+    models = (
+        session.query(VlaModel)
+        .options(
+            joinedload(VlaModel.paradigm),
+            joinedload(VlaModel.paper),
+            selectinload(VlaModel.model_topics).joinedload(ModelTopic.topic),
+            selectinload(VlaModel.evaluation_results).joinedload(EvaluationResult.benchmark),
+        )
+        .filter(VlaModel.year.is_not(None))
+        .order_by(VlaModel.year.asc(), VlaModel.name.asc())
+        .all()
+    )
+
+    timeline_rows = []
+    for year in sorted({model.year for model in models}):
+        year_models = [model for model in models if model.year == year]
+        topics = sorted({topic_name for model in year_models for topic_name in model.topic_names})
+        paradigms = {}
+        for model in year_models:
+            name = model.paradigm.name if model.paradigm else "Unknown"
+            paradigms[name] = paradigms.get(name, 0) + 1
+        timeline_rows.append(
+            {
+                "year": year,
+                "models": year_models,
+                "topics": topics[:8],
+                "paradigms": sorted(paradigms.items(), key=lambda item: (-item[1], item[0])),
+            }
+        )
+
+    stats = {
+        "model_count": len(models),
+        "year_count": len(timeline_rows),
+        "latest_year": max((model.year for model in models), default=None),
+        "open_source_count": sum(1 for model in models if model.open_source),
+    }
+
+    return render_template(
+        "timeline.html",
+        timeline_rows=timeline_rows,
+        stats=stats,
     )
 
 

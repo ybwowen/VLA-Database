@@ -6,7 +6,7 @@
   <title>VLA 模型数据库系统</title>
   <meta
     name="description"
-    content="VLA（Vision-Language-Action）模型数据库系统静态展示页，聚焦于数据设计思路、E-R 图与关系模式。"
+    content="VLA（Vision-Language-Action）模型数据库系统静态展示页，展示 2022-2026 数据范围、规范化 E-R 设计、查询能力与数据治理原则。"
   >
   <link rel="canonical" href="https://ybwowen.github.io/VLA-Database/">
   <link rel="stylesheet" href="./assets/site.css">
@@ -16,11 +16,11 @@
     <div class="topbar__inner">
       <a class="brand" href="#home">VLA Database</a>
       <nav class="nav">
-        <a href="#problem">问题背景</a>
-        <a href="#architecture">设计架构</a>
+        <a href="#dataset">数据范围</a>
+        <a href="#timeline">时间线</a>
         <a href="#schema">E-R 图</a>
         <a href="#queries">查询能力</a>
-        <!-- <a href="#deploy">部署说明</a> -->
+        <a href="#governance">数据治理</a>
       </nav>
     </div>
   </header>
@@ -28,45 +28,58 @@
   <main id="home">
     <section class="hero section">
       <div class="hero__content">
-        <p class="eyebrow">Database Course Project</p>
-        <h1>VLA模型数据库系统</h1>
-        <div class="hero__chips">
+        <p class="eyebrow">Database Course Project · Final Version</p>
+        <h1>VLA 模型数据库系统</h1>
+        <p class="hero__lead">
+          一个面向 Vision-Language-Action 与机器人基础模型的关系数据库课程项目，
+          使用 MySQL、Flask 和 SQLAlchemy 管理模型、论文、作者、机构、topic、数据来源和 benchmark 结果。
+        </p>
+        <div class="hero__chips" aria-label="技术栈">
           <span>MySQL 8</span>
           <span>Flask</span>
           <span>SQLAlchemy</span>
+          <span>Jinja2</span>
           <span>Normalized Schema</span>
-          <span>ER Design</span>
+          <span>2022-2026 Coverage</span>
         </div>
         <div class="hero__actions">
-          <a class="button button--primary" href="#schema">查看 E-R 图</a>
-          <a class="button button--ghost" href="https://github.com/ybwowen/VLA-Database" target="_blank" rel="noreferrer">查看 GitHub 仓库</a>
-          <a class="button button--ghost" href="https://ybwowen.github.io/VLA-Database/" target="_blank" rel="noreferrer">未来站点地址</a>
+          <a class="button button--primary" href="#dataset">查看最终数据范围</a>
+          <a class="button button--ghost" href="#schema">查看 E-R 图</a>
+          <a class="button button--ghost" href="https://github.com/ybwowen/VLA-Database" target="_blank" rel="noreferrer">GitHub 仓库</a>
         </div>
         <div class="hero__links">
           <a href="https://github.com/ybwowen/VLA-Database" target="_blank" rel="noreferrer">
             Repository: github.com/ybwowen/VLA-Database
           </a>
           <a href="https://ybwowen.github.io/VLA-Database/" target="_blank" rel="noreferrer">
-            GitHub Pages: ybwowen.github.io/VLA-Database
+            GitHub Pages 展示页: ybwowen.github.io/VLA-Database
           </a>
         </div>
       </div>
       <div class="hero__panel">
-        <div class="stat-card">
-          <strong>10</strong>
+        <div class="stat-card stat-card--strong">
+          <strong>20</strong>
           <span>seed 模型</span>
         </div>
         <div class="stat-card">
+          <strong>2022-2026</strong>
+          <span>年份覆盖</span>
+        </div>
+        <div class="stat-card">
+          <strong>15</strong>
+          <span>benchmarks</span>
+        </div>
+        <div class="stat-card">
+          <strong>35</strong>
+          <span>evaluation rows</span>
+        </div>
+        <div class="stat-card">
+          <strong>17</strong>
+          <span>topics</span>
+        </div>
+        <div class="stat-card">
           <strong>13</strong>
-          <span>核心/桥接/事实表</span>
-        </div>
-        <div class="stat-card">
-          <strong>3 层</strong>
-          <span>数据、服务、展示分层</span>
-        </div>
-        <div class="stat-card">
-          <strong>MVP</strong>
-          <span>浏览、筛选、详情、统计、录入</span>
+          <span>核心 / 桥接 / 事实表</span>
         </div>
       </div>
     </section>
@@ -76,26 +89,133 @@
         <p class="eyebrow">Why This Project</p>
         <h2>为什么需要把 VLA 资料做成数据库</h2>
         <p>
-          VLA 模型相关信息散落在论文、项目主页、GitHub 仓库和 benchmark 表格中。
-          如果只靠 Excel 或人工整理，随着模型数量增加，很快就会暴露出维护和查询问题。
+          VLA 模型相关信息散落在论文、项目主页、GitHub 仓库、Hugging Face 模型卡和 benchmark 表格中。
+          只靠 Excel 或人工笔记会让多对多关系、条件查询、来源追溯和统计分析变得越来越难维护。
         </p>
       </div>
       <div class="grid grid--4">
         <article class="info-card">
           <h3>字段口径不统一</h3>
-          <p>同一类信息在不同资料里命名不同，作者、topic、benchmark 结果难以标准化。</p>
+          <p>模型年份、论文状态、topic、benchmark split 和开源状态在不同来源里经常命名不同。</p>
         </article>
         <article class="info-card">
           <h3>关系天然复杂</h3>
-          <p>一篇论文有多位作者，一个作者可能有多个机构，一个模型也可能对应多个 topic 与数据来源。</p>
+          <p>一篇论文有多个作者，一个作者可能有多个机构，一个模型也可能对应多个 topic 和数据来源。</p>
         </article>
         <article class="info-card">
-          <h3>条件查询不方便</h3>
-          <p>按 paradigm、topic、benchmark 或年份筛选时，平铺表格难以支持联查和统计。</p>
+          <h3>多条件查询困难</h3>
+          <p>按年份、范式、topic、benchmark 或关键词组合筛选，需要稳定的关系模式和联查逻辑。</p>
         </article>
         <article class="info-card">
-          <h3>后续扩展成本高</h3>
-          <p>新增 benchmark、录入作者机构、补充评测结果时，非规范化结构往往会出现重复与不一致。</p>
+          <h3>统计与扩展成本高</h3>
+          <p>新增 2026 模型、benchmark 或评测结果时，规范化结构能减少重复、空缺和不一致。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="dataset" class="section section--soft">
+      <div class="section-heading">
+        <p class="eyebrow">Final Dataset Scope</p>
+        <h2>最终 seed data 已扩展到 2022-2026</h2>
+        <p>
+          当前数据库内置 20 个代表性 VLA 或 VLA-adjacent 机器人基础模型。
+          2026 条目只录入有公开论文、项目页、模型卡或官方页面支撑的信息。
+        </p>
+      </div>
+      <div class="dataset-strip">
+        <article>
+          <span class="dataset-number">20</span>
+          <strong>Models</strong>
+          <p>从 RT-1、VIMA 到 Xiaomi-Robotics-0、Green-VLA、AR-VLA、ProgressVLA。</p>
+        </article>
+        <article>
+          <span class="dataset-number">20</span>
+          <strong>Papers</strong>
+          <p>论文、项目页、代码链接和发布状态拆分存储，便于后续维护。</p>
+        </article>
+        <article>
+          <span class="dataset-number">17</span>
+          <strong>Topics</strong>
+          <p>新增 humanoid robotics、spatial grounding、real-time control 等最终版主题。</p>
+        </article>
+        <article>
+          <span class="dataset-number">35</span>
+          <strong>Results</strong>
+          <p>包含数值型 benchmark 结果与只有定性描述的来源追溯记录。</p>
+        </article>
+      </div>
+      <div class="model-cloud" aria-label="seed 模型列表">
+        <span>RT-1</span>
+        <span>RT-2</span>
+        <span>VIMA</span>
+        <span>RoboFlamingo</span>
+        <span>GR-1</span>
+        <span>OpenVLA</span>
+        <span>Octo</span>
+        <span>pi0</span>
+        <span>OpenHelix</span>
+        <span>Fast-in-Slow</span>
+        <span>RDT-1B</span>
+        <span>SpatialVLA</span>
+        <span>OpenVLA-OFT</span>
+        <span>GR00T N1.5</span>
+        <span>pi0.5</span>
+        <span>SmolVLA</span>
+        <span class="is-latest">Xiaomi-Robotics-0</span>
+        <span class="is-latest">Green-VLA</span>
+        <span class="is-latest">AR-VLA</span>
+        <span class="is-latest">ProgressVLA</span>
+      </div>
+    </section>
+
+    <section id="timeline" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">2022-2026 Timeline</p>
+        <h2>按年份展示模型演进</h2>
+        <p>
+          动态 Flask 版本提供 <code>/timeline</code> 页面；这里保留静态摘要，方便 GitHub Pages 作为课程展示入口。
+        </p>
+      </div>
+      <div class="timeline-static">
+        <article>
+          <div class="timeline-static__year">2022</div>
+          <div>
+            <h3>Early VLA Policies</h3>
+            <p>RT-1, VIMA</p>
+            <span>real robot · multimodal prompting</span>
+          </div>
+        </article>
+        <article>
+          <div class="timeline-static__year">2023</div>
+          <div>
+            <h3>Vision-Language Transfer</h3>
+            <p>RT-2, RoboFlamingo, GR-1</p>
+            <span>web-scale VLM transfer · humanoid manipulation</span>
+          </div>
+        </article>
+        <article>
+          <div class="timeline-static__year">2024</div>
+          <div>
+            <h3>Open Generalist Policies</h3>
+            <p>OpenVLA, Octo, pi0, RDT-1B</p>
+            <span>open checkpoints · diffusion policies · large robot datasets</span>
+          </div>
+        </article>
+        <article>
+          <div class="timeline-static__year">2025</div>
+          <div>
+            <h3>Efficiency And Embodiment</h3>
+            <p>Fast-in-Slow, OpenHelix, SpatialVLA, OpenVLA-OFT, GR00T N1.5, pi0.5, SmolVLA</p>
+            <span>spatial grounding · fine-tuning · compact policies · humanoid foundation models</span>
+          </div>
+        </article>
+        <article class="timeline-static__latest">
+          <div class="timeline-static__year">2026</div>
+          <div>
+            <h3>Recent 2026 Entries</h3>
+            <p>Xiaomi-Robotics-0, Green-VLA, AR-VLA, ProgressVLA</p>
+            <span>real-time control · staged VLA · autoregressive action expert · progress-aware diffusion</span>
+          </div>
         </article>
       </div>
     </section>
@@ -103,10 +223,8 @@
     <section id="architecture" class="section section--soft">
       <div class="section-heading">
         <p class="eyebrow">Design Architecture</p>
-        <h2>设计思路与系统架构</h2>
-        <p>
-          先明确关系模式，再组织查询逻辑，最后做页面展示。
-        </p>
+        <h2>三层实现结构</h2>
+        <p>先明确关系模式，再组织查询逻辑，最后通过服务端渲染页面展示数据库能力。</p>
       </div>
       <div class="architecture">
         <article class="layer-card layer-card--blue">
@@ -123,23 +241,23 @@
         <article class="layer-card layer-card--green">
           <span class="layer-label">Layer 2</span>
           <h3>Service Layer: Flask + SQLAlchemy</h3>
-          <p>通过 ORM 维护外键关系、用路由组织列表页、详情页、统计页和管理录入逻辑。</p>
+          <p>通过 ORM 维护外键关系，用路由组织列表页、详情页、统计页、timeline 和管理录入逻辑。</p>
           <ul class="tag-list">
             <li>joined query</li>
             <li>filtering</li>
-            <li>stats aggregation</li>
+            <li>aggregation</li>
             <li>CRUD workflow</li>
           </ul>
         </article>
         <article class="layer-card layer-card--orange">
           <span class="layer-label">Layer 3</span>
           <h3>Presentation Layer: Course Demo Pages</h3>
-          <p>页面只承担“展示关系与查询结果”的职责，不把复杂逻辑塞进前端。</p>
+          <p>页面展示查询结果、统计分布、E-R 设计和管理操作，不把数据库逻辑塞进静态前端。</p>
           <ul class="tag-list">
-            <li>首页</li>
-            <li>模型列表 / 详情</li>
-            <li>Benchmark 页</li>
-            <li>Stats / Schema / Admin</li>
+            <li>Models / Details</li>
+            <li>Benchmarks / Stats</li>
+            <li>Timeline / Schema</li>
+            <li>Admin Forms</li>
           </ul>
         </article>
       </div>
@@ -233,35 +351,72 @@
     <section id="queries" class="section">
       <div class="section-heading">
         <p class="eyebrow">Database Capabilities</p>
-        <h2>数据库查询能力</h2>
+        <h2>数据库查询与演示入口</h2>
+        <p>
+          GitHub Pages 是静态展示页；真正的查询、录入和统计在本地 Flask 应用中运行。
+          下列路径可以作为答辩时的演示脚本。
+        </p>
       </div>
       <div class="grid grid--3">
         <article class="capability-card">
-          <h3>基础查询</h3>
-          <p>浏览模型列表，查看模型名称、范式、年份、是否开源等基本信息。</p>
+          <h3>年份筛选</h3>
+          <p><code>/models?year=2026</code> 展示 Xiaomi-Robotics-0、Green-VLA、AR-VLA、ProgressVLA 等最新条目。</p>
         </article>
         <article class="capability-card">
-          <h3>条件查询</h3>
-          <p>按 paradigm、topic、benchmark 和关键词筛选模型，演示多表联查。</p>
+          <h3>多条件筛选</h3>
+          <p><code>/models</code> 支持按 paradigm、topic、benchmark、year 和关键词组合查询。</p>
         </article>
         <article class="capability-card">
           <h3>详情联查</h3>
-          <p>在模型详情页联动展示论文、作者、机构、数据来源和 benchmark 结果。</p>
+          <p><code>/models/xiaomi-robotics-0</code> 展示模型、论文、topic、数据来源和 benchmark 结果。</p>
         </article>
         <article class="capability-card">
           <h3>统计查询</h3>
-          <p>统计范式分布、topic 覆盖度、数据来源类型分布和 benchmark 覆盖情况。</p>
+          <p><code>/stats</code> 汇总范式分布、topic 覆盖、benchmark 覆盖和 2022-2026 年份趋势。</p>
         </article>
         <article class="capability-card">
-          <h3>数据录入</h3>
-          <p>支持新增模型、补充作者与机构关联、录入 benchmark result，展示 CRUD 闭环。</p>
+          <h3>时间线视图</h3>
+          <p><code>/timeline</code> 按年份展示模型演进、代表模型、范式分布和关键 topic。</p>
         </article>
         <article class="capability-card">
-          <h3>可扩展性</h3>
-          <p>后续可以继续扩充更多模型、更多 benchmark 和更复杂的统计分析，而不需要推翻表结构。</p>
+          <h3>CRUD 闭环</h3>
+          <p><code>/admin/models/new</code>、作者机构关联和 benchmark result 表单用于演示增删改查。</p>
         </article>
       </div>
     </section>
+
+    <section id="governance" class="section section--soft">
+      <div class="section-heading">
+        <p class="eyebrow">Data Governance</p>
+        <h2>数据原则：保守录入，不编造数值</h2>
+        <p>
+          最终版 seed data 覆盖 2024-2026 扩展模型，但仍优先保证来源可追溯和字段可信。
+        </p>
+      </div>
+      <div class="governance-grid">
+        <article class="governance-card">
+          <span>01</span>
+          <h3>未知字段保留为空</h3>
+          <p>没有公开来源支撑的字段不靠猜测补齐，数据库中保留空值或 <code>NULL</code>。</p>
+        </article>
+        <article class="governance-card">
+          <span>02</span>
+          <h3>数值结果必须有来源</h3>
+          <p>只有官方页面、论文或模型卡明确给出数值时，才写入 <code>metric_value</code> 与单位。</p>
+        </article>
+        <article class="governance-card">
+          <span>03</span>
+          <h3>允许定性结果记录</h3>
+          <p>如果公开页面只有文字描述，则只写 <code>result_summary</code> 和 <code>source_url</code>。</p>
+        </article>
+        <article class="governance-card">
+          <span>04</span>
+          <h3>分类口径集中维护</h3>
+          <p>topic、paradigm、data source 和 benchmark 使用参考表，避免自由文本导致统计失真。</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <p>
