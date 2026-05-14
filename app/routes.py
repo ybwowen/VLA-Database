@@ -215,7 +215,7 @@ def _schema_relationships():
         ("Paradigm", "Model", "1-to-many", "One paradigm can classify many models."),
         ("Paper", "Model", "1-to-many", "One paper can support one or more model records."),
         ("Paper", "Author", "many-to-many", "Implemented through PaperAuthor."),
-        ("Paper", "Topic", "many-to-many", "Implemented through PaperTopic for the 100+ paper library."),
+        ("Paper", "Topic", "many-to-many", "Implemented through PaperTopic for the model-paper index."),
         ("Author", "Affiliation", "many-to-many", "Implemented through AuthorAffiliation."),
         ("Model", "Topic", "many-to-many", "Implemented through ModelTopic."),
         ("Model", "DataSourceType", "many-to-many", "Implemented through ModelDataSource."),
@@ -762,7 +762,7 @@ def query_examples():
     examples = [
         {
             "title": "Paper topic coverage",
-            "purpose": "Counts how the 100+ paper library distributes over the normalized topic taxonomy.",
+            "purpose": "Counts how indexed model papers distribute over the normalized topic taxonomy.",
             "sql": """SELECT t.name AS topic, COUNT(pt.paper_id) AS paper_count
 FROM topics AS t
 LEFT JOIN paper_topics AS pt ON pt.topic_id = t.id

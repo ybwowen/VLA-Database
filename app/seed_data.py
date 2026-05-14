@@ -1631,14 +1631,14 @@ def load_seed_data(session):
         if model is not None and model.paper is not None:
             _link_paper_topics(session, model.paper, topics, model_item["topics"])
 
-    library_count = _seed_paper_library(session, topics)
+    paper_index_count = _seed_paper_library(session, topics)
 
     session.flush()
     paper_count = session.query(Paper.id).count()
     return {
         "seeded": True,
         "message": (
-            f"Inserted {inserted_model_count} models, loaded {library_count} paper-library "
+            f"Inserted {inserted_model_count} models, loaded {paper_index_count} paper-index "
             f"entries, and ensured {paper_count} paper records."
         ),
     }

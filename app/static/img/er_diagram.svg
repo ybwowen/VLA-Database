@@ -4,7 +4,7 @@
 <defs><filter id="shadow" x="-10%" y="-10%" width="130%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#202b33" flood-opacity="0.08" /></filter></defs>
 <rect width="1720" height="1080" fill="#fbf7f0" />
 <text x="70" y="72" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="800" fill="#20313d">VLA Database ER Diagram</text>
-<text x="70" y="112" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#60707c">Normalized schema for model records, 100+ paper library, topic tags, authors, data sources, and benchmark facts.</text>
+<text x="70" y="112" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#60707c">Normalized schema for model records, model-paper index, topic tags, authors, data sources, and benchmark facts.</text>
 <path d="M330,238 L390,238" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
 <rect x="336" y="224" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
 <text x="360" y="243" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">1:N</text>
@@ -133,7 +133,7 @@
 <line x1="728" y1="559" x2="952" y2="559" stroke="#edf1f4" />
 <text x="728" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">topic_id (FK)</text>
 <line x1="728" y1="584" x2="952" y2="584" stroke="#edf1f4" />
-<text x="728" y="600" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">100+ paper tags</text>
+<text x="728" y="600" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">paper topic tags</text>
 </g>
 <g filter="url(#shadow)">
 <rect x="1030" y="450" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
