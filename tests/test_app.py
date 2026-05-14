@@ -35,7 +35,7 @@ def client(app):
     return app.test_client()
 
 
-def test_seed_data_includes_final_project_models(app):
+def test_demo_data_includes_recent_models(app):
     session = get_session()
     try:
         names = {name for (name,) in session.query(VlaModel.name).all()}
@@ -46,7 +46,7 @@ def test_seed_data_includes_final_project_models(app):
         remove_session()
 
 
-def test_seed_data_includes_extended_topics(app):
+def test_demo_data_includes_extended_topics(app):
     session = get_session()
     try:
         topic_names = {name for (name,) in session.query(Topic.name).all()}
@@ -63,15 +63,22 @@ def test_seed_data_includes_extended_topics(app):
         remove_session()
 
 
-def test_seed_data_includes_large_paper_library(app):
+def test_demo_data_includes_large_paper_index(app):
     session = get_session()
     try:
         papers = session.query(Paper).all()
         titles = [paper.title for paper in papers]
-        assert len(papers) >= 100
+        assert len(papers) >= 110
         assert len(titles) == len(set(titles))
         assert all(paper.arxiv_url or paper.project_url or paper.code_url for paper in papers)
         assert session.query(PaperTopic).count() >= 100
+        removed_dataset_only_titles = {
+            "DROID: A Large-Scale In-the-Wild Robot Manipulation Dataset",
+            "BridgeData V2: A Dataset for Robot Learning at Scale",
+            "RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation",
+            "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
+        }
+        assert removed_dataset_only_titles.isdisjoint(titles)
     finally:
         session.close()
         remove_session()

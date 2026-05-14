@@ -6,7 +6,7 @@
 <section class="panel">
   <div class="panel-header">
     <h1>Model List</h1>
-    <p>Browse all seeded models and filter them by paradigm, topic, or benchmark.</p>
+    <p>Browse model records and filter them by paradigm, topic, or benchmark.</p>
   </div>
 
   <form method="get" class="filter-grid">
@@ -73,7 +73,7 @@
 <section class="panel">
   <div class="panel-header">
     <h2>{{ models|length }} Models</h2>
-    <p>Result set after conditional query filtering.</p>
+    <p>Filtered model records.</p>
   </div>
 
   {% if models %}
@@ -115,7 +115,7 @@
                 <span class="tag">{{ benchmark_name }}</span>
                 {% endfor %}
               {% else %}
-                <span class="subtle">No seeded result</span>
+                <span class="subtle">No result row</span>
               {% endif %}
             </div>
           </td>

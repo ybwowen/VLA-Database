@@ -6,7 +6,7 @@
 <section class="panel timeline-hero">
   <div class="panel-header">
     <h1>VLA Timeline</h1>
-    <p>Representative VLA and VLA-adjacent robot policies in the seeded database, grouped by release year for poster-ready presentation.</p>
+    <p>Representative VLA and VLA-adjacent robot policies, grouped by release year for presentation.</p>
   </div>
 
   <div class="stats-grid">
@@ -39,7 +39,7 @@
       <div class="panel-header">
         <h2>{{ row.year }} Representative Models</h2>
         <p>
-          {{ row.models|length }} seeded model{% if row.models|length != 1 %}s{% endif %}
+          {{ row.models|length }} model{% if row.models|length != 1 %}s{% endif %}
           across {{ row.paradigms|length }} paradigm bucket{% if row.paradigms|length != 1 %}s{% endif %}.
         </p>
       </div>

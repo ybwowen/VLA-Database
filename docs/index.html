@@ -28,7 +28,7 @@
   <main id="home">
     <section class="hero section">
       <div class="hero__content">
-        <p class="eyebrow">Database Course Project · Final Version</p>
+        <p class="eyebrow">Course Project · VLA Database</p>
         <h1>VLA 模型数据库系统</h1>
         <p class="hero__lead">
           一个面向 Vision-Language-Action 与机器人基础模型的关系数据库课程项目，
@@ -43,7 +43,7 @@
           <span>2022-2026 Coverage</span>
         </div>
         <div class="hero__actions">
-          <a class="button button--primary" href="#dataset">查看最终数据范围</a>
+          <a class="button button--primary" href="#dataset">查看数据范围</a>
           <a class="button button--ghost" href="#schema">查看 E-R 图</a>
           <a class="button button--ghost" href="https://github.com/ybwowen/VLA-Database" target="_blank" rel="noreferrer">GitHub 仓库</a>
         </div>
@@ -59,11 +59,11 @@
       <div class="hero__panel">
         <div class="stat-card stat-card--strong">
           <strong>20</strong>
-          <span>curated 模型</span>
+          <span>模型记录</span>
         </div>
         <div class="stat-card">
-          <strong>100+</strong>
-          <span>paper library</span>
+          <strong>120+</strong>
+          <span>模型论文</span>
         </div>
         <div class="stat-card">
           <strong>35</strong>
@@ -115,12 +115,13 @@
 
     <section id="dataset" class="section section--soft">
       <div class="section-heading">
-        <p class="eyebrow">Final Dataset Scope</p>
-        <h2>最终 seed data 已扩展到 20 模型 + 100+ 论文</h2>
+        <p class="eyebrow">Data Scope</p>
+        <h2>模型记录和论文索引分开管理</h2>
         <p>
-          当前数据库内置 20 个代表性 VLA 或 VLA-adjacent 机器人基础模型，
-          并额外导入 100+ 篇 VLA、embodied reasoning、action tokenization 与机器人数据集相关论文。
-          所有 2026 条目和 paper library 记录都保留可追溯来源链接。
+          系统收录 20 个代表性 VLA 或 VLA-adjacent 机器人基础模型；
+          论文索引侧重 VLA 模型、机器人基础模型、语言条件策略、action tokenization
+          以及模型适配/加速方法，不再把纯数据集或 benchmark 当作主记录。
+          每条 2026 模型和论文记录都尽量附上论文页、项目页或代码链接。
         </p>
       </div>
       <div class="dataset-strip">
@@ -130,14 +131,14 @@
           <p>从 RT-1、VIMA 到 Xiaomi-Robotics-0、Green-VLA、AR-VLA、ProgressVLA。</p>
         </article>
         <article>
-          <span class="dataset-number">124</span>
+          <span class="dataset-number">120+</span>
           <strong>Papers</strong>
-          <p>通过 <code>PaperTopic</code> 连接到 topic 体系，可独立于模型记录查询。</p>
+          <p>模型论文通过 <code>PaperTopic</code> 复用同一套 topic，便于筛选和统计。</p>
         </article>
         <article>
           <span class="dataset-number">17</span>
           <strong>Topics</strong>
-          <p>新增 humanoid robotics、spatial grounding、real-time control 等最终版主题。</p>
+          <p>覆盖 humanoid robotics、spatial grounding、real-time control 等方向。</p>
         </article>
         <article>
           <span class="dataset-number">35</span>
@@ -145,7 +146,7 @@
           <p>包含数值型 benchmark 结果与只有定性描述的来源追溯记录。</p>
         </article>
       </div>
-      <div class="model-cloud" aria-label="seed 模型列表">
+      <div class="model-cloud" aria-label="模型列表">
         <span>RT-1</span>
         <span>RT-2</span>
         <span>VIMA</span>
@@ -199,7 +200,7 @@
           <div>
             <h3>Open Generalist Policies</h3>
             <p>OpenVLA, Octo, pi0, RDT-1B</p>
-            <span>open checkpoints · diffusion policies · large robot datasets</span>
+            <span>open checkpoints · diffusion policies · broad robot data</span>
           </div>
         </article>
         <article>
@@ -332,7 +333,7 @@
         </div>
         <div class="relationship-row">
           <strong>Paper ↔ Topic</strong>
-          <span>多对多。通过 <code>paper_topics</code> 给 paper library 复用统一 topic 分类。</span>
+          <span>多对多。通过 <code>paper_topics</code> 给论文索引复用统一 topic 分类。</span>
         </div>
         <div class="relationship-row">
           <strong>Author ↔ Affiliation</strong>
@@ -358,8 +359,8 @@
         <p class="eyebrow">Database Capabilities</p>
         <h2>数据库查询与演示入口</h2>
         <p>
-          GitHub Pages 是静态展示页；真正的查询、录入和统计在本地 Flask 应用中运行。
-          下列路径可以作为答辩时的演示脚本。
+          GitHub Pages 用来说明项目结构；交互式查询、录入和统计在本地 Flask 应用中运行。
+          这些入口可以直接作为答辩时的演示路线。
         </p>
       </div>
       <div class="grid grid--3">
@@ -373,7 +374,7 @@
         </article>
         <article class="capability-card">
           <h3>论文资料库</h3>
-          <p><code>/papers</code> 支持按关键词、年份、topic、publication status 组合筛选 100+ paper。</p>
+          <p><code>/papers</code> 支持按关键词、年份、topic、publication status 组合筛选模型论文。</p>
         </article>
         <article class="capability-card">
           <h3>详情联查</h3>
@@ -396,11 +397,11 @@
 
     <section id="governance" class="section section--soft">
       <div class="section-heading">
-        <p class="eyebrow">Data Governance</p>
-        <h2>数据原则：保守录入，不编造数值</h2>
+        <p class="eyebrow">Curation Rules</p>
+        <h2>数据原则：来源清楚，空缺留空</h2>
         <p>
-          最终版 seed data 覆盖 2024-2026 扩展模型与 100+ paper library，
-          但仍优先保证来源可追溯和字段可信。
+          数据库覆盖 2024-2026 的近期模型，并用论文索引补足上下文。
+          没有公开来源支撑的信息不会手动补猜。
         </p>
       </div>
       <div class="governance-grid">

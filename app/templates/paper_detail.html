@@ -6,7 +6,7 @@
 <section class="panel">
   <div class="panel-header">
     <h1>{{ paper.title }}</h1>
-    <p>{{ paper.notes or 'Paper metadata from the curated VLA paper library.' }}</p>
+    <p>{{ paper.notes or 'Metadata from the VLA paper index.' }}</p>
   </div>
 
   <div class="hero-actions">
@@ -80,7 +80,7 @@
           </div>
           {% else %}
           <div class="empty-state">
-            <p>This paper is part of the library but is not currently represented as a model record.</p>
+            <p>This paper is indexed for search but is not currently represented as a model record.</p>
           </div>
           {% endif %}
         </div>
@@ -92,7 +92,7 @@
 <section class="panel">
   <div class="panel-header">
     <h2>Authors and Affiliations</h2>
-    <p>Selected author rows exist for model-linked seed papers; library-only papers can be expanded later.</p>
+    <p>Selected author rows exist for model-linked papers; index-only papers can be expanded later.</p>
   </div>
 
   {% if current_authors %}

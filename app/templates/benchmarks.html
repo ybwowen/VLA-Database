@@ -6,7 +6,7 @@
 <section class="panel">
   <div class="panel-header">
     <h1>Benchmark Results</h1>
-    <p>Browse seeded evaluation results from the benchmark perspective.</p>
+    <p>Browse evaluation rows from the benchmark perspective.</p>
   </div>
 
   <form method="get" class="filter-grid single-row">
@@ -34,7 +34,7 @@
   <article class="stat-card">
     <span class="stat-label">{{ benchmark.name }}</span>
     <strong>{{ benchmark_counts.get(benchmark.id, 0) }}</strong>
-    <small class="subtle">models with seeded rows</small>
+    <small class="subtle">models with result rows</small>
   </article>
   {% endfor %}
 </section>
@@ -88,7 +88,7 @@
   </div>
   {% else %}
   <div class="empty-state">
-    <p>No seeded result rows for this benchmark yet.</p>
+  <p>No result rows for this benchmark yet.</p>
   </div>
   {% endif %}
 </section>

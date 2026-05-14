@@ -107,7 +107,7 @@
   <article class="panel">
   <div class="panel-header">
     <h2>Authors and Affiliations</h2>
-    <p>Selected author records in seed data.</p>
+    <p>Selected author records for this paper.</p>
   </div>
   {% if model.paper %}
   <div class="section-actions">
@@ -168,7 +168,7 @@
     </div>
     {% else %}
     <div class="empty-state">
-      <p>Seed data does not yet contain selected author rows for this model.</p>
+    <p>No selected author rows for this model yet.</p>
     </div>
     {% endif %}
   </article>
@@ -211,7 +211,7 @@
 <section class="panel">
   <div class="panel-header">
     <h2>Benchmark Results</h2>
-    <p>Numeric metrics are shown only when publicly verified in the seed.</p>
+    <p>Numeric metrics are shown only when a public source reports them.</p>
   </div>
   <div class="section-actions">
     <a class="button" href="{{ url_for('main.admin_result_create', model_id=model.id) }}">Add Result Row</a>
@@ -261,7 +261,7 @@
   </div>
   {% else %}
   <div class="empty-state">
-    <p>No benchmark result rows are seeded for this model yet.</p>
+    <p>No benchmark result rows for this model yet.</p>
   </div>
   {% endif %}
 </section>

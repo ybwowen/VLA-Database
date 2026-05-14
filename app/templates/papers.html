@@ -5,8 +5,8 @@
 {% block content %}
 <section class="panel">
   <div class="panel-header">
-    <h1>Paper Library</h1>
-    <p>Browse the 100+ paper library used to contextualize VLA models, action tokenization, embodied reasoning, and robot datasets.</p>
+    <h1>Paper Index</h1>
+    <p>Browse VLA model and method papers by keyword, year, topic, venue type, and publication status.</p>
   </div>
 
   <form method="get" class="filter-grid">
@@ -73,7 +73,7 @@
 <section class="panel">
   <div class="panel-header">
     <h2>{{ papers|length }} Papers</h2>
-    <p>Result set after conditional query filtering.</p>
+    <p>Filtered from the indexed model-paper records.</p>
   </div>
 
   {% if papers %}
@@ -95,9 +95,6 @@
         <tr>
           <td>
             <a href="{{ url_for('main.paper_detail', paper_id=paper.id) }}">{{ paper.title }}</a>
-            {% if paper.notes %}
-            <div class="subtle">{{ paper.notes }}</div>
-            {% endif %}
           </td>
           <td>{{ paper.year or 'N/A' }}</td>
           <td>{{ paper.venue_name or 'N/A' }}</td>
@@ -120,7 +117,7 @@
               {% endfor %}
             </div>
             {% else %}
-            <span class="subtle">Library only</span>
+            <span class="subtle">Indexed only</span>
             {% endif %}
           </td>
           <td>

@@ -153,7 +153,7 @@ VLA（Vision-Language-Action）模型数据库系统
 
 ## 8. 当前数据范围
 
-当前系统内置 20 个代表性模型，覆盖 2022-2026；同时新增 100+ 篇 VLA 相关 paper library，用于补充 action tokenization、embodied reasoning、robot foundation model、robotics dataset/benchmark 等背景资料。
+系统收录 20 个代表性模型，覆盖 2022-2026；论文索引侧重 VLA 模型、机器人基础模型、语言条件策略、action tokenization，以及模型适配/加速方法。纯数据集、benchmark 和平台介绍不作为主记录。
 
 - RT-1
 - RT-2
@@ -179,10 +179,10 @@ VLA（Vision-Language-Action）模型数据库系统
 数据治理原则：
 
 - 对信息不确定的字段保留为空。
-- 对有争议是否属于标准 VLA 的模型，在备注中保守说明。
-- paper library 使用 `PaperTopic` 中间表连接到现有 topic 体系，论文不必都对应完整模型记录。
+- 对有争议是否属于标准 VLA 的模型，在备注中说明边界。
+- 论文索引使用 `PaperTopic` 中间表连接到现有 topic 体系，论文不必都对应完整模型记录。
 - benchmark 数值只录入公开来源明确给出的数据。
-- 只有定性结果时，写入 `result_summary`，不编造 `metric_value`。
+- 只有定性结果时，写入 `result_summary`，不手动补猜 `metric_value`。
 - 每条评测尽量保留 `source_url`，方便追溯。
 
 ## 9. 查询示例
@@ -216,7 +216,7 @@ VLA（Vision-Language-Action）模型数据库系统
 
 项目增加了 SQLite in-memory 测试入口，不依赖真实 MySQL 服务。测试内容包括：
 
-- seed data 能正常加载。
+- 初始化数据能正常加载。
 - 模型数量不少于 20。
 - 2026 模型 `Xiaomi-Robotics-0`、`Green-VLA`、`AR-VLA`、`ProgressVLA` 存在。
 - 新增 topic 分类存在。
@@ -261,9 +261,9 @@ Poster 工程文件暂时保留在本地 `projects/` 目录中，该目录不随
 - 多对多关系都通过桥表表达。
 - 既支持浏览查询，也支持后台录入。
 - 既支持明细展示，也支持统计分析和时间线展示。
-- seed data 覆盖 2022-2026，包含当前较新的 2026 条目。
-- 数据录入策略保守，不编造未知字段和 benchmark 数值。
-- Poster 直接使用项目实际运行截图，适合课程最终展示。
+- 初始化数据覆盖 2022-2026，包含当前较新的 2026 条目。
+- 数据录入时保留空缺字段，不手动补猜未知字段和 benchmark 数值。
+- Poster 可直接使用项目运行截图作为课程展示材料。
 
 ## 15. 不足与后续扩展
 
@@ -285,4 +285,4 @@ Poster 工程文件暂时保留在本地 `projects/` 目录中，该目录不随
 - 可答辩的统计、schema 和 timeline 页面
 - 可编辑的英文 A1 poster 交付物
 
-因此，它既可以作为数据库课程最终项目，也可以作为后续扩展成更完整 VLA 资料库的基础。
+因此，它既可以作为数据库课程项目，也可以作为后续整理 VLA 资料库的基础。

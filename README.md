@@ -17,7 +17,7 @@ The system is a small but complete web prototype that demonstrates:
 - normalized schema design
 - entity and relationship modeling
 - foreign keys and many-to-many bridge tables
-- curated seed data initialization
+- demo data initialization
 - basic query, conditional query, statistical query, and timeline query
 - a server-rendered web front end for browsing, filtering, inspecting, and
   editing records
@@ -32,7 +32,7 @@ Data-handling principle:
 
 ## 2. Core Features
 
-The final course-project version covers the following functions:
+The course-project build covers the following functions:
 
 - Model information management
   - model name, release year, open-source status, summary, notes
@@ -112,8 +112,6 @@ VLA-Database/
 ├── docs/
 │   ├── COURSE_REPORT.md
 │   └── index.html
-├── projects/
-│   └── vla_database_final_poster_a1_20260509/
 ├── scripts/
 │   ├── init_db.py
 │   └── setup_mysql_wsl.sh
@@ -154,11 +152,12 @@ Main relationships:
 - `Model` 1-to-many `EvaluationResult`
 - `Benchmark` 1-to-many `EvaluationResult`
 
-## 6. Seed Data Scope
+## 6. Data Scope
 
-The database currently seeds 20 representative model records across 2022-2026
-and a broader 100+ paper library for VLA, embodied reasoning, action
-tokenization, and robotics dataset context.
+The database loads 20 representative model records across 2022-2026 and a
+separate paper index with more than 100 VLA model or method papers, including
+robot foundation models, language-conditioned policies, action tokenization, and
+model-level adaptation or acceleration methods.
 
 - RT-1
 - RT-2
@@ -182,13 +181,13 @@ tokenization, and robotics dataset context.
 - ProgressVLA
 
 The 2026 records are included to show that the schema can keep up with recent
-VLA development. They are seeded conservatively and cite public project pages or
+VLA development. They cite public project pages or
 publication pages through `source_url` fields.
 
-The paper library is stored in `data/paper_library.json`. It is imported
+The paper index is stored in `data/paper_library.json`. It is imported
 idempotently into `papers` and linked to `topics` through `paper_topics`, so
-library papers can be queried even when they are not represented as full model
-records.
+papers can be queried even when they are not represented as full model records.
+Pure dataset, benchmark, and platform-only entries are excluded from this file.
 
 ## 7. Query Scenarios To Demonstrate
 
@@ -267,17 +266,21 @@ Or provide a full SQLAlchemy URL:
 DATABASE_URL=mysql+pymysql://root:your_password@127.0.0.1:3306/vla_database?charset=utf8mb4
 ```
 
-### 4. Initialize schema and seed data
+### 4. Initialize schema and demo data
 
 ```bash
-python3 scripts/init_db.py --reset
+.venv/bin/python scripts/init_db.py --reset
 ```
 
 ### 5. Start the web app
 
 ```bash
-python3 run.py
+.venv/bin/python run.py
 ```
+
+Do not prefix the script name with another interpreter name. For example,
+`.venv/bin/python python3 run.py` asks Python to open a local file named
+`python3`, which will fail.
 
 Open:
 
@@ -315,8 +318,8 @@ python -m pytest -q
 The current environment may need `pytest` installed before running the command.
 The tests cover:
 
-- seed-data loading
-- paper library size, unique titles, source links, and PaperTopic coverage
+- demo-data loading
+- paper-index size, unique titles, source links, and PaperTopic coverage
 - presence of 2026 models
 - topic taxonomy expansion
 - public route responses
@@ -327,9 +330,8 @@ The tests cover:
 ## 10. Poster Work
 
 Poster generation assets are kept locally under the ignored `projects/`
-directory and are not part of this code push. The Flask routes now expose the
-paper library, SQL examples, schema, and statistics pages needed for future
-poster screenshots.
+directory and are not part of this code push. The Flask routes expose the paper
+index, SQL examples, schema, and statistics pages needed for future screenshots.
 
 ## 11. Course Presentation Highlights
 
@@ -340,5 +342,5 @@ poster screenshots.
 - MySQL is used as the relational backend.
 - The frontend demonstrates filtering, paper browsing, details, statistics, SQL examples, timeline, and admin
   CRUD workflows.
-- Seed data is realistic but conservative: unknown values are not guessed, and
+- Demo data keeps unknown values empty, and
   benchmark numbers are only stored when public sources support them.

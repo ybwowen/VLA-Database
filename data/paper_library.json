@@ -1,7 +1,7 @@
 {
-  "source": "https://github.com/Psi-Robot/Awesome-VLA-Papers",
+  "source": "Psi-Robot/Awesome-VLA-Papers, plus checked conference and proceedings pages",
   "source_snapshot": "2026-05-14",
-  "scope_note": "VLA, robot foundation model, language-conditioned manipulation, embodied reasoning, action-tokenization, and robotics dataset/benchmark papers. Pure autonomous-driving-only entries are excluded.",
+  "scope_note": "VLA model, robot foundation model, language-conditioned policy, and model-level adaptation/acceleration papers. Pure dataset, benchmark, and platform-only records are excluded.",
   "papers": [
     {
       "alias": "Language Planner",
@@ -17,7 +17,7 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Language Planner."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Language Planner."
     },
     {
       "alias": "Socratic Models",
@@ -33,7 +33,7 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Socratic Models."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Socratic Models."
     },
     {
       "alias": "SayCan",
@@ -52,7 +52,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: SayCan."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: SayCan."
     },
     {
       "alias": "Inner Monologue",
@@ -68,7 +68,7 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Inner Monologue."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Inner Monologue."
     },
     {
       "alias": "PaLM-E",
@@ -84,7 +84,7 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: PaLM-E."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: PaLM-E."
     },
     {
       "alias": "EmbodiedGPT",
@@ -100,7 +100,7 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: EmbodiedGPT."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: EmbodiedGPT."
     },
     {
       "alias": "DoReMi",
@@ -116,7 +116,7 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: DoReMi."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: DoReMi."
     },
     {
       "alias": "ViLa",
@@ -133,7 +133,7 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ViLa."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ViLa."
     },
     {
       "alias": "3D-VLA",
@@ -150,7 +150,7 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: 3D-VLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: 3D-VLA."
     },
     {
       "alias": "Bi-VLA",
@@ -170,7 +170,7 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Bi-VLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Bi-VLA."
     },
     {
       "alias": "RoboMamba",
@@ -188,7 +188,7 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: RoboMamba."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: RoboMamba."
     },
     {
       "alias": "ReplanVLM",
@@ -205,7 +205,7 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ReplanVLM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ReplanVLM."
     },
     {
       "alias": "BUMBLE",
@@ -222,7 +222,7 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: BUMBLE."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: BUMBLE."
     },
     {
       "alias": "ReflectVLM",
@@ -240,7 +240,7 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ReflectVLM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ReflectVLM."
     },
     {
       "alias": "Hi Robot",
@@ -257,7 +257,7 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Hi Robot."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Hi Robot."
     },
     {
       "alias": "RoboBrain",
@@ -275,15 +275,15 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: RoboBrain."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: RoboBrain."
     },
     {
-      "alias": "pi_{0.5}",
-      "title": ": a Vision-Language-Action Model with Open-World Generalization",
+      "alias": "pi0.5",
+      "title": "pi0.5: A Vision-Language-Action Model with Open-World Generalization",
       "year": 2025,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2504.16054",
       "project_url": "https://www.physicalintelligence.company/blog/pi05",
       "code_url": null,
@@ -292,7 +292,7 @@
         "open-world generalization",
         "reasoning"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: pi_{0.5}."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
     },
     {
       "alias": "RT-H",
@@ -308,7 +308,7 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Motion). Alias: RT-H."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Motion). Alias: RT-H."
     },
     {
       "alias": "NaVILA",
@@ -324,7 +324,7 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Motion). Alias: NaVILA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Motion). Alias: NaVILA."
     },
     {
       "alias": "Code as Policies",
@@ -340,7 +340,7 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Code as Policies."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Code as Policies."
     },
     {
       "alias": "ProgPrompt",
@@ -356,7 +356,7 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: ProgPrompt."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: ProgPrompt."
     },
     {
       "alias": "ChatGPT for Robotics",
@@ -372,7 +372,7 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: ChatGPT for Robotics."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: ChatGPT for Robotics."
     },
     {
       "alias": "Text2Motion",
@@ -388,7 +388,7 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Text2Motion."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Text2Motion."
     },
     {
       "alias": "Instruct2Act",
@@ -404,7 +404,7 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Instruct2Act."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Instruct2Act."
     },
     {
       "alias": "RoboScript",
@@ -422,7 +422,7 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: RoboScript."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: RoboScript."
     },
     {
       "alias": "RoboCodeX",
@@ -438,7 +438,7 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: RoboCodeX."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: RoboCodeX."
     },
     {
       "alias": "KITE",
@@ -455,7 +455,7 @@
         "object-centric",
         "spatial grounding"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: KITE."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: KITE."
     },
     {
       "alias": "CoPa",
@@ -473,7 +473,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: CoPa."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: CoPa."
     },
     {
       "alias": "RoboPoint",
@@ -490,7 +490,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: RoboPoint."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: RoboPoint."
     },
     {
       "alias": "RAM",
@@ -508,7 +508,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: RAM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: RAM."
     },
     {
       "alias": "ReKep",
@@ -528,7 +528,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: ReKep."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: ReKep."
     },
     {
       "alias": "OmniManip",
@@ -546,7 +546,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: OmniManip."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: OmniManip."
     },
     {
       "alias": "Magma",
@@ -563,7 +563,7 @@
         "object-centric",
         "spatial grounding"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: Magma."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: Magma."
     },
     {
       "alias": "KUDA",
@@ -581,7 +581,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: KUDA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: KUDA."
     },
     {
       "alias": "GPT-4V",
@@ -598,7 +598,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: GPT-4V."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: GPT-4V."
     },
     {
       "alias": "A3VLM",
@@ -614,7 +614,7 @@
         "object-centric",
         "spatial grounding"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: A3VLM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: A3VLM."
     },
     {
       "alias": "DexGraspVLA",
@@ -631,7 +631,7 @@
         "object-centric",
         "spatial grounding"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: DexGraspVLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: DexGraspVLA."
     },
     {
       "alias": "MOO",
@@ -649,7 +649,7 @@
         "open-world generalization",
         "spatial grounding"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: MOO."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: MOO."
     },
     {
       "alias": "ROCKET-1",
@@ -666,7 +666,7 @@
         "open-world generalization",
         "spatial grounding"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: ROCKET-1."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: ROCKET-1."
     },
     {
       "alias": "SoFar",
@@ -685,7 +685,7 @@
         "reasoning",
         "spatial grounding"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: SoFar."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: SoFar."
     },
     {
       "alias": "RoboDexVLM",
@@ -704,7 +704,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: RoboDexVLM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: RoboDexVLM."
     },
     {
       "alias": "CLIPort",
@@ -722,7 +722,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: CLIPort."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: CLIPort."
     },
     {
       "alias": "VoxPoser",
@@ -741,7 +741,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: VoxPoser."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: VoxPoser."
     },
     {
       "alias": "ManipLLM",
@@ -759,7 +759,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: ManipLLM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: ManipLLM."
     },
     {
       "alias": "ManiFoundation",
@@ -777,7 +777,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: ManiFoundation."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: ManiFoundation."
     },
     {
       "alias": "MOKA",
@@ -796,7 +796,7 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: MOKA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: MOKA."
     },
     {
       "alias": "AVDC",
@@ -813,7 +813,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: AVDC."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: AVDC."
     },
     {
       "alias": "RT-Trajectory",
@@ -830,7 +830,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: RT-Trajectory."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: RT-Trajectory."
     },
     {
       "alias": "ATM",
@@ -847,7 +847,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: ATM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: ATM."
     },
     {
       "alias": "LLARVA",
@@ -864,7 +864,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: LLARVA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: LLARVA."
     },
     {
       "alias": "Im2Flow2Act",
@@ -881,7 +881,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: Im2Flow2Act."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: Im2Flow2Act."
     },
     {
       "alias": "FLIP",
@@ -898,7 +898,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: FLIP."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: FLIP."
     },
     {
       "alias": "HAMSTER",
@@ -916,7 +916,7 @@
         "open-world generalization",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: HAMSTER."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: HAMSTER."
     },
     {
       "alias": "ARM4R",
@@ -933,7 +933,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: ARM4R."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: ARM4R."
     },
     {
       "alias": "SuSIE",
@@ -951,7 +951,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: SuSIE."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: SuSIE."
     },
     {
       "alias": "CoTDiffusion",
@@ -970,7 +970,7 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: CoTDiffusion."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: CoTDiffusion."
     },
     {
       "alias": "CoT-VLA",
@@ -988,7 +988,7 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: CoT-VLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: CoT-VLA."
     },
     {
       "alias": "UniPi",
@@ -1004,7 +1004,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: UniPi."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: UniPi."
     },
     {
       "alias": "VLP",
@@ -1021,7 +1021,7 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: VLP."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: VLP."
     },
     {
       "alias": "Gen2Act",
@@ -1038,7 +1038,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: Gen2Act."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: Gen2Act."
     },
     {
       "alias": "Video Prediction Policy",
@@ -1055,7 +1055,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: Video Prediction Policy."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: Video Prediction Policy."
     },
     {
       "alias": "FLIP",
@@ -1072,7 +1072,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: FLIP."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: FLIP."
     },
     {
       "alias": "GEVRM",
@@ -1089,7 +1089,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: GEVRM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: GEVRM."
     },
     {
       "alias": "OmniJARVIS",
@@ -1106,7 +1106,7 @@
         "open-world generalization",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: OmniJARVIS."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: OmniJARVIS."
     },
     {
       "alias": "QueST",
@@ -1122,7 +1122,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: QueST."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: QueST."
     },
     {
       "alias": "LAPA",
@@ -1139,7 +1139,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: LAPA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: LAPA."
     },
     {
       "alias": "GROOT-2",
@@ -1155,39 +1155,23 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: GROOT-2."
-    },
-    {
-      "alias": "GO-1",
-      "title": "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
-      "year": 2025,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
-      "arxiv_url": "https://arxiv.org/abs/2503.06669",
-      "project_url": "https://agibot-world.com",
-      "code_url": "https://github.com/OpenDriveLab/AgiBot-World",
-      "topics": [
-        "generalist manipulation",
-        "task-centric"
-      ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: GO-1."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: GROOT-2."
     },
     {
       "alias": "UniVLA",
       "title": "UniVLA: Learning to Act Anywhere with Task-centric Latent Actions",
       "year": 2025,
-      "venue_name": "RSS2025",
+      "venue_name": "RSS 2025",
       "publication_type": "conference",
       "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2505.06111",
-      "project_url": "https://github.com/OpenDriveLab/UniVLA#ckpts",
+      "project_url": "https://www.roboticsproceedings.org/rss21/p014.html",
       "code_url": "https://github.com/OpenDriveLab/UniVLA",
       "topics": [
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: UniVLA."
+      "notes": "Model or method paper; checked against RSS 2025 proceedings."
     },
     {
       "alias": "LangLfP",
@@ -1203,7 +1187,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: LangLfP."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: LangLfP."
     },
     {
       "alias": "BC-Z",
@@ -1219,7 +1203,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: BC-Z."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: BC-Z."
     },
     {
       "alias": "Gato",
@@ -1235,7 +1219,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: Gato."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: Gato."
     },
     {
       "alias": "VIMA",
@@ -1251,7 +1235,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: VIMA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: VIMA."
     },
     {
       "alias": "RT-1",
@@ -1267,7 +1251,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-1."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-1."
     },
     {
       "alias": "RT-2",
@@ -1283,7 +1267,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-2."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-2."
     },
     {
       "alias": "RT-X",
@@ -1300,7 +1284,7 @@
         "open-world generalization",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-X."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-X."
     },
     {
       "alias": "RoboFlamingo",
@@ -1316,7 +1300,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RoboFlamingo."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RoboFlamingo."
     },
     {
       "alias": "LEO",
@@ -1333,7 +1317,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: LEO."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: LEO."
     },
     {
       "alias": "GR-1",
@@ -1350,7 +1334,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR-1."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR-1."
     },
     {
       "alias": "Octo",
@@ -1366,7 +1350,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: Octo."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: Octo."
     },
     {
       "alias": "OpenVLA",
@@ -1382,7 +1366,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA."
     },
     {
       "alias": "TinyVLA",
@@ -1398,7 +1382,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: TinyVLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: TinyVLA."
     },
     {
       "alias": "HiRT",
@@ -1414,7 +1398,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HiRT."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HiRT."
     },
     {
       "alias": "GR-2",
@@ -1431,7 +1415,7 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR-2."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR-2."
     },
     {
       "alias": "RDT-1B",
@@ -1448,7 +1432,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RDT-1B."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RDT-1B."
     },
     {
       "alias": "pi_0",
@@ -1464,7 +1448,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi_0."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi_0."
     },
     {
       "alias": "CogACT",
@@ -1480,23 +1464,23 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: CogACT."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: CogACT."
     },
     {
       "alias": "pi_0-FAST",
       "title": "FAST: Efficient Action Tokenization for Vision-Language-Action Models",
       "year": 2025,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
+      "venue_name": "RSS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2501.09747",
-      "project_url": "https://www.pi.website/research/fast",
+      "project_url": "https://www.roboticsproceedings.org/rss21/p012.html",
       "code_url": null,
       "topics": [
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi_0-FAST."
+      "notes": "Model or method paper; checked against RSS 2025 proceedings."
     },
     {
       "alias": "UniAct",
@@ -1512,7 +1496,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: UniAct."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: UniAct."
     },
     {
       "alias": "OpenVLA-OFT",
@@ -1528,7 +1512,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA-OFT."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA-OFT."
     },
     {
       "alias": "JARVIS-VLA",
@@ -1544,7 +1528,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: JARVIS-VLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: JARVIS-VLA."
     },
     {
       "alias": "HybridVLA",
@@ -1560,7 +1544,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HybridVLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HybridVLA."
     },
     {
       "alias": "MoManipVLA",
@@ -1576,7 +1560,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: MoManipVLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: MoManipVLA."
     },
     {
       "alias": "GR00T N1",
@@ -1593,23 +1577,23 @@
         "humanoid robotics",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR00T N1."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR00T N1."
     },
     {
       "alias": "pi_0+KI",
       "title": "Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better",
       "year": 2025,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
+      "venue_name": "NeurIPS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2505.23705",
       "project_url": "https://www.physicalintelligence.company/research/knowledge_insulation",
-      "code_url": null,
+      "code_url": "https://github.com/Physical-Intelligence/openpi",
       "topics": [
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi_0+KI."
+      "notes": "Model or method paper; checked against NeurIPS 2025 proceedings page."
     },
     {
       "alias": "RTC",
@@ -1626,7 +1610,7 @@
         "real-time control",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RTC."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RTC."
     },
     {
       "alias": "ECoT",
@@ -1643,7 +1627,7 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: ECoT."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: ECoT."
     },
     {
       "alias": "RAD",
@@ -1659,7 +1643,7 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: RAD."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: RAD."
     },
     {
       "alias": "Cosmos-Reason1",
@@ -1675,236 +1659,312 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: Cosmos-Reason1."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: Cosmos-Reason1."
     },
     {
-      "alias": "Something-Something V2",
-      "title": "The\" something something\" video database for learning and evaluating visual common sense",
-      "year": 2017,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
-      "arxiv_url": "https://arxiv.org/abs/1706.04261",
-      "project_url": "https://www.qualcomm.com/developer/software/something-something-v-2-dataset",
-      "code_url": null,
-      "topics": [
-        "generalist manipulation",
-        "long-horizon",
-        "open-world generalization",
-        "task-centric"
-      ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Bottom Layer: Web Data and Human Video). Alias: Something-Something V2."
-    },
-    {
-      "alias": "EPIC-KITCHENS-100",
-      "title": "Scaling Egocentric Vision: The EPIC-KITCHENS Dataset",
-      "year": 2018,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
-      "arxiv_url": "https://arxiv.org/abs/1804.02748",
-      "project_url": "https://epic-kitchens.github.io/2020-100",
-      "code_url": null,
-      "topics": [
-        "generalist manipulation",
-        "long-horizon",
-        "open-world generalization",
-        "task-centric"
-      ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Bottom Layer: Web Data and Human Video). Alias: EPIC-KITCHENS-100."
-    },
-    {
-      "alias": "Ego4D",
-      "title": "Ego4D: Around the World in 3,000 Hours of Egocentric Video",
-      "year": 2021,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
-      "arxiv_url": "https://arxiv.org/abs/2110.07058",
-      "project_url": "https://ego4d-data.org",
-      "code_url": null,
-      "topics": [
-        "generalist manipulation",
-        "long-horizon",
-        "open-world generalization",
-        "task-centric"
-      ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Bottom Layer: Web Data and Human Video). Alias: Ego4D."
-    },
-    {
-      "alias": "Ego-Exo4D",
-      "title": "Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives",
-      "year": 2023,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
-      "arxiv_url": "https://arxiv.org/abs/2311.18259",
-      "project_url": "https://ego-exo4d-data.org/",
-      "code_url": null,
-      "topics": [
-        "generalist manipulation",
-        "long-horizon",
-        "open-world generalization",
-        "task-centric"
-      ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Bottom Layer: Web Data and Human Video). Alias: Ego-Exo4D."
-    },
-    {
-      "alias": "MimicGen",
-      "title": "MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations",
-      "year": 2023,
-      "venue_name": "CoRL 2023",
-      "publication_type": "conference",
-      "publication_status": "published",
-      "arxiv_url": "https://arxiv.org/abs/2310.17596",
-      "project_url": null,
-      "code_url": null,
-      "topics": [
-        "generalist manipulation",
-        "open-world generalization",
-        "sim2real",
-        "task-centric"
-      ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Middle Layer: Synthetic and Simulation Data). Alias: MimicGen."
-    },
-    {
-      "alias": "RoboCase",
-      "title": "RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots",
-      "year": 2024,
-      "venue_name": "RSS 2024",
-      "publication_type": "conference",
-      "publication_status": "published",
-      "arxiv_url": "https://arxiv.org/abs/2406.02523",
-      "project_url": "https://robocasa.ai/",
-      "code_url": "https://github.com/robocasa/robocasa",
-      "topics": [
-        "generalist manipulation",
-        "open-world generalization",
-        "sim2real",
-        "task-centric"
-      ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Middle Layer: Synthetic and Simulation Data). Alias: RoboCase."
-    },
-    {
-      "alias": "DexMimicGen",
-      "title": "DexMimicGen: Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning",
-      "year": 2024,
+      "alias": "BYOVLA",
+      "title": "Run-time Observation Interventions Make Vision-Language-Action Models More Visually Robust",
+      "year": 2025,
       "venue_name": "ICRA 2025",
       "publication_type": "conference",
       "publication_status": "published",
-      "arxiv_url": "https://arxiv.org/abs/2410.24185",
-      "project_url": "https://dexmimicgen.github.io",
+      "arxiv_url": "https://arxiv.org/abs/2410.01971",
+      "project_url": "https://aasherh.github.io/byovla/",
+      "code_url": "https://github.com/irom-lab/byovla",
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "safety"
+      ],
+      "notes": "Model or method paper; ICRA 2025 checked against Princeton publication page and DOI metadata."
+    },
+    {
+      "alias": "Long-VLA",
+      "title": "Long-VLA: Unleashing Long-Horizon Capability of Vision Language Action Model for Robot Manipulation",
+      "year": 2025,
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2508.19958",
+      "project_url": "https://proceedings.mlr.press/v305/fan25a.html",
       "code_url": null,
       "topics": [
-        "bimanual manipulation",
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+    },
+    {
+      "alias": "ControlVLA",
+      "title": "ControlVLA: Few-shot Object-centric Adaptation for Pre-trained Vision-Language-Action Models",
+      "year": 2025,
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2506.16211",
+      "project_url": "https://proceedings.mlr.press/v305/li25c.html",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "open-world generalization"
+      ],
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+    },
+    {
+      "alias": "3DS-VLA",
+      "title": "3DS-VLA: A 3D Spatial-Aware Vision Language Action Model for Robust Multi-Task Manipulation",
+      "year": 2025,
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://proceedings.mlr.press/v305/li25g.html",
+      "code_url": null,
+      "topics": [
+        "depth/3D perception",
+        "generalist manipulation",
+        "spatial grounding"
+      ],
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+    },
+    {
+      "alias": "GraspVLA",
+      "title": "GraspVLA: a Grasping Foundation Model Pre-trained on Billion-scale Synthetic Action Data",
+      "year": 2025,
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2505.03233",
+      "project_url": "https://proceedings.mlr.press/v305/deng25a.html",
+      "code_url": null,
+      "topics": [
         "dexterous manipulation",
         "generalist manipulation",
-        "open-world generalization",
         "sim2real"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Middle Layer: Synthetic and Simulation Data). Alias: DexMimicGen."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
     },
     {
-      "alias": "AgiBot DigitalWorld",
-      "title": "AgiBot DigitalWorld",
+      "alias": "DexVLA",
+      "title": "DexVLA: Vision-Language Model with Plug-In Diffusion Expert for General Robot Control",
       "year": 2025,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2502.05855",
+      "project_url": "https://proceedings.mlr.press/v305/wen25b.html",
+      "code_url": null,
+      "topics": [
+        "dexterous manipulation",
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+    },
+    {
+      "alias": "RoboMonkey",
+      "title": "RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models",
+      "year": 2025,
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2506.17811",
+      "project_url": "https://proceedings.mlr.press/v305/kwok25a.html",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "reasoning"
+      ],
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+    },
+    {
+      "alias": "FLOWER",
+      "title": "FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Action Flow Policies",
+      "year": 2025,
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2509.04996",
+      "project_url": "https://intuitive-robots.github.io/flower_vla/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "real-time control",
+        "task-centric"
+      ],
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+    },
+    {
+      "alias": "Oat-VLA",
+      "title": "Focusing on What Matters: Object-Agent-centric Tokenization for Vision Language Action models",
+      "year": 2025,
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2509.23655",
+      "project_url": "https://proceedings.mlr.press/v305/bendikas25a.html",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "task-centric"
+      ],
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+    },
+    {
+      "alias": "TA-VLA",
+      "title": "TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models",
+      "year": 2025,
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2509.07962",
+      "project_url": "https://proceedings.mlr.press/v305/zhang25k.html",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "real-time control",
+        "task-centric"
+      ],
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+    },
+    {
+      "alias": "EndoVLA",
+      "title": "EndoVLA: Dual-Phase Vision-Language-Action Model for Autonomous Tracking in Endoscopy",
+      "year": 2025,
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2505.15206",
+      "project_url": "https://proceedings.mlr.press/v305/kit25a.html",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+    },
+    {
+      "alias": "RICL",
+      "title": "RICL: Adding In-Context Adaptability to Pre-Trained Vision-Language-Action Models",
+      "year": 2025,
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2508.02062",
+      "project_url": "https://ricl-vla.github.io/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings and project page."
+    },
+    {
+      "alias": "VLA Steering",
+      "title": "Mechanistic Interpretability for Steering Vision-Language-Action Models",
+      "year": 2025,
+      "venue_name": "CoRL 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2509.00328",
+      "project_url": "https://proceedings.mlr.press/v305/haon25a.html",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "reasoning",
+        "safety"
+      ],
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+    },
+    {
+      "alias": "ReBot",
+      "title": "ReBot: Scaling Robot Learning with Real-to-Sim-to-Real Robotic Video Synthesis",
+      "year": 2025,
+      "venue_name": "IROS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2503.14526",
+      "project_url": "https://yuffish.github.io/rebot/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "sim2real",
+        "task-centric"
+      ],
+      "notes": "Model or method paper; IROS 2025 checked against project page."
+    },
+    {
+      "alias": "CLAP",
+      "title": "CLAP: A Closed-Loop Diffusion Transformer Action Foundation Model for Robotic Manipulation",
+      "year": 2025,
+      "venue_name": "IROS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
       "arxiv_url": null,
-      "project_url": "https://agibot-digitalworld.com/",
+      "project_url": "https://rasevents.org/uploads/documents/pdfviewer/d5/6e/203084-3722.pdf",
       "code_url": null,
       "topics": [
         "generalist manipulation",
-        "open-world generalization",
-        "sim2real"
+        "real-time control",
+        "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Middle Layer: Synthetic and Simulation Data). Alias: AgiBot DigitalWorld."
+      "notes": "Model or method paper; IROS 2025 checked against conference PDF."
     },
     {
-      "alias": "RH20T",
-      "title": "RH20T: A Comprehensive Robotic Dataset for Learning Diverse Skills in One-Shot",
-      "year": 2023,
-      "venue_name": "ICRA 2024",
+      "alias": "PD-VLA",
+      "title": "PD-VLA: Accelerating Vision-Language-Action Model Integrated with Action Chunking via Parallel Decoding",
+      "year": 2025,
+      "venue_name": "IROS 2025",
       "publication_type": "conference",
       "publication_status": "published",
-      "arxiv_url": "https://arxiv.org/abs/2307.00595",
-      "project_url": "https://rh20t.github.io",
+      "arxiv_url": "https://arxiv.org/abs/2503.02310",
+      "project_url": "https://events.infovaya.com/uploads/documents/pdfviewer/81/c4/204296-2901.pdf",
       "code_url": null,
       "topics": [
         "generalist manipulation",
-        "open-world generalization",
+        "real-time control",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Top Layer: Real-world Robot Data). Alias: RH20T."
+      "notes": "Model or method paper; IROS 2025 checked against conference PDF."
     },
     {
-      "alias": "BridgeData V2",
-      "title": "BridgeData V2: A Dataset for Robot Learning at Scale",
-      "year": 2023,
-      "venue_name": "CoRL 2023",
+      "alias": "RPD",
+      "title": "Refined Policy Distillation: From VLA Generalists to RL Experts",
+      "year": 2025,
+      "venue_name": "IROS 2025",
       "publication_type": "conference",
       "publication_status": "published",
-      "arxiv_url": "https://arxiv.org/abs/2308.12952",
-      "project_url": "https://rail-berkeley.github.io/bridgedata/",
+      "arxiv_url": "https://arxiv.org/abs/2503.05833",
+      "project_url": "https://refined-policy-distillation.github.io/",
       "code_url": null,
       "topics": [
         "generalist manipulation",
-        "open-world generalization",
+        "real-time control",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Top Layer: Real-world Robot Data). Alias: BridgeData V2."
+      "notes": "Model or method paper; IROS 2025 checked against DOI/conference metadata."
     },
     {
-      "alias": "HoNY",
-      "title": "On Bringing Robots Home",
-      "year": 2023,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
-      "arxiv_url": "https://arxiv.org/abs/2311.16098",
-      "project_url": "https://dobb-e.com",
-      "code_url": null,
-      "topics": [
-        "generalist manipulation",
-        "open-world generalization",
-        "task-centric"
-      ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Top Layer: Real-world Robot Data). Alias: HoNY."
-    },
-    {
-      "alias": "DROID",
-      "title": "DROID: A Large-Scale In-the-Wild Robot Manipulation Dataset",
-      "year": 2024,
-      "venue_name": "RSS 2024",
+      "alias": "CapsDT",
+      "title": "CapsDT: Diffusion-Transformer for Capsule Robot Manipulation",
+      "year": 2025,
+      "venue_name": "IROS 2025",
       "publication_type": "conference",
       "publication_status": "published",
-      "arxiv_url": "https://arxiv.org/abs/2403.12945",
-      "project_url": "https://huggingface.co/KarlP/droid",
+      "arxiv_url": null,
+      "project_url": "https://research.cuhk.edu.hk/en/publications/capsdt-diffusion-transformer-for-capsule-robot-manipulation/",
       "code_url": null,
       "topics": [
         "generalist manipulation",
-        "open-world generalization",
         "task-centric"
       ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Top Layer: Real-world Robot Data). Alias: DROID."
-    },
-    {
-      "alias": "RoboMIND",
-      "title": "RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation",
-      "year": 2024,
-      "venue_name": "RSS 2025",
-      "publication_type": "conference",
-      "publication_status": "published",
-      "arxiv_url": "https://arxiv.org/abs/2412.13877",
-      "project_url": "https://x-humanoid-robomind.github.io/",
-      "code_url": null,
-      "topics": [
-        "generalist manipulation",
-        "open-world generalization",
-        "task-centric"
-      ],
-      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Top Layer: Real-world Robot Data). Alias: RoboMIND."
+      "notes": "Model or method paper; IROS 2025 checked against institutional publication page."
     }
   ]
 }
