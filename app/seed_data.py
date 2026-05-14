@@ -210,7 +210,7 @@ SEED_MODELS = [
             "arxiv_url": "https://arxiv.org/abs/2212.06817",
             "project_url": "https://robotics-transformer1.github.io/",
             "code_url": "https://github.com/google-research/robotics_transformer",
-            "notes": "Seed data records selected authors only.",
+            "notes": "This record includes selected authors only.",
         },
         "authors": [
             {
@@ -282,7 +282,7 @@ SEED_MODELS = [
             "arxiv_url": "https://arxiv.org/abs/2307.15818",
             "project_url": "https://robotics-transformer2.github.io/",
             "code_url": None,
-            "notes": "Seed data records selected authors only.",
+            "notes": "This record includes selected authors only.",
         },
         "authors": [
             {
@@ -397,7 +397,7 @@ SEED_MODELS = [
             "arxiv_url": "https://arxiv.org/abs/2311.01378",
             "project_url": "https://roboflamingo.github.io/",
             "code_url": "https://github.com/RoboFlamingo/RoboFlamingo",
-            "notes": "Seed data records selected authors only.",
+            "notes": "This record includes selected authors only.",
         },
         "authors": [
             {
@@ -498,7 +498,7 @@ SEED_MODELS = [
             "arxiv_url": "https://arxiv.org/abs/2406.09246",
             "project_url": "https://openvla.github.io/",
             "code_url": "https://github.com/openvla/openvla",
-            "notes": "Seed data prioritizes model-level information; author list is intentionally partial.",
+            "notes": "This record prioritizes model-level information; author list is intentionally partial.",
         },
         "authors": [
             {
@@ -595,7 +595,7 @@ SEED_MODELS = [
             "arxiv_url": None,
             "project_url": "https://www.physicalintelligence.company/blog/pi0",
             "code_url": None,
-            "notes": "Seed data records selected authors only.",
+            "notes": "This record includes selected authors only.",
         },
         "authors": [
             {

@@ -26,5 +26,5 @@ def build_database_url():
 
 
 class Config:
-    SECRET_KEY = os.getenv("SECRET_KEY", "vla-course-project")
+    SECRET_KEY = os.getenv("SECRET_KEY", "vla-database-system")
     DATABASE_URL = build_database_url()

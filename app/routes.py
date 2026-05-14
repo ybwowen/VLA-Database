@@ -964,7 +964,7 @@ def admin_model_create():
         recent_models=recent_models,
         page_title="Add Model Record",
         page_description=(
-            "Lightweight admin entry page for course demos. It creates a new model, "
+            "Lightweight admin entry page. It creates a new model, "
             "optionally creates or reuses a paper, and links selected topics and data-source categories."
         ),
         submit_label="Create Model",

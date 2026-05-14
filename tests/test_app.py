@@ -35,7 +35,7 @@ def client(app):
     return app.test_client()
 
 
-def test_demo_data_includes_recent_models(app):
+def test_sample_data_includes_recent_models(app):
     session = get_session()
     try:
         names = {name for (name,) in session.query(VlaModel.name).all()}
@@ -46,7 +46,7 @@ def test_demo_data_includes_recent_models(app):
         remove_session()
 
 
-def test_demo_data_includes_extended_topics(app):
+def test_sample_data_includes_extended_topics(app):
     session = get_session()
     try:
         topic_names = {name for (name,) in session.query(Topic.name).all()}
@@ -63,7 +63,7 @@ def test_demo_data_includes_extended_topics(app):
         remove_session()
 
 
-def test_demo_data_includes_large_paper_index(app):
+def test_sample_data_includes_large_paper_index(app):
     session = get_session()
     try:
         papers = session.query(Paper).all()

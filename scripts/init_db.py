@@ -14,11 +14,11 @@ from app.seed_data import load_seed_data
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Initialize the MySQL schema and load demo data.")
+    parser = argparse.ArgumentParser(description="Initialize the MySQL schema and load sample data.")
     parser.add_argument(
         "--reset",
         action="store_true",
-        help="Drop all tables before recreating them and reloading demo data.",
+        help="Drop all tables before recreating them and reloading sample data.",
     )
     args = parser.parse_args()
 

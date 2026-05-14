@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-This repository is a database course project for managing VLA
+This repository provides a relational database system for managing VLA
 (Vision-Language-Action) and closely related robot foundation models used in
 embodied AI and robotic manipulation.
 
@@ -12,12 +12,12 @@ The project focuses on a practical database-design question:
   a relational database instead of being scattered across papers, project pages,
   GitHub repositories, model cards, and manually maintained spreadsheets?
 
-The system is a small but complete web prototype that demonstrates:
+The system is a small but complete web prototype that provides:
 
 - normalized schema design
 - entity and relationship modeling
 - foreign keys and many-to-many bridge tables
-- demo data initialization
+- sample data initialization
 - basic query, conditional query, statistical query, and timeline query
 - a server-rendered web front end for browsing, filtering, inspecting, and
   editing records
@@ -32,7 +32,7 @@ Data-handling principle:
 
 ## 2. Core Features
 
-The course-project build covers the following functions:
+The current build covers the following functions:
 
 - Model information management
   - model name, release year, open-source status, summary, notes
@@ -71,16 +71,16 @@ The course-project build covers the following functions:
 - Database: `MySQL 8.x`
 - DB driver: `PyMySQL`
 - Frontend: server-rendered `HTML + Jinja2 + CSS`
-- Poster generation: `python-pptx` plus screenshots from the running frontend
+- Report assets: `python-pptx` plus screenshots from the running frontend
 - Deployment style: direct local deployment in WSL, no Docker required
 
 Why this stack:
 
-- Flask keeps the web layer simple enough for a database course demo
+- Flask keeps the web layer compact and easy to inspect
 - SQLAlchemy expresses entity relationships clearly
 - MySQL reflects a mainstream relational database deployment
-- server-rendered pages are enough for query and CRUD demonstration
-- a generated PPTX poster remains editable after creation
+- server-rendered pages are enough for query and CRUD workflows
+- generated PPTX assets remain editable after creation
 
 ## 4. Project Structure
 
@@ -189,9 +189,9 @@ idempotently into `papers` and linked to `topics` through `paper_topics`, so
 papers can be queried even when they are not represented as full model records.
 Pure dataset, benchmark, and platform-only entries are excluded from this file.
 
-## 7. Query Scenarios To Demonstrate
+## 7. Query Scenarios
 
-This project is suitable for demonstrating the following database operations:
+The application supports the following database operations:
 
 - list all models ordered by year
 - query models released in `2026`
@@ -257,7 +257,7 @@ MYSQL_PORT=3306
 MYSQL_USER=vla_user
 MYSQL_PASSWORD=change_me
 MYSQL_DATABASE=vla_database
-SECRET_KEY=vla-course-project
+SECRET_KEY=vla-database-system
 ```
 
 Or provide a full SQLAlchemy URL:
@@ -266,7 +266,7 @@ Or provide a full SQLAlchemy URL:
 DATABASE_URL=mysql+pymysql://root:your_password@127.0.0.1:3306/vla_database?charset=utf8mb4
 ```
 
-### 4. Initialize schema and demo data
+### 4. Initialize schema and sample data
 
 ```bash
 .venv/bin/python scripts/init_db.py --reset
@@ -318,7 +318,7 @@ python -m pytest -q
 The current environment may need `pytest` installed before running the command.
 The tests cover:
 
-- demo-data loading
+- sample-data loading
 - paper-index size, unique titles, source links, and PaperTopic coverage
 - presence of 2026 models
 - topic taxonomy expansion
@@ -327,20 +327,20 @@ The tests cover:
 - representative model detail pages
 - basic admin validation
 
-## 10. Poster Work
+## 10. Visual Materials
 
-Poster generation assets are kept locally under the ignored `projects/`
+Visual-generation assets are kept locally under the ignored `projects/`
 directory and are not part of this code push. The Flask routes expose the paper
-index, SQL examples, schema, and statistics pages needed for future screenshots.
+index, SQL examples, schema, and statistics pages needed for screenshots.
 
-## 11. Course Presentation Highlights
+## 11. System Highlights
 
 - The schema is normalized and avoids repeated denormalized fields.
 - Many-to-many relationships are modeled with bridge tables.
 - `evaluation_results` is a fact table that supports numeric and qualitative
   benchmark records.
 - MySQL is used as the relational backend.
-- The frontend demonstrates filtering, paper browsing, details, statistics, SQL examples, timeline, and admin
+- The frontend provides filtering, paper browsing, details, statistics, SQL examples, timeline, and admin
   CRUD workflows.
-- Demo data keeps unknown values empty, and
+- Sample data keeps unknown values empty, and
   benchmark numbers are only stored when public sources support them.

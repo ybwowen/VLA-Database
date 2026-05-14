@@ -6,7 +6,7 @@
 <section class="panel">
   <div class="panel-header">
     <h1>Schema and ER Explanation</h1>
-    <p>This page is designed for course presentation: it summarizes the normalized schema, relationship cardinalities, and current table coverage.</p>
+    <p>Schema overview with normalized entities, relationship cardinalities, and current table coverage.</p>
   </div>
 
   <div class="stats-grid">
@@ -40,7 +40,7 @@
 <section class="panel">
   <div class="panel-header">
     <h2>ER Diagram</h2>
-    <p>A bundled SVG diagram for presentation use. It is stored inside the project, so it works offline and does not depend on external JS libraries.</p>
+    <p>A bundled SVG diagram stored inside the project, so it works offline and does not depend on external JS libraries.</p>
   </div>
   <div class="section-actions">
     <a class="button" href="{{ url_for('static', filename='img/er_diagram.svg') }}" target="_blank" rel="noopener">Open SVG</a>
@@ -88,7 +88,7 @@
 <section class="panel">
   <div class="panel-header">
     <h2>Relationship Explanation</h2>
-    <p>Cardinalities that you can directly explain during the demo.</p>
+    <p>Cardinalities used by the normalized relational design.</p>
   </div>
   <div class="table-wrap">
     <table>
@@ -118,7 +118,7 @@
   <article class="panel">
     <div class="panel-header">
       <h2>Normalization Highlights</h2>
-      <p>Key points for database-course evaluation.</p>
+      <p>Key points for normalized database design.</p>
     </div>
     <div class="stack-list">
       <div class="stack-item"><span>Paper and Model are separated</span><small class="subtle">Avoids mixing publication metadata with model metadata.</small></div>
@@ -129,14 +129,14 @@
 
   <article class="panel">
     <div class="panel-header">
-      <h2>Typical Demo Script</h2>
-      <p>A simple order for your presentation.</p>
+      <h2>Suggested Walkthrough</h2>
+      <p>A simple order for inspecting the system.</p>
     </div>
     <div class="stack-list">
       <div class="stack-item"><span>1. Open `/schema`</span><small class="subtle">Explain entities and cardinalities.</small></div>
       <div class="stack-item"><span>2. Open `/stats`</span><small class="subtle">Show grouped queries and aggregate results.</small></div>
       <div class="stack-item"><span>3. Open `/models` and `/models/openvla`</span><small class="subtle">Show query and detail retrieval.</small></div>
-      <div class="stack-item"><span>4. Open `/admin/models/new`</span><small class="subtle">Demonstrate insert operations.</small></div>
+      <div class="stack-item"><span>4. Open `/admin/models/new`</span><small class="subtle">Create a new model record.</small></div>
     </div>
   </article>
 </section>
