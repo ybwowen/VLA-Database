@@ -473,6 +473,22 @@ form {
   line-height: 1.7;
 }
 
+.sql-block {
+  margin: 0;
+  padding: 18px;
+  overflow-x: auto;
+  border-radius: 14px;
+  background: #102331;
+  color: #f3f7fb;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.sql-block code {
+  font-family: inherit;
+}
+
 .diagram-figure {
   margin: 0;
   display: grid;

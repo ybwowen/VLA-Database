@@ -59,15 +59,11 @@
       <div class="hero__panel">
         <div class="stat-card stat-card--strong">
           <strong>20</strong>
-          <span>seed 模型</span>
+          <span>curated 模型</span>
         </div>
         <div class="stat-card">
-          <strong>2022-2026</strong>
-          <span>年份覆盖</span>
-        </div>
-        <div class="stat-card">
-          <strong>15</strong>
-          <span>benchmarks</span>
+          <strong>100+</strong>
+          <span>paper library</span>
         </div>
         <div class="stat-card">
           <strong>35</strong>
@@ -78,7 +74,11 @@
           <span>topics</span>
         </div>
         <div class="stat-card">
-          <strong>13</strong>
+          <strong>2022-2026</strong>
+          <span>年份覆盖</span>
+        </div>
+        <div class="stat-card">
+          <strong>14</strong>
           <span>核心 / 桥接 / 事实表</span>
         </div>
       </div>
@@ -116,10 +116,11 @@
     <section id="dataset" class="section section--soft">
       <div class="section-heading">
         <p class="eyebrow">Final Dataset Scope</p>
-        <h2>最终 seed data 已扩展到 2022-2026</h2>
+        <h2>最终 seed data 已扩展到 20 模型 + 100+ 论文</h2>
         <p>
-          当前数据库内置 20 个代表性 VLA 或 VLA-adjacent 机器人基础模型。
-          2026 条目只录入有公开论文、项目页、模型卡或官方页面支撑的信息。
+          当前数据库内置 20 个代表性 VLA 或 VLA-adjacent 机器人基础模型，
+          并额外导入 100+ 篇 VLA、embodied reasoning、action tokenization 与机器人数据集相关论文。
+          所有 2026 条目和 paper library 记录都保留可追溯来源链接。
         </p>
       </div>
       <div class="dataset-strip">
@@ -129,9 +130,9 @@
           <p>从 RT-1、VIMA 到 Xiaomi-Robotics-0、Green-VLA、AR-VLA、ProgressVLA。</p>
         </article>
         <article>
-          <span class="dataset-number">20</span>
+          <span class="dataset-number">124</span>
           <strong>Papers</strong>
-          <p>论文、项目页、代码链接和发布状态拆分存储，便于后续维护。</p>
+          <p>通过 <code>PaperTopic</code> 连接到 topic 体系，可独立于模型记录查询。</p>
         </article>
         <article>
           <span class="dataset-number">17</span>
@@ -234,7 +235,7 @@
           <ul class="tag-list">
             <li>Model / Paper</li>
             <li>Author / Affiliation</li>
-            <li>Topic / DataSourceType</li>
+            <li>Topic / PaperTopic</li>
             <li>Benchmark / EvaluationResult</li>
           </ul>
         </article>
@@ -246,7 +247,7 @@
             <li>joined query</li>
             <li>filtering</li>
             <li>aggregation</li>
-            <li>CRUD workflow</li>
+            <li>paper search</li>
           </ul>
         </article>
         <article class="layer-card layer-card--orange">
@@ -254,9 +255,9 @@
           <h3>Presentation Layer: Course Demo Pages</h3>
           <p>页面展示查询结果、统计分布、E-R 设计和管理操作，不把数据库逻辑塞进静态前端。</p>
           <ul class="tag-list">
-            <li>Models / Details</li>
+            <li>Models / Papers</li>
             <li>Benchmarks / Stats</li>
-            <li>Timeline / Schema</li>
+            <li>SQL / Schema</li>
             <li>Admin Forms</li>
           </ul>
         </article>
@@ -290,7 +291,7 @@
           <h3>桥接表</h3>
           <p>
             <code>paper_authors</code>、<code>author_affiliations</code>、
-            <code>model_topics</code>、<code>model_data_sources</code>
+            <code>model_topics</code>、<code>paper_topics</code>、<code>model_data_sources</code>
             用于表达多对多关系。
           </p>
         </article>
@@ -330,6 +331,10 @@
           <span>多对多。通过 <code>paper_authors</code> 保存作者顺序、第一作者和通讯作者标记。</span>
         </div>
         <div class="relationship-row">
+          <strong>Paper ↔ Topic</strong>
+          <span>多对多。通过 <code>paper_topics</code> 给 paper library 复用统一 topic 分类。</span>
+        </div>
+        <div class="relationship-row">
           <strong>Author ↔ Affiliation</strong>
           <span>多对多。通过 <code>author_affiliations</code> 关联机构。</span>
         </div>
@@ -367,16 +372,20 @@
           <p><code>/models</code> 支持按 paradigm、topic、benchmark、year 和关键词组合查询。</p>
         </article>
         <article class="capability-card">
+          <h3>论文资料库</h3>
+          <p><code>/papers</code> 支持按关键词、年份、topic、publication status 组合筛选 100+ paper。</p>
+        </article>
+        <article class="capability-card">
           <h3>详情联查</h3>
           <p><code>/models/xiaomi-robotics-0</code> 展示模型、论文、topic、数据来源和 benchmark 结果。</p>
         </article>
         <article class="capability-card">
-          <h3>统计查询</h3>
-          <p><code>/stats</code> 汇总范式分布、topic 覆盖、benchmark 覆盖和 2022-2026 年份趋势。</p>
+          <h3>SQL 示例</h3>
+          <p><code>/queries</code> 展示 topic 聚合、model-paper 联表和 benchmark coverage 等真实 SQL。</p>
         </article>
         <article class="capability-card">
-          <h3>时间线视图</h3>
-          <p><code>/timeline</code> 按年份展示模型演进、代表模型、范式分布和关键 topic。</p>
+          <h3>统计查询</h3>
+          <p><code>/stats</code> 汇总模型范式、paper 年份、paper topic 和 benchmark 覆盖。</p>
         </article>
         <article class="capability-card">
           <h3>CRUD 闭环</h3>
@@ -390,7 +399,8 @@
         <p class="eyebrow">Data Governance</p>
         <h2>数据原则：保守录入，不编造数值</h2>
         <p>
-          最终版 seed data 覆盖 2024-2026 扩展模型，但仍优先保证来源可追溯和字段可信。
+          最终版 seed data 覆盖 2024-2026 扩展模型与 100+ paper library，
+          但仍优先保证来源可追溯和字段可信。
         </p>
       </div>
       <div class="governance-grid">

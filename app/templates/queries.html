@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}SQL Queries | VLA Database{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <div class="panel-header">
+    <h1>SQL Query Examples</h1>
+    <p>Poster-ready SQL snippets that map directly to the relational design and visible dashboard results.</p>
+  </div>
+
+  <div class="stats-grid">
+    <article class="stat-card">
+      <span class="stat-label">Papers</span>
+      <strong>{{ stats.paper_count }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">PaperTopic Rows</span>
+      <strong>{{ stats.paper_topic_count }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Models</span>
+      <strong>{{ stats.model_count }}</strong>
+    </article>
+    <article class="stat-card">
+      <span class="stat-label">Evaluation Rows</span>
+      <strong>{{ stats.result_count }}</strong>
+    </article>
+  </div>
+</section>
+
+{% for example in examples %}
+<section class="panel">
+  <div class="panel-header">
+    <h2>{{ example.title }}</h2>
+    <p>{{ example.purpose }}</p>
+  </div>
+  <pre class="sql-block"><code>{{ example.sql }}</code></pre>
+</section>
+{% endfor %}
+{% endblock %}

@@ -37,6 +37,11 @@ class Paper(Base):
     notes = Column(Text)
 
     models = relationship("VlaModel", back_populates="paper")
+    paper_topics = relationship(
+        "PaperTopic",
+        back_populates="paper",
+        cascade="all, delete-orphan",
+    )
     paper_authors = relationship(
         "PaperAuthor",
         back_populates="paper",
@@ -47,6 +52,10 @@ class Paper(Base):
     @property
     def corresponding_authors(self):
         return [link.author for link in self.paper_authors if link.is_corresponding_author]
+
+    @property
+    def topic_names(self):
+        return sorted(link.topic.name for link in self.paper_topics)
 
 
 class Author(Base):
@@ -121,6 +130,21 @@ class Topic(Base):
         back_populates="topic",
         cascade="all, delete-orphan",
     )
+    paper_topics = relationship(
+        "PaperTopic",
+        back_populates="topic",
+        cascade="all, delete-orphan",
+    )
+
+
+class PaperTopic(Base):
+    __tablename__ = "paper_topics"
+
+    paper_id = Column(Integer, ForeignKey("papers.id"), primary_key=True)
+    topic_id = Column(Integer, ForeignKey("topics.id"), primary_key=True)
+
+    paper = relationship("Paper", back_populates="paper_topics")
+    topic = relationship("Topic", back_populates="paper_topics")
 
 
 class ModelTopic(Base):

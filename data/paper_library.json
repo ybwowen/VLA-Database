@@ -1,0 +1,1910 @@
+{
+  "source": "https://github.com/Psi-Robot/Awesome-VLA-Papers",
+  "source_snapshot": "2026-05-14",
+  "scope_note": "VLA, robot foundation model, language-conditioned manipulation, embodied reasoning, action-tokenization, and robotics dataset/benchmark papers. Pure autonomous-driving-only entries are excluded.",
+  "papers": [
+    {
+      "alias": "Language Planner",
+      "title": "Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents",
+      "year": 2022,
+      "venue_name": "ICML 2022",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2201.07207",
+      "project_url": "https://wenlong.page/language-planner/",
+      "code_url": "https://github.com/huangwl18/language-planner",
+      "topics": [
+        "long-horizon",
+        "reasoning"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Language Planner."
+    },
+    {
+      "alias": "Socratic Models",
+      "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
+      "year": 2022,
+      "venue_name": "ICLR 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2204.00598",
+      "project_url": "https://socraticmodels.github.io/",
+      "code_url": "https://github.com/google-research/google-research/tree/master/socraticmodels",
+      "topics": [
+        "long-horizon",
+        "reasoning"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Socratic Models."
+    },
+    {
+      "alias": "SayCan",
+      "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+      "year": 2022,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2204.01691",
+      "project_url": "https://say-can.github.io/",
+      "code_url": "https://github.com/google-research/google-research/tree/master/saycan",
+      "topics": [
+        "long-horizon",
+        "object-centric",
+        "reasoning",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: SayCan."
+    },
+    {
+      "alias": "Inner Monologue",
+      "title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
+      "year": 2022,
+      "venue_name": "CoRL 2022",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2207.05608",
+      "project_url": "https://innermonologue.github.io/",
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "reasoning"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Inner Monologue."
+    },
+    {
+      "alias": "PaLM-E",
+      "title": "PaLM-E: An Embodied Multimodal Language Model",
+      "year": 2023,
+      "venue_name": "ICML 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2303.03378",
+      "project_url": "https://palm-e.github.io/",
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "reasoning"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: PaLM-E."
+    },
+    {
+      "alias": "EmbodiedGPT",
+      "title": "EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought",
+      "year": 2023,
+      "venue_name": "NeurIPS 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2305.15021",
+      "project_url": "https://embodiedgpt.github.io/",
+      "code_url": "https://github.com/EmbodiedGPT/EmbodiedGPT_Pytorch",
+      "topics": [
+        "long-horizon",
+        "reasoning"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: EmbodiedGPT."
+    },
+    {
+      "alias": "DoReMi",
+      "title": "DoReMi: Grounding Language Model by Detecting and Recovering from Plan-Execution Misalignment",
+      "year": 2023,
+      "venue_name": "IROS 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2307.00329",
+      "project_url": "https://sites.google.com/view/doremi-paper",
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "reasoning"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: DoReMi."
+    },
+    {
+      "alias": "ViLa",
+      "title": "Look Before You Leap: Unveiling the Power of GPT-4V in Robotic Vision-Language Planning",
+      "year": 2023,
+      "venue_name": "Workshop on Vision-Language Models for Navigation and Manipulation, ICRA 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2311.17842",
+      "project_url": "https://robot-vila.github.io/",
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ViLa."
+    },
+    {
+      "alias": "3D-VLA",
+      "title": "3D-VLA: A 3D Vision-Language-Action Generative World Model",
+      "year": 2024,
+      "venue_name": "ICML 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2403.09631",
+      "project_url": "https://vis-www.cs.umass.edu/3dvla",
+      "code_url": "https://github.com/UMass-Embodied-AGI/3D-VLA",
+      "topics": [
+        "depth/3D perception",
+        "long-horizon",
+        "reasoning"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: 3D-VLA."
+    },
+    {
+      "alias": "Bi-VLA",
+      "title": "Bi-VLA: Vision-Language-Action Model-Based System for Bimanual Robotic Dexterous Manipulations",
+      "year": 2024,
+      "venue_name": "SMC 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2405.06039",
+      "project_url": null,
+      "code_url": null,
+      "topics": [
+        "bimanual manipulation",
+        "dexterous manipulation",
+        "generalist manipulation",
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Bi-VLA."
+    },
+    {
+      "alias": "RoboMamba",
+      "title": "RoboMamba: Multimodal State Space Model for Efficient Robot Reasoning and Manipulation",
+      "year": 2024,
+      "venue_name": "NeurIPS 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2406.04339",
+      "project_url": "https://sites.google.com/view/robomamba-web",
+      "code_url": "https://github.com/lmzpai/roboMamba",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: RoboMamba."
+    },
+    {
+      "alias": "ReplanVLM",
+      "title": "ReplanVLM: Replanning Robotic Tasks with Visual Language Models",
+      "year": 2024,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2407.21762v1",
+      "project_url": null,
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ReplanVLM."
+    },
+    {
+      "alias": "BUMBLE",
+      "title": "BUMBLE: Unifying Reasoning and Acting with Vision-Language Models for Building-wide Mobile Manipulation",
+      "year": 2024,
+      "venue_name": "ICRA 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2410.06237",
+      "project_url": "https://robin-lab.cs.utexas.edu/BUMBLE/",
+      "code_url": "https://github.com/UT-Austin-RobIn/BUMBLE",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "reasoning"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: BUMBLE."
+    },
+    {
+      "alias": "ReflectVLM",
+      "title": "Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2502.16707",
+      "project_url": "https://reflect-vlm.github.io/",
+      "code_url": "https://github.com/yunhaif/reflect-vlm",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ReflectVLM."
+    },
+    {
+      "alias": "Hi Robot",
+      "title": "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2502.19417",
+      "project_url": "https://www.pi.website/research/hirobot",
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Hi Robot."
+    },
+    {
+      "alias": "RoboBrain",
+      "title": "RoboBrain: A Unified Brain Model for Robotic Manipulation from Abstract to Concrete",
+      "year": 2025,
+      "venue_name": "CVPR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2502.21257",
+      "project_url": "https://superrobobrain.github.io/",
+      "code_url": "https://github.com/FlagOpen/RoboBrain",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: RoboBrain."
+    },
+    {
+      "alias": "pi_{0.5}",
+      "title": ": a Vision-Language-Action Model with Open-World Generalization",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2504.16054",
+      "project_url": "https://www.physicalintelligence.company/blog/pi05",
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "open-world generalization",
+        "reasoning"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: pi_{0.5}."
+    },
+    {
+      "alias": "RT-H",
+      "title": "RT-H: Action Hierarchies Using Language",
+      "year": 2024,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2403.01823",
+      "project_url": "https://rt-hierarchy.github.io/",
+      "code_url": null,
+      "topics": [
+        "skill/subtask",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Motion). Alias: RT-H."
+    },
+    {
+      "alias": "NaVILA",
+      "title": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
+      "year": 2024,
+      "venue_name": "RSS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2412.04453",
+      "project_url": "https://navila-bot.github.io/",
+      "code_url": "https://github.com/yang-zj1026/legged-loco",
+      "topics": [
+        "skill/subtask",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Motion). Alias: NaVILA."
+    },
+    {
+      "alias": "Code as Policies",
+      "title": "Code as Policies: Language Model Programs for Embodied Control",
+      "year": 2022,
+      "venue_name": "ICRA 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2209.07753",
+      "project_url": "https://code-as-policies.github.io",
+      "code_url": "https://github.com/google-research/google-research/tree/master/code_as_policies",
+      "topics": [
+        "skill/subtask",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Code as Policies."
+    },
+    {
+      "alias": "ProgPrompt",
+      "title": "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
+      "year": 2022,
+      "venue_name": "ICRA 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2209.11302",
+      "project_url": "https://progprompt.github.io",
+      "code_url": "https://github.com/NVlabs/progprompt-vh",
+      "topics": [
+        "skill/subtask",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: ProgPrompt."
+    },
+    {
+      "alias": "ChatGPT for Robotics",
+      "title": "ChatGPT for Robotics: Design Principles and Model Abilities",
+      "year": 2023,
+      "venue_name": "IEEE Access 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2306.17582",
+      "project_url": "https://www.microsoft.com/en-us/research/articles/chatgpt-for-robotics/",
+      "code_url": "https://github.com/microsoft/PromptCraft-Robotics",
+      "topics": [
+        "skill/subtask",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: ChatGPT for Robotics."
+    },
+    {
+      "alias": "Text2Motion",
+      "title": "Text2Motion: From Natural Language Instructions to Feasible Plans",
+      "year": 2023,
+      "venue_name": "ICRL 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2303.12153",
+      "project_url": "https://sites.google.com/stanford.edu/text2motion",
+      "code_url": null,
+      "topics": [
+        "skill/subtask",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Text2Motion."
+    },
+    {
+      "alias": "Instruct2Act",
+      "title": "Instruct2Act: Mapping Multi-modality Instructions to Robotic Actions with Large Language Model",
+      "year": 2023,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2305.11176",
+      "project_url": null,
+      "code_url": "https://github.com/OpenGVLab/Instruct2Act",
+      "topics": [
+        "skill/subtask",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Instruct2Act."
+    },
+    {
+      "alias": "RoboScript",
+      "title": "RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation",
+      "year": 2024,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2402.14623",
+      "project_url": null,
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "sim2real",
+        "skill/subtask",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: RoboScript."
+    },
+    {
+      "alias": "RoboCodeX",
+      "title": "RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis",
+      "year": 2024,
+      "venue_name": "ICML 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2402.16117",
+      "project_url": "https://sites.google.com/view/robocodexplus",
+      "code_url": "https://github.com/RoboCodeX-source/RoboCodeX_code",
+      "topics": [
+        "skill/subtask",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: RoboCodeX."
+    },
+    {
+      "alias": "KITE",
+      "title": "KITE: Keypoint-Conditioned Policies for Semantic Manipulation",
+      "year": 2023,
+      "venue_name": "CoRL 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2306.16605",
+      "project_url": "https://sites.google.com/view/kite-website/home",
+      "code_url": "https://github.com/priyasundaresan/kite_keypoint_training",
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "spatial grounding"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: KITE."
+    },
+    {
+      "alias": "CoPa",
+      "title": "CoPa: General Robotic Manipulation through Spatial Constraints of Parts with Foundation Models",
+      "year": 2024,
+      "venue_name": "IROS 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2403.08248",
+      "project_url": "https://copa-2024.github.io/",
+      "code_url": "https://github.com/HaoxuHuang/copa",
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: CoPa."
+    },
+    {
+      "alias": "RoboPoint",
+      "title": "RoboPoint: A Vision-Language Model for Spatial Affordance Prediction for Robotics",
+      "year": 2024,
+      "venue_name": "CoRL 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2406.10721",
+      "project_url": "https://robo-point.github.io/",
+      "code_url": "https://github.com/wentaoyuan/RoboPoint",
+      "topics": [
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: RoboPoint."
+    },
+    {
+      "alias": "RAM",
+      "title": "RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation",
+      "year": 2024,
+      "venue_name": "CoRL 2024 Oral",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2407.04689",
+      "project_url": "https://yuxuank.com/RAM/",
+      "code_url": "https://github.com/yxKryptonite/RAM_code",
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: RAM."
+    },
+    {
+      "alias": "ReKep",
+      "title": "ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation",
+      "year": 2024,
+      "venue_name": "CoRL 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2409.01652",
+      "project_url": "https://rekep-robot.github.io/",
+      "code_url": "https://github.com/huangwl18/ReKep",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "object-centric",
+        "reasoning",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: ReKep."
+    },
+    {
+      "alias": "OmniManip",
+      "title": "OmniManip: Towards General Robotic Manipulation via Object-Centric Interaction Primitives as Spatial Constraints",
+      "year": 2025,
+      "venue_name": "CVPR 2025 Highlight",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2501.03841",
+      "project_url": "https://omnimanip.github.io/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: OmniManip."
+    },
+    {
+      "alias": "Magma",
+      "title": "Magma: A Foundation Model for Multimodal AI Agents",
+      "year": 2025,
+      "venue_name": "CVPR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2502.13130",
+      "project_url": "https://microsoft.github.io/Magma/",
+      "code_url": "https://github.com/microsoft/Magma",
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "spatial grounding"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: Magma."
+    },
+    {
+      "alias": "KUDA",
+      "title": "KUDA: Keypoints to Unify Dynamics Learning and Visual Prompting for Open-Vocabulary Robotic Manipulation",
+      "year": 2025,
+      "venue_name": "ICRA 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2503.10546",
+      "project_url": "https://kuda-dynamics.github.io/",
+      "code_url": "https://github.com/StoreBlank/KUDA",
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: KUDA."
+    },
+    {
+      "alias": "GPT-4V",
+      "title": "GPT-4V(ision) for Robotics: Multimodal Task Planning from Human Demonstration",
+      "year": 2023,
+      "venue_name": "RA-L 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2311.12015",
+      "project_url": "https://microsoft.github.io/GPT4Vision-Robot-Manipulation-Prompts/",
+      "code_url": "https://github.com/microsoft/GPT4Vision-Robot-Manipulation-Prompts",
+      "topics": [
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: GPT-4V."
+    },
+    {
+      "alias": "A3VLM",
+      "title": "A3VLM: Actionable Articulation-Aware Vision Language Model",
+      "year": 2024,
+      "venue_name": "CoRL 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2406.07549",
+      "project_url": null,
+      "code_url": "https://github.com/changhaonan/A3VLM",
+      "topics": [
+        "object-centric",
+        "spatial grounding"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: A3VLM."
+    },
+    {
+      "alias": "DexGraspVLA",
+      "title": "DexGraspVLA: A Vision-Language-Action Framework Towards General Dexterous Grasping",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2502.20900",
+      "project_url": "https://dexgraspvla.github.io/",
+      "code_url": "https://github.com/Psi-Robot/DexGraspVLA",
+      "topics": [
+        "dexterous manipulation",
+        "object-centric",
+        "spatial grounding"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: DexGraspVLA."
+    },
+    {
+      "alias": "MOO",
+      "title": "Open-World Object Manipulation using Pre-Trained Vision-Language Models",
+      "year": 2023,
+      "venue_name": "CoRL 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2303.00905",
+      "project_url": "https://robot-moo.github.io/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "open-world generalization",
+        "spatial grounding"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: MOO."
+    },
+    {
+      "alias": "ROCKET-1",
+      "title": "ROCKET-1: Mastering Open-World Interaction with Visual-Temporal Context Prompting",
+      "year": 2024,
+      "venue_name": "CVPR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Cai_ROCKET-1_Mastering_Open-World_Interaction_with_Visual-Temporal_Context_Prompting_CVPR_2025_paper.html",
+      "project_url": "https://craftjarvis.github.io/ROCKET-1",
+      "code_url": null,
+      "topics": [
+        "object-centric",
+        "open-world generalization",
+        "spatial grounding"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: ROCKET-1."
+    },
+    {
+      "alias": "SoFar",
+      "title": "SoFar: Language-Grounded Orientation Bridges Spatial Reasoning and Object Manipulation",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2502.13143",
+      "project_url": "https://qizekun.github.io/sofar/",
+      "code_url": "https://github.com/qizekun/SoFar",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "object-centric",
+        "reasoning",
+        "spatial grounding"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: SoFar."
+    },
+    {
+      "alias": "RoboDexVLM",
+      "title": "RoboDexVLM: Visual Language Model-Enabled Task Planning and Motion Control for Dexterous Robot Manipulation",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2503.01616",
+      "project_url": "https://henryhcliu.github.io/robodexvlm/",
+      "code_url": null,
+      "topics": [
+        "dexterous manipulation",
+        "generalist manipulation",
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: RoboDexVLM."
+    },
+    {
+      "alias": "CLIPort",
+      "title": "CLIPort: What and Where Pathways for Robotic Manipulation",
+      "year": 2021,
+      "venue_name": "CoRL 2021",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2109.12098",
+      "project_url": "https://cliport.github.io/",
+      "code_url": "https://github.com/cliport/cliport",
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: CLIPort."
+    },
+    {
+      "alias": "VoxPoser",
+      "title": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models",
+      "year": 2023,
+      "venue_name": "CoRL 2023 Oral",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2307.05973",
+      "project_url": "https://voxposer.github.io/",
+      "code_url": "https://github.com/huangwl18/VoxPoser",
+      "topics": [
+        "depth/3D perception",
+        "generalist manipulation",
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: VoxPoser."
+    },
+    {
+      "alias": "ManipLLM",
+      "title": "ManipLLM: Embodied Multimodal Large Language Model for Object-Centric Robotic Manipulation",
+      "year": 2023,
+      "venue_name": "CVPR 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2312.16217",
+      "project_url": "https://sites.google.com/view/manipllm",
+      "code_url": "https://github.com/clorislili/ManipLLM",
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: ManipLLM."
+    },
+    {
+      "alias": "ManiFoundation",
+      "title": "ManiFoundation Model for General-Purpose Robotic Manipulation of Contact Synthesis with Arbitrary Objects and Robots",
+      "year": 2024,
+      "venue_name": "IROS 2024 Oral",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2405.06964",
+      "project_url": "https://manifoundationmodel.github.io/",
+      "code_url": "https://github.com/NUS-LinS-Lab/ManiFM",
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: ManiFoundation."
+    },
+    {
+      "alias": "MOKA",
+      "title": "MOKA: Open-World Robotic Manipulation through Mark-Based Visual Prompting",
+      "year": 2024,
+      "venue_name": "RSS 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2403.03174",
+      "project_url": "https://moka-manipulation.github.io/",
+      "code_url": "https://github.com/moka-manipulation/moka",
+      "topics": [
+        "generalist manipulation",
+        "object-centric",
+        "open-world generalization",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: MOKA."
+    },
+    {
+      "alias": "AVDC",
+      "title": "Learning to Act from Actionless Videos through Dense Correspondences",
+      "year": 2023,
+      "venue_name": "ICLR 2024 spotlight",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2310.08576",
+      "project_url": null,
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: AVDC."
+    },
+    {
+      "alias": "RT-Trajectory",
+      "title": "RT-Trajectory: Robotic Task Generalization via Hindsight Trajectory Sketches",
+      "year": 2023,
+      "venue_name": "ICLR 2024 (Spotlight)",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2311.01977",
+      "project_url": "https://rt-trajectory.github.io",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: RT-Trajectory."
+    },
+    {
+      "alias": "ATM",
+      "title": "Any-point Trajectory Modeling for Policy Learning",
+      "year": 2023,
+      "venue_name": "RSS 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2401.00025",
+      "project_url": "https://xingyu-lin.github.io/atm/",
+      "code_url": "https://github.com/Large-Trajectory-Model/ATM",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: ATM."
+    },
+    {
+      "alias": "LLARVA",
+      "title": "LLARVA: Vision-Action Instruction Tuning Enhances Robot Learning",
+      "year": 2024,
+      "venue_name": "CoRL 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2406.11815",
+      "project_url": "https://llarva24.github.io",
+      "code_url": "https://github.com/Dantong88/LLARVA",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: LLARVA."
+    },
+    {
+      "alias": "Im2Flow2Act",
+      "title": "Flow as the Cross-Domain Manipulation Interface",
+      "year": 2024,
+      "venue_name": "CoRL 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2407.15208",
+      "project_url": "https://im-flow-act.github.io",
+      "code_url": "https://github.com/real-stanford/im2Flow2Act",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: Im2Flow2Act."
+    },
+    {
+      "alias": "FLIP",
+      "title": "FLIP : Flow-Centric Generative Planning as General-Purpose Manipulation World Model",
+      "year": 2024,
+      "venue_name": "ICLR 2025 Poster",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2412.08261",
+      "project_url": "https://nus-lins-lab.github.io/flipweb/",
+      "code_url": "https://github.com/HeegerGao/FLIP",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: FLIP."
+    },
+    {
+      "alias": "HAMSTER",
+      "title": "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+      "year": 2025,
+      "venue_name": "ICLR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2502.05485",
+      "project_url": "https://hamster-robot.github.io",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: HAMSTER."
+    },
+    {
+      "alias": "ARM4R",
+      "title": "Pre-training Auto-regressive Robotic Models with 4D Representations",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2502.13142",
+      "project_url": null,
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: ARM4R."
+    },
+    {
+      "alias": "SuSIE",
+      "title": "Zero-Shot Robotic Manipulation with Pretrained Image-Editing Diffusion Models",
+      "year": 2023,
+      "venue_name": "ICLR 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2310.10639",
+      "project_url": "https://rail-berkeley.github.io/susie/",
+      "code_url": "https://github.com/kvablack/susie",
+      "topics": [
+        "depth/3D perception",
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: SuSIE."
+    },
+    {
+      "alias": "CoTDiffusion",
+      "title": "Generate Subgoal Images before Act: Unlocking the Chain-of-Thought Reasoning in Diffusion Model for Robot Manipulation with Multimodal Prompts",
+      "year": 2024,
+      "venue_name": "CVPR 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Ni_Generate_Subgoal_Images_before_Act_Unlocking_the_Chain-of-Thought_Reasoning_in_CVPR_2024_paper.html",
+      "project_url": "https://cotdiffusion.github.io/",
+      "code_url": null,
+      "topics": [
+        "depth/3D perception",
+        "generalist manipulation",
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: CoTDiffusion."
+    },
+    {
+      "alias": "CoT-VLA",
+      "title": "CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models",
+      "year": 2025,
+      "venue_name": "CVPR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2503.22020",
+      "project_url": "https://cot-vla.github.io/",
+      "code_url": null,
+      "topics": [
+        "depth/3D perception",
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: CoT-VLA."
+    },
+    {
+      "alias": "UniPi",
+      "title": "Learning Universal Policies via Text-Guided Video Generation",
+      "year": 2023,
+      "venue_name": "NeurIPS 2023 spotlight",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2302.00111",
+      "project_url": "https://universal-policy.github.io/unipi/",
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: UniPi."
+    },
+    {
+      "alias": "VLP",
+      "title": "Video Language Planning",
+      "year": 2023,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2310.10625",
+      "project_url": "https://video-language-planning.github.io/",
+      "code_url": "https://github.com/video-language-planning/vlp_code",
+      "topics": [
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: VLP."
+    },
+    {
+      "alias": "Gen2Act",
+      "title": "Gen2Act: Human Video Generation in Novel Scenarios enables Generalizable Robot Manipulation",
+      "year": 2024,
+      "venue_name": "CoRL-X-Embodiment-WS 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2409.16283",
+      "project_url": "https://homangab.github.io/gen2act/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: Gen2Act."
+    },
+    {
+      "alias": "Video Prediction Policy",
+      "title": "Video Prediction Policy: A Generalist Robot Policy with Predictive Visual Representations",
+      "year": 2024,
+      "venue_name": "ICML 2025 Spotlight",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2412.14803",
+      "project_url": "https://video-prediction-policy.github.io/",
+      "code_url": "https://github.com/roboterax/video-prediction-policy",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: Video Prediction Policy."
+    },
+    {
+      "alias": "FLIP",
+      "title": "FLIP: Flow-Centric Generative Planning as General-Purpose Manipulation World Model",
+      "year": 2024,
+      "venue_name": "ICLR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2412.08261",
+      "project_url": "https://nus-lins-lab.github.io/flipweb/",
+      "code_url": "https://github.com/HeegerGao/FLIP",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: FLIP."
+    },
+    {
+      "alias": "GEVRM",
+      "title": "GEVRM: Goal-Expressive Video Generation Model For Robust Visual Manipulation",
+      "year": 2025,
+      "venue_name": "ICLR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2502.09268",
+      "project_url": null,
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: GEVRM."
+    },
+    {
+      "alias": "OmniJARVIS",
+      "title": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "year": 2024,
+      "venue_name": "NeurIPS 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2407.00114",
+      "project_url": "https://omnijarvis.github.io",
+      "code_url": "https://github.com/CraftJarvis/OmniJarvis",
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: OmniJARVIS."
+    },
+    {
+      "alias": "QueST",
+      "title": "QueST: Self-Supervised Skill Abstractions for Learning Continuous Control",
+      "year": 2024,
+      "venue_name": "NeurIPS 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2407.15840",
+      "project_url": "https://quest-model.github.io",
+      "code_url": "https://github.com/pairlab/QueST",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: QueST."
+    },
+    {
+      "alias": "LAPA",
+      "title": "LAPA: Latent Action Pretraining from Videos",
+      "year": 2024,
+      "venue_name": "ICLR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2410.11758",
+      "project_url": "https://latentactionpretraining.github.io",
+      "code_url": "https://github.com/LatentActionPretraining/LAPA",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: LAPA."
+    },
+    {
+      "alias": "GROOT-2",
+      "title": "GROOT-2: Weakly Supervised Multi-Modal Instruction Following Agents",
+      "year": 2024,
+      "venue_name": "ICLR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2412.10410",
+      "project_url": null,
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: GROOT-2."
+    },
+    {
+      "alias": "GO-1",
+      "title": "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2503.06669",
+      "project_url": "https://agibot-world.com",
+      "code_url": "https://github.com/OpenDriveLab/AgiBot-World",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: GO-1."
+    },
+    {
+      "alias": "UniVLA",
+      "title": "UniVLA: Learning to Act Anywhere with Task-centric Latent Actions",
+      "year": 2025,
+      "venue_name": "RSS2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2505.06111",
+      "project_url": "https://github.com/OpenDriveLab/UniVLA#ckpts",
+      "code_url": "https://github.com/OpenDriveLab/UniVLA",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: UniVLA."
+    },
+    {
+      "alias": "LangLfP",
+      "title": "Language-Conditioned Imitation Learning over Unstructured Data",
+      "year": 2020,
+      "venue_name": "RSS 2021",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2005.07648",
+      "project_url": "https://language-play.github.io",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: LangLfP."
+    },
+    {
+      "alias": "BC-Z",
+      "title": "Zero-Shot Task Generalization with Robotic Imitation Learning",
+      "year": 2022,
+      "venue_name": "CoRL 2021",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2202.02005",
+      "project_url": "https://sites.google.com/view/bc-z/home?pli=1",
+      "code_url": "https://github.com/google-research/tensor2robot/tree/master/research/bcz",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: BC-Z."
+    },
+    {
+      "alias": "Gato",
+      "title": "A Generalist Agent",
+      "year": 2022,
+      "venue_name": "TMLR 2022",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2205.06175",
+      "project_url": "https://deepmind.google/discover/blog/a-generalist-agent/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: Gato."
+    },
+    {
+      "alias": "VIMA",
+      "title": "VIMA: General Robot Manipulation with Multimodal Prompts",
+      "year": 2022,
+      "venue_name": "ICML 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2210.03094",
+      "project_url": "https://vimalabs.github.io/",
+      "code_url": "https://github.com/vimalabs/VIMA",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: VIMA."
+    },
+    {
+      "alias": "RT-1",
+      "title": "RT-1: Robotics Transformer for Real-World Control at Scale",
+      "year": 2022,
+      "venue_name": "RSS 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2212.06817",
+      "project_url": "https://robotics-transformer1.github.io/",
+      "code_url": "https://github.com/google-research/robotics_transformer",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-1."
+    },
+    {
+      "alias": "RT-2",
+      "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+      "year": 2023,
+      "venue_name": "CoRL 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2307.15818",
+      "project_url": "https://robotics-transformer2.github.io/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-2."
+    },
+    {
+      "alias": "RT-X",
+      "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+      "year": 2023,
+      "venue_name": "ICRA 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2310.08864",
+      "project_url": "https://robotics-transformer-x.github.io",
+      "code_url": "https://github.com/google-deepmind/open_x_embodiment",
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-X."
+    },
+    {
+      "alias": "RoboFlamingo",
+      "title": "Vision-Language Foundation Models as Effective Robot Imitators",
+      "year": 2023,
+      "venue_name": "ICLR 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2311.01378",
+      "project_url": "https://roboflamingo.github.io",
+      "code_url": "https://github.com/RoboFlamingo/RoboFlamingo",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RoboFlamingo."
+    },
+    {
+      "alias": "LEO",
+      "title": "An Embodied Generalist Agent in 3D World",
+      "year": 2023,
+      "venue_name": "ICML 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2311.12871",
+      "project_url": "https://embodied-generalist.github.io/",
+      "code_url": "https://github.com/embodied-generalist/embodied-generalist?tab=readme-ov-file",
+      "topics": [
+        "depth/3D perception",
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: LEO."
+    },
+    {
+      "alias": "GR-1",
+      "title": "Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation",
+      "year": 2023,
+      "venue_name": "ICLR 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2312.13139",
+      "project_url": "https://gr1-manipulation.github.io/",
+      "code_url": "https://github.com/bytedance/GR-1",
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR-1."
+    },
+    {
+      "alias": "Octo",
+      "title": "Octo: An Open-Source Generalist Robot Policy",
+      "year": 2024,
+      "venue_name": "ICRA 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2405.12213",
+      "project_url": "https://octo-models.github.io",
+      "code_url": "https://github.com/octo-models/octo",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: Octo."
+    },
+    {
+      "alias": "OpenVLA",
+      "title": "OpenVLA: An open-source vision-language-action model",
+      "year": 2024,
+      "venue_name": "CoRL 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2406.09246",
+      "project_url": "https://openvla.github.io/",
+      "code_url": "https://github.com/openvla/openvla",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA."
+    },
+    {
+      "alias": "TinyVLA",
+      "title": "TinyVLA: Towards Fast, Data-Efficient Vision-Language-Action Models for Robotic Manipulation",
+      "year": 2024,
+      "venue_name": "RA-L 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2409.12514",
+      "project_url": "https://tiny-vla.github.io/",
+      "code_url": "https://github.com/liyaxuanliyaxuan/TinyVLA",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: TinyVLA."
+    },
+    {
+      "alias": "HiRT",
+      "title": "HiRT: Enhancing Robotic Control with Hierarchical Robot Transformers",
+      "year": 2024,
+      "venue_name": "CoRL 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2410.05273",
+      "project_url": null,
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HiRT."
+    },
+    {
+      "alias": "GR-2",
+      "title": "GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge for Robot Manipulation",
+      "year": 2024,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2410.06158v1",
+      "project_url": "https://gr2-manipulation.github.io/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR-2."
+    },
+    {
+      "alias": "RDT-1B",
+      "title": "RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation",
+      "year": 2024,
+      "venue_name": "ICLR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2410.07864",
+      "project_url": "https://rdt-robotics.github.io/rdt-robotics/",
+      "code_url": "https://rdt-robotics.github.io/rdt-robotics/",
+      "topics": [
+        "bimanual manipulation",
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RDT-1B."
+    },
+    {
+      "alias": "pi_0",
+      "title": "A Vision-Language-Action Flow Model for General Robot Control",
+      "year": 2024,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2410.24164",
+      "project_url": "https://www.physicalintelligence.company/blog/pi0",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi_0."
+    },
+    {
+      "alias": "CogACT",
+      "title": "CogACT: A Foundational Vision-Language-Action Model for Synergizing Cognition and Action in Robotic Manipulation",
+      "year": 2024,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2411.19650",
+      "project_url": "https://cogact.github.io/",
+      "code_url": "https://github.com/microsoft/CogACT?tab=readme-ov-file",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: CogACT."
+    },
+    {
+      "alias": "pi_0-FAST",
+      "title": "FAST: Efficient Action Tokenization for Vision-Language-Action Models",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2501.09747",
+      "project_url": "https://www.pi.website/research/fast",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi_0-FAST."
+    },
+    {
+      "alias": "UniAct",
+      "title": "Universal Actions for Enhanced Embodied Foundation Models",
+      "year": 2025,
+      "venue_name": "CVPR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2501.10105",
+      "project_url": "https://2toinf.github.io/UniAct/",
+      "code_url": "https://github.com/2toinf/UniAct",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: UniAct."
+    },
+    {
+      "alias": "OpenVLA-OFT",
+      "title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2502.19645",
+      "project_url": "https://openvla-oft.github.io",
+      "code_url": "https://github.com/moojink/openvla-oft",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA-OFT."
+    },
+    {
+      "alias": "JARVIS-VLA",
+      "title": "Post-Training Large-Scale Vision Language Models to Play Visual Games with Keyboards and Mouse",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2503.16365",
+      "project_url": "https://craftjarvis.github.io/JarvisVLA/",
+      "code_url": "https://github.com/CraftJarvis/JarvisVLA",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: JARVIS-VLA."
+    },
+    {
+      "alias": "HybridVLA",
+      "title": "HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2503.10631",
+      "project_url": "https://hybrid-vla.github.io",
+      "code_url": "https://github.com/PKU-HMI-Lab/Hybrid-VLA",
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HybridVLA."
+    },
+    {
+      "alias": "MoManipVLA",
+      "title": "MoManipVLA: Transferring Vision-Language-Action Models for General Mobile Manipulation",
+      "year": 2025,
+      "venue_name": "CVPR 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2503.13446",
+      "project_url": null,
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: MoManipVLA."
+    },
+    {
+      "alias": "GR00T N1",
+      "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2503.14734",
+      "project_url": "https://developer.nvidia.com/isaac/gr00t",
+      "code_url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "topics": [
+        "generalist manipulation",
+        "humanoid robotics",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR00T N1."
+    },
+    {
+      "alias": "pi_0+KI",
+      "title": "Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2505.23705",
+      "project_url": "https://www.physicalintelligence.company/research/knowledge_insulation",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi_0+KI."
+    },
+    {
+      "alias": "RTC",
+      "title": "Real-Time Execution of Action Chunking Flow Policies",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2506.07339",
+      "project_url": "https://www.pi.website/research/real_time_chunking",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "real-time control",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RTC."
+    },
+    {
+      "alias": "ECoT",
+      "title": "Robotic Control via Embodied Chain-of-Thought Reasoning",
+      "year": 2024,
+      "venue_name": "CoRL 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2407.08693",
+      "project_url": "https://embodied-cot.github.io/",
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: ECoT."
+    },
+    {
+      "alias": "RAD",
+      "title": "Action-Free Reasoning for Policy Generalization",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2502.03729",
+      "project_url": "https://rad-generalization.github.io/",
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "reasoning"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: RAD."
+    },
+    {
+      "alias": "Cosmos-Reason1",
+      "title": "Cosmos-Reason1: From Physical Common Sense To Embodied Reasoning",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2503.15558",
+      "project_url": "https://research.nvidia.com/labs/dir/cosmos-reason1/",
+      "code_url": "https://github.com/nvidia-cosmos/cosmos-reason1?tab=readme-ov-file",
+      "topics": [
+        "long-horizon",
+        "reasoning"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: Cosmos-Reason1."
+    },
+    {
+      "alias": "Something-Something V2",
+      "title": "The\" something something\" video database for learning and evaluating visual common sense",
+      "year": 2017,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/1706.04261",
+      "project_url": "https://www.qualcomm.com/developer/software/something-something-v-2-dataset",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Bottom Layer: Web Data and Human Video). Alias: Something-Something V2."
+    },
+    {
+      "alias": "EPIC-KITCHENS-100",
+      "title": "Scaling Egocentric Vision: The EPIC-KITCHENS Dataset",
+      "year": 2018,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/1804.02748",
+      "project_url": "https://epic-kitchens.github.io/2020-100",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Bottom Layer: Web Data and Human Video). Alias: EPIC-KITCHENS-100."
+    },
+    {
+      "alias": "Ego4D",
+      "title": "Ego4D: Around the World in 3,000 Hours of Egocentric Video",
+      "year": 2021,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2110.07058",
+      "project_url": "https://ego4d-data.org",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Bottom Layer: Web Data and Human Video). Alias: Ego4D."
+    },
+    {
+      "alias": "Ego-Exo4D",
+      "title": "Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives",
+      "year": 2023,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2311.18259",
+      "project_url": "https://ego-exo4d-data.org/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "long-horizon",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Bottom Layer: Web Data and Human Video). Alias: Ego-Exo4D."
+    },
+    {
+      "alias": "MimicGen",
+      "title": "MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations",
+      "year": 2023,
+      "venue_name": "CoRL 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2310.17596",
+      "project_url": null,
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "sim2real",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Middle Layer: Synthetic and Simulation Data). Alias: MimicGen."
+    },
+    {
+      "alias": "RoboCase",
+      "title": "RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots",
+      "year": 2024,
+      "venue_name": "RSS 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2406.02523",
+      "project_url": "https://robocasa.ai/",
+      "code_url": "https://github.com/robocasa/robocasa",
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "sim2real",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Middle Layer: Synthetic and Simulation Data). Alias: RoboCase."
+    },
+    {
+      "alias": "DexMimicGen",
+      "title": "DexMimicGen: Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning",
+      "year": 2024,
+      "venue_name": "ICRA 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2410.24185",
+      "project_url": "https://dexmimicgen.github.io",
+      "code_url": null,
+      "topics": [
+        "bimanual manipulation",
+        "dexterous manipulation",
+        "generalist manipulation",
+        "open-world generalization",
+        "sim2real"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Middle Layer: Synthetic and Simulation Data). Alias: DexMimicGen."
+    },
+    {
+      "alias": "AgiBot DigitalWorld",
+      "title": "AgiBot DigitalWorld",
+      "year": 2025,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": null,
+      "project_url": "https://agibot-digitalworld.com/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "sim2real"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Middle Layer: Synthetic and Simulation Data). Alias: AgiBot DigitalWorld."
+    },
+    {
+      "alias": "RH20T",
+      "title": "RH20T: A Comprehensive Robotic Dataset for Learning Diverse Skills in One-Shot",
+      "year": 2023,
+      "venue_name": "ICRA 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2307.00595",
+      "project_url": "https://rh20t.github.io",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Top Layer: Real-world Robot Data). Alias: RH20T."
+    },
+    {
+      "alias": "BridgeData V2",
+      "title": "BridgeData V2: A Dataset for Robot Learning at Scale",
+      "year": 2023,
+      "venue_name": "CoRL 2023",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2308.12952",
+      "project_url": "https://rail-berkeley.github.io/bridgedata/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Top Layer: Real-world Robot Data). Alias: BridgeData V2."
+    },
+    {
+      "alias": "HoNY",
+      "title": "On Bringing Robots Home",
+      "year": 2023,
+      "venue_name": null,
+      "publication_type": "arXiv preprint",
+      "publication_status": "unknown",
+      "arxiv_url": "https://arxiv.org/abs/2311.16098",
+      "project_url": "https://dobb-e.com",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Top Layer: Real-world Robot Data). Alias: HoNY."
+    },
+    {
+      "alias": "DROID",
+      "title": "DROID: A Large-Scale In-the-Wild Robot Manipulation Dataset",
+      "year": 2024,
+      "venue_name": "RSS 2024",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2403.12945",
+      "project_url": "https://huggingface.co/KarlP/droid",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Top Layer: Real-world Robot Data). Alias: DROID."
+    },
+    {
+      "alias": "RoboMIND",
+      "title": "RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation",
+      "year": 2024,
+      "venue_name": "RSS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": "https://arxiv.org/abs/2412.13877",
+      "project_url": "https://x-humanoid-robomind.github.io/",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Curated from Psi-Robot/Awesome-VLA-Papers (Scalable Data Sources / Top Layer: Real-world Robot Data). Alias: RoboMIND."
+    }
+  ]
+}

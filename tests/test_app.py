@@ -2,7 +2,7 @@ import pytest
 
 from app import create_app
 from app.db import Base, get_engine, get_session, remove_session
-from app.models import Paradigm, Topic, VlaModel
+from app.models import Paper, PaperTopic, Paradigm, Topic, VlaModel
 from app.seed_data import load_seed_data
 
 
@@ -63,11 +63,29 @@ def test_seed_data_includes_extended_topics(app):
         remove_session()
 
 
+def test_seed_data_includes_large_paper_library(app):
+    session = get_session()
+    try:
+        papers = session.query(Paper).all()
+        titles = [paper.title for paper in papers]
+        assert len(papers) >= 100
+        assert len(titles) == len(set(titles))
+        assert all(paper.arxiv_url or paper.project_url or paper.code_url for paper in papers)
+        assert session.query(PaperTopic).count() >= 100
+    finally:
+        session.close()
+        remove_session()
+
+
 @pytest.mark.parametrize(
     "path",
     [
         "/",
         "/models",
+        "/papers",
+        "/papers?q=OpenVLA",
+        "/papers?year=2025",
+        "/queries",
         "/models?year=2026",
         "/stats",
         "/schema",

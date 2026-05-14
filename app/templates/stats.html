@@ -143,4 +143,42 @@
     </div>
   </article>
 </section>
+
+<section class="content-grid">
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Paper Topic Coverage</h2>
+      <p>Many-to-many aggregation over `PaperTopic` for the 100+ paper library.</p>
+    </div>
+    <div class="bar-chart">
+      {% for row in paper_topic_bars %}
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span>{{ row.label }}</span>
+          <strong>{{ row.count }}</strong>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width: {{ row.width }}%;"></div></div>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Papers by Year</h2>
+      <p>Publication-year distribution for paper records, independent of model rows.</p>
+    </div>
+    <div class="bar-chart">
+      {% for row in paper_year_bars %}
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span>{{ row.label }}</span>
+          <strong>{{ row.count }}</strong>
+        </div>
+        <div class="bar-track"><div class="bar-fill bar-fill-alt" style="width: {{ row.width }}%;"></div></div>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+</section>
 {% endblock %}

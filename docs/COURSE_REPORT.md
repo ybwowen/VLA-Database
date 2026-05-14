@@ -153,7 +153,7 @@ VLA（Vision-Language-Action）模型数据库系统
 
 ## 8. 当前数据范围
 
-当前系统内置 20 个代表性模型，覆盖 2022-2026：
+当前系统内置 20 个代表性模型，覆盖 2022-2026；同时新增 100+ 篇 VLA 相关 paper library，用于补充 action tokenization、embodied reasoning、robot foundation model、robotics dataset/benchmark 等背景资料。
 
 - RT-1
 - RT-2
@@ -180,6 +180,7 @@ VLA（Vision-Language-Action）模型数据库系统
 
 - 对信息不确定的字段保留为空。
 - 对有争议是否属于标准 VLA 的模型，在备注中保守说明。
+- paper library 使用 `PaperTopic` 中间表连接到现有 topic 体系，论文不必都对应完整模型记录。
 - benchmark 数值只录入公开来源明确给出的数据。
 - 只有定性结果时，写入 `result_summary`，不编造 `metric_value`。
 - 每条评测尽量保留 `source_url`，方便追溯。
@@ -233,19 +234,9 @@ python -m pytest -q
 
 ## 12. Poster 交付
 
-项目包含一个可编辑英文 A1 竖版 poster 工程：
-
-```text
-projects/vla_database_final_poster_a1_20260509/
-```
-
-Poster 特点：
-
-- 使用 `python-pptx` 生成 PowerPoint。
-- 页面尺寸为 A1 portrait。
-- 标题、正文、标签、图例、色块均为可编辑对象。
-- 前端截图来自真实运行的 Flask 页面，包括 `/schema`、`/stats`、`/models?year=2026`、`/timeline` 和模型详情页。
-- 不把整张 poster 合成为一张不可编辑图片。
+Poster 工程文件暂时保留在本地 `projects/` 目录中，该目录不随本轮代码提交推送。
+当前系统已经准备好后续 poster 需要的页面素材，包括 `/papers`、`/schema`、
+`/stats`、`/queries`、`/models?year=2026` 和模型详情页。
 
 ## 13. 管理功能演示建议
 

@@ -147,6 +147,7 @@ Main relationships:
 - `Paradigm` 1-to-many `Model`
 - `Paper` 1-to-many `Model`
 - `Paper` many-to-many `Author` through `PaperAuthor`
+- `Paper` many-to-many `Topic` through `PaperTopic`
 - `Author` many-to-many `Affiliation` through `AuthorAffiliation`
 - `Model` many-to-many `Topic` through `ModelTopic`
 - `Model` many-to-many `DataSourceType` through `ModelDataSource`
@@ -155,7 +156,9 @@ Main relationships:
 
 ## 6. Seed Data Scope
 
-The database currently seeds 20 representative models across 2022-2026:
+The database currently seeds 20 representative model records across 2022-2026
+and a broader 100+ paper library for VLA, embodied reasoning, action
+tokenization, and robotics dataset context.
 
 - RT-1
 - RT-2
@@ -181,6 +184,11 @@ The database currently seeds 20 representative models across 2022-2026:
 The 2026 records are included to show that the schema can keep up with recent
 VLA development. They are seeded conservatively and cite public project pages or
 publication pages through `source_url` fields.
+
+The paper library is stored in `data/paper_library.json`. It is imported
+idempotently into `papers` and linked to `topics` through `paper_topics`, so
+library papers can be queried even when they are not represented as full model
+records.
 
 ## 7. Query Scenarios To Demonstrate
 
@@ -282,6 +290,9 @@ Useful pages:
 - `/`
 - `/models`
 - `/models?year=2026`
+- `/papers`
+- `/papers?year=2025`
+- `/queries`
 - `/models/<slug>`
 - `/benchmarks`
 - `/stats`
@@ -305,6 +316,7 @@ The current environment may need `pytest` installed before running the command.
 The tests cover:
 
 - seed-data loading
+- paper library size, unique titles, source links, and PaperTopic coverage
 - presence of 2026 models
 - topic taxonomy expansion
 - public route responses
@@ -312,26 +324,12 @@ The tests cover:
 - representative model detail pages
 - basic admin validation
 
-## 10. Poster Output
+## 10. Poster Work
 
-The final editable poster lives under:
-
-```text
-projects/vla_database_final_poster_a1_20260509/
-```
-
-The generated file is:
-
-```text
-vla_database_final_poster_a1_20260509.pptx
-```
-
-Poster characteristics:
-
-- English A1 portrait format
-- editable PowerPoint text, shapes, and charts
-- frontend screenshots captured from actual Flask routes
-- source notes stored in `sources.md`
+Poster generation assets are kept locally under the ignored `projects/`
+directory and are not part of this code push. The Flask routes now expose the
+paper library, SQL examples, schema, and statistics pages needed for future
+poster screenshots.
 
 ## 11. Course Presentation Highlights
 
@@ -340,7 +338,7 @@ Poster characteristics:
 - `evaluation_results` is a fact table that supports numeric and qualitative
   benchmark records.
 - MySQL is used as the relational backend.
-- The frontend demonstrates filtering, details, statistics, timeline, and admin
+- The frontend demonstrates filtering, paper browsing, details, statistics, SQL examples, timeline, and admin
   CRUD workflows.
 - Seed data is realistic but conservative: unknown values are not guessed, and
   benchmark numbers are only stored when public sources support them.

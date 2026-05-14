@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block title %}Paper | VLA Database{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <div class="panel-header">
+    <h1>{{ paper.title }}</h1>
+    <p>{{ paper.notes or 'Paper metadata from the curated VLA paper library.' }}</p>
+  </div>
+
+  <div class="hero-actions">
+    <a class="button" href="{{ url_for('main.paper_list') }}">Back to Papers</a>
+    {% if paper.models %}
+      {% for model in paper.models %}
+      <a class="button button-primary" href="{{ url_for('main.model_detail', slug=model.slug) }}">Open {{ model.name }}</a>
+      {% endfor %}
+    {% endif %}
+    <a class="button" href="{{ url_for('main.admin_paper_author_create', paper_id=paper.id) }}">Add Author / Affiliation</a>
+  </div>
+
+  <div class="detail-grid">
+    <article class="detail-card">
+      <h2>Publication</h2>
+      <dl class="detail-list">
+        <div>
+          <dt>Year</dt>
+          <dd>{{ paper.year or 'N/A' }}</dd>
+        </div>
+        <div>
+          <dt>Venue</dt>
+          <dd>{{ paper.venue_name or 'N/A' }}</dd>
+        </div>
+        <div>
+          <dt>Type</dt>
+          <dd>{{ paper.publication_type or 'N/A' }}</dd>
+        </div>
+        <div>
+          <dt>Status</dt>
+          <dd>{{ paper.publication_status or 'unknown' }}</dd>
+        </div>
+        <div>
+          <dt>Links</dt>
+          <dd class="link-row">
+            {% if paper.arxiv_url %}
+            <a href="{{ paper.arxiv_url }}" target="_blank" rel="noreferrer">Paper</a>
+            {% endif %}
+            {% if paper.project_url %}
+            <a href="{{ paper.project_url }}" target="_blank" rel="noreferrer">Project</a>
+            {% endif %}
+            {% if paper.code_url %}
+            <a href="{{ paper.code_url }}" target="_blank" rel="noreferrer">Code</a>
+            {% endif %}
+          </dd>
+        </div>
+      </dl>
+    </article>
+
+    <article class="detail-card">
+      <h2>Topics and Models</h2>
+      <div class="split-column">
+        <div>
+          <h3>Paper Topics</h3>
+          <div class="tag-cloud">
+            {% for topic_name in paper.topic_names %}
+            <span class="tag">{{ topic_name }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        <div>
+          <h3>Linked Model Records</h3>
+          {% if paper.models %}
+          <div class="stack-list">
+            {% for model in paper.models %}
+            <div class="stack-item">
+              <a href="{{ url_for('main.model_detail', slug=model.slug) }}">{{ model.name }}</a>
+              <small class="subtle">{{ model.paradigm.name if model.paradigm else 'N/A' }} · {{ model.year or 'N/A' }}</small>
+            </div>
+            {% endfor %}
+          </div>
+          {% else %}
+          <div class="empty-state">
+            <p>This paper is part of the library but is not currently represented as a model record.</p>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="panel-header">
+    <h2>Authors and Affiliations</h2>
+    <p>Selected author rows exist for model-linked seed papers; library-only papers can be expanded later.</p>
+  </div>
+
+  {% if current_authors %}
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Order</th>
+          <th>Author</th>
+          <th>Role</th>
+          <th>Affiliations</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for link in current_authors %}
+        <tr>
+          <td>{{ link.author_order }}</td>
+          <td>{{ link.author.full_name }}</td>
+          <td>
+            <div class="compact-tags">
+              {% if link.is_first_author %}
+              <span class="tag">First Author</span>
+              {% endif %}
+              {% if link.is_corresponding_author %}
+              <span class="tag">Corresponding</span>
+              {% endif %}
+              {% if not link.is_first_author and not link.is_corresponding_author %}
+              <span class="subtle">Author</span>
+              {% endif %}
+            </div>
+          </td>
+          <td>
+            <div class="compact-tags">
+              {% for author_aff in link.author.author_affiliations %}
+              <span class="tag">{{ author_aff.affiliation.name }}</span>
+              {% endfor %}
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <p>No selected author rows are stored for this paper yet.</p>
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

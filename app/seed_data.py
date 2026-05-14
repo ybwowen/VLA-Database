@@ -1,3 +1,6 @@
+import json
+from pathlib import Path
+
 from .models import (
     Affiliation,
     Author,
@@ -9,10 +12,15 @@ from .models import (
     ModelTopic,
     Paper,
     PaperAuthor,
+    PaperTopic,
     Paradigm,
     Topic,
     VlaModel,
 )
+
+
+ROOT_DIR = Path(__file__).resolve().parents[1]
+PAPER_LIBRARY_PATH = ROOT_DIR / "data" / "paper_library.json"
 
 
 PARADIGMS = [
@@ -667,7 +675,7 @@ SEED_MODELS = [
             "A dual-system VLA architecture that separates slow semantic reasoning from high-frequency robot control."
         ),
         "notes": None,
-        "website_url": None,
+        "website_url": "https://fast-in-slow.github.io/",
         "repo_url": None,
         "paradigm": "Dual System",
         "paper": {
@@ -676,8 +684,8 @@ SEED_MODELS = [
             "venue_name": None,
             "publication_type": "arXiv preprint",
             "publication_status": "unknown",
-            "arxiv_url": None,
-            "project_url": None,
+            "arxiv_url": "https://arxiv.org/abs/2506.01953",
+            "project_url": "https://fast-in-slow.github.io/",
             "code_url": None,
             "notes": "Seed records selected authors only because the project emphasizes schema design and queryability.",
         },
@@ -711,7 +719,7 @@ SEED_MODELS = [
                 "metric_value": 8.0,
                 "metric_unit": "%",
                 "result_summary": "Project materials report about 8% average success-rate improvement in simulation.",
-                "source_url": None,
+                "source_url": "https://arxiv.org/abs/2506.01953",
             },
             {
                 "benchmark": "Multi-Task Real-World Eval",
@@ -720,7 +728,7 @@ SEED_MODELS = [
                 "metric_value": 11.0,
                 "metric_unit": "%",
                 "result_summary": "Project materials report about 11% average success-rate improvement on real-world tasks.",
-                "source_url": None,
+                "source_url": "https://arxiv.org/abs/2506.01953",
             },
         ],
     },
@@ -1405,12 +1413,66 @@ def _get_or_create(session, model_class, defaults=None, **lookup):
     return instance
 
 
+def _load_paper_library_entries():
+    if not PAPER_LIBRARY_PATH.exists():
+        return []
+
+    with PAPER_LIBRARY_PATH.open(encoding="utf-8") as file:
+        payload = json.load(file)
+    if isinstance(payload, dict):
+        return payload.get("papers", [])
+    return payload
+
+
+def _paper_defaults(item):
+    return {
+        "year": item.get("year"),
+        "venue_name": item.get("venue_name"),
+        "publication_type": item.get("publication_type"),
+        "publication_status": item.get("publication_status"),
+        "arxiv_url": item.get("arxiv_url"),
+        "project_url": item.get("project_url"),
+        "code_url": item.get("code_url"),
+        "notes": item.get("notes"),
+    }
+
+
+def _backfill_paper_fields(paper, defaults):
+    for field_name, value in defaults.items():
+        if value is not None and getattr(paper, field_name) in (None, ""):
+            setattr(paper, field_name, value)
+
+
+def _link_paper_topics(session, paper, topics, topic_names):
+    for topic_name in topic_names:
+        topic = topics.get(topic_name)
+        if topic is None:
+            continue
+        _get_or_create(
+            session,
+            PaperTopic,
+            paper_id=paper.id,
+            topic_id=topic.id,
+        )
+
+
+def _seed_paper_library(session, topics):
+    entries = _load_paper_library_entries()
+    for item in entries:
+        title = (item.get("title") or "").strip()
+        if not title:
+            continue
+
+        defaults = _paper_defaults(item)
+        paper = _get_or_create(session, Paper, title=title, defaults=defaults)
+        _backfill_paper_fields(paper, defaults)
+        _link_paper_topics(session, paper, topics, item.get("topics") or ["other"])
+
+    return len(entries)
+
+
 def load_seed_data(session):
-    if session.query(VlaModel.id).first():
-        return {
-            "seeded": False,
-            "message": "Model records already exist. Use --reset to rebuild the database from seed data.",
-        }
+    models_already_seeded = session.query(VlaModel.id).first() is not None
 
     paradigms = {
         item["name"]: _get_or_create(
@@ -1457,111 +1519,126 @@ def load_seed_data(session):
     }
 
     affiliation_cache = {}
+    inserted_model_count = 0
 
-    for model_item in SEED_MODELS:
-        paper_item = model_item["paper"]
-        paper = _get_or_create(
-            session,
-            Paper,
-            title=paper_item["title"],
-            defaults={
-                "year": paper_item["year"],
-                "venue_name": paper_item["venue_name"],
-                "publication_type": paper_item["publication_type"],
-                "publication_status": paper_item["publication_status"],
-                "arxiv_url": paper_item["arxiv_url"],
-                "project_url": paper_item["project_url"],
-                "code_url": paper_item["code_url"],
-                "notes": paper_item["notes"],
-            },
-        )
-
-        for index, author_item in enumerate(model_item["authors"], start=1):
-            author = _get_or_create(
+    if not models_already_seeded:
+        for model_item in SEED_MODELS:
+            paper_item = model_item["paper"]
+            paper = _get_or_create(
                 session,
-                Author,
-                full_name=author_item["full_name"],
+                Paper,
+                title=paper_item["title"],
+                defaults={
+                    "year": paper_item["year"],
+                    "venue_name": paper_item["venue_name"],
+                    "publication_type": paper_item["publication_type"],
+                    "publication_status": paper_item["publication_status"],
+                    "arxiv_url": paper_item["arxiv_url"],
+                    "project_url": paper_item["project_url"],
+                    "code_url": paper_item["code_url"],
+                    "notes": paper_item["notes"],
+                },
             )
+            _link_paper_topics(session, paper, topics, model_item["topics"])
 
-            for affiliation_name in author_item["affiliations"]:
-                affiliation = affiliation_cache.get(affiliation_name)
-                if affiliation is None:
-                    affiliation = _get_or_create(
+            for index, author_item in enumerate(model_item["authors"], start=1):
+                author = _get_or_create(
+                    session,
+                    Author,
+                    full_name=author_item["full_name"],
+                )
+
+                for affiliation_name in author_item["affiliations"]:
+                    affiliation = affiliation_cache.get(affiliation_name)
+                    if affiliation is None:
+                        affiliation = _get_or_create(
+                            session,
+                            Affiliation,
+                            name=affiliation_name,
+                        )
+                        affiliation_cache[affiliation_name] = affiliation
+
+                    _get_or_create(
                         session,
-                        Affiliation,
-                        name=affiliation_name,
+                        AuthorAffiliation,
+                        author_id=author.id,
+                        affiliation_id=affiliation.id,
                     )
-                    affiliation_cache[affiliation_name] = affiliation
 
                 _get_or_create(
                     session,
-                    AuthorAffiliation,
+                    PaperAuthor,
+                    paper_id=paper.id,
                     author_id=author.id,
-                    affiliation_id=affiliation.id,
+                    defaults={
+                        "author_order": index,
+                        "is_first_author": author_item["is_first_author"],
+                        "is_corresponding_author": author_item["is_corresponding_author"],
+                    },
                 )
 
-            _get_or_create(
+            model = _get_or_create(
                 session,
-                PaperAuthor,
-                paper_id=paper.id,
-                author_id=author.id,
+                VlaModel,
+                slug=model_item["slug"],
                 defaults={
-                    "author_order": index,
-                    "is_first_author": author_item["is_first_author"],
-                    "is_corresponding_author": author_item["is_corresponding_author"],
+                    "name": model_item["name"],
+                    "year": model_item["year"],
+                    "open_source": model_item["open_source"],
+                    "summary": model_item["summary"],
+                    "notes": model_item["notes"],
+                    "website_url": model_item["website_url"],
+                    "repo_url": model_item["repo_url"],
+                    "paper_id": paper.id,
+                    "paradigm_id": paradigms[model_item["paradigm"]].id,
                 },
             )
+            inserted_model_count += 1
 
-        model = _get_or_create(
-            session,
-            VlaModel,
-            slug=model_item["slug"],
-            defaults={
-                "name": model_item["name"],
-                "year": model_item["year"],
-                "open_source": model_item["open_source"],
-                "summary": model_item["summary"],
-                "notes": model_item["notes"],
-                "website_url": model_item["website_url"],
-                "repo_url": model_item["repo_url"],
-                "paper_id": paper.id,
-                "paradigm_id": paradigms[model_item["paradigm"]].id,
-            },
-        )
-
-        for topic_name in model_item["topics"]:
-            _get_or_create(
-                session,
-                ModelTopic,
-                model_id=model.id,
-                topic_id=topics[topic_name].id,
-            )
-
-        for source_item in model_item["data_sources"]:
-            _get_or_create(
-                session,
-                ModelDataSource,
-                model_id=model.id,
-                data_source_type_id=data_sources[source_item["name"]].id,
-                defaults={"notes": source_item["notes"]},
-            )
-
-        for result_item in model_item["evaluations"]:
-            session.add(
-                EvaluationResult(
+            for topic_name in model_item["topics"]:
+                _get_or_create(
+                    session,
+                    ModelTopic,
                     model_id=model.id,
-                    benchmark_id=benchmarks[result_item["benchmark"]].id,
-                    split_name=result_item["split_name"],
-                    metric_name=result_item["metric_name"],
-                    metric_value=result_item["metric_value"],
-                    metric_unit=result_item["metric_unit"],
-                    result_summary=result_item["result_summary"],
-                    source_url=result_item["source_url"],
+                    topic_id=topics[topic_name].id,
                 )
-            )
+
+            for source_item in model_item["data_sources"]:
+                _get_or_create(
+                    session,
+                    ModelDataSource,
+                    model_id=model.id,
+                    data_source_type_id=data_sources[source_item["name"]].id,
+                    defaults={"notes": source_item["notes"]},
+                )
+
+            for result_item in model_item["evaluations"]:
+                session.add(
+                    EvaluationResult(
+                        model_id=model.id,
+                        benchmark_id=benchmarks[result_item["benchmark"]].id,
+                        split_name=result_item["split_name"],
+                        metric_name=result_item["metric_name"],
+                        metric_value=result_item["metric_value"],
+                        metric_unit=result_item["metric_unit"],
+                        result_summary=result_item["result_summary"],
+                        source_url=result_item["source_url"],
+                    )
+                )
+
+    for model_item in SEED_MODELS:
+        model = session.query(VlaModel).filter(VlaModel.slug == model_item["slug"]).one_or_none()
+        if model is not None and model.paper is not None:
+            _link_paper_topics(session, model.paper, topics, model_item["topics"])
+
+    library_count = _seed_paper_library(session, topics)
 
     session.flush()
+    paper_count = session.query(Paper.id).count()
     return {
         "seeded": True,
-        "message": f"Inserted {len(SEED_MODELS)} models and supporting reference data.",
+        "message": (
+            f"Inserted {inserted_model_count} models, loaded {library_count} paper-library "
+            f"entries, and ensured {paper_count} paper records."
+        ),
     }

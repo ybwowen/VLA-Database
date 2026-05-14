@@ -19,6 +19,10 @@
       <strong>{{ table_counts.papers }}</strong>
     </article>
     <article class="stat-card">
+      <span class="stat-label">PaperTopic Rows</span>
+      <strong>{{ table_counts.paper_topics }}</strong>
+    </article>
+    <article class="stat-card">
       <span class="stat-label">Authors</span>
       <strong>{{ table_counts.authors }}</strong>
     </article>
@@ -118,7 +122,7 @@
     </div>
     <div class="stack-list">
       <div class="stack-item"><span>Paper and Model are separated</span><small class="subtle">Avoids mixing publication metadata with model metadata.</small></div>
-      <div class="stack-item"><span>Many-to-many relations use bridge tables</span><small class="subtle">PaperAuthor, AuthorAffiliation, ModelTopic, ModelDataSource.</small></div>
+      <div class="stack-item"><span>Many-to-many relations use bridge tables</span><small class="subtle">PaperAuthor, PaperTopic, AuthorAffiliation, ModelTopic, ModelDataSource.</small></div>
       <div class="stack-item"><span>EvaluationResult is isolated</span><small class="subtle">Allows one model to have many benchmark rows with different metrics and settings.</small></div>
     </div>
   </article>

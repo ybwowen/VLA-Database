@@ -13,8 +13,10 @@
     </p>
     <div class="hero-actions">
       <a class="button button-primary" href="{{ url_for('main.model_list') }}">Browse Models</a>
+      <a class="button" href="{{ url_for('main.paper_list') }}">Browse Papers</a>
       <a class="button" href="{{ url_for('main.benchmark_list') }}">Browse Benchmarks</a>
       <a class="button" href="{{ url_for('main.stats_dashboard') }}">View Stats</a>
+      <a class="button" href="{{ url_for('main.query_examples') }}">SQL Examples</a>
       <a class="button" href="{{ url_for('main.admin_model_create') }}">Add Model</a>
     </div>
   </div>
@@ -66,6 +68,18 @@
       {% endfor %}
     </div>
   </article>
+
+  <article class="panel">
+    <div class="panel-header">
+      <h2>Paper Topic Coverage</h2>
+      <p>Aggregate query over the PaperTopic bridge table.</p>
+    </div>
+    <div class="tag-cloud">
+      {% for name, count in paper_topic_stats %}
+      <span class="tag">{{ name }} · {{ count }}</span>
+      {% endfor %}
+    </div>
+  </article>
 </section>
 
 <section class="panel">
@@ -104,6 +118,42 @@
             </div>
           </td>
           <td>{{ 'Yes' if model.open_source else 'No' }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="panel-header">
+    <h2>Recent Paper Library Records</h2>
+    <p>The paper library keeps broader VLA context even when a paper is not modeled as a full model record.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Paper</th>
+          <th>Year</th>
+          <th>Venue</th>
+          <th>Topics</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for paper in recent_papers %}
+        <tr>
+          <td><a href="{{ url_for('main.paper_detail', paper_id=paper.id) }}">{{ paper.title }}</a></td>
+          <td>{{ paper.year or 'N/A' }}</td>
+          <td>{{ paper.venue_name or 'N/A' }}</td>
+          <td>
+            <div class="compact-tags">
+              {% for topic_name in paper.topic_names %}
+              <span class="tag">{{ topic_name }}</span>
+              {% endfor %}
+            </div>
+          </td>
         </tr>
         {% endfor %}
       </tbody>

@@ -17,6 +17,7 @@ from .models import (
     ModelTopic,
     Paper,
     PaperAuthor,
+    PaperTopic,
     Paradigm,
     Topic,
     VlaModel,
@@ -94,6 +95,36 @@ def _filter_options(session):
     }
 
 
+def _paper_filter_options(session):
+    return {
+        "topics": session.query(Topic).order_by(Topic.name.asc()).all(),
+        "years": [
+            year
+            for (year,) in session.query(Paper.year)
+            .filter(Paper.year.is_not(None))
+            .distinct()
+            .order_by(Paper.year.desc())
+            .all()
+        ],
+        "publication_types": [
+            item
+            for (item,) in session.query(Paper.publication_type)
+            .filter(Paper.publication_type.is_not(None))
+            .distinct()
+            .order_by(Paper.publication_type.asc())
+            .all()
+        ],
+        "publication_statuses": [
+            item
+            for (item,) in session.query(Paper.publication_status)
+            .filter(Paper.publication_status.is_not(None))
+            .distinct()
+            .order_by(Paper.publication_status.asc())
+            .all()
+        ],
+    }
+
+
 def _admin_options(session):
     options = _filter_options(session)
     options["data_source_types"] = (
@@ -152,6 +183,11 @@ def _schema_entities():
             "fields": ["paper_id (FK)", "author_id (FK)", "author_order", "is_first_author"],
         },
         {
+            "name": "PaperTopic",
+            "role": "Bridge",
+            "fields": ["paper_id (FK)", "topic_id (FK)"],
+        },
+        {
             "name": "AuthorAffiliation",
             "role": "Bridge",
             "fields": ["author_id (FK)", "affiliation_id (FK)", "notes"],
@@ -179,6 +215,7 @@ def _schema_relationships():
         ("Paradigm", "Model", "1-to-many", "One paradigm can classify many models."),
         ("Paper", "Model", "1-to-many", "One paper can support one or more model records."),
         ("Paper", "Author", "many-to-many", "Implemented through PaperAuthor."),
+        ("Paper", "Topic", "many-to-many", "Implemented through PaperTopic for the 100+ paper library."),
         ("Author", "Affiliation", "many-to-many", "Implemented through AuthorAffiliation."),
         ("Model", "Topic", "many-to-many", "Implemented through ModelTopic."),
         ("Model", "DataSourceType", "many-to-many", "Implemented through ModelDataSource."),
@@ -417,6 +454,15 @@ def index():
         .all()
     )
 
+    paper_topic_stats = (
+        session.query(Topic.name, func.count(PaperTopic.paper_id))
+        .outerjoin(PaperTopic, Topic.id == PaperTopic.topic_id)
+        .group_by(Topic.id)
+        .order_by(func.count(PaperTopic.paper_id).desc(), Topic.name.asc())
+        .limit(10)
+        .all()
+    )
+
     recent_models = (
         session.query(VlaModel)
         .options(
@@ -429,12 +475,22 @@ def index():
         .all()
     )
 
+    recent_papers = (
+        session.query(Paper)
+        .options(selectinload(Paper.paper_topics).joinedload(PaperTopic.topic))
+        .order_by(Paper.year.desc(), Paper.title.asc())
+        .limit(8)
+        .all()
+    )
+
     return render_template(
         "index.html",
         stats=stats,
         paradigm_stats=paradigm_stats,
         topic_stats=topic_stats,
+        paper_topic_stats=paper_topic_stats,
         recent_models=recent_models,
+        recent_papers=recent_papers,
     )
 
 
@@ -491,6 +547,22 @@ def stats_dashboard():
         .all()
     )
 
+    paper_topic_rows = (
+        session.query(Topic.name, func.count(PaperTopic.paper_id))
+        .outerjoin(PaperTopic, Topic.id == PaperTopic.topic_id)
+        .group_by(Topic.id)
+        .order_by(func.count(PaperTopic.paper_id).desc(), Topic.name.asc())
+        .all()
+    )
+
+    paper_year_rows = (
+        session.query(Paper.year, func.count(Paper.id))
+        .filter(Paper.year.is_not(None))
+        .group_by(Paper.year)
+        .order_by(Paper.year.asc())
+        .all()
+    )
+
     year_rows = (
         session.query(VlaModel.year, func.count(VlaModel.id))
         .filter(VlaModel.year.is_not(None))
@@ -512,6 +584,8 @@ def stats_dashboard():
         data_source_bars=_bar_rows(data_source_rows),
         publication_bars=_bar_rows(publication_rows),
         benchmark_bars=_bar_rows(benchmark_rows),
+        paper_topic_bars=_bar_rows(paper_topic_rows),
+        paper_year_bars=_bar_rows([(str(year), count) for year, count in paper_year_rows]),
         year_bars=_bar_rows([(str(year), count) for year, count in year_rows]),
     )
 
@@ -523,6 +597,7 @@ def schema_page():
     table_counts = {
         "models": session.query(func.count(VlaModel.id)).scalar() or 0,
         "papers": session.query(func.count(Paper.id)).scalar() or 0,
+        "paper_topics": session.query(func.count(PaperTopic.paper_id)).scalar() or 0,
         "authors": session.query(func.count(Author.id)).scalar() or 0,
         "affiliations": session.query(func.count(Affiliation.id)).scalar() or 0,
         "results": session.query(func.count(EvaluationResult.id)).scalar() or 0,
@@ -530,6 +605,7 @@ def schema_page():
 
     diagram_text = """Paradigm 1 --- N Model N --- 1 Paper
 Model N --- N Topic           via ModelTopic
+Paper N --- N Topic           via PaperTopic
 Model N --- N DataSourceType  via ModelDataSource
 Paper N --- N Author          via PaperAuthor
 Author N --- N Affiliation    via AuthorAffiliation
@@ -597,6 +673,123 @@ def model_list():
             "q": keyword,
         },
     )
+
+
+@bp.route("/papers")
+def paper_list():
+    session = get_session()
+    topic_id = request.args.get("topic", type=int)
+    year = request.args.get("year", type=int)
+    publication_type = (request.args.get("type") or "").strip()
+    publication_status = (request.args.get("status") or "").strip()
+    keyword = request.args.get("q", "").strip()
+
+    query = session.query(Paper).options(
+        selectinload(Paper.paper_topics).joinedload(PaperTopic.topic),
+        selectinload(Paper.models).joinedload(VlaModel.paradigm),
+    )
+
+    if topic_id:
+        query = query.join(Paper.paper_topics).filter(PaperTopic.topic_id == topic_id)
+
+    if year:
+        query = query.filter(Paper.year == year)
+
+    if publication_type:
+        query = query.filter(Paper.publication_type == publication_type)
+
+    if publication_status:
+        query = query.filter(Paper.publication_status == publication_status)
+
+    if keyword:
+        query = query.outerjoin(Paper.models).filter(
+            or_(
+                _lower_like(Paper.title, keyword),
+                _lower_like(Paper.venue_name, keyword),
+                _lower_like(Paper.notes, keyword),
+                _lower_like(VlaModel.name, keyword),
+            )
+        )
+
+    papers = query.distinct().order_by(Paper.year.desc(), Paper.title.asc()).all()
+
+    return render_template(
+        "papers.html",
+        papers=papers,
+        filters=_paper_filter_options(session),
+        selected={
+            "topic": topic_id,
+            "year": year,
+            "type": publication_type,
+            "status": publication_status,
+            "q": keyword,
+        },
+    )
+
+
+@bp.route("/papers/<int:paper_id>")
+def paper_detail(paper_id):
+    session = get_session()
+    paper = (
+        session.query(Paper)
+        .options(
+            selectinload(Paper.paper_topics).joinedload(PaperTopic.topic),
+            selectinload(Paper.models).joinedload(VlaModel.paradigm),
+            selectinload(Paper.paper_authors)
+            .joinedload(PaperAuthor.author)
+            .selectinload(Author.author_affiliations)
+            .joinedload(AuthorAffiliation.affiliation),
+        )
+        .filter(Paper.id == paper_id)
+        .one_or_none()
+    )
+    if paper is None:
+        abort(404)
+
+    current_authors = sorted(paper.paper_authors, key=lambda item: item.author_order)
+    return render_template("paper_detail.html", paper=paper, current_authors=current_authors)
+
+
+@bp.route("/queries")
+def query_examples():
+    session = get_session()
+    stats = {
+        "paper_count": session.query(func.count(Paper.id)).scalar() or 0,
+        "model_count": session.query(func.count(VlaModel.id)).scalar() or 0,
+        "result_count": session.query(func.count(EvaluationResult.id)).scalar() or 0,
+        "paper_topic_count": session.query(func.count(PaperTopic.paper_id)).scalar() or 0,
+    }
+    examples = [
+        {
+            "title": "Paper topic coverage",
+            "purpose": "Counts how the 100+ paper library distributes over the normalized topic taxonomy.",
+            "sql": """SELECT t.name AS topic, COUNT(pt.paper_id) AS paper_count
+FROM topics AS t
+LEFT JOIN paper_topics AS pt ON pt.topic_id = t.id
+GROUP BY t.id, t.name
+ORDER BY paper_count DESC, t.name ASC;""",
+        },
+        {
+            "title": "Model filtering with linked papers",
+            "purpose": "Finds VLA models by year and retrieves their paper and paradigm context.",
+            "sql": """SELECT m.name, m.year, p.title AS paper_title, pg.name AS paradigm
+FROM models AS m
+JOIN papers AS p ON p.id = m.paper_id
+JOIN paradigms AS pg ON pg.id = m.paradigm_id
+WHERE m.year = 2026
+ORDER BY m.name ASC;""",
+        },
+        {
+            "title": "Benchmark coverage",
+            "purpose": "Counts distinct models that have at least one result row per benchmark.",
+            "sql": """SELECT b.name AS benchmark, COUNT(DISTINCT er.model_id) AS model_count
+FROM benchmarks AS b
+LEFT JOIN evaluation_results AS er ON er.benchmark_id = b.id
+GROUP BY b.id, b.name
+ORDER BY model_count DESC, b.name ASC;""",
+        },
+    ]
+    return render_template("queries.html", stats=stats, examples=examples)
 
 
 @bp.route("/timeline")
