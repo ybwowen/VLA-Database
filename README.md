@@ -154,10 +154,13 @@ Main relationships:
 
 ## 6. Data Scope
 
-The database loads 20 representative model records across 2022-2026 and a
-separate paper index with more than 100 VLA model or method papers, including
-robot foundation models, language-conditioned policies, action tokenization, and
-model-level adaptation or acceleration methods.
+The database loads a compact core set of hand-checked model records and then
+creates additional lightweight model records from the paper index when a paper
+clearly introduces a VLA model or model-level method. The current sample data
+covers more than 90 model records across 2022-2026 and more than 120 VLA model
+or method papers, including robot foundation models, language-conditioned
+policies, action tokenization, and model-level adaptation or acceleration
+methods.
 
 - RT-1
 - RT-2
@@ -180,14 +183,16 @@ model-level adaptation or acceleration methods.
 - AR-VLA
 - ProgressVLA
 
-The 2026 records are included to show that the schema can keep up with recent
-VLA development. They cite public project pages or
-publication pages through `source_url` fields.
+The 2026 records cite public project pages or publication pages through
+`source_url` fields.
 
 The paper index is stored in `data/paper_library.json`. It is imported
 idempotently into `papers` and linked to `topics` through `paper_topics`, so
 papers can be queried even when they are not represented as full model records.
 Pure dataset, benchmark, and platform-only entries are excluded from this file.
+Author metadata is imported when it is available from arXiv, PMLR, RSS, or
+project pages. Affiliations are attached when a source gives a reliable
+author-institution mapping; otherwise they are left empty.
 
 ## 7. Query Scenarios
 

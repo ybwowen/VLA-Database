@@ -1,6 +1,6 @@
 {
   "source": "Psi-Robot/Awesome-VLA-Papers, plus checked conference and proceedings pages",
-  "source_snapshot": "2026-05-14",
+  "source_snapshot": "2026-05-15",
   "scope_note": "VLA model, robot foundation model, language-conditioned policy, and model-level adaptation/acceleration papers. Pure dataset, benchmark, and platform-only records are excluded.",
   "papers": [
     {
@@ -17,7 +17,25 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Language Planner."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Language Planner.",
+      "authors": [
+        {
+          "full_name": "Wenlong Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pieter Abbeel",
+          "affiliations": []
+        },
+        {
+          "full_name": "Deepak Pathak",
+          "affiliations": []
+        },
+        {
+          "full_name": "Igor Mordatch",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Socratic Models",
@@ -33,7 +51,61 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Socratic Models."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Socratic Models.",
+      "authors": [
+        {
+          "full_name": "Andy Zeng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Maria Attarian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Krzysztof Choromanski",
+          "affiliations": []
+        },
+        {
+          "full_name": "Adrian Wong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Stefan Welker",
+          "affiliations": []
+        },
+        {
+          "full_name": "Federico Tombari",
+          "affiliations": []
+        },
+        {
+          "full_name": "Aveek Purohit",
+          "affiliations": []
+        },
+        {
+          "full_name": "Michael Ryoo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Vikas Sindhwani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Johnny Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Vincent Vanhoucke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pete Florence",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "SayCan",
@@ -52,7 +124,189 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: SayCan."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: SayCan.",
+      "authors": [
+        {
+          "full_name": "Michael Ahn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anthony Brohan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Noah Brown",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yevgen Chebotar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Omar Cortes",
+          "affiliations": []
+        },
+        {
+          "full_name": "Byron David",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chuyuan Fu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Keerthana Gopalakrishnan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karol Hausman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alex Herzog",
+          "affiliations": []
+        },
+        {
+          "full_name": "Daniel Ho",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jasmine Hsu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Julian Ibarz",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alex Irpan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Eric Jang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rosario Jauregui Ruano",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kyle Jeffrey",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sally Jesmonth",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nikhil J Joshi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ryan Julian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dmitry Kalashnikov",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuheng Kuang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kuang-Huei Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Linda Luu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Carolina Parada",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peter Pastor",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jornell Quiambao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kanishka Rao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jarek Rettinghouse",
+          "affiliations": []
+        },
+        {
+          "full_name": "Diego Reyes",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pierre Sermanet",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nicolas Sievers",
+          "affiliations": []
+        },
+        {
+          "full_name": "Clayton Tan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alexander Toshev",
+          "affiliations": []
+        },
+        {
+          "full_name": "Vincent Vanhoucke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fei Xia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ted Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peng Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sichun Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mengyuan Yan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andy Zeng",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Inner Monologue",
@@ -68,7 +322,77 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Inner Monologue."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Inner Monologue.",
+      "authors": [
+        {
+          "full_name": "Wenlong Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fei Xia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ted Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Harris Chan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jacky Liang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pete Florence",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andy Zeng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jonathan Tompson",
+          "affiliations": []
+        },
+        {
+          "full_name": "Igor Mordatch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yevgen Chebotar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pierre Sermanet",
+          "affiliations": []
+        },
+        {
+          "full_name": "Noah Brown",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tomas Jackson",
+          "affiliations": []
+        },
+        {
+          "full_name": "Linda Luu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karol Hausman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "PaLM-E",
@@ -84,7 +408,97 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: PaLM-E."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: PaLM-E.",
+      "authors": [
+        {
+          "full_name": "Danny Driess",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fei Xia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mehdi S. M. Sajjadi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Corey Lynch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Aakanksha Chowdhery",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ayzaan Wahid",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jonathan Tompson",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianhe Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenlong Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yevgen Chebotar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pierre Sermanet",
+          "affiliations": []
+        },
+        {
+          "full_name": "Daniel Duckworth",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Vincent Vanhoucke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karol Hausman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Marc Toussaint",
+          "affiliations": []
+        },
+        {
+          "full_name": "Klaus Greff",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andy Zeng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Igor Mordatch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pete Florence",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "EmbodiedGPT",
@@ -100,7 +514,49 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: EmbodiedGPT."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: EmbodiedGPT.",
+      "authors": [
+        {
+          "full_name": "Yao Mu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qinglong Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mengkang Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenhai Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mingyu Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jun Jin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bin Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jifeng Dai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yu Qiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ping Luo",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "DoReMi",
@@ -116,7 +572,25 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: DoReMi."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: DoReMi.",
+      "authors": [
+        {
+          "full_name": "Yanjiang Guo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yen-Jen Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lihan Zha",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianyu Chen",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ViLa",
@@ -133,7 +607,29 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ViLa."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ViLa.",
+      "authors": [
+        {
+          "full_name": "Yingdong Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fanqi Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tong Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Li Yi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yang Gao",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "3D-VLA",
@@ -150,7 +646,41 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: 3D-VLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: 3D-VLA.",
+      "authors": [
+        {
+          "full_name": "Haoyu Zhen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaowen Qiu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peihao Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jincheng Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xin Yan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yilun Du",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yining Hong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chuang Gan",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Bi-VLA",
@@ -170,7 +700,33 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Bi-VLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Bi-VLA.",
+      "authors": [
+        {
+          "full_name": "Koffivi Fidèle Gbagbe",
+          "affiliations": []
+        },
+        {
+          "full_name": "Miguel Altamirano Cabrera",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ali Alabbas",
+          "affiliations": []
+        },
+        {
+          "full_name": "Oussama Alyunes",
+          "affiliations": []
+        },
+        {
+          "full_name": "Artem Lykov",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dzmitry Tsetserukou",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RoboMamba",
@@ -188,7 +744,49 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: RoboMamba."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: RoboMamba.",
+      "authors": [
+        {
+          "full_name": "Jiaming Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mengzhen Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhenyu Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pengju An",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaoqi Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kaichen Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Senqiao Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Renrui Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yandong Guo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shanghang Zhang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ReplanVLM",
@@ -205,7 +803,25 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ReplanVLM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ReplanVLM.",
+      "authors": [
+        {
+          "full_name": "Aoran Mei",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guo-Niu Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huaxiang Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhongxue Gan",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "BUMBLE",
@@ -222,7 +838,29 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: BUMBLE."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: BUMBLE.",
+      "authors": [
+        {
+          "full_name": "Rutav Shah",
+          "affiliations": []
+        },
+        {
+          "full_name": "Albert Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yifeng Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuke Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Roberto Martín-Martín",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ReflectVLM",
@@ -240,7 +878,33 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ReflectVLM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: ReflectVLM.",
+      "authors": [
+        {
+          "full_name": "Yunhai Feng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiaming Han",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhuoran Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiangyu Yue",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianlan Luo",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Hi Robot",
@@ -257,7 +921,69 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Hi Robot."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: Hi Robot.",
+      "authors": [
+        {
+          "full_name": "Lucy Xiaoyang Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Michael Equi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Liyiming Ke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "James Tanner",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anna Walling",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haohuan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Niccolo Fusai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Adrian Li-Bell",
+          "affiliations": []
+        },
+        {
+          "full_name": "Danny Driess",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lachy Groom",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RoboBrain",
@@ -275,7 +1001,77 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: RoboBrain."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Plan). Alias: RoboBrain.",
+      "authors": [
+        {
+          "full_name": "Yuheng Ji",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huajie Tan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiayu Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaoshuai Hao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuan Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hengyuan Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pengwei Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mengdi Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao Mu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pengju An",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinda Xue",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qinghang Su",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huaihai Lyu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaolong Zheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiaming Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhongyuan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shanghang Zhang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "pi0.5",
@@ -285,14 +1081,156 @@
       "publication_type": "conference",
       "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2504.16054",
-      "project_url": "https://www.physicalintelligence.company/blog/pi05",
+      "project_url": "https://proceedings.mlr.press/v305/black25a.html",
       "code_url": null,
       "topics": [
         "long-horizon",
         "open-world generalization",
         "reasoning"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "Kevin Black",
+          "affiliations": []
+        },
+        {
+          "full_name": "Noah Brown",
+          "affiliations": []
+        },
+        {
+          "full_name": "James Darpinian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karan Dhabalia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Danny Driess",
+          "affiliations": []
+        },
+        {
+          "full_name": "Adnan Esmail",
+          "affiliations": []
+        },
+        {
+          "full_name": "Michael Robert Equi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Niccolo Fusai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Manuel Y. Galliker",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dibya Ghosh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lachy Groom",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karol Hausman",
+          "affiliations": []
+        },
+        {
+          "full_name": "brian ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Szymon Jakubczak",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tim Jones",
+          "affiliations": []
+        },
+        {
+          "full_name": "Liyiming Ke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Devin LeBlanc",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Adrian Li-Bell",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mohith Mothukuri",
+          "affiliations": []
+        },
+        {
+          "full_name": "Suraj Nair",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Allen Z. Ren",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lucy Xiaoyang Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Laura Smith",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jost Tobias Springenberg",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kyle Stachowicz",
+          "affiliations": []
+        },
+        {
+          "full_name": "James Tanner",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Homer Walke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anna Walling",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haohuan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lili Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ury Zhilinsky",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RT-H",
@@ -308,7 +1246,45 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Motion). Alias: RT-H."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Motion). Alias: RT-H.",
+      "authors": [
+        {
+          "full_name": "Suneel Belkhale",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianli Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ted Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pierre Sermanet",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quon Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jonathan Tompson",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yevgen Chebotar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Debidatta Dwibedi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dorsa Sadigh",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "NaVILA",
@@ -318,13 +1294,55 @@
       "publication_type": "conference",
       "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2412.04453",
-      "project_url": "https://navila-bot.github.io/",
+      "project_url": "https://www.roboticsproceedings.org/rss21/p018.html",
       "code_url": "https://github.com/yang-zj1026/legged-loco",
       "topics": [
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Motion). Alias: NaVILA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Language Description as Action Tokens / Language Motion). Alias: NaVILA.",
+      "authors": [
+        {
+          "full_name": "An-Chieh Cheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yandong Ji",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhaojing Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zaitian Gongye",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xueyan Zou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jan Kautz",
+          "affiliations": []
+        },
+        {
+          "full_name": "Erdem Biyik",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hongxu Yin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sifei Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaolong Wang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Code as Policies",
@@ -340,7 +1358,41 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Code as Policies."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Code as Policies.",
+      "authors": [
+        {
+          "full_name": "Jacky Liang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenlong Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fei Xia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peng Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karol Hausman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pete Florence",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andy Zeng",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ProgPrompt",
@@ -356,7 +1408,45 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: ProgPrompt."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: ProgPrompt.",
+      "authors": [
+        {
+          "full_name": "Ishika Singh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Valts Blukis",
+          "affiliations": []
+        },
+        {
+          "full_name": "Arsalan Mousavian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ankit Goyal",
+          "affiliations": []
+        },
+        {
+          "full_name": "Danfei Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jonathan Tremblay",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dieter Fox",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jesse Thomason",
+          "affiliations": []
+        },
+        {
+          "full_name": "Animesh Garg",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ChatGPT for Robotics",
@@ -372,7 +1462,25 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: ChatGPT for Robotics."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: ChatGPT for Robotics.",
+      "authors": [
+        {
+          "full_name": "Sai Vemprala",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rogerio Bonatti",
+          "affiliations": []
+        },
+        {
+          "full_name": "Arthur Bucker",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ashish Kapoor",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Text2Motion",
@@ -388,7 +1496,29 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Text2Motion."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Text2Motion.",
+      "authors": [
+        {
+          "full_name": "Kevin Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Christopher Agia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Toki Migimatsu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Marco Pavone",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jeannette Bohg",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Instruct2Act",
@@ -404,7 +1534,33 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Instruct2Act."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: Instruct2Act.",
+      "authors": [
+        {
+          "full_name": "Siyuan Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhengkai Jiang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Dong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yu Qiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peng Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hongsheng Li",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RoboScript",
@@ -422,7 +1578,65 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: RoboScript."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: RoboScript.",
+      "authors": [
+        {
+          "full_name": "Junting Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao Mu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qiaojun Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianming Wei",
+          "affiliations": []
+        },
+        {
+          "full_name": "Silang Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhecheng Yuan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhixuan Liang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chao Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kaipeng Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenqi Shao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yu Qiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huazhe Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mingyu Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ping Luo",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RoboCodeX",
@@ -438,7 +1652,85 @@
         "skill/subtask",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: RoboCodeX."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Code as Action Tokens). Alias: RoboCodeX.",
+      "authors": [
+        {
+          "full_name": "Yao Mu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Junting Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qinglong Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shoufa Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qiaojun Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chongjian Ge",
+          "affiliations": []
+        },
+        {
+          "full_name": "Runjian Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhixuan Liang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mengkang Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chaofan Tao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peize Sun",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haibao Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chao Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenqi Shao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenhai Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jifeng Dai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yu Qiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mingyu Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ping Luo",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "KITE",
@@ -455,7 +1747,25 @@
         "object-centric",
         "spatial grounding"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: KITE."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: KITE.",
+      "authors": [
+        {
+          "full_name": "Priya Sundaresan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Suneel Belkhale",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dorsa Sadigh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jeannette Bohg",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "CoPa",
@@ -473,7 +1783,29 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: CoPa."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: CoPa.",
+      "authors": [
+        {
+          "full_name": "Haoxu Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fanqi Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yingdong Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shengjie Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yang Gao",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RoboPoint",
@@ -490,7 +1822,41 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: RoboPoint."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: RoboPoint.",
+      "authors": [
+        {
+          "full_name": "Wentao Yuan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiafei Duan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Valts Blukis",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wilbert Pumacay",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ranjay Krishna",
+          "affiliations": []
+        },
+        {
+          "full_name": "Adithyavairavan Murali",
+          "affiliations": []
+        },
+        {
+          "full_name": "Arsalan Mousavian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dieter Fox",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RAM",
@@ -508,7 +1874,41 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: RAM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: RAM.",
+      "authors": [
+        {
+          "full_name": "Yuxuan Kuang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Junjie Ye",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoran Geng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiageng Mao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Congyue Deng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Leonidas Guibas",
+          "affiliations": []
+        },
+        {
+          "full_name": "He Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yue Wang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ReKep",
@@ -528,7 +1928,29 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: ReKep."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: ReKep.",
+      "authors": [
+        {
+          "full_name": "Wenlong Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chen Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yunzhu Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ruohan Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Li Fei-Fei",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "OmniManip",
@@ -546,7 +1968,33 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: OmniManip."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: OmniManip.",
+      "authors": [
+        {
+          "full_name": "Mingjie Pan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiyao Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianshu Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yinghao Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenlong Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Dong",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Magma",
@@ -563,7 +2011,61 @@
         "object-centric",
         "spatial grounding"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: Magma."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: Magma.",
+      "authors": [
+        {
+          "full_name": "Jianwei Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Reuben Tan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qianhui Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ruijie Zheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Baolin Peng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yongyuan Liang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yu Gu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mu Cai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Seonghyeon Ye",
+          "affiliations": []
+        },
+        {
+          "full_name": "Joel Jang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuquan Deng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lars Liden",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianfeng Gao",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "KUDA",
@@ -581,7 +2083,21 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: KUDA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Keypoint). Alias: KUDA.",
+      "authors": [
+        {
+          "full_name": "Zixian Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mingtong Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yunzhu Li",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "GPT-4V",
@@ -598,7 +2114,29 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: GPT-4V."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: GPT-4V.",
+      "authors": [
+        {
+          "full_name": "Naoki Wake",
+          "affiliations": []
+        },
+        {
+          "full_name": "Atsushi Kanehira",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kazuhiro Sasabuchi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jun Takamatsu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Katsushi Ikeuchi",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "A3VLM",
@@ -614,7 +2152,41 @@
         "object-centric",
         "spatial grounding"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: A3VLM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: A3VLM.",
+      "authors": [
+        {
+          "full_name": "Siyuan Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haonan Chang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuhan Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yimeng Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Dong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peng Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Abdeslam Boularias",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hongsheng Li",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "DexGraspVLA",
@@ -631,7 +2203,57 @@
         "object-centric",
         "spatial grounding"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: DexGraspVLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Bounding Box). Alias: DexGraspVLA.",
+      "authors": [
+        {
+          "full_name": "Yifan Zhong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xuchuan Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ruochong Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ceyao Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhang Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianrui Guan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fanlian Zeng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ka Num Lui",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuyao Ye",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yitao Liang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yaodong Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuanpei Chen",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "MOO",
@@ -649,7 +2271,57 @@
         "open-world generalization",
         "spatial grounding"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: MOO."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: MOO.",
+      "authors": [
+        {
+          "full_name": "Austin Stone",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ted Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Keerthana Gopalakrishnan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kuang-Huei Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Paul Wohlhart",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sean Kirmani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brianna Zitkovich",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fei Xia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karol Hausman",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ROCKET-1",
@@ -685,7 +2357,81 @@
         "reasoning",
         "spatial grounding"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: SoFar."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: SoFar.",
+      "authors": [
+        {
+          "full_name": "Zekun Qi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenyao Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yufei Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Runpei Dong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinqiang Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jingwen Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lingyun Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Baoyu Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xialin He",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guofan Fan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiazhao Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiawei He",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiayuan Gu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xin Jin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kaisheng Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhizheng Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "He Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Li Yi",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RoboDexVLM",
@@ -704,7 +2450,33 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: RoboDexVLM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: RoboDexVLM.",
+      "authors": [
+        {
+          "full_name": "Haichao Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sikai Guo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pengfei Mai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiahang Cao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoang Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jun Ma",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "CLIPort",
@@ -722,7 +2494,21 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: CLIPort."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: CLIPort.",
+      "authors": [
+        {
+          "full_name": "Mohit Shridhar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lucas Manuelli",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dieter Fox",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "VoxPoser",
@@ -741,7 +2527,33 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: VoxPoser."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: VoxPoser.",
+      "authors": [
+        {
+          "full_name": "Wenlong Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chen Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ruohan Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yunzhu Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiajun Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Li Fei-Fei",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ManipLLM",
@@ -759,7 +2571,45 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: ManipLLM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: ManipLLM.",
+      "authors": [
+        {
+          "full_name": "Xiaoqi Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mingxu Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yiran Geng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoran Geng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuxing Long",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yan Shen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Renrui Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiaming Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Dong",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ManiFoundation",
@@ -777,7 +2627,61 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: ManiFoundation."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: ManiFoundation.",
+      "authors": [
+        {
+          "full_name": "Zhixuan Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chongkai Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zixuan Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gang Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chenrui Tie",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haozhuo Zheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoyu Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Weikun Peng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Debang Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianrun Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianyi Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhouliang Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lin Shao",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "MOKA",
@@ -796,7 +2700,25 @@
         "spatial grounding",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: MOKA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Affordance Map). Alias: MOKA.",
+      "authors": [
+        {
+          "full_name": "Fangchen Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kuan Fang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pieter Abbeel",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "AVDC",
@@ -813,7 +2735,29 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: AVDC."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: AVDC.",
+      "authors": [
+        {
+          "full_name": "Po-Chen Ko",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiayuan Mao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yilun Du",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shao-Hua Sun",
+          "affiliations": []
+        },
+        {
+          "full_name": "Joshua B. Tenenbaum",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RT-Trajectory",
@@ -830,7 +2774,77 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: RT-Trajectory."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: RT-Trajectory.",
+      "authors": [
+        {
+          "full_name": "Jiayuan Gu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sean Kirmani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Paul Wohlhart",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Montserrat Gonzalez Arenas",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kanishka Rao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenhao Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chuyuan Fu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Keerthana Gopalakrishnan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhuo Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Priya Sundaresan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peng Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Su",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karol Hausman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ted Xiao",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ATM",
@@ -847,7 +2861,37 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: ATM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: ATM.",
+      "authors": [
+        {
+          "full_name": "Chuan Wen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xingyu Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "John So",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kai Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qi Dou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yang Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pieter Abbeel",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "LLARVA",
@@ -864,7 +2908,41 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: LLARVA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: LLARVA.",
+      "authors": [
+        {
+          "full_name": "Dantong Niu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuvan Sharma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Giscard Biamby",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jerome Quenum",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yutong Bai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Baifeng Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Trevor Darrell",
+          "affiliations": []
+        },
+        {
+          "full_name": "Roei Herzig",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Im2Flow2Act",
@@ -881,7 +2959,37 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: Im2Flow2Act."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: Im2Flow2Act.",
+      "authors": [
+        {
+          "full_name": "Mengda Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhenjia Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yinghao Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Cheng Chi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gordon Wetzstein",
+          "affiliations": []
+        },
+        {
+          "full_name": "Manuela Veloso",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shuran Song",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "FLIP",
@@ -898,7 +3006,29 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: FLIP."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: FLIP.",
+      "authors": [
+        {
+          "full_name": "Chongkai Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haozhuo Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhixuan Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhehao Cai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lin Shao",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "HAMSTER",
@@ -916,7 +3046,57 @@
         "open-world generalization",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: HAMSTER."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: HAMSTER.",
+      "authors": [
+        {
+          "full_name": "Yi Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuquan Deng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jesse Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Joel Jang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Marius Memmel",
+          "affiliations": []
+        },
+        {
+          "full_name": "Raymond Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Caelan Reed Garrett",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fabio Ramos",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dieter Fox",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anqi Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Abhishek Gupta",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ankit Goyal",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ARM4R",
@@ -933,7 +3113,41 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: ARM4R."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Trajectory as Action Tokens / Robotic Manipulation). Alias: ARM4R.",
+      "authors": [
+        {
+          "full_name": "Dantong Niu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuvan Sharma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoru Xue",
+          "affiliations": []
+        },
+        {
+          "full_name": "Giscard Biamby",
+          "affiliations": []
+        },
+        {
+          "full_name": "Junyi Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ziteng Ji",
+          "affiliations": []
+        },
+        {
+          "full_name": "Trevor Darrell",
+          "affiliations": []
+        },
+        {
+          "full_name": "Roei Herzig",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "SuSIE",
@@ -951,7 +3165,37 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: SuSIE."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: SuSIE.",
+      "authors": [
+        {
+          "full_name": "Kevin Black",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mitsuhiko Nakamoto",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pranav Atreya",
+          "affiliations": []
+        },
+        {
+          "full_name": "Homer Walke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Aviral Kumar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "CoTDiffusion",
@@ -988,7 +3232,69 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: CoT-VLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: CoT-VLA.",
+      "authors": [
+        {
+          "full_name": "Qingqing Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Moo Jin Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zipeng Fu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhuoyang Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yecheng Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhaoshuo Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qianli Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Song Han",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ankur Handa",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ming-Yu Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Donglai Xiang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gordon Wetzstein",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tsung-Yi Lin",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "UniPi",
@@ -1004,7 +3310,41 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: UniPi."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: UniPi.",
+      "authors": [
+        {
+          "full_name": "Yilun Du",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mengjiao Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bo Dai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hanjun Dai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ofir Nachum",
+          "affiliations": []
+        },
+        {
+          "full_name": "Joshua B. Tenenbaum",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dale Schuurmans",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pieter Abbeel",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "VLP",
@@ -1021,7 +3361,61 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: VLP."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: VLP.",
+      "authors": [
+        {
+          "full_name": "Yilun Du",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mengjiao Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pete Florence",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fei Xia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ayzaan Wahid",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pierre Sermanet",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianhe Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pieter Abbeel",
+          "affiliations": []
+        },
+        {
+          "full_name": "Joshua B. Tenenbaum",
+          "affiliations": []
+        },
+        {
+          "full_name": "Leslie Kaelbling",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andy Zeng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jonathan Tompson",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Gen2Act",
@@ -1038,7 +3432,49 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: Gen2Act."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: Gen2Act.",
+      "authors": [
+        {
+          "full_name": "Homanga Bharadhwaj",
+          "affiliations": []
+        },
+        {
+          "full_name": "Debidatta Dwibedi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Abhinav Gupta",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shubham Tulsiani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Carl Doersch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ted Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dhruv Shah",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fei Xia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dorsa Sadigh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sean Kirmani",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Video Prediction Policy",
@@ -1055,7 +3491,45 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: Video Prediction Policy."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: Video Prediction Policy.",
+      "authors": [
+        {
+          "full_name": "Yucheng Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yanjiang Guo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pengchao Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaoyu Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yen-Jen Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianke Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Koushil Sreenath",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chaochao Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianyu Chen",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "FLIP",
@@ -1072,7 +3546,29 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: FLIP."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: FLIP.",
+      "authors": [
+        {
+          "full_name": "Chongkai Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haozhuo Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhixuan Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhehao Cai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lin Shao",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "GEVRM",
@@ -1089,7 +3585,29 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: GEVRM."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Multi-Frame Video). Alias: GEVRM.",
+      "authors": [
+        {
+          "full_name": "Hongyin Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pengxiang Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shangke Lyu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ying Peng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Donglin Wang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "OmniJARVIS",
@@ -1106,7 +3624,49 @@
         "open-world generalization",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: OmniJARVIS."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: OmniJARVIS.",
+      "authors": [
+        {
+          "full_name": "Zihao Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shaofei Cai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhancun Mu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haowei Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ceyao Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xuejie Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qing Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anji Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaojian Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yitao Liang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "QueST",
@@ -1122,7 +3682,29 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: QueST."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: QueST.",
+      "authors": [
+        {
+          "full_name": "Atharva Mete",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haotian Xue",
+          "affiliations": []
+        },
+        {
+          "full_name": "Albert Wilcox",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yongxin Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Animesh Garg",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "LAPA",
@@ -1139,7 +3721,73 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: LAPA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: LAPA.",
+      "authors": [
+        {
+          "full_name": "Seonghyeon Ye",
+          "affiliations": []
+        },
+        {
+          "full_name": "Joel Jang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Byeongguk Jeon",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sejune Joo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianwei Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Baolin Peng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ajay Mandlekar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Reuben Tan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yu-Wei Chao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bill Yuchen Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lars Liden",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kimin Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianfeng Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Luke Zettlemoyer",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dieter Fox",
+          "affiliations": []
+        },
+        {
+          "full_name": "Minjoon Seo",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "GROOT-2",
@@ -1155,7 +3803,37 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: GROOT-2."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Latent Representation as Action Tokens). Alias: GROOT-2.",
+      "authors": [
+        {
+          "full_name": "Shaofei Cai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bowei Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zihao Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haowei Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaojian Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anji Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yitao Liang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "UniVLA",
@@ -1171,7 +3849,41 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Model or method paper; checked against RSS 2025 proceedings."
+      "notes": "Model or method paper; checked against RSS 2025 proceedings.",
+      "authors": [
+        {
+          "full_name": "Qingwen Bu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yanting Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jisong Cai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shenyuan Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guanghui Ren",
+          "affiliations": []
+        },
+        {
+          "full_name": "Maoqing Yao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ping Luo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hongyang Li",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "LangLfP",
@@ -1187,7 +3899,17 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: LangLfP."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: LangLfP.",
+      "authors": [
+        {
+          "full_name": "Corey Lynch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pierre Sermanet",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "BC-Z",
@@ -1203,7 +3925,41 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: BC-Z."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: BC-Z.",
+      "authors": [
+        {
+          "full_name": "Eric Jang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alex Irpan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mohi Khansari",
+          "affiliations": []
+        },
+        {
+          "full_name": "Daniel Kappler",
+          "affiliations": []
+        },
+        {
+          "full_name": "Frederik Ebert",
+          "affiliations": []
+        },
+        {
+          "full_name": "Corey Lynch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Gato",
@@ -1219,7 +3975,89 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: Gato."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: Gato.",
+      "authors": [
+        {
+          "full_name": "Scott Reed",
+          "affiliations": []
+        },
+        {
+          "full_name": "Konrad Zolna",
+          "affiliations": []
+        },
+        {
+          "full_name": "Emilio Parisotto",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergio Gomez Colmenarejo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alexander Novikov",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gabriel Barth-Maron",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mai Gimenez",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yury Sulsky",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jackie Kay",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jost Tobias Springenberg",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tom Eccles",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jake Bruce",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ali Razavi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ashley Edwards",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nicolas Heess",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yutian Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Raia Hadsell",
+          "affiliations": []
+        },
+        {
+          "full_name": "Oriol Vinyals",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mahyar Bordbar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nando de Freitas",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "VIMA",
@@ -1235,7 +4073,49 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: VIMA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: VIMA.",
+      "authors": [
+        {
+          "full_name": "Yunfan Jiang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Agrim Gupta",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zichen Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guanzhi Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yongqiang Dou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yanjun Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Li Fei-Fei",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anima Anandkumar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuke Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Linxi Fan",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RT-1",
@@ -1251,7 +4131,213 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-1."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-1.",
+      "authors": [
+        {
+          "full_name": "Anthony Brohan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Noah Brown",
+          "affiliations": []
+        },
+        {
+          "full_name": "Justice Carbajal",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yevgen Chebotar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Joseph Dabis",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Keerthana Gopalakrishnan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karol Hausman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alex Herzog",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jasmine Hsu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Julian Ibarz",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alex Irpan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tomas Jackson",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sally Jesmonth",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nikhil J Joshi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ryan Julian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dmitry Kalashnikov",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuheng Kuang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Isabel Leal",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kuang-Huei Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Utsav Malla",
+          "affiliations": []
+        },
+        {
+          "full_name": "Deeksha Manjunath",
+          "affiliations": []
+        },
+        {
+          "full_name": "Igor Mordatch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ofir Nachum",
+          "affiliations": []
+        },
+        {
+          "full_name": "Carolina Parada",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jodilyn Peralta",
+          "affiliations": []
+        },
+        {
+          "full_name": "Emily Perez",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jornell Quiambao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kanishka Rao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Michael Ryoo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Grecia Salazar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pannag Sanketi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kevin Sayed",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jaspiar Singh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sumedh Sontakke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Austin Stone",
+          "affiliations": []
+        },
+        {
+          "full_name": "Clayton Tan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huong Tran",
+          "affiliations": []
+        },
+        {
+          "full_name": "Vincent Vanhoucke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Steve Vega",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fei Xia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ted Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peng Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sichun Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianhe Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brianna Zitkovich",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RT-2",
@@ -1267,7 +4353,225 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-2."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-2.",
+      "authors": [
+        {
+          "full_name": "Anthony Brohan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Noah Brown",
+          "affiliations": []
+        },
+        {
+          "full_name": "Justice Carbajal",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yevgen Chebotar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xi Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Krzysztof Choromanski",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianli Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Danny Driess",
+          "affiliations": []
+        },
+        {
+          "full_name": "Avinava Dubey",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pete Florence",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chuyuan Fu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Montse Gonzalez Arenas",
+          "affiliations": []
+        },
+        {
+          "full_name": "Keerthana Gopalakrishnan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kehang Han",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karol Hausman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alexander Herzog",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jasmine Hsu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alex Irpan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nikhil Joshi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ryan Julian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dmitry Kalashnikov",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuheng Kuang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Isabel Leal",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lisa Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tsang-Wei Edward Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Henryk Michalewski",
+          "affiliations": []
+        },
+        {
+          "full_name": "Igor Mordatch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kanishka Rao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Krista Reymann",
+          "affiliations": []
+        },
+        {
+          "full_name": "Michael Ryoo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Grecia Salazar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pannag Sanketi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pierre Sermanet",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jaspiar Singh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anikait Singh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Radu Soricut",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huong Tran",
+          "affiliations": []
+        },
+        {
+          "full_name": "Vincent Vanhoucke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ayzaan Wahid",
+          "affiliations": []
+        },
+        {
+          "full_name": "Stefan Welker",
+          "affiliations": []
+        },
+        {
+          "full_name": "Paul Wohlhart",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jialin Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fei Xia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ted Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peng Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sichun Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianhe Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brianna Zitkovich",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RT-X",
@@ -1284,7 +4588,1185 @@
         "open-world generalization",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-X."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RT-X.",
+      "authors": [
+        {
+          "full_name": "Embodiment Collaboration",
+          "affiliations": []
+        },
+        {
+          "full_name": "Abby O'Neill",
+          "affiliations": []
+        },
+        {
+          "full_name": "Abdul Rehman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Abhinav Gupta",
+          "affiliations": []
+        },
+        {
+          "full_name": "Abhiram Maddukuri",
+          "affiliations": []
+        },
+        {
+          "full_name": "Abhishek Gupta",
+          "affiliations": []
+        },
+        {
+          "full_name": "Abhishek Padalkar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Abraham Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Acorn Pooley",
+          "affiliations": []
+        },
+        {
+          "full_name": "Agrim Gupta",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ajay Mandlekar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ajinkya Jain",
+          "affiliations": []
+        },
+        {
+          "full_name": "Albert Tung",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alex Bewley",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alex Herzog",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alex Irpan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alexander Khazatsky",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anant Rai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anchit Gupta",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andrew Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andrey Kolobov",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anikait Singh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Animesh Garg",
+          "affiliations": []
+        },
+        {
+          "full_name": "Aniruddha Kembhavi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Annie Xie",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anthony Brohan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Antonin Raffin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Archit Sharma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Arefeh Yavary",
+          "affiliations": []
+        },
+        {
+          "full_name": "Arhan Jain",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ashwin Balakrishna",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ayzaan Wahid",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ben Burgess-Limerick",
+          "affiliations": []
+        },
+        {
+          "full_name": "Beomjoon Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bernhard Schölkopf",
+          "affiliations": []
+        },
+        {
+          "full_name": "Blake Wulfe",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Cewu Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Charles Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Charlotte Le",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chen Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chenfeng Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Cheng Chi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chenguang Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Christine Chan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Christopher Agia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chuer Pan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chuyuan Fu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Coline Devin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Danfei Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Daniel Morton",
+          "affiliations": []
+        },
+        {
+          "full_name": "Danny Driess",
+          "affiliations": []
+        },
+        {
+          "full_name": "Daphne Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Deepak Pathak",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dhruv Shah",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dieter Büchler",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dinesh Jayaraman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dmitry Kalashnikov",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dorsa Sadigh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Edward Johns",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ethan Foster",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fangchen Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Federico Ceola",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fei Xia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Feiyu Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Felipe Vieira Frujeri",
+          "affiliations": []
+        },
+        {
+          "full_name": "Freek Stulp",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gaoyue Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gaurav S. Sukhatme",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gautam Salhotra",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ge Yan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gilbert Feng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Giulio Schiavi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Glen Berseth",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gregory Kahn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guangwen Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guanzhi Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Su",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao-Shu Fang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haochen Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Henghui Bao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Heni Ben Amor",
+          "affiliations": []
+        },
+        {
+          "full_name": "Henrik I Christensen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hiroki Furuta",
+          "affiliations": []
+        },
+        {
+          "full_name": "Homanga Bharadhwaj",
+          "affiliations": []
+        },
+        {
+          "full_name": "Homer Walke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hongjie Fang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huy Ha",
+          "affiliations": []
+        },
+        {
+          "full_name": "Igor Mordatch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ilija Radosavovic",
+          "affiliations": []
+        },
+        {
+          "full_name": "Isabel Leal",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jacky Liang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jad Abou-Chakra",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jaehyung Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jaimyn Drake",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jan Peters",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jan Schneider",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jasmine Hsu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jay Vakil",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jeannette Bohg",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jeffrey Bingham",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jeffrey Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jensen Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiaheng Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiajun Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jialin Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiankai Sun",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianlan Luo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiayuan Gu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jie Tan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jihoon Oh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jimmy Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jingpei Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jingyun Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jitendra Malik",
+          "affiliations": []
+        },
+        {
+          "full_name": "João Silvério",
+          "affiliations": []
+        },
+        {
+          "full_name": "Joey Hejna",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jonathan Booher",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jonathan Tompson",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jonathan Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jordi Salvador",
+          "affiliations": []
+        },
+        {
+          "full_name": "Joseph J. Lim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Junhyek Han",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kaiyuan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kanishka Rao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karol Hausman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Keegan Go",
+          "affiliations": []
+        },
+        {
+          "full_name": "Keerthana Gopalakrishnan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ken Goldberg",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kendra Byrne",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kenneth Oslund",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kento Kawaharazuka",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kevin Black",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kevin Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kevin Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kiana Ehsani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kiran Lekkala",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kirsty Ellis",
+          "affiliations": []
+        },
+        {
+          "full_name": "Krishan Rana",
+          "affiliations": []
+        },
+        {
+          "full_name": "Krishnan Srinivasan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kuan Fang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kunal Pratap Singh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kuo-Hao Zeng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kyle Hatch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kyle Hsu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Laurent Itti",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lawrence Yunliang Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lerrel Pinto",
+          "affiliations": []
+        },
+        {
+          "full_name": "Li Fei-Fei",
+          "affiliations": []
+        },
+        {
+          "full_name": "Liam Tan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Linxi \"Jim\" Fan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lionel Ott",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lisa Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Luca Weihs",
+          "affiliations": []
+        },
+        {
+          "full_name": "Magnum Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Marion Lepert",
+          "affiliations": []
+        },
+        {
+          "full_name": "Marius Memmel",
+          "affiliations": []
+        },
+        {
+          "full_name": "Masayoshi Tomizuka",
+          "affiliations": []
+        },
+        {
+          "full_name": "Masha Itkina",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mateo Guaman Castro",
+          "affiliations": []
+        },
+        {
+          "full_name": "Max Spero",
+          "affiliations": []
+        },
+        {
+          "full_name": "Maximilian Du",
+          "affiliations": []
+        },
+        {
+          "full_name": "Michael Ahn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Michael C. Yip",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mingtong Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mingyu Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Minho Heo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mohan Kumar Srirama",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mohit Sharma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Moo Jin Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Muhammad Zubair Irshad",
+          "affiliations": []
+        },
+        {
+          "full_name": "Naoaki Kanazawa",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nicklas Hansen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nicolas Heess",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nikhil J Joshi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Niko Suenderhauf",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ning Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Norman Di Palo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nur Muhammad Mahi Shafiullah",
+          "affiliations": []
+        },
+        {
+          "full_name": "Oier Mees",
+          "affiliations": []
+        },
+        {
+          "full_name": "Oliver Kroemer",
+          "affiliations": []
+        },
+        {
+          "full_name": "Osbert Bastani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pannag R Sanketi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Patrick \"Tree\" Miller",
+          "affiliations": []
+        },
+        {
+          "full_name": "Patrick Yin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Paul Wohlhart",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peng Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peter David Fagan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Peter Mitrano",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pierre Sermanet",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pieter Abbeel",
+          "affiliations": []
+        },
+        {
+          "full_name": "Priya Sundaresan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qiuyu Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rafael Rafailov",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ran Tian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ria Doshi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Roberto Martín-Martín",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rohan Baijal",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rosario Scalise",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rose Hendrix",
+          "affiliations": []
+        },
+        {
+          "full_name": "Roy Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Runjia Qian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ruohan Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Russell Mendonca",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rutav Shah",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ryan Hoque",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ryan Julian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Samuel Bustamante",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sean Kirmani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shan Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sherry Moore",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shikhar Bahl",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shivin Dass",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shubham Sonawani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shubham Tulsiani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shuran Song",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sichun Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Siddhant Haldar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Siddharth Karamcheti",
+          "affiliations": []
+        },
+        {
+          "full_name": "Simeon Adebola",
+          "affiliations": []
+        },
+        {
+          "full_name": "Simon Guist",
+          "affiliations": []
+        },
+        {
+          "full_name": "Soroush Nasiriany",
+          "affiliations": []
+        },
+        {
+          "full_name": "Stefan Schaal",
+          "affiliations": []
+        },
+        {
+          "full_name": "Stefan Welker",
+          "affiliations": []
+        },
+        {
+          "full_name": "Stephen Tian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Subramanian Ramamoorthy",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sudeep Dasari",
+          "affiliations": []
+        },
+        {
+          "full_name": "Suneel Belkhale",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sungjae Park",
+          "affiliations": []
+        },
+        {
+          "full_name": "Suraj Nair",
+          "affiliations": []
+        },
+        {
+          "full_name": "Suvir Mirchandani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Takayuki Osa",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tanmay Gupta",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tatsuya Harada",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tatsuya Matsushima",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ted Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Thomas Kollar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianhe Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianli Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Todor Davchev",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tony Z. Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Travis Armstrong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Trevor Darrell",
+          "affiliations": []
+        },
+        {
+          "full_name": "Trinity Chung",
+          "affiliations": []
+        },
+        {
+          "full_name": "Vidhi Jain",
+          "affiliations": []
+        },
+        {
+          "full_name": "Vikash Kumar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Vincent Vanhoucke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Vitor Guizilini",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wei Zhan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenxuan Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wolfram Burgard",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xi Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiangyu Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaolong Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinghao Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinyang Geng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiyuan Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xu Liangwei",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xuanlin Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yansong Pang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yecheng Jason Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yejin Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yevgen Chebotar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yifan Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yifeng Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yilin Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ying Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yixuan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yonatan Bisk",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yongqiang Dou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yoonyoung Cho",
+          "affiliations": []
+        },
+        {
+          "full_name": "Youngwoon Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuchen Cui",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yue Cao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yueh-Hua Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yujin Tang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuke Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yunchu Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yunfan Jiang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yunshuang Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yunzhu Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yusuke Iwasawa",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yutaka Matsuo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zehan Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhuo Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zichen Jeff Cui",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zichen Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zipeng Fu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zipeng Lin",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RoboFlamingo",
@@ -1300,7 +5782,57 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RoboFlamingo."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RoboFlamingo.",
+      "authors": [
+        {
+          "full_name": "Xinghang Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Minghuan Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hanbo Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Cunjun Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jie Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hongtao Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chilam Cheang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ya Jing",
+          "affiliations": []
+        },
+        {
+          "full_name": "Weinan Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huaping Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hang Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tao Kong",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "LEO",
@@ -1317,7 +5849,49 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: LEO."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: LEO.",
+      "authors": [
+        {
+          "full_name": "Jiangyong Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Silong Yong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaojian Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiongkun Linghu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Puhao Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qing Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Song-Chun Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Baoxiong Jia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Siyuan Huang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "GR-1",
@@ -1334,7 +5908,45 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR-1."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR-1.",
+      "authors": [
+        {
+          "full_name": "Hongtao Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ya Jing",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chilam Cheang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guangzeng Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiafeng Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinghang Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Minghuan Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hang Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tao Kong",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Octo",
@@ -1350,7 +5962,85 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: Octo."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: Octo.",
+      "authors": [
+        {
+          "full_name": "Octo Model Team",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dibya Ghosh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Homer Walke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kevin Black",
+          "affiliations": []
+        },
+        {
+          "full_name": "Oier Mees",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sudeep Dasari",
+          "affiliations": []
+        },
+        {
+          "full_name": "Joey Hejna",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tobias Kreiman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Charles Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianlan Luo",
+          "affiliations": []
+        },
+        {
+          "full_name": "You Liang Tan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lawrence Yunliang Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pannag Sanketi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ted Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dorsa Sadigh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "OpenVLA",
@@ -1366,7 +6056,81 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA.",
+      "authors": [
+        {
+          "full_name": "Moo Jin Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Siddharth Karamcheti",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ted Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ashwin Balakrishna",
+          "affiliations": []
+        },
+        {
+          "full_name": "Suraj Nair",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rafael Rafailov",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ethan Foster",
+          "affiliations": []
+        },
+        {
+          "full_name": "Grace Lam",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pannag Sanketi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Thomas Kollar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Benjamin Burchfiel",
+          "affiliations": []
+        },
+        {
+          "full_name": "Russ Tedrake",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dorsa Sadigh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Percy Liang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "TinyVLA",
@@ -1382,7 +6146,57 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: TinyVLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: TinyVLA.",
+      "authors": [
+        {
+          "full_name": "Junjie Wen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yichen Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jinming Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Minjie Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kun Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhiyuan Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ning Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ran Cheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chaomin Shen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yaxin Peng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Feifei Feng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jian Tang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "HiRT",
@@ -1398,7 +6212,37 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HiRT."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HiRT.",
+      "authors": [
+        {
+          "full_name": "Jianke Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yanjiang Guo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaoyu Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yen-Jen Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yucheng Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chengming Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianyu Chen",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "GR-2",
@@ -1415,7 +6259,57 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR-2."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR-2.",
+      "authors": [
+        {
+          "full_name": "Chi-Lam Cheang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guangzeng Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ya Jing",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tao Kong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hang Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yifeng Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuxiao Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hongtao Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiafeng Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yichu Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hanbo Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Minzhao Zhu",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RDT-1B",
@@ -1432,23 +6326,163 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RDT-1B."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RDT-1B.",
+      "authors": [
+        {
+          "full_name": "Songming Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lingxuan Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bangguo Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hengkai Tan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huayu Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhengyi Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ke Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hang Su",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jun Zhu",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "pi_0",
       "title": "A Vision-Language-Action Flow Model for General Robot Control",
       "year": 2024,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
+      "venue_name": "RSS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2410.24164",
-      "project_url": "https://www.physicalintelligence.company/blog/pi0",
+      "project_url": "https://www.roboticsproceedings.org/rss21/p010.html",
       "code_url": null,
       "topics": [
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi_0."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi_0.",
+      "authors": [
+        {
+          "full_name": "Kevin Black",
+          "affiliations": []
+        },
+        {
+          "full_name": "Noah Brown",
+          "affiliations": []
+        },
+        {
+          "full_name": "Danny Driess",
+          "affiliations": []
+        },
+        {
+          "full_name": "Adnan Esmail",
+          "affiliations": []
+        },
+        {
+          "full_name": "Michael Robert Equi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Niccolo Fusai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lachy Groom",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karol Hausman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Szymon Jakubczak",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tim Jones",
+          "affiliations": []
+        },
+        {
+          "full_name": "Liyiming Ke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        },
+        {
+          "full_name": "Adrian Li-Bell",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mohith Mothukuri",
+          "affiliations": []
+        },
+        {
+          "full_name": "Suraj Nair",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lucy Xiaoyang Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Laura Smith",
+          "affiliations": []
+        },
+        {
+          "full_name": "James Tanner",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anna Walling",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haohuan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ury Zhilinsky",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "CogACT",
@@ -1464,7 +6498,81 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: CogACT."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: CogACT.",
+      "authors": [
+        {
+          "full_name": "Qixiu Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yaobo Liang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zeyu Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lin Luo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xi Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mozheng Liao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fangyun Wei",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yu Deng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sicheng Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yizhong Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaofan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bei Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianlong Fu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianmin Bao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dong Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuanchun Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiaolong Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Baining Guo",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "pi_0-FAST",
@@ -1480,7 +6588,45 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Model or method paper; checked against RSS 2025 proceedings."
+      "notes": "Model or method paper; checked against RSS 2025 proceedings.",
+      "authors": [
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kyle Stachowicz",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Danny Driess",
+          "affiliations": []
+        },
+        {
+          "full_name": "Suraj Nair",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Oier Mees",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "UniAct",
@@ -1496,23 +6642,79 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: UniAct."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: UniAct.",
+      "authors": [
+        {
+          "full_name": "Jinliang Zheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianxiong Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dongxiu Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yinan Zheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhihao Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhonghong Ou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yu Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jingjing Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ya-Qin Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xianyuan Zhan",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "OpenVLA-OFT",
       "title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
       "year": 2025,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
+      "venue_name": "RSS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2502.19645",
-      "project_url": "https://openvla-oft.github.io",
+      "project_url": "https://www.roboticsproceedings.org/rss21/p017.html",
       "code_url": "https://github.com/moojink/openvla-oft",
       "topics": [
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA-OFT."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA-OFT.",
+      "authors": [
+        {
+          "full_name": "Moo Jin Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Percy Liang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "JARVIS-VLA",
@@ -1528,7 +6730,29 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: JARVIS-VLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: JARVIS-VLA.",
+      "authors": [
+        {
+          "full_name": "Muyao Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zihao Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kaichen He",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaojian Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yitao Liang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "HybridVLA",
@@ -1544,7 +6768,69 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HybridVLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HybridVLA.",
+      "authors": [
+        {
+          "full_name": "Jiaming Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pengju An",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhuoyang Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Renrui Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chenyang Gu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaoqi Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ziyu Guo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sixiang Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mengzhen Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chengkai Hou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mengdi Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "KC alex Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pheng-Ann Heng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shanghang Zhang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "MoManipVLA",
@@ -1560,7 +6846,29 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: MoManipVLA."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: MoManipVLA.",
+      "authors": [
+        {
+          "full_name": "Zhenyu Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuheng Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiuwei Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ziwei Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haibin Yan",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "GR00T N1",
@@ -1577,7 +6885,181 @@
         "humanoid robotics",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR00T N1."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: GR00T N1.",
+      "authors": [
+        {
+          "full_name": "NVIDIA",
+          "affiliations": []
+        },
+        {
+          "full_name": ":",
+          "affiliations": []
+        },
+        {
+          "full_name": "Johan Bjorck",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fernando Castañeda",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nikita Cherniadev",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xingye Da",
+          "affiliations": []
+        },
+        {
+          "full_name": "Runyu Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Linxi \"Jim\" Fan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yu Fang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dieter Fox",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fengyuan Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Spencer Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Joel Jang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhenyu Jiang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jan Kautz",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kaushil Kundalia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lawrence Lao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhiqi Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zongyu Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kevin Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guilin Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Edith Llontop",
+          "affiliations": []
+        },
+        {
+          "full_name": "Loic Magne",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ajay Mandlekar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Avnish Narayan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Soroush Nasiriany",
+          "affiliations": []
+        },
+        {
+          "full_name": "Scott Reed",
+          "affiliations": []
+        },
+        {
+          "full_name": "You Liang Tan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guanzhi Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zu Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jing Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qi Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiannan Xiang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuqi Xie",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yinzhen Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhenjia Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Seonghyeon Ye",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhiding Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ao Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yizhou Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ruijie Zheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuke Zhu",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "pi_0+KI",
@@ -1593,7 +7075,53 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Model or method paper; checked against NeurIPS 2025 proceedings page."
+      "notes": "Model or method paper; checked against NeurIPS 2025 proceedings page.",
+      "authors": [
+        {
+          "full_name": "Danny Driess",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jost Tobias Springenberg",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brian Ichter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lili Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Adrian Li-Bell",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Allen Z. Ren",
+          "affiliations": []
+        },
+        {
+          "full_name": "Homer Walke",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quan Vuong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lucy Xiaoyang Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RTC",
@@ -1610,7 +7138,21 @@
         "real-time control",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RTC."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: RTC.",
+      "authors": [
+        {
+          "full_name": "Kevin Black",
+          "affiliations": []
+        },
+        {
+          "full_name": "Manuel Y. Galliker",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ECoT",
@@ -1627,7 +7169,33 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: ECoT."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: ECoT.",
+      "authors": [
+        {
+          "full_name": "Michał Zawalski",
+          "affiliations": []
+        },
+        {
+          "full_name": "William Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Oier Mees",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chelsea Finn",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RAD",
@@ -1643,7 +7211,25 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: RAD."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: RAD.",
+      "authors": [
+        {
+          "full_name": "Jaden Clark",
+          "affiliations": []
+        },
+        {
+          "full_name": "Suvir Mirchandani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dorsa Sadigh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Suneel Belkhale",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Cosmos-Reason1",
@@ -1659,7 +7245,225 @@
         "long-horizon",
         "reasoning"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: Cosmos-Reason1."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Reasoning as Action Tokens). Alias: Cosmos-Reason1.",
+      "authors": [
+        {
+          "full_name": "NVIDIA",
+          "affiliations": []
+        },
+        {
+          "full_name": ":",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alisson Azzolini",
+          "affiliations": []
+        },
+        {
+          "full_name": "Junjie Bai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hannah Brandon",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiaxin Cao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Prithvijit Chattopadhyay",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huayu Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jinju Chu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yin Cui",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jenna Diamond",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yifan Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Liang Feng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Francesco Ferroni",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rama Govindaraju",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jinwei Gu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Siddharth Gururani",
+          "affiliations": []
+        },
+        {
+          "full_name": "Imad El Hanafi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zekun Hao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jacob Huffman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jingyi Jin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Brendan Johnson",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rizwan Khan",
+          "affiliations": []
+        },
+        {
+          "full_name": "George Kurian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Elena Lantz",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nayeon Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhaoshuo Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xuan Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Maosheng Liao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tsung-Yi Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yen-Chen Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ming-Yu Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiangyu Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Alice Luo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andrew Mathau",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yun Ni",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lindsey Pavao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wei Ping",
+          "affiliations": []
+        },
+        {
+          "full_name": "David W. Romero",
+          "affiliations": []
+        },
+        {
+          "full_name": "Misha Smelyanskiy",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shuran Song",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lyne Tchapmi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andrew Z. Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Boxin Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoxiang Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fangyin Wei",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiashu Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dinghao Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaodong Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhuolin Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jingxu Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaohui Zeng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhe Zhang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "BYOVLA",
@@ -1676,7 +7480,21 @@
         "open-world generalization",
         "safety"
       ],
-      "notes": "Model or method paper; ICRA 2025 checked against Princeton publication page and DOI metadata."
+      "notes": "Model or method paper; ICRA 2025 checked against Princeton publication page and DOI metadata.",
+      "authors": [
+        {
+          "full_name": "Asher J. Hancock",
+          "affiliations": []
+        },
+        {
+          "full_name": "Allen Z. Ren",
+          "affiliations": []
+        },
+        {
+          "full_name": "Anirudha Majumdar",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Long-VLA",
@@ -1693,7 +7511,61 @@
         "long-horizon",
         "task-centric"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "Yiguo Fan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shuanghao Bai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinyang Tong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pengxiang Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuyang Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hongchao Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fengqi Dai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wei Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yang Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Siteng Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhaoxin Fan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Badong Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Donglin Wang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ControlVLA",
@@ -1710,7 +7582,53 @@
         "object-centric",
         "open-world generalization"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "Puhao Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yingying Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ziheng Xi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wanlin Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuzhe Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhiyuan Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yinghan Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Song-Chun Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tengyu Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Siyuan Huang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "3DS-VLA",
@@ -1727,7 +7645,57 @@
         "generalist manipulation",
         "spatial grounding"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "Xiaoqi Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Liang Heng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiaming Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yan Shen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chenyang Gu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhuoyang Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Nuowei Han",
+          "affiliations": []
+        },
+        {
+          "full_name": "Renrui Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Tang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shanghang Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Dong",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "GraspVLA",
@@ -1744,7 +7712,57 @@
         "generalist manipulation",
         "sim2real"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "Shengliang Deng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mi Yan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Songlin Wei",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haixin Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuxin Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiayi Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhiqi Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Taoyu Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xuheng Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Heming Cui",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhizheng Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "He Wang",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "DexVLA",
@@ -1761,7 +7779,33 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "Junjie Wen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yichen Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jinming Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhibin Tang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chaomin Shen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Feifei Feng",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RoboMonkey",
@@ -1778,7 +7822,41 @@
         "open-world generalization",
         "reasoning"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "Jacky Kwok",
+          "affiliations": []
+        },
+        {
+          "full_name": "Christopher Agia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rohan Sinha",
+          "affiliations": []
+        },
+        {
+          "full_name": "Matt Foutter",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shulu Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ion Stoica",
+          "affiliations": []
+        },
+        {
+          "full_name": "Azalia Mirhoseini",
+          "affiliations": []
+        },
+        {
+          "full_name": "Marco Pavone",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "FLOWER",
@@ -1788,14 +7866,40 @@
       "publication_type": "conference",
       "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2509.04996",
-      "project_url": "https://intuitive-robots.github.io/flower_vla/",
+      "project_url": "https://proceedings.mlr.press/v305/reuss25a.html",
       "code_url": null,
       "topics": [
         "generalist manipulation",
         "real-time control",
         "task-centric"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "Moritz Reuss",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hongyi Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Marcel Rühle",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ömer Erdinç Yağmurlu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fabian Otto",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rudolf Lioutikov",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "Oat-VLA",
@@ -1812,7 +7916,29 @@
         "object-centric",
         "task-centric"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "Rokas Bendikas",
+          "affiliations": []
+        },
+        {
+          "full_name": "Daniel Dijkman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Markus Peschl",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sanjay Haresh",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pietro Mazzaglia",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "TA-VLA",
@@ -1829,7 +7955,41 @@
         "real-time control",
         "task-centric"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "Zongzheng Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haobo Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhuo Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chenghao Yue",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zehao Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huan-ang Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ziwei Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Zhao",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "EndoVLA",
@@ -1846,7 +8006,45 @@
         "open-world generalization",
         "task-centric"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "NG CHI KIT",
+          "affiliations": []
+        },
+        {
+          "full_name": "Long Bai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guankun Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yupeng Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huxin Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kun yuan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chenhan Jin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tieyong Zeng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hongliang Ren",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RICL",
@@ -1856,14 +8054,32 @@
       "publication_type": "conference",
       "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2508.02062",
-      "project_url": "https://ricl-vla.github.io/",
+      "project_url": "https://proceedings.mlr.press/v305/sridhar25a.html",
       "code_url": null,
       "topics": [
         "generalist manipulation",
         "open-world generalization",
         "task-centric"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings and project page."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings and project page.",
+      "authors": [
+        {
+          "full_name": "Kaustubh Sridhar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Souradeep Dutta",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dinesh Jayaraman",
+          "affiliations": []
+        },
+        {
+          "full_name": "Insup Lee",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "VLA Steering",
@@ -1880,7 +8096,25 @@
         "reasoning",
         "safety"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings."
+      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "authors": [
+        {
+          "full_name": "Bear Häon",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kaylene Caswell Stocking",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ian Chuang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Claire Tomlin",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "ReBot",
@@ -1897,7 +8131,37 @@
         "sim2real",
         "task-centric"
       ],
-      "notes": "Model or method paper; IROS 2025 checked against project page."
+      "notes": "Model or method paper; IROS 2025 checked against project page.",
+      "authors": [
+        {
+          "full_name": "Yu Fang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yue Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinghao Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kaiyuan Zheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gedas Bertasius",
+          "affiliations": []
+        },
+        {
+          "full_name": "Daniel Szafir",
+          "affiliations": []
+        },
+        {
+          "full_name": "Mingyu Ding",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "CLAP",
@@ -1931,7 +8195,57 @@
         "real-time control",
         "task-centric"
       ],
-      "notes": "Model or method paper; IROS 2025 checked against conference PDF."
+      "notes": "Model or method paper; IROS 2025 checked against conference PDF.",
+      "authors": [
+        {
+          "full_name": "Wenxuan Song",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiayi Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pengxiang Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Han Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wei Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhide Zhong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zongyuan Ge",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhijun Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Donglin Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jun Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lujia Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoang Li",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "RPD",
@@ -1948,7 +8262,21 @@
         "real-time control",
         "task-centric"
       ],
-      "notes": "Model or method paper; IROS 2025 checked against DOI/conference metadata."
+      "notes": "Model or method paper; IROS 2025 checked against DOI/conference metadata.",
+      "authors": [
+        {
+          "full_name": "Tobias Jülg",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wolfram Burgard",
+          "affiliations": []
+        },
+        {
+          "full_name": "Florian Walter",
+          "affiliations": []
+        }
+      ]
     },
     {
       "alias": "CapsDT",
@@ -1965,6 +8293,240 @@
         "task-centric"
       ],
       "notes": "Model or method paper; IROS 2025 checked against institutional publication page."
+    },
+    {
+      "alias": "SpatialVLA",
+      "title": "SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models",
+      "year": 2025,
+      "venue_name": "RSS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://www.roboticsproceedings.org/rss21/p011.html",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Model or method paper; checked against RSS 2025 proceedings.",
+      "authors": [
+        {
+          "full_name": "Delin Qu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoming Song",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qizhi Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuanqi Yao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinyi Ye",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiayuan Gu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhigang Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yan Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bin Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dong Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xuelong Li",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "Uni-NaVid",
+      "title": "Uni-NaVid: A Video-based Vision-Language-Action Model for Unifying Embodied Navigation Tasks",
+      "year": 2025,
+      "venue_name": "RSS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://www.roboticsproceedings.org/rss21/p013.html",
+      "code_url": null,
+      "topics": [
+        "task-centric",
+        "long-horizon",
+        "open-world generalization"
+      ],
+      "notes": "Model or method paper; checked against RSS 2025 proceedings.",
+      "authors": [
+        {
+          "full_name": "Jiazhao Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kunyu Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shaoan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Minghan Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoran Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Songlin Wei",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhongyuan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhizheng Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "He Wang",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "CLIP-RT",
+      "title": "CLIP-RT: Learning Language-Conditioned Robotic Policies from Natural Language Supervision",
+      "year": 2025,
+      "venue_name": "RSS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://www.roboticsproceedings.org/rss21/p016.html",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric",
+        "open-world generalization"
+      ],
+      "notes": "Model or method paper; checked against RSS 2025 proceedings.",
+      "authors": [
+        {
+          "full_name": "Gi-Cheon Kang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Junghyun Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kyuhwan Shim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jun Ki Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Byoung-Tak Zhang",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "ConRFT",
+      "title": "ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy",
+      "year": 2025,
+      "venue_name": "RSS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://www.roboticsproceedings.org/rss21/p019.html",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "real-time control",
+        "task-centric"
+      ],
+      "notes": "Model or method paper; checked against RSS 2025 proceedings.",
+      "authors": [
+        {
+          "full_name": "Yuhui Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shuai Tian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shugao Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yingting Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoran Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dongbin Zhao",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "RLDG",
+      "title": "RLDG: Robotic Generalist Policy Distillation via Reinforcement Learning",
+      "year": 2025,
+      "venue_name": "RSS 2025",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://www.roboticsproceedings.org/rss21/p028.html",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "sim2real",
+        "task-centric"
+      ],
+      "notes": "Model or method paper; checked against RSS 2025 proceedings.",
+      "authors": [
+        {
+          "full_name": "Charles Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qiyang Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianlan Luo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        }
+      ]
     }
   ]
 }

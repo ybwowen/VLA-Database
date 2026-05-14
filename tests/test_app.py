@@ -2,7 +2,7 @@ import pytest
 
 from app import create_app
 from app.db import Base, get_engine, get_session, remove_session
-from app.models import Paper, PaperTopic, Paradigm, Topic, VlaModel
+from app.models import Author, Paper, PaperAuthor, PaperTopic, Paradigm, Topic, VlaModel
 from app.seed_data import load_seed_data
 
 
@@ -39,8 +39,9 @@ def test_sample_data_includes_recent_models(app):
     session = get_session()
     try:
         names = {name for (name,) in session.query(VlaModel.name).all()}
-        assert len(names) >= 20
+        assert len(names) >= 90
         assert {"Xiaomi-Robotics-0", "Green-VLA", "AR-VLA", "ProgressVLA"} <= names
+        assert {"Long-VLA", "ControlVLA", "Uni-NaVid", "ConRFT", "RLDG"} <= names
     finally:
         session.close()
         remove_session()
@@ -68,10 +69,12 @@ def test_sample_data_includes_large_paper_index(app):
     try:
         papers = session.query(Paper).all()
         titles = [paper.title for paper in papers]
-        assert len(papers) >= 110
+        assert len(papers) >= 120
         assert len(titles) == len(set(titles))
         assert all(paper.arxiv_url or paper.project_url or paper.code_url for paper in papers)
         assert session.query(PaperTopic).count() >= 100
+        assert session.query(Author).count() >= 500
+        assert session.query(PaperAuthor).count() >= 500
         removed_dataset_only_titles = {
             "DROID: A Large-Scale In-the-Wild Robot Manipulation Dataset",
             "BridgeData V2: A Dataset for Robot Learning at Scale",
