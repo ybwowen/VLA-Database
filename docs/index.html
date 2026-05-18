@@ -10,6 +10,7 @@
   >
   <link rel="canonical" href="https://ybwowen.github.io/VLA-Database/">
   <link rel="stylesheet" href="./assets/site.css">
+  <script defer src="./assets/site.js"></script>
 </head>
 <body>
   <header class="topbar">
@@ -23,7 +24,10 @@
         <a href="#queries">查询能力</a>
         <a href="#governance">数据治理</a>
       </nav>
-      <div class="topbar__search" aria-label="静态搜索框预览">Search models...</div>
+      <label class="topbar__search">
+        <span class="sr-only">Search demo models</span>
+        <input id="demo-search" type="search" placeholder="Search models..." autocomplete="off">
+      </label>
     </div>
   </header>
 
@@ -60,49 +64,117 @@
         </div>
       </div>
       <div class="hero__panel app-preview" aria-label="VLA 模型数据库后台界面预览">
-        <div class="preview-filters">
+        <form class="preview-filters" id="preview-filter-form">
           <div class="preview-heading">
             <strong>Filters</strong>
-            <span>Reset</span>
+            <button class="preview-reset" type="reset">Reset</button>
           </div>
-          <label>Year</label>
-          <div class="preview-range"><span>2022</span><span>2026</span></div>
-          <label>Paradigm</label>
-          <div class="preview-select">All</div>
-          <label>Topic</label>
-          <div class="preview-select">All</div>
-          <label>Open Source</label>
-          <div class="preview-select">All</div>
-          <button>Apply Filters</button>
-        </div>
+          <label for="year-from">Year</label>
+          <div class="preview-range">
+            <select id="year-from" name="yearFrom">
+              <option value="">Any</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+            </select>
+            <select name="yearTo" aria-label="Year to">
+              <option value="">Any</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+            </select>
+          </div>
+          <label for="demo-paradigm">Paradigm</label>
+          <select id="demo-paradigm" name="paradigm">
+            <option value="">All</option>
+            <option value="Autoregressive">Autoregressive</option>
+            <option value="Diffusion / Flow">Diffusion / Flow</option>
+            <option value="Dual System">Dual System</option>
+            <option value="Other">Other</option>
+          </select>
+          <label for="demo-topic">Topic</label>
+          <select id="demo-topic" name="topic">
+            <option value="">All</option>
+            <option value="generalist manipulation">generalist manipulation</option>
+            <option value="spatial grounding">spatial grounding</option>
+            <option value="real-time control">real-time control</option>
+            <option value="humanoid robotics">humanoid robotics</option>
+          </select>
+          <label for="demo-open-source">Open Source</label>
+          <select id="demo-open-source" name="openSource">
+            <option value="">All</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <button class="preview-apply" type="submit">Apply Filters</button>
+        </form>
         <div class="preview-table">
           <div class="preview-table__title">
-            <strong>Model List <span>(153 results)</span></strong>
+            <strong>Model List <span id="preview-result-count">(12 results)</span></strong>
+            <small>Static demo</small>
           </div>
           <div class="preview-row preview-row--head">
             <span>Model</span><span>Year</span><span>Paradigm</span><span>Open</span>
           </div>
-          <div class="preview-row"><strong>AR-VLA</strong><span>2026</span><span>Autoregressive</span><em>✓</em></div>
-          <div class="preview-row"><strong>Green-VLA</strong><span>2026</span><span>Diffusion / Flow</span><em>✓</em></div>
-          <div class="preview-row"><strong>OpenVLA-OFT</strong><span>2025</span><span>Autoregressive</span><em>✓</em></div>
-          <div class="preview-row"><strong>OpenVLA</strong><span>2024</span><span>Autoregressive</span><em>✓</em></div>
-          <div class="preview-row"><strong>RT-2</strong><span>2023</span><span>Autoregressive</span><em>×</em></div>
+          <div class="preview-table-body" id="preview-table-body">
+            <div class="preview-row" data-model="AR-VLA" data-year="2026" data-paradigm="Autoregressive" data-topic="generalist manipulation real-time control" data-open-source="yes" data-benchmark="Multi-Task Real-World Eval">
+              <strong>AR-VLA</strong><span>2026</span><span>Autoregressive</span><em class="status-yes">✓</em>
+            </div>
+            <div class="preview-row" data-model="Green-VLA" data-year="2026" data-paradigm="Diffusion / Flow" data-topic="humanoid robotics real-time control" data-open-source="yes" data-benchmark="CALVIN">
+              <strong>Green-VLA</strong><span>2026</span><span>Diffusion / Flow</span><em class="status-yes">✓</em>
+            </div>
+            <div class="preview-row" data-model="OpenVLA-OFT" data-year="2025" data-paradigm="Autoregressive" data-topic="generalist manipulation spatial grounding" data-open-source="yes" data-benchmark="LIBERO">
+              <strong>OpenVLA-OFT</strong><span>2025</span><span>Autoregressive</span><em class="status-yes">✓</em>
+            </div>
+            <div class="preview-row" data-model="SpatialVLA" data-year="2025" data-paradigm="Autoregressive" data-topic="spatial grounding generalist manipulation" data-open-source="no" data-benchmark="LIBERO">
+              <strong>SpatialVLA</strong><span>2025</span><span>Autoregressive</span><em class="status-no">×</em>
+            </div>
+            <div class="preview-row" data-model="OpenVLA" data-year="2024" data-paradigm="Autoregressive" data-topic="generalist manipulation" data-open-source="yes" data-benchmark="LIBERO">
+              <strong>OpenVLA</strong><span>2024</span><span>Autoregressive</span><em class="status-yes">✓</em>
+            </div>
+            <div class="preview-row" data-model="Octo" data-year="2024" data-paradigm="Diffusion / Flow" data-topic="generalist manipulation" data-open-source="yes" data-benchmark="WidowX">
+              <strong>Octo</strong><span>2024</span><span>Diffusion / Flow</span><em class="status-yes">✓</em>
+            </div>
+            <div class="preview-row" data-model="RT-2" data-year="2023" data-paradigm="Autoregressive" data-topic="generalist manipulation" data-open-source="no" data-benchmark="Real Robot Eval">
+              <strong>RT-2</strong><span>2023</span><span>Autoregressive</span><em class="status-no">×</em>
+            </div>
+            <div class="preview-row" data-model="RoboFlamingo" data-year="2023" data-paradigm="Autoregressive" data-topic="generalist manipulation" data-open-source="yes" data-benchmark="CALVIN">
+              <strong>RoboFlamingo</strong><span>2023</span><span>Autoregressive</span><em class="status-yes">✓</em>
+            </div>
+            <div class="preview-row" data-model="RT-1" data-year="2022" data-paradigm="Autoregressive" data-topic="generalist manipulation" data-open-source="no" data-benchmark="Real Robot Eval">
+              <strong>RT-1</strong><span>2022</span><span>Autoregressive</span><em class="status-no">×</em>
+            </div>
+            <div class="preview-row" data-model="VIMA" data-year="2022" data-paradigm="Other" data-topic="generalist manipulation" data-open-source="yes" data-benchmark="VIMA-Bench">
+              <strong>VIMA</strong><span>2022</span><span>Other</span><em class="status-yes">✓</em>
+            </div>
+            <div class="preview-row" data-model="GR00T N1.5" data-year="2025" data-paradigm="Dual System" data-topic="humanoid robotics" data-open-source="no" data-benchmark="Humanoid Eval">
+              <strong>GR00T N1.5</strong><span>2025</span><span>Dual System</span><em class="status-no">×</em>
+            </div>
+            <div class="preview-row" data-model="Xiaomi-Robotics-0" data-year="2026" data-paradigm="Dual System" data-topic="real-time control humanoid robotics" data-open-source="yes" data-benchmark="LIBERO">
+              <strong>Xiaomi-Robotics-0</strong><span>2026</span><span>Dual System</span><em class="status-yes">✓</em>
+            </div>
+          </div>
+          <p class="preview-empty" id="preview-empty" hidden>No demo rows matched these filters.</p>
         </div>
         <div class="preview-insights">
           <div class="preview-stat-grid">
-            <article><span>Total Models</span><strong>153</strong></article>
-            <article><span>Open Source</span><strong>71</strong></article>
-            <article><span>Papers</span><strong>153</strong></article>
-            <article><span>Benchmarks</span><strong>11</strong></article>
+            <article><span>Total Models</span><strong id="demo-total-models">12</strong></article>
+            <article><span>Open Source</span><strong id="demo-open-models">8</strong></article>
+            <article><span>Years</span><strong id="demo-year-count">5</strong></article>
+            <article><span>Benchmarks</span><strong id="demo-benchmark-count">8</strong></article>
           </div>
           <div class="preview-bars">
             <strong>Timeline</strong>
-            <div>
-              <span style="height: 22px;">2022</span>
-              <span style="height: 42px;">2023</span>
-              <span style="height: 58px;">2024</span>
-              <span style="height: 82px;">2025</span>
-              <span style="height: 50px;">2026</span>
+            <div id="demo-timeline">
+              <span data-year="2022">2022</span>
+              <span data-year="2023">2023</span>
+              <span data-year="2024">2024</span>
+              <span data-year="2025">2025</span>
+              <span data-year="2026">2026</span>
             </div>
           </div>
         </div>

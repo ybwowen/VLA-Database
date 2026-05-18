@@ -1,212 +1,253 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720 1080" role="img" aria-labelledby="title desc">
-<title id="title">VLA Database ER Diagram</title>
-<desc id="desc">Entity relationship diagram with Model, Paper, PaperTopic, Topic, EvaluationResult, and bridge tables.</desc>
-<defs><filter id="shadow" x="-10%" y="-10%" width="130%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#202b33" flood-opacity="0.08" /></filter></defs>
-<rect width="1720" height="1080" fill="#fbf7f0" />
-<text x="70" y="72" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="800" fill="#20313d">VLA Database ER Diagram</text>
-<text x="70" y="112" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#60707c">Normalized schema for model records, model-paper index, topic tags, authors, data sources, and benchmark facts.</text>
-<path d="M330,238 L390,238" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="336" y="224" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="360" y="243" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">1:N</text>
-<path d="M650,238 L710,238" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="656" y="224" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="680" y="243" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">N:1</text>
-<path d="M970,238 L1030,238" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="976" y="224" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="1000" y="243" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">1:N</text>
-<path d="M1290,238 L1350,238" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="1296" y="224" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="1320" y="243" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">N:1</text>
-<path d="M1350,238 L1290,528" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="1296" y="369" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="1320" y="388" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">1:N</text>
-<path d="M1290,528 L1350,528" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="1296" y="514" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="1320" y="533" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">N:1</text>
-<path d="M330,528 L390,528" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="336" y="514" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="360" y="533" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">1:N</text>
-<path d="M520,450 L520,316" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="496" y="369" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="520" y="388" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">N:1</text>
-<path d="M330,528 L710,528" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="496" y="514" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="520" y="533" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">1:N</text>
-<path d="M840,450 L840,316" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="816" y="369" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="840" y="388" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">N:1</text>
-<path d="M330,818 L390,818" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="336" y="804" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="360" y="823" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">1:N</text>
-<path d="M520,740 L520,316" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="496" y="514" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="520" y="533" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">N:1</text>
-<path d="M520,316 L840,740" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="656" y="514" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="680" y="533" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">1:N</text>
-<path d="M970,818 L1030,818" fill="none" stroke="#697985" stroke-width="3" stroke-linecap="round" />
-<rect x="976" y="804" width="48" height="24" rx="12" fill="#ffffff" stroke="#d8e0e6" />
-<text x="1000" y="823" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#24588a">N:1</text>
-<g filter="url(#shadow)">
-<rect x="70" y="160" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="70" y="160" width="260" height="44" rx="20" fill="#4f81ad" />
-<text x="88" y="189" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">Paradigm</text>
-<text x="88" y="232" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#4f81ad">Reference</text>
-<text x="88" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">id (PK)</text>
-<line x1="88" y1="269" x2="312" y2="269" stroke="#edf1f4" />
-<text x="88" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">name</text>
-<line x1="88" y1="294" x2="312" y2="294" stroke="#edf1f4" />
-<text x="88" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">description</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="390" y="160" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="390" y="160" width="260" height="44" rx="20" fill="#c2663d" />
-<text x="408" y="189" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">Model</text>
-<text x="408" y="232" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#c2663d">Core</text>
-<text x="408" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">id (PK)</text>
-<line x1="408" y1="269" x2="632" y2="269" stroke="#edf1f4" />
-<text x="408" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">name, slug, year</text>
-<line x1="408" y1="294" x2="632" y2="294" stroke="#edf1f4" />
-<text x="408" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">paper_id, paradigm_id</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="710" y="160" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="710" y="160" width="260" height="44" rx="20" fill="#c2663d" />
-<text x="728" y="189" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">Paper</text>
-<text x="728" y="232" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#c2663d">Core</text>
-<text x="728" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">id (PK)</text>
-<line x1="728" y1="269" x2="952" y2="269" stroke="#edf1f4" />
-<text x="728" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">title, year</text>
-<line x1="728" y1="294" x2="952" y2="294" stroke="#edf1f4" />
-<text x="728" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">venue, links, status</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="1030" y="160" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="1030" y="160" width="260" height="44" rx="20" fill="#2c877f" />
-<text x="1048" y="189" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">PaperAuthor</text>
-<text x="1048" y="232" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#2c877f">Bridge</text>
-<text x="1048" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">paper_id (FK)</text>
-<line x1="1048" y1="269" x2="1272" y2="269" stroke="#edf1f4" />
-<text x="1048" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">author_id (FK)</text>
-<line x1="1048" y1="294" x2="1272" y2="294" stroke="#edf1f4" />
-<text x="1048" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">author_order, flags</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="1350" y="160" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="1350" y="160" width="260" height="44" rx="20" fill="#c2663d" />
-<text x="1368" y="189" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">Author</text>
-<text x="1368" y="232" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#c2663d">Core</text>
-<text x="1368" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">id (PK)</text>
-<line x1="1368" y1="269" x2="1592" y2="269" stroke="#edf1f4" />
-<text x="1368" y="285" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">full_name</text>
-<line x1="1368" y1="294" x2="1592" y2="294" stroke="#edf1f4" />
-<text x="1368" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">notes</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="70" y="450" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="70" y="450" width="260" height="44" rx="20" fill="#4f81ad" />
-<text x="88" y="479" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">Topic</text>
-<text x="88" y="522" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#4f81ad">Reference</text>
-<text x="88" y="550" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">id (PK)</text>
-<line x1="88" y1="559" x2="312" y2="559" stroke="#edf1f4" />
-<text x="88" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">name</text>
-<line x1="88" y1="584" x2="312" y2="584" stroke="#edf1f4" />
-<text x="88" y="600" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">description</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="390" y="450" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="390" y="450" width="260" height="44" rx="20" fill="#2c877f" />
-<text x="408" y="479" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">ModelTopic</text>
-<text x="408" y="522" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#2c877f">Bridge</text>
-<text x="408" y="550" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">model_id (FK)</text>
-<line x1="408" y1="559" x2="632" y2="559" stroke="#edf1f4" />
-<text x="408" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">topic_id (FK)</text>
-<line x1="408" y1="584" x2="632" y2="584" stroke="#edf1f4" />
-<text x="408" y="600" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">composite PK</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="710" y="450" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="710" y="450" width="260" height="44" rx="20" fill="#2c877f" />
-<text x="728" y="479" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">PaperTopic</text>
-<text x="728" y="522" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#2c877f">Bridge</text>
-<text x="728" y="550" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">paper_id (FK)</text>
-<line x1="728" y1="559" x2="952" y2="559" stroke="#edf1f4" />
-<text x="728" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">topic_id (FK)</text>
-<line x1="728" y1="584" x2="952" y2="584" stroke="#edf1f4" />
-<text x="728" y="600" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">paper topic tags</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="1030" y="450" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="1030" y="450" width="260" height="44" rx="20" fill="#2c877f" />
-<text x="1048" y="479" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">AuthorAffiliation</text>
-<text x="1048" y="522" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#2c877f">Bridge</text>
-<text x="1048" y="550" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">author_id (FK)</text>
-<line x1="1048" y1="559" x2="1272" y2="559" stroke="#edf1f4" />
-<text x="1048" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">affiliation_id (FK)</text>
-<line x1="1048" y1="584" x2="1272" y2="584" stroke="#edf1f4" />
-<text x="1048" y="600" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">notes</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="1350" y="450" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="1350" y="450" width="260" height="44" rx="20" fill="#c2663d" />
-<text x="1368" y="479" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">Affiliation</text>
-<text x="1368" y="522" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#c2663d">Core</text>
-<text x="1368" y="550" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">id (PK)</text>
-<line x1="1368" y1="559" x2="1592" y2="559" stroke="#edf1f4" />
-<text x="1368" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">name, country</text>
-<line x1="1368" y1="584" x2="1592" y2="584" stroke="#edf1f4" />
-<text x="1368" y="600" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">website_url</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="70" y="740" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="70" y="740" width="260" height="44" rx="20" fill="#4f81ad" />
-<text x="88" y="769" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">DataSourceType</text>
-<text x="88" y="812" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#4f81ad">Reference</text>
-<text x="88" y="840" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">id (PK)</text>
-<line x1="88" y1="849" x2="312" y2="849" stroke="#edf1f4" />
-<text x="88" y="865" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">name</text>
-<line x1="88" y1="874" x2="312" y2="874" stroke="#edf1f4" />
-<text x="88" y="890" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">description</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="390" y="740" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="390" y="740" width="260" height="44" rx="20" fill="#2c877f" />
-<text x="408" y="769" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">ModelDataSource</text>
-<text x="408" y="812" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#2c877f">Bridge</text>
-<text x="408" y="840" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">model_id (FK)</text>
-<line x1="408" y1="849" x2="632" y2="849" stroke="#edf1f4" />
-<text x="408" y="865" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">data_source_type_id (FK)</text>
-<line x1="408" y1="874" x2="632" y2="874" stroke="#edf1f4" />
-<text x="408" y="890" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">notes</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="710" y="740" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="710" y="740" width="260" height="44" rx="20" fill="#a68027" />
-<text x="728" y="769" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">EvaluationResult</text>
-<text x="728" y="812" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#a68027">Fact</text>
-<text x="728" y="840" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">id (PK)</text>
-<line x1="728" y1="849" x2="952" y2="849" stroke="#edf1f4" />
-<text x="728" y="865" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">model_id, benchmark_id</text>
-<line x1="728" y1="874" x2="952" y2="874" stroke="#edf1f4" />
-<text x="728" y="890" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">metric, value, source_url</text>
-</g>
-<g filter="url(#shadow)">
-<rect x="1030" y="740" width="260" height="156" rx="20" fill="#ffffff" stroke="#d8e0e6" stroke-width="1.5" />
-<rect x="1030" y="740" width="260" height="44" rx="20" fill="#4f81ad" />
-<text x="1048" y="769" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">Benchmark</text>
-<text x="1048" y="812" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800" fill="#4f81ad">Reference</text>
-<text x="1048" y="840" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">id (PK)</text>
-<line x1="1048" y1="849" x2="1272" y2="849" stroke="#edf1f4" />
-<text x="1048" y="865" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">name, category</text>
-<line x1="1048" y1="874" x2="1272" y2="874" stroke="#edf1f4" />
-<text x="1048" y="890" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#314550">official_url</text>
-</g>
-<rect x="70" y="1000" width="26" height="18" rx="5" fill="#4f81ad" />
-<text x="106" y="1015" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#20313d">Reference</text>
-<rect x="280" y="1000" width="26" height="18" rx="5" fill="#c2663d" />
-<text x="316" y="1015" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#20313d">Core</text>
-<rect x="490" y="1000" width="26" height="18" rx="5" fill="#2c877f" />
-<text x="526" y="1015" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#20313d">Bridge</text>
-<rect x="700" y="1000" width="26" height="18" rx="5" fill="#a68027" />
-<text x="736" y="1015" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#20313d">Fact</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 920" role="img" aria-labelledby="title desc">
+  <title id="title">VLA Database ER Diagram</title>
+  <desc id="desc">Normalized entity relationship diagram for VLA models, papers, authors, affiliations, topics, data sources, benchmarks, and evaluation results.</desc>
+  <defs>
+    <filter id="cardShadow" x="-12%" y="-12%" width="124%" height="132%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#24324e" flood-opacity="0.10" />
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#627386" />
+    </marker>
+    <style>
+      .bg { fill: #f7f9fc; }
+      .title { font: 800 34px "Segoe UI", Arial, sans-serif; fill: #172033; }
+      .subtitle { font: 16px "Segoe UI", Arial, sans-serif; fill: #687385; }
+      .card { fill: #fff; stroke: #d7dee8; stroke-width: 1.4; filter: url(#cardShadow); }
+      .header-core { fill: #145db8; }
+      .header-ref { fill: #4e7fa9; }
+      .header-bridge { fill: #2f8a82; }
+      .header-fact { fill: #9a7419; }
+      .card-title { font: 800 19px "Segoe UI", Arial, sans-serif; fill: #fff; }
+      .card-role { font: 800 12px "Segoe UI", Arial, sans-serif; text-transform: uppercase; }
+      .role-core { fill: #145db8; }
+      .role-ref { fill: #4e7fa9; }
+      .role-bridge { fill: #2f8a82; }
+      .role-fact { fill: #9a7419; }
+      .field { font: 14px "Segoe UI", Arial, sans-serif; fill: #314154; }
+      .field-strong { font: 700 14px "Segoe UI", Arial, sans-serif; fill: #172033; }
+      .rule { stroke: #edf1f5; stroke-width: 1; }
+      .rel { fill: none; stroke: #627386; stroke-width: 2.4; marker-end: url(#arrow); }
+      .rel-soft { fill: none; stroke: #8a9aab; stroke-width: 2; marker-end: url(#arrow); }
+      .chip { fill: #fff; stroke: #cbd8e6; stroke-width: 1; }
+      .chip-text { font: 800 12px "Segoe UI", Arial, sans-serif; fill: #08447f; }
+      .legend-text { font: 700 13px "Segoe UI", Arial, sans-serif; fill: #314154; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1500" height="920" rx="0" />
+  <text class="title" x="54" y="58">VLA Database ER Diagram</text>
+  <text class="subtitle" x="54" y="86">Normalized schema for model metadata, paper index, topics, sources, authors, affiliations, and benchmark facts.</text>
+
+  <g transform="translate(54,110)">
+    <rect x="0" y="0" width="16" height="16" rx="3" fill="#145db8" />
+    <text class="legend-text" x="24" y="13">Core entity</text>
+    <rect x="132" y="0" width="16" height="16" rx="3" fill="#4e7fa9" />
+    <text class="legend-text" x="156" y="13">Reference</text>
+    <rect x="264" y="0" width="16" height="16" rx="3" fill="#2f8a82" />
+    <text class="legend-text" x="288" y="13">Bridge table</text>
+    <rect x="416" y="0" width="16" height="16" rx="3" fill="#9a7419" />
+    <text class="legend-text" x="440" y="13">Fact table</text>
+  </g>
+
+  <!-- relationship lines -->
+  <path class="rel" d="M 278 238 H 346" />
+  <rect class="chip" x="292" y="224" width="42" height="24" rx="12" />
+  <text class="chip-text" x="313" y="241" text-anchor="middle">1:N</text>
+
+  <path class="rel" d="M 596 238 H 656" />
+  <rect class="chip" x="604" y="224" width="42" height="24" rx="12" />
+  <text class="chip-text" x="625" y="241" text-anchor="middle">N:1</text>
+
+  <path class="rel" d="M 908 238 H 966" />
+  <rect class="chip" x="916" y="224" width="42" height="24" rx="12" />
+  <text class="chip-text" x="937" y="241" text-anchor="middle">1:N</text>
+
+  <path class="rel" d="M 1216 238 H 1272" />
+  <rect class="chip" x="1222" y="224" width="42" height="24" rx="12" />
+  <text class="chip-text" x="1243" y="241" text-anchor="middle">N:1</text>
+
+  <path class="rel-soft" d="M 470 306 V 420" />
+  <rect class="chip" x="449" y="348" width="42" height="24" rx="12" />
+  <text class="chip-text" x="470" y="365" text-anchor="middle">1:N</text>
+
+  <path class="rel-soft" d="M 278 508 H 346" />
+  <rect class="chip" x="292" y="494" width="42" height="24" rx="12" />
+  <text class="chip-text" x="313" y="511" text-anchor="middle">1:N</text>
+
+  <path class="rel-soft" d="M 782 306 V 420" />
+  <rect class="chip" x="761" y="348" width="42" height="24" rx="12" />
+  <text class="chip-text" x="782" y="365" text-anchor="middle">1:N</text>
+
+  <path class="rel-soft" d="M 278 508 H 320 V 400 H 656 V 508" />
+  <rect class="chip" x="464" y="386" width="42" height="24" rx="12" />
+  <text class="chip-text" x="485" y="403" text-anchor="middle">1:N</text>
+
+  <path class="rel-soft" d="M 470 306 V 652" />
+  <rect class="chip" x="449" y="574" width="42" height="24" rx="12" />
+  <text class="chip-text" x="470" y="591" text-anchor="middle">1:N</text>
+
+  <path class="rel-soft" d="M 278 738 H 346" />
+  <rect class="chip" x="292" y="724" width="42" height="24" rx="12" />
+  <text class="chip-text" x="313" y="741" text-anchor="middle">1:N</text>
+
+  <path class="rel-soft" d="M 596 292 H 626 V 738 H 656" />
+  <rect class="chip" x="605" y="632" width="42" height="24" rx="12" />
+  <text class="chip-text" x="626" y="649" text-anchor="middle">1:N</text>
+
+  <path class="rel-soft" d="M 908 738 H 966" />
+  <rect class="chip" x="916" y="724" width="42" height="24" rx="12" />
+  <text class="chip-text" x="937" y="741" text-anchor="middle">N:1</text>
+
+  <path class="rel-soft" d="M 1090 306 V 420" />
+  <rect class="chip" x="1069" y="348" width="42" height="24" rx="12" />
+  <text class="chip-text" x="1090" y="365" text-anchor="middle">1:N</text>
+
+  <path class="rel-soft" d="M 1377 306 V 362 H 1216 V 498" />
+  <rect class="chip" x="1266" y="348" width="42" height="24" rx="12" />
+  <text class="chip-text" x="1287" y="365" text-anchor="middle">1:N</text>
+
+  <path class="rel-soft" d="M 1216 510 H 1244 V 724 H 1272" />
+  <rect class="chip" x="1224" y="616" width="42" height="24" rx="12" />
+  <text class="chip-text" x="1245" y="633" text-anchor="middle">N:1</text>
+
+  <!-- cards -->
+  <g transform="translate(54,160)">
+    <rect class="card" width="224" height="146" rx="14" />
+    <path class="header-ref" d="M14 0 H210 A14 14 0 0 1 224 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">Paradigm</text>
+    <text class="card-role role-ref" x="18" y="68">Reference</text>
+    <text class="field-strong" x="18" y="94">id (PK)</text>
+    <line class="rule" x1="18" y1="102" x2="206" y2="102" />
+    <text class="field" x="18" y="123">name, description</text>
+  </g>
+
+  <g transform="translate(346,160)">
+    <rect class="card" width="250" height="146" rx="14" />
+    <path class="header-core" d="M14 0 H236 A14 14 0 0 1 250 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">VlaModel</text>
+    <text class="card-role role-core" x="18" y="68">Core</text>
+    <text class="field-strong" x="18" y="94">id, name, slug, year</text>
+    <line class="rule" x1="18" y1="102" x2="232" y2="102" />
+    <text class="field" x="18" y="123">paper_id, paradigm_id, open_source</text>
+  </g>
+
+  <g transform="translate(656,160)">
+    <rect class="card" width="252" height="146" rx="14" />
+    <path class="header-core" d="M14 0 H238 A14 14 0 0 1 252 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">Paper</text>
+    <text class="card-role role-core" x="18" y="68">Core</text>
+    <text class="field-strong" x="18" y="94">id, title, year, venue</text>
+    <line class="rule" x1="18" y1="102" x2="234" y2="102" />
+    <text class="field" x="18" y="123">arxiv_url, project_url, code_url</text>
+  </g>
+
+  <g transform="translate(966,160)">
+    <rect class="card" width="250" height="146" rx="14" />
+    <path class="header-bridge" d="M14 0 H236 A14 14 0 0 1 250 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">PaperAuthor</text>
+    <text class="card-role role-bridge" x="18" y="68">Bridge</text>
+    <text class="field-strong" x="18" y="94">paper_id, author_id</text>
+    <line class="rule" x1="18" y1="102" x2="232" y2="102" />
+    <text class="field" x="18" y="123">author_order, flags, notes</text>
+  </g>
+
+  <g transform="translate(1272,160)">
+    <rect class="card" width="210" height="146" rx="14" />
+    <path class="header-core" d="M14 0 H196 A14 14 0 0 1 210 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">Author</text>
+    <text class="card-role role-core" x="18" y="68">Core</text>
+    <text class="field-strong" x="18" y="94">id, full_name</text>
+    <line class="rule" x1="18" y1="102" x2="192" y2="102" />
+    <text class="field" x="18" y="123">notes</text>
+  </g>
+
+  <g transform="translate(54,430)">
+    <rect class="card" width="224" height="156" rx="14" />
+    <path class="header-ref" d="M14 0 H210 A14 14 0 0 1 224 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">Topic</text>
+    <text class="card-role role-ref" x="18" y="68">Reference</text>
+    <text class="field-strong" x="18" y="94">id (PK)</text>
+    <line class="rule" x1="18" y1="102" x2="206" y2="102" />
+    <text class="field" x="18" y="123">name, description</text>
+  </g>
+
+  <g transform="translate(346,420)">
+    <rect class="card" width="250" height="156" rx="14" />
+    <path class="header-bridge" d="M14 0 H236 A14 14 0 0 1 250 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">ModelTopic</text>
+    <text class="card-role role-bridge" x="18" y="68">Bridge</text>
+    <text class="field-strong" x="18" y="94">model_id, topic_id</text>
+    <line class="rule" x1="18" y1="102" x2="232" y2="102" />
+    <text class="field" x="18" y="123">composite primary key</text>
+  </g>
+
+  <g transform="translate(656,420)">
+    <rect class="card" width="252" height="156" rx="14" />
+    <path class="header-bridge" d="M14 0 H238 A14 14 0 0 1 252 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">PaperTopic</text>
+    <text class="card-role role-bridge" x="18" y="68">Bridge</text>
+    <text class="field-strong" x="18" y="94">paper_id, topic_id</text>
+    <line class="rule" x1="18" y1="102" x2="234" y2="102" />
+    <text class="field" x="18" y="123">paper topic tags</text>
+  </g>
+
+  <g transform="translate(966,420)">
+    <rect class="card" width="250" height="156" rx="14" />
+    <path class="header-bridge" d="M14 0 H236 A14 14 0 0 1 250 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">AuthorAffiliation</text>
+    <text class="card-role role-bridge" x="18" y="68">Bridge</text>
+    <text class="field-strong" x="18" y="94">author_id, affiliation_id</text>
+    <line class="rule" x1="18" y1="102" x2="232" y2="102" />
+    <text class="field" x="18" y="123">notes</text>
+  </g>
+
+  <g transform="translate(1272,650)">
+    <rect class="card" width="210" height="146" rx="14" />
+    <path class="header-core" d="M14 0 H196 A14 14 0 0 1 210 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">Affiliation</text>
+    <text class="card-role role-core" x="18" y="68">Core</text>
+    <text class="field-strong" x="18" y="94">id, name, country</text>
+    <line class="rule" x1="18" y1="102" x2="192" y2="102" />
+    <text class="field" x="18" y="123">website_url, notes</text>
+  </g>
+
+  <g transform="translate(54,660)">
+    <rect class="card" width="224" height="146" rx="14" />
+    <path class="header-ref" d="M14 0 H210 A14 14 0 0 1 224 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">DataSourceType</text>
+    <text class="card-role role-ref" x="18" y="68">Reference</text>
+    <text class="field-strong" x="18" y="94">id (PK)</text>
+    <line class="rule" x1="18" y1="102" x2="206" y2="102" />
+    <text class="field" x="18" y="123">real robot, simulation, mixed</text>
+  </g>
+
+  <g transform="translate(346,650)">
+    <rect class="card" width="250" height="156" rx="14" />
+    <path class="header-bridge" d="M14 0 H236 A14 14 0 0 1 250 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">ModelDataSource</text>
+    <text class="card-role role-bridge" x="18" y="68">Bridge</text>
+    <text class="field-strong" x="18" y="94">model_id, data_source_type_id</text>
+    <line class="rule" x1="18" y1="102" x2="232" y2="102" />
+    <text class="field" x="18" y="123">notes</text>
+  </g>
+
+  <g transform="translate(656,650)">
+    <rect class="card" width="252" height="156" rx="14" />
+    <path class="header-fact" d="M14 0 H238 A14 14 0 0 1 252 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">EvaluationResult</text>
+    <text class="card-role role-fact" x="18" y="68">Fact</text>
+    <text class="field-strong" x="18" y="94">model_id, benchmark_id</text>
+    <line class="rule" x1="18" y1="102" x2="234" y2="102" />
+    <text class="field" x="18" y="123">metric, value, split, source_url</text>
+  </g>
+
+  <g transform="translate(966,650)">
+    <rect class="card" width="250" height="156" rx="14" />
+    <path class="header-core" d="M14 0 H236 A14 14 0 0 1 250 14 V42 H0 V14 A14 14 0 0 1 14 0 Z" />
+    <text class="card-title" x="18" y="27">Benchmark</text>
+    <text class="card-role role-core" x="18" y="68">Core</text>
+    <text class="field-strong" x="18" y="94">id, name, category</text>
+    <line class="rule" x1="18" y1="102" x2="232" y2="102" />
+    <text class="field" x="18" y="123">description, official_url</text>
+  </g>
 </svg>
