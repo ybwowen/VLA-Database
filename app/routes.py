@@ -84,6 +84,9 @@ def _filter_options(session):
         "paradigms": session.query(Paradigm).order_by(Paradigm.name.asc()).all(),
         "topics": session.query(Topic).order_by(Topic.name.asc()).all(),
         "benchmarks": session.query(Benchmark).order_by(Benchmark.name.asc()).all(),
+        "data_source_types": session.query(DataSourceType)
+        .order_by(DataSourceType.name.asc())
+        .all(),
         "years": [
             year
             for (year,) in session.query(VlaModel.year)
@@ -626,13 +629,21 @@ def model_list():
     paradigm_id = request.args.get("paradigm", type=int)
     topic_id = request.args.get("topic", type=int)
     benchmark_id = request.args.get("benchmark", type=int)
+    data_source_type_id = request.args.get("data_source_type", type=int)
     year = request.args.get("year", type=int)
+    year_from = request.args.get("year_from", type=int)
+    year_to = request.args.get("year_to", type=int)
+    if year and not year_from and not year_to:
+        year_from = year
+        year_to = year
+    open_source = (request.args.get("open_source") or "").strip()
     keyword = request.args.get("q", "").strip()
 
     query = session.query(VlaModel).options(
         joinedload(VlaModel.paradigm),
         joinedload(VlaModel.paper),
         selectinload(VlaModel.model_topics).joinedload(ModelTopic.topic),
+        selectinload(VlaModel.model_data_sources).joinedload(ModelDataSource.data_source_type),
         selectinload(VlaModel.evaluation_results).joinedload(EvaluationResult.benchmark),
     )
 
@@ -647,8 +658,21 @@ def model_list():
             EvaluationResult.benchmark_id == benchmark_id
         )
 
-    if year:
-        query = query.filter(VlaModel.year == year)
+    if data_source_type_id:
+        query = query.join(VlaModel.model_data_sources).filter(
+            ModelDataSource.data_source_type_id == data_source_type_id
+        )
+
+    if year_from:
+        query = query.filter(VlaModel.year >= year_from)
+
+    if year_to:
+        query = query.filter(VlaModel.year <= year_to)
+
+    if open_source == "yes":
+        query = query.filter(VlaModel.open_source.is_(True))
+    elif open_source == "no":
+        query = query.filter(VlaModel.open_source.is_(False))
 
     if keyword:
         query = query.outerjoin(VlaModel.paper).filter(
@@ -660,16 +684,52 @@ def model_list():
         )
 
     models = query.distinct().order_by(VlaModel.year.desc(), VlaModel.name.asc()).all()
+    model_year_counts = {}
+    for model in models:
+        if model.year is not None:
+            model_year_counts[model.year] = model_year_counts.get(model.year, 0) + 1
+    max_year_count = max(model_year_counts.values(), default=0)
+    timeline_rows = [
+        {
+            "year": year_value,
+            "count": count,
+            "width": (count / max_year_count * 100) if max_year_count else 0,
+        }
+        for year_value, count in sorted(model_year_counts.items())
+    ]
+    open_source_count = sum(1 for model in models if model.open_source)
+    model_stats = {
+        "model_count": len(models),
+        "open_source_count": open_source_count,
+        "open_source_ratio": round(open_source_count / len(models) * 100) if models else 0,
+        "paper_count": len({model.paper_id for model in models if model.paper_id}),
+        "benchmark_count": len(
+            {
+                result.benchmark_id
+                for model in models
+                for result in model.evaluation_results
+                if result.benchmark_id
+            }
+        ),
+        "year_min": min(model_year_counts.keys(), default=None),
+        "year_max": max(model_year_counts.keys(), default=None),
+        "timeline_rows": timeline_rows,
+    }
 
     return render_template(
         "models.html",
         models=models,
         filters=_filter_options(session),
+        stats=model_stats,
         selected={
             "paradigm": paradigm_id,
             "topic": topic_id,
             "benchmark": benchmark_id,
+            "data_source_type": data_source_type_id,
             "year": year,
+            "year_from": year_from,
+            "year_to": year_to,
+            "open_source": open_source,
             "q": keyword,
         },
     )
