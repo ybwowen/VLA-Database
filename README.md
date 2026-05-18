@@ -54,7 +54,8 @@ The current build covers the following functions:
   - benchmark name, metric, split/setting, result summary, source link
 - Query support
   - browse all models
-  - filter by paradigm, topic, benchmark, year, and keyword
+  - filter by year range, paradigm, topic, benchmark, open-source status,
+    data-source type, and keyword
   - inspect model details
   - browse benchmark-centric result pages
   - view aggregate statistics
@@ -63,6 +64,12 @@ The current build covers the following functions:
   - add paper-author-affiliation links
   - add and delete benchmark result rows
   - open a dedicated schema page for ER explanation
+- Frontend presentation
+  - dark-blue navigation bar with global model search
+  - dashboard-style model browsing page with left filters, central table, and
+    right-side statistics/timeline cards
+  - static GitHub Pages showcase under `docs/` using the same visual language as
+    the Flask app
 
 ## 3. Recommended Stack
 
@@ -71,6 +78,7 @@ The current build covers the following functions:
 - Database: `MySQL 8.x`
 - DB driver: `PyMySQL`
 - Frontend: server-rendered `HTML + Jinja2 + CSS`
+- Static project page: GitHub Pages from `docs/`
 - Report assets: `python-pptx` plus screenshots from the running frontend
 - Deployment style: direct local deployment in WSL, no Docker required
 
@@ -111,7 +119,10 @@ VLA-Database/
 │       └── admin_*.html
 ├── docs/
 │   ├── COURSE_REPORT.md
-│   └── index.html
+│   ├── index.html
+│   └── assets/
+│       ├── site.css
+│       └── er_diagram.svg
 ├── scripts/
 │   ├── init_db.py
 │   └── setup_mysql_wsl.sh
@@ -208,11 +219,15 @@ seed also stores source-backed per-paper affiliation snapshots on the
 The application supports the following database operations:
 
 - list all models ordered by year
-- query models released in `2026`
+- query models released in a single year, such as `2026`
+- query models within a year range, such as `2024-2026`
 - query all models under a given paradigm
 - query all models tagged with `reasoning`, `spatial grounding`, or
   `real-time control`
 - query all models evaluated on `CALVIN`, `LIBERO`, or `SimplerEnv`
+- query only open-source or closed-source model records
+- query models by data-source type, such as `real robot`, `simulation`,
+  `synthetic`, or `mixed`
 - inspect a single model and view its paper, selected authors, affiliations,
   topics, data sources, and evaluation results
 - count how many models belong to each paradigm
@@ -307,6 +322,8 @@ Useful pages:
 - `/`
 - `/models`
 - `/models?year=2026`
+- `/models?year_from=2024&year_to=2026`
+- `/models?year_from=2024&year_to=2026&open_source=yes`
 - `/papers`
 - `/papers?year=2025`
 - `/queries`
@@ -343,9 +360,15 @@ The tests cover:
 
 ## 10. Visual Materials
 
+The GitHub Pages version lives in `docs/index.html` with styles in
+`docs/assets/site.css`. It is a static showcase of the same dashboard-oriented
+interface used by the Flask app: dark-blue navigation, model search, filter
+sidebar, compact model table, statistics cards, and timeline preview.
+
 Visual-generation assets are kept locally under the ignored `projects/`
 directory and are not part of this code push. The Flask routes expose the paper
-index, SQL examples, schema, and statistics pages needed for screenshots.
+index, SQL examples, schema, statistics, timeline, and model browsing pages
+needed for screenshots.
 
 ## 11. System Highlights
 
@@ -354,7 +377,7 @@ index, SQL examples, schema, and statistics pages needed for screenshots.
 - `evaluation_results` is a fact table that supports numeric and qualitative
   benchmark records.
 - MySQL is used as the relational backend.
-- The frontend provides filtering, paper browsing, details, statistics, SQL examples, timeline, and admin
-  CRUD workflows.
+- The frontend provides dashboard-style filtering, paper browsing, details,
+  statistics, SQL examples, timeline, and admin CRUD workflows.
 - Sample data keeps unknown values empty, and
   benchmark numbers are only stored when public sources support them.

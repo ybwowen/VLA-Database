@@ -3,131 +3,226 @@
 {% block title %}Models | VLA Database{% endblock %}
 
 {% block content %}
-<section class="panel">
-  <div class="panel-header">
-    <h1>Model List</h1>
-    <p>Browse model records and filter them by paradigm, topic, or benchmark.</p>
-  </div>
-
-  <form method="get" class="filter-grid">
-    <label>
-      <span>Keyword</span>
-      <input type="text" name="q" value="{{ selected.q }}" placeholder="model name or paper title">
-    </label>
-
-    <label>
-      <span>Paradigm</span>
-      <select name="paradigm">
-        <option value="">All</option>
-        {% for paradigm in filters.paradigms %}
-        <option value="{{ paradigm.id }}" {% if selected.paradigm == paradigm.id %}selected{% endif %}>
-          {{ paradigm.name }}
-        </option>
-        {% endfor %}
-      </select>
-    </label>
-
-    <label>
-      <span>Topic</span>
-      <select name="topic">
-        <option value="">All</option>
-        {% for topic in filters.topics %}
-        <option value="{{ topic.id }}" {% if selected.topic == topic.id %}selected{% endif %}>
-          {{ topic.name }}
-        </option>
-        {% endfor %}
-      </select>
-    </label>
-
-    <label>
-      <span>Benchmark</span>
-      <select name="benchmark">
-        <option value="">All</option>
-        {% for benchmark in filters.benchmarks %}
-        <option value="{{ benchmark.id }}" {% if selected.benchmark == benchmark.id %}selected{% endif %}>
-          {{ benchmark.name }}
-        </option>
-        {% endfor %}
-      </select>
-    </label>
-
-    <label>
-      <span>Year</span>
-      <select name="year">
-        <option value="">All</option>
-        {% for year in filters.years %}
-        <option value="{{ year }}" {% if selected.year == year %}selected{% endif %}>
-          {{ year }}
-        </option>
-        {% endfor %}
-      </select>
-    </label>
-
-    <div class="filter-actions">
-      <button class="button button-primary" type="submit">Apply Filters</button>
-      <a class="button" href="{{ url_for('main.model_list') }}">Reset</a>
+<section class="browse-layout">
+  <aside class="filter-panel">
+    <div class="filter-panel-header">
+      <h1>Filters</h1>
+      <a href="{{ url_for('main.model_list') }}">Reset</a>
     </div>
-  </form>
-</section>
 
-<section class="panel">
-  <div class="panel-header">
-    <h2>{{ models|length }} Models</h2>
-    <p>Filtered model records.</p>
-  </div>
+    <form method="get" class="filter-stack">
+      <label>
+        <span>Keyword</span>
+        <input type="text" name="q" value="{{ selected.q }}" placeholder="model or paper">
+      </label>
 
-  {% if models %}
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Model</th>
-          <th>Paradigm</th>
-          <th>Year</th>
-          <th>Open Source</th>
-          <th>Topics</th>
-          <th>Benchmarks</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for model in models %}
-        <tr>
-          <td>
-            <a href="{{ url_for('main.model_detail', slug=model.slug) }}">{{ model.name }}</a>
-            {% if model.paper %}
-            <div class="subtle">{{ model.paper.title }}</div>
-            {% endif %}
-          </td>
-          <td>{{ model.paradigm.name if model.paradigm else 'N/A' }}</td>
-          <td>{{ model.year or 'N/A' }}</td>
-          <td>{{ 'Yes' if model.open_source else 'No' }}</td>
-          <td>
-            <div class="compact-tags">
-              {% for topic_name in model.topic_names %}
-              <span class="tag">{{ topic_name }}</span>
-              {% endfor %}
-            </div>
-          </td>
-          <td>
-            <div class="compact-tags">
-              {% if model.benchmark_names %}
-                {% for benchmark_name in model.benchmark_names %}
-                <span class="tag">{{ benchmark_name }}</span>
-                {% endfor %}
-              {% else %}
-                <span class="subtle">No result row</span>
+      <div class="year-range">
+        <label>
+          <span>Year</span>
+          <select name="year_from">
+            <option value="">Any</option>
+            {% for year in filters.years|reverse %}
+            <option value="{{ year }}" {% if selected.year_from == year %}selected{% endif %}>
+              {{ year }}
+            </option>
+            {% endfor %}
+          </select>
+        </label>
+        <span class="range-separator">-</span>
+        <label>
+          <span>&nbsp;</span>
+          <select name="year_to">
+            <option value="">Any</option>
+            {% for year in filters.years|reverse %}
+            <option value="{{ year }}" {% if selected.year_to == year %}selected{% endif %}>
+              {{ year }}
+            </option>
+            {% endfor %}
+          </select>
+        </label>
+      </div>
+
+      <label>
+        <span>Paradigm</span>
+        <select name="paradigm">
+          <option value="">All</option>
+          {% for paradigm in filters.paradigms %}
+          <option value="{{ paradigm.id }}" {% if selected.paradigm == paradigm.id %}selected{% endif %}>
+            {{ paradigm.name }}
+          </option>
+          {% endfor %}
+        </select>
+      </label>
+
+      <label>
+        <span>Topic</span>
+        <select name="topic">
+          <option value="">All</option>
+          {% for topic in filters.topics %}
+          <option value="{{ topic.id }}" {% if selected.topic == topic.id %}selected{% endif %}>
+            {{ topic.name }}
+          </option>
+          {% endfor %}
+        </select>
+      </label>
+
+      <label>
+        <span>Open Source</span>
+        <select name="open_source">
+          <option value="" {% if not selected.open_source %}selected{% endif %}>All</option>
+          <option value="yes" {% if selected.open_source == "yes" %}selected{% endif %}>Yes</option>
+          <option value="no" {% if selected.open_source == "no" %}selected{% endif %}>No</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Data Source Type</span>
+        <select name="data_source_type">
+          <option value="">All</option>
+          {% for data_source in filters.data_source_types %}
+          <option value="{{ data_source.id }}" {% if selected.data_source_type == data_source.id %}selected{% endif %}>
+            {{ data_source.name }}
+          </option>
+          {% endfor %}
+        </select>
+      </label>
+
+      <label>
+        <span>Benchmark</span>
+        <select name="benchmark">
+          <option value="">All</option>
+          {% for benchmark in filters.benchmarks %}
+          <option value="{{ benchmark.id }}" {% if selected.benchmark == benchmark.id %}selected{% endif %}>
+            {{ benchmark.name }}
+          </option>
+          {% endfor %}
+        </select>
+      </label>
+
+      <button class="button button-primary filter-submit" type="submit">Apply Filters</button>
+    </form>
+  </aside>
+
+  <section class="model-list-panel">
+    <div class="model-list-header">
+      <div>
+        <h1>Model List <span>({{ models|length }} results)</span></h1>
+        <p>Browse VLA model records by year, paradigm, topic, benchmark, source type, and paper link.</p>
+      </div>
+      <a class="button compact-button" href="{{ url_for('main.admin_model_create') }}">Add Model</a>
+    </div>
+
+    {% if models %}
+    <div class="table-wrap model-table-wrap">
+      <table class="model-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Paradigm</th>
+            <th>Topics</th>
+            <th>Open Source</th>
+            <th>Top Benchmarks</th>
+            <th>Paper</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for model in models %}
+          <tr>
+            <td class="model-name-cell">
+              <a href="{{ url_for('main.model_detail', slug=model.slug) }}">{{ model.name }}</a>
+              {% if model.data_source_names %}
+              <div class="subtle">{{ model.data_source_names|join(', ') }}</div>
               {% endif %}
-            </div>
-          </td>
-        </tr>
+            </td>
+            <td>{{ model.year or 'N/A' }}</td>
+            <td>{{ model.paradigm.name if model.paradigm else 'N/A' }}</td>
+            <td>
+              <span class="inline-list">{{ model.topic_names[:3]|join(', ') or 'N/A' }}</span>
+            </td>
+            <td>
+              {% if model.open_source %}
+              <span class="status-mark status-yes" aria-label="Open source">&#10003;</span>
+              {% else %}
+              <span class="status-mark status-no" aria-label="Not open source">&times;</span>
+              {% endif %}
+            </td>
+            <td>
+              <span class="inline-list">{{ model.benchmark_names[:3]|join(', ') or 'N/A' }}</span>
+            </td>
+            <td>
+              {% if model.paper %}
+                {% if model.paper.arxiv_url %}
+                <a href="{{ model.paper.arxiv_url }}" target="_blank" rel="noreferrer">arXiv</a>
+                {% else %}
+                <a href="{{ url_for('main.paper_detail', paper_id=model.paper.id) }}">Details</a>
+                {% endif %}
+              {% else %}
+              <span class="subtle">N/A</span>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="table-footer">
+      <span>Showing {{ models|length }} model records</span>
+      <a href="{{ url_for('main.paper_list') }}">Paper index</a>
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <p>No models matched the current filter combination.</p>
+    </div>
+    {% endif %}
+  </section>
+
+  <aside class="insights-rail">
+    <section class="dashboard-card">
+      <h2>
+        Statistics
+        {% if stats.year_min and stats.year_max %}
+        <span>({{ stats.year_min }}-{{ stats.year_max }})</span>
+        {% endif %}
+      </h2>
+      <div class="mini-stat-grid">
+        <article>
+          <span>Total Models</span>
+          <strong>{{ stats.model_count }}</strong>
+        </article>
+        <article>
+          <span>Open Source</span>
+          <strong>{{ stats.open_source_count }}</strong>
+          <small>{{ stats.open_source_ratio }}%</small>
+        </article>
+        <article>
+          <span>Papers</span>
+          <strong>{{ stats.paper_count }}</strong>
+        </article>
+        <article>
+          <span>Benchmarks</span>
+          <strong>{{ stats.benchmark_count }}</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="dashboard-card timeline-card">
+      <h2>Timeline <span>(by Year)</span></h2>
+      {% if stats.timeline_rows %}
+      <div class="mini-timeline">
+        {% for row in stats.timeline_rows %}
+        <div class="mini-timeline-row">
+          <div class="mini-timeline-bar" style="height: {{ 18 + row.width * 0.72 }}px;">
+            <span>{{ row.count }}</span>
+          </div>
+          <strong>{{ row.year }}</strong>
+        </div>
         {% endfor %}
-      </tbody>
-    </table>
-  </div>
-  {% else %}
-  <div class="empty-state">
-    <p>No models matched the current filter combination.</p>
-  </div>
-  {% endif %}
+      </div>
+      {% else %}
+      <p class="subtle">No dated models in this result set.</p>
+      {% endif %}
+    </section>
+  </aside>
 </section>
 {% endblock %}

@@ -14,14 +14,16 @@
 <body>
   <header class="topbar">
     <div class="topbar__inner">
-      <a class="brand" href="#home">VLA Database</a>
+      <a class="brand" href="#home">VLA Model Database System</a>
       <nav class="nav">
+        <a href="#interface">界面风格</a>
         <a href="#dataset">数据范围</a>
         <a href="#timeline">时间线</a>
         <a href="#schema">E-R 图</a>
         <a href="#queries">查询能力</a>
         <a href="#governance">数据治理</a>
       </nav>
+      <div class="topbar__search" aria-label="静态搜索框预览">Search models...</div>
     </div>
   </header>
 
@@ -31,8 +33,9 @@
         <p class="eyebrow">VLA Metadata System</p>
         <h1>VLA 模型数据库系统</h1>
         <p class="hero__lead">
-          一个面向 Vision-Language-Action 与机器人基础模型的关系数据库系统，
-          使用 MySQL、Flask 和 SQLAlchemy 管理模型、论文、作者、机构、topic、数据来源和 benchmark 结果。
+          一个面向 Vision-Language-Action 与机器人基础模型的关系数据库系统。
+          动态端采用深蓝导航、左侧筛选、中间模型表格和右侧统计面板，使用 MySQL、Flask
+          和 SQLAlchemy 管理模型、论文、作者、机构、topic、数据来源和 benchmark 结果。
         </p>
         <div class="hero__chips" aria-label="技术栈">
           <span>MySQL 8</span>
@@ -56,31 +59,82 @@
           </a>
         </div>
       </div>
-      <div class="hero__panel">
-        <div class="stat-card stat-card--strong">
-          <strong>150+</strong>
-          <span>模型记录</span>
+      <div class="hero__panel app-preview" aria-label="VLA 模型数据库后台界面预览">
+        <div class="preview-filters">
+          <div class="preview-heading">
+            <strong>Filters</strong>
+            <span>Reset</span>
+          </div>
+          <label>Year</label>
+          <div class="preview-range"><span>2022</span><span>2026</span></div>
+          <label>Paradigm</label>
+          <div class="preview-select">All</div>
+          <label>Topic</label>
+          <div class="preview-select">All</div>
+          <label>Open Source</label>
+          <div class="preview-select">All</div>
+          <button>Apply Filters</button>
         </div>
-        <div class="stat-card">
-          <strong>145+</strong>
-          <span>模型论文</span>
+        <div class="preview-table">
+          <div class="preview-table__title">
+            <strong>Model List <span>(153 results)</span></strong>
+          </div>
+          <div class="preview-row preview-row--head">
+            <span>Model</span><span>Year</span><span>Paradigm</span><span>Open</span>
+          </div>
+          <div class="preview-row"><strong>AR-VLA</strong><span>2026</span><span>Autoregressive</span><em>✓</em></div>
+          <div class="preview-row"><strong>Green-VLA</strong><span>2026</span><span>Diffusion / Flow</span><em>✓</em></div>
+          <div class="preview-row"><strong>OpenVLA-OFT</strong><span>2025</span><span>Autoregressive</span><em>✓</em></div>
+          <div class="preview-row"><strong>OpenVLA</strong><span>2024</span><span>Autoregressive</span><em>✓</em></div>
+          <div class="preview-row"><strong>RT-2</strong><span>2023</span><span>Autoregressive</span><em>×</em></div>
         </div>
-        <div class="stat-card">
-          <strong>35</strong>
-          <span>evaluation rows</span>
+        <div class="preview-insights">
+          <div class="preview-stat-grid">
+            <article><span>Total Models</span><strong>153</strong></article>
+            <article><span>Open Source</span><strong>71</strong></article>
+            <article><span>Papers</span><strong>153</strong></article>
+            <article><span>Benchmarks</span><strong>11</strong></article>
+          </div>
+          <div class="preview-bars">
+            <strong>Timeline</strong>
+            <div>
+              <span style="height: 22px;">2022</span>
+              <span style="height: 42px;">2023</span>
+              <span style="height: 58px;">2024</span>
+              <span style="height: 82px;">2025</span>
+              <span style="height: 50px;">2026</span>
+            </div>
+          </div>
         </div>
-        <div class="stat-card">
-          <strong>17</strong>
-          <span>topics</span>
-        </div>
-        <div class="stat-card">
-          <strong>2022-2026</strong>
-          <span>年份覆盖</span>
-        </div>
-        <div class="stat-card">
-          <strong>14</strong>
-          <span>核心 / 桥接 / 事实表</span>
-        </div>
+      </div>
+    </section>
+
+    <section id="interface" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Interface Update</p>
+        <h2>静态展示页与 Flask 页面保持同一套视觉语言</h2>
+        <p>
+          GitHub Pages 不能直接连接本地 MySQL，但它现在会展示动态端的核心界面形态：
+          深蓝导航栏、模型搜索、筛选侧栏、数据表和统计趋势卡片。实际筛选、详情、录入和统计仍在本地 Flask 应用中运行。
+        </p>
+      </div>
+      <div class="grid grid--4">
+        <article class="info-card">
+          <h3>Browse Dashboard</h3>
+          <p>模型列表页使用三栏布局，优先展示筛选条件、结果表格和当前结果集统计。</p>
+        </article>
+        <article class="info-card">
+          <h3>Compact Tables</h3>
+          <p>表格列与截图风格一致，集中展示模型、年份、范式、topic、开源状态、benchmark 和论文入口。</p>
+        </article>
+        <article class="info-card">
+          <h3>Expanded Filters</h3>
+          <p>支持年份范围、paradigm、topic、open source、data source type、benchmark 和关键词组合查询。</p>
+        </article>
+        <article class="info-card">
+          <h3>Responsive Layout</h3>
+          <p>桌面端保持三栏信息密度，窄屏端按导航、筛选、表格、统计的顺序堆叠。</p>
+        </article>
       </div>
     </section>
 
@@ -126,12 +180,12 @@
       </div>
       <div class="dataset-strip">
         <article>
-          <span class="dataset-number">150+</span>
+          <span class="dataset-number">153</span>
           <strong>Models</strong>
           <p>从 RT-1、VIMA 到 Long-VLA、ControlVLA、Uni-NaVid、Xiaomi-Robotics-0、FASTer、X-VLA 等近期记录。</p>
         </article>
         <article>
-          <span class="dataset-number">145+</span>
+          <span class="dataset-number">153</span>
           <strong>Papers</strong>
           <p>模型论文通过 <code>PaperTopic</code> 复用同一套 topic，便于筛选和统计。</p>
         </article>
@@ -141,9 +195,9 @@
           <p>覆盖 humanoid robotics、spatial grounding、real-time control 等方向。</p>
         </article>
         <article>
-          <span class="dataset-number">35</span>
-          <strong>Results</strong>
-          <p>包含数值型 benchmark 结果与只有定性描述的来源追溯记录。</p>
+          <span class="dataset-number">11</span>
+          <strong>Benchmarks</strong>
+          <p>按 benchmark 维度组织 evaluation rows，支持统计覆盖与来源追溯。</p>
         </article>
       </div>
       <div class="model-cloud" aria-label="模型列表">
@@ -366,11 +420,11 @@
       <div class="grid grid--3">
         <article class="capability-card">
           <h3>年份筛选</h3>
-          <p><code>/models?year=2026</code> 展示 Xiaomi-Robotics-0、Green-VLA、AR-VLA、ProgressVLA 等最新条目。</p>
+          <p><code>/models?year_from=2024&amp;year_to=2026</code> 展示近年 VLA 模型和模型级方法。</p>
         </article>
         <article class="capability-card">
           <h3>多条件筛选</h3>
-          <p><code>/models</code> 支持按 paradigm、topic、benchmark、year 和关键词组合查询。</p>
+          <p><code>/models</code> 支持按 paradigm、topic、benchmark、year range、open source、data source type 和关键词组合查询。</p>
         </article>
         <article class="capability-card">
           <h3>论文资料库</h3>
