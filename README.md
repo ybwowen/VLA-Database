@@ -39,8 +39,8 @@ The current build covers the following functions:
 - Paper information management
   - paper title, venue, publication type, publication status, links
 - Author and affiliation management
-  - selected authors, author order, first-author flag, corresponding-author flag,
-    affiliations
+  - paper author lists, author order, first-author flag, corresponding-author
+    flag, and source-backed per-paper affiliation snapshots
 - Paradigm management
   - `Autoregressive`, `Diffusion / Flow-based`, `Dual System`, `Other`
 - Topic classification management
@@ -155,10 +155,11 @@ Main relationships:
 ## 6. Data Scope
 
 The database loads a compact core set of hand-checked model records and then
-creates additional lightweight model records from the paper index when a paper
-clearly introduces a VLA model or model-level method. The current sample data
-covers more than 90 model records across 2022-2026 and more than 120 VLA model
-or method papers, including robot foundation models, language-conditioned
+creates additional lightweight model records from explicit `model_names` fields
+in the paper index when a paper clearly introduces a VLA model or model-level
+method. The current sample data covers more than 150 model records across
+2022-2026 and more than 145 VLA model or method papers, including robot
+foundation models, language-conditioned
 policies, action tokenization, and model-level adaptation or acceleration
 methods.
 
@@ -182,17 +183,25 @@ methods.
 - Green-VLA
 - AR-VLA
 - ProgressVLA
+- FASTer
+- X-VLA
+- PixelVLA
+- MemoryVLA
+- Vlaser
 
-The 2026 records cite public project pages or publication pages through
-`source_url` fields.
+The 2026 records cite public project pages or publication pages through the
+paper/model link fields and benchmark `source_url` rows.
 
 The paper index is stored in `data/paper_library.json`. It is imported
 idempotently into `papers` and linked to `topics` through `paper_topics`, so
-papers can be queried even when they are not represented as full model records.
-Pure dataset, benchmark, and platform-only entries are excluded from this file.
-Author metadata is imported when it is available from arXiv, PMLR, RSS, or
-project pages. Affiliations are attached when a source gives a reliable
-author-institution mapping; otherwise they are left empty.
+papers can be queried even when they are represented only as lightweight
+model/method records. Pure dataset, benchmark, and platform-only entries are
+excluded from this file. Author metadata is imported when it is available from
+arXiv, CVF, ICLR, PMLR, RSS, or project pages. Affiliations are attached when a
+source gives a reliable author-institution mapping; otherwise they are left
+empty. Because the normalized schema stores author affiliations globally, the
+seed also stores source-backed per-paper affiliation snapshots on the
+`paper_authors.notes` bridge row and the detail pages display those first.
 
 ## 7. Query Scenarios
 
