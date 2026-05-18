@@ -106,6 +106,14 @@ class PaperAuthor(Base):
     paper = relationship("Paper", back_populates="paper_authors")
     author = relationship("Author", back_populates="paper_authors")
 
+    @property
+    def affiliation_names(self):
+        prefix = "Affiliations:"
+        if self.notes and self.notes.startswith(prefix):
+            raw_names = self.notes[len(prefix) :].strip()
+            return [name.strip() for name in raw_names.split(";") if name.strip()]
+        return [link.affiliation.name for link in self.author.author_affiliations]
+
 
 class AuthorAffiliation(Base):
     __tablename__ = "author_affiliations"

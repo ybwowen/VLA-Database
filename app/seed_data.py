@@ -2,6 +2,8 @@ import json
 import re
 from pathlib import Path
 
+from sqlalchemy import or_
+
 from .models import (
     Affiliation,
     Author,
@@ -897,7 +899,7 @@ SEED_MODELS = [
         "repo_url": "https://github.com/SpatialVLA/SpatialVLA",
         "paradigm": "Autoregressive",
         "paper": {
-            "title": "SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Model",
+            "title": "SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models",
             "year": 2025,
             "venue_name": "RSS 2025",
             "publication_type": "conference",
@@ -1370,7 +1372,7 @@ SEED_MODELS = [
         "repo_url": None,
         "paradigm": "Autoregressive",
         "paper": {
-            "title": "AR-VLA: True Autoregressive Action Expert for Vision-Language-Action Models",
+            "title": "AR-VLA: Autoregressive Action Expert for Vision-Language-Action Models",
             "year": 2026,
             "venue_name": "RSS 2026",
             "publication_type": "conference",
@@ -1553,14 +1555,17 @@ def _link_paper_topics(session, paper, topics, topic_names):
 def _link_paper_authors(session, paper, author_items, affiliation_cache):
     for index, author_item in enumerate(author_items or [], start=1):
         name = (author_item.get("full_name") or author_item.get("name") or "").strip()
-        if not name:
+        if not name or not re.search(r"[A-Za-z0-9]", name):
             continue
 
         author = _get_or_create(session, Author, full_name=name)
+        affiliation_names = []
         for affiliation_name in author_item.get("affiliations") or []:
             affiliation_name = affiliation_name.strip()
             if not affiliation_name:
                 continue
+            if affiliation_name not in affiliation_names:
+                affiliation_names.append(affiliation_name)
             affiliation = affiliation_cache.get(affiliation_name)
             if affiliation is None:
                 affiliation = _get_or_create(session, Affiliation, name=affiliation_name)
@@ -1583,8 +1588,14 @@ def _link_paper_authors(session, paper, author_items, affiliation_cache):
                 "is_corresponding_author": bool(author_item.get("is_corresponding_author", False)),
             },
         )
-        if link.author_order in (None, 0):
+        if link.author_order in (None, 0) or link.author_order != index:
             link.author_order = index
+        explicit_first = author_item.get("is_first_author")
+        link.is_first_author = bool(explicit_first) if explicit_first is not None else index == 1
+        if author_item.get("is_corresponding_author"):
+            link.is_corresponding_author = True
+        if affiliation_names:
+            link.notes = "Affiliations: " + "; ".join(affiliation_names)
 
 
 def _infer_paradigm_name(item):
@@ -1598,45 +1609,60 @@ def _infer_paradigm_name(item):
     return "Other"
 
 
+def _model_names_from_paper_item(item):
+    names = item.get("model_names")
+    if names is None:
+        alias = (item.get("alias") or "").strip()
+        names = [alias] if alias in AUTO_MODEL_ALIASES else []
+    return [name.strip() for name in names if isinstance(name, str) and name.strip()]
+
+
 def _seed_model_from_paper_item(session, item, paper, topics, paradigms, data_sources):
-    alias = (item.get("alias") or "").strip()
-    if alias not in AUTO_MODEL_ALIASES or paper.models:
-        return False
+    created_count = 0
+    for model_name in _model_names_from_paper_item(item):
+        slug = _slugify(model_name)
+        existing_model = (
+            session.query(VlaModel)
+            .filter(or_(VlaModel.slug == slug, VlaModel.name == model_name))
+            .one_or_none()
+        )
+        if existing_model is not None:
+            continue
 
-    slug = _slugify(alias)
-    if session.query(VlaModel.id).filter(VlaModel.slug == slug).first() is not None:
-        return False
+        paradigm = paradigms[_infer_paradigm_name(item)]
+        model = VlaModel(
+            name=model_name,
+            slug=slug,
+            year=item.get("year"),
+            open_source=bool(item.get("code_url")),
+            summary=f"Model or method record linked to the paper: {item.get('title')}.",
+            notes="Linked from the paper index; benchmark rows can be added when public metrics are available.",
+            website_url=item.get("project_url") or item.get("arxiv_url"),
+            repo_url=item.get("code_url"),
+            paper_id=paper.id,
+            paradigm_id=paradigm.id,
+        )
+        session.add(model)
+        session.flush()
 
-    paradigm = paradigms[_infer_paradigm_name(item)]
-    model = VlaModel(
-        name=alias,
-        slug=slug,
-        year=item.get("year"),
-        open_source=bool(item.get("code_url")),
-        summary=f"Model or method record linked to the paper: {item.get('title')}.",
-        notes="Linked from the paper index; benchmark rows can be added when public metrics are available.",
-        website_url=item.get("project_url") or item.get("arxiv_url"),
-        repo_url=item.get("code_url"),
-        paper_id=paper.id,
-        paradigm_id=paradigm.id,
-    )
-    session.add(model)
-    session.flush()
+        topic_names = item.get("topics") or ["other"]
+        for topic_name in topic_names:
+            topic = topics.get(topic_name)
+            if topic is not None:
+                _get_or_create(session, ModelTopic, model_id=model.id, topic_id=topic.id)
 
-    topic_names = item.get("topics") or ["other"]
-    for topic_name in topic_names:
-        topic = topics.get(topic_name)
-        if topic is not None:
-            _get_or_create(session, ModelTopic, model_id=model.id, topic_id=topic.id)
+        _get_or_create(
+            session,
+            ModelDataSource,
+            model_id=model.id,
+            data_source_type_id=data_sources["mixed"].id,
+            defaults={
+                "notes": "Source mix is recorded at paper level when more specific training data details are available."
+            },
+        )
+        created_count += 1
 
-    _get_or_create(
-        session,
-        ModelDataSource,
-        model_id=model.id,
-        data_source_type_id=data_sources["mixed"].id,
-        defaults={"notes": "Source mix is recorded at paper level when more specific training data details are available."},
-    )
-    return True
+    return created_count
 
 
 def _seed_paper_library(session, topics, affiliation_cache, paradigms=None, data_sources=None):
@@ -1653,8 +1679,8 @@ def _seed_paper_library(session, topics, affiliation_cache, paradigms=None, data
         _link_paper_topics(session, paper, topics, item.get("topics") or ["other"])
         _link_paper_authors(session, paper, item.get("authors"), affiliation_cache)
         if paradigms is not None and data_sources is not None:
-            created_model_count += int(
-                _seed_model_from_paper_item(session, item, paper, topics, paradigms, data_sources)
+            created_model_count += _seed_model_from_paper_item(
+                session, item, paper, topics, paradigms, data_sources
             )
 
     return len(entries), created_model_count

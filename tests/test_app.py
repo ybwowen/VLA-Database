@@ -39,9 +39,10 @@ def test_sample_data_includes_recent_models(app):
     session = get_session()
     try:
         names = {name for (name,) in session.query(VlaModel.name).all()}
-        assert len(names) >= 90
+        assert len(names) >= 145
         assert {"Xiaomi-Robotics-0", "Green-VLA", "AR-VLA", "ProgressVLA"} <= names
         assert {"Long-VLA", "ControlVLA", "Uni-NaVid", "ConRFT", "RLDG"} <= names
+        assert {"FASTer", "X-VLA", "PixelVLA", "MemoryVLA", "Vlaser"} <= names
     finally:
         session.close()
         remove_session()
@@ -69,12 +70,13 @@ def test_sample_data_includes_large_paper_index(app):
     try:
         papers = session.query(Paper).all()
         titles = [paper.title for paper in papers]
-        assert len(papers) >= 120
+        assert len(papers) >= 145
         assert len(titles) == len(set(titles))
         assert all(paper.arxiv_url or paper.project_url or paper.code_url for paper in papers)
         assert session.query(PaperTopic).count() >= 100
-        assert session.query(Author).count() >= 500
-        assert session.query(PaperAuthor).count() >= 500
+        assert session.query(Author).count() >= 1100
+        assert session.query(PaperAuthor).count() >= 1700
+        assert sum(1 for paper in papers if not paper.models) <= 2
         removed_dataset_only_titles = {
             "DROID: A Large-Scale In-the-Wild Robot Manipulation Dataset",
             "BridgeData V2: A Dataset for Robot Learning at Scale",
@@ -82,6 +84,34 @@ def test_sample_data_includes_large_paper_index(app):
             "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
         }
         assert removed_dataset_only_titles.isdisjoint(titles)
+    finally:
+        session.close()
+        remove_session()
+
+
+def test_paper_author_affiliation_snapshots_are_paper_specific(app):
+    session = get_session()
+    try:
+        openvla = (
+            session.query(Paper)
+            .filter(Paper.title == "OpenVLA: An Open-Source Vision-Language-Action Model")
+            .one()
+        )
+        karl_link = next(
+            link for link in openvla.paper_authors if link.author.full_name == "Karl Pertsch"
+        )
+        assert karl_link.affiliation_names == ["Stanford University", "UC Berkeley"]
+
+        clap = (
+            session.query(Paper)
+            .filter(
+                Paper.title
+                == "CLAP: A Closed-Loop Diffusion Transformer Action Foundation Model for Robotic Manipulation"
+            )
+            .one()
+        )
+        yang_zhou = next(link for link in clap.paper_authors if link.author.full_name == "Yang Zhou")
+        assert yang_zhou.affiliation_names == ["Huawei Technologies"]
     finally:
         session.close()
         remove_session()

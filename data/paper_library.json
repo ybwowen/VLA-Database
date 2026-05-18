@@ -1,10 +1,13 @@
 {
-  "source": "Psi-Robot/Awesome-VLA-Papers, plus checked conference and proceedings pages",
-  "source_snapshot": "2026-05-15",
-  "scope_note": "VLA model, robot foundation model, language-conditioned policy, and model-level adaptation/acceleration papers. Pure dataset, benchmark, and platform-only records are excluded.",
+  "source": "Psi-Robot/Awesome-VLA-Papers, plus checked arXiv, CVF, ICLR virtual, RSS, PMLR, project, and proceedings pages",
+  "source_snapshot": "2026-05-18",
+  "scope_note": "VLA model, robot foundation model, language-conditioned policy, and model-level adaptation/acceleration papers. Pure dataset, benchmark, and platform-only records are excluded; affiliations are recorded only when a public source gives a reliable mapping.",
   "papers": [
     {
       "alias": "Language Planner",
+      "model_names": [
+        "Language Planner"
+      ],
       "title": "Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents",
       "year": 2022,
       "venue_name": "ICML 2022",
@@ -39,6 +42,9 @@
     },
     {
       "alias": "Socratic Models",
+      "model_names": [
+        "Socratic Models"
+      ],
       "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
       "year": 2022,
       "venue_name": "ICLR 2023",
@@ -109,6 +115,9 @@
     },
     {
       "alias": "SayCan",
+      "model_names": [
+        "SayCan"
+      ],
       "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
       "year": 2022,
       "venue_name": null,
@@ -310,6 +319,9 @@
     },
     {
       "alias": "Inner Monologue",
+      "model_names": [
+        "Inner Monologue"
+      ],
       "title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
       "year": 2022,
       "venue_name": "CoRL 2022",
@@ -396,6 +408,9 @@
     },
     {
       "alias": "PaLM-E",
+      "model_names": [
+        "PaLM-E"
+      ],
       "title": "PaLM-E: An Embodied Multimodal Language Model",
       "year": 2023,
       "venue_name": "ICML 2023",
@@ -502,6 +517,9 @@
     },
     {
       "alias": "EmbodiedGPT",
+      "model_names": [
+        "EmbodiedGPT"
+      ],
       "title": "EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought",
       "year": 2023,
       "venue_name": "NeurIPS 2023",
@@ -560,6 +578,9 @@
     },
     {
       "alias": "DoReMi",
+      "model_names": [
+        "DoReMi"
+      ],
       "title": "DoReMi: Grounding Language Model by Detecting and Recovering from Plan-Execution Misalignment",
       "year": 2023,
       "venue_name": "IROS 2024",
@@ -594,6 +615,9 @@
     },
     {
       "alias": "ViLa",
+      "model_names": [
+        "ViLa"
+      ],
       "title": "Look Before You Leap: Unveiling the Power of GPT-4V in Robotic Vision-Language Planning",
       "year": 2023,
       "venue_name": "Workshop on Vision-Language Models for Navigation and Manipulation, ICRA 2024",
@@ -633,6 +657,9 @@
     },
     {
       "alias": "3D-VLA",
+      "model_names": [
+        "3D-VLA"
+      ],
       "title": "3D-VLA: A 3D Vision-Language-Action Generative World Model",
       "year": 2024,
       "venue_name": "ICML 2024",
@@ -684,6 +711,9 @@
     },
     {
       "alias": "Bi-VLA",
+      "model_names": [
+        "Bi-VLA"
+      ],
       "title": "Bi-VLA: Vision-Language-Action Model-Based System for Bimanual Robotic Dexterous Manipulations",
       "year": 2024,
       "venue_name": "SMC 2024",
@@ -730,6 +760,9 @@
     },
     {
       "alias": "RoboMamba",
+      "model_names": [
+        "RoboMamba"
+      ],
       "title": "RoboMamba: Multimodal State Space Model for Efficient Robot Reasoning and Manipulation",
       "year": 2024,
       "venue_name": "NeurIPS 2024",
@@ -790,6 +823,9 @@
     },
     {
       "alias": "ReplanVLM",
+      "model_names": [
+        "ReplanVLM"
+      ],
       "title": "ReplanVLM: Replanning Robotic Tasks with Visual Language Models",
       "year": 2024,
       "venue_name": null,
@@ -825,6 +861,9 @@
     },
     {
       "alias": "BUMBLE",
+      "model_names": [
+        "BUMBLE"
+      ],
       "title": "BUMBLE: Unifying Reasoning and Acting with Vision-Language Models for Building-wide Mobile Manipulation",
       "year": 2024,
       "venue_name": "ICRA 2025",
@@ -864,6 +903,9 @@
     },
     {
       "alias": "ReflectVLM",
+      "model_names": [
+        "ReflectVLM"
+      ],
       "title": "Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation",
       "year": 2025,
       "venue_name": null,
@@ -908,6 +950,9 @@
     },
     {
       "alias": "Hi Robot",
+      "model_names": [
+        "Hi Robot"
+      ],
       "title": "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models",
       "year": 2025,
       "venue_name": null,
@@ -987,6 +1032,9 @@
     },
     {
       "alias": "RoboBrain",
+      "model_names": [
+        "RoboBrain"
+      ],
       "title": "RoboBrain: A Unified Brain Model for Robotic Manipulation from Abstract to Concrete",
       "year": 2025,
       "venue_name": "CVPR 2025",
@@ -1075,165 +1123,241 @@
     },
     {
       "alias": "pi0.5",
+      "model_names": [
+        "pi0.5"
+      ],
       "title": "pi0.5: A Vision-Language-Action Model with Open-World Generalization",
       "year": 2025,
       "venue_name": "CoRL 2025",
       "publication_type": "conference",
       "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2504.16054",
-      "project_url": "https://proceedings.mlr.press/v305/black25a.html",
-      "code_url": null,
+      "project_url": "https://www.physicalintelligence.company/blog/pi05",
+      "code_url": "https://github.com/Physical-Intelligence/openpi",
       "topics": [
         "long-horizon",
         "open-world generalization",
         "reasoning"
       ],
-      "notes": "Model or method paper; checked against CoRL 2025 PMLR proceedings.",
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi0.5. Checked against CoRL 2025 / PMLR proceedings and the official project page.",
       "authors": [
         {
           "full_name": "Kevin Black",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Noah Brown",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "James Darpinian",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Karan Dhabalia",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Danny Driess",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Adnan Esmail",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
-          "full_name": "Michael Robert Equi",
-          "affiliations": []
+          "full_name": "Michael Equi",
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Chelsea Finn",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Niccolo Fusai",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Manuel Y. Galliker",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Dibya Ghosh",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Lachy Groom",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Karol Hausman",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
-          "full_name": "brian ichter",
-          "affiliations": []
+          "full_name": "Brian Ichter",
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Szymon Jakubczak",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Tim Jones",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Liyiming Ke",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Devin LeBlanc",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Sergey Levine",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Adrian Li-Bell",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Mohith Mothukuri",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Suraj Nair",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Karl Pertsch",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Allen Z. Ren",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Lucy Xiaoyang Shi",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Laura Smith",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Jost Tobias Springenberg",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Kyle Stachowicz",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "James Tanner",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Quan Vuong",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Homer Walke",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Anna Walling",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Haohuan Wang",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Lili Yu",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Ury Zhilinsky",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         }
       ]
     },
     {
       "alias": "RT-H",
+      "model_names": [
+        "RT-H"
+      ],
       "title": "RT-H: Action Hierarchies Using Language",
       "year": 2024,
       "venue_name": null,
@@ -1288,6 +1412,9 @@
     },
     {
       "alias": "NaVILA",
+      "model_names": [
+        "NaVILA"
+      ],
       "title": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
       "year": 2024,
       "venue_name": "RSS 2025",
@@ -1346,6 +1473,9 @@
     },
     {
       "alias": "Code as Policies",
+      "model_names": [
+        "Code as Policies"
+      ],
       "title": "Code as Policies: Language Model Programs for Embodied Control",
       "year": 2022,
       "venue_name": "ICRA 2023",
@@ -1396,6 +1526,9 @@
     },
     {
       "alias": "ProgPrompt",
+      "model_names": [
+        "ProgPrompt"
+      ],
       "title": "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
       "year": 2022,
       "venue_name": "ICRA 2023",
@@ -1450,6 +1583,9 @@
     },
     {
       "alias": "ChatGPT for Robotics",
+      "model_names": [
+        "ChatGPT for Robotics"
+      ],
       "title": "ChatGPT for Robotics: Design Principles and Model Abilities",
       "year": 2023,
       "venue_name": "IEEE Access 2024",
@@ -1484,6 +1620,9 @@
     },
     {
       "alias": "Text2Motion",
+      "model_names": [
+        "Text2Motion"
+      ],
       "title": "Text2Motion: From Natural Language Instructions to Feasible Plans",
       "year": 2023,
       "venue_name": "ICRL 2023",
@@ -1522,6 +1661,9 @@
     },
     {
       "alias": "Instruct2Act",
+      "model_names": [
+        "Instruct2Act"
+      ],
       "title": "Instruct2Act: Mapping Multi-modality Instructions to Robotic Actions with Large Language Model",
       "year": 2023,
       "venue_name": null,
@@ -1564,6 +1706,9 @@
     },
     {
       "alias": "RoboScript",
+      "model_names": [
+        "RoboScript"
+      ],
       "title": "RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation",
       "year": 2024,
       "venue_name": null,
@@ -1640,6 +1785,9 @@
     },
     {
       "alias": "RoboCodeX",
+      "model_names": [
+        "RoboCodeX"
+      ],
       "title": "RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis",
       "year": 2024,
       "venue_name": "ICML 2024",
@@ -1734,6 +1882,9 @@
     },
     {
       "alias": "KITE",
+      "model_names": [
+        "KITE"
+      ],
       "title": "KITE: Keypoint-Conditioned Policies for Semantic Manipulation",
       "year": 2023,
       "venue_name": "CoRL 2023",
@@ -1769,6 +1920,9 @@
     },
     {
       "alias": "CoPa",
+      "model_names": [
+        "CoPa"
+      ],
       "title": "CoPa: General Robotic Manipulation through Spatial Constraints of Parts with Foundation Models",
       "year": 2024,
       "venue_name": "IROS 2024",
@@ -1809,6 +1963,9 @@
     },
     {
       "alias": "RoboPoint",
+      "model_names": [
+        "RoboPoint"
+      ],
       "title": "RoboPoint: A Vision-Language Model for Spatial Affordance Prediction for Robotics",
       "year": 2024,
       "venue_name": "CoRL 2024",
@@ -1860,6 +2017,9 @@
     },
     {
       "alias": "RAM",
+      "model_names": [
+        "RAM"
+      ],
       "title": "RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation",
       "year": 2024,
       "venue_name": "CoRL 2024 Oral",
@@ -1912,6 +2072,9 @@
     },
     {
       "alias": "ReKep",
+      "model_names": [
+        "ReKep"
+      ],
       "title": "ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation",
       "year": 2024,
       "venue_name": "CoRL 2024",
@@ -1954,6 +2117,9 @@
     },
     {
       "alias": "OmniManip",
+      "model_names": [
+        "OmniManip"
+      ],
       "title": "OmniManip: Towards General Robotic Manipulation via Object-Centric Interaction Primitives as Spatial Constraints",
       "year": 2025,
       "venue_name": "CVPR 2025 Highlight",
@@ -1998,6 +2164,9 @@
     },
     {
       "alias": "Magma",
+      "model_names": [
+        "Magma"
+      ],
       "title": "Magma: A Foundation Model for Multimodal AI Agents",
       "year": 2025,
       "venue_name": "CVPR 2025",
@@ -2069,6 +2238,9 @@
     },
     {
       "alias": "KUDA",
+      "model_names": [
+        "KUDA"
+      ],
       "title": "KUDA: Keypoints to Unify Dynamics Learning and Visual Prompting for Open-Vocabulary Robotic Manipulation",
       "year": 2025,
       "venue_name": "ICRA 2025",
@@ -2101,6 +2273,9 @@
     },
     {
       "alias": "GPT-4V",
+      "model_names": [
+        "GPT-4V"
+      ],
       "title": "GPT-4V(ision) for Robotics: Multimodal Task Planning from Human Demonstration",
       "year": 2023,
       "venue_name": "RA-L 2024",
@@ -2140,6 +2315,9 @@
     },
     {
       "alias": "A3VLM",
+      "model_names": [
+        "A3VLM"
+      ],
       "title": "A3VLM: Actionable Articulation-Aware Vision Language Model",
       "year": 2024,
       "venue_name": "CoRL 2024",
@@ -2190,6 +2368,9 @@
     },
     {
       "alias": "DexGraspVLA",
+      "model_names": [
+        "DexGraspVLA"
+      ],
       "title": "DexGraspVLA: A Vision-Language-Action Framework Towards General Dexterous Grasping",
       "year": 2025,
       "venue_name": null,
@@ -2257,6 +2438,9 @@
     },
     {
       "alias": "MOO",
+      "model_names": [
+        "MOO"
+      ],
       "title": "Open-World Object Manipulation using Pre-Trained Vision-Language Models",
       "year": 2023,
       "venue_name": "CoRL 2023",
@@ -2325,6 +2509,9 @@
     },
     {
       "alias": "ROCKET-1",
+      "model_names": [
+        "ROCKET-1"
+      ],
       "title": "ROCKET-1: Mastering Open-World Interaction with Visual-Temporal Context Prompting",
       "year": 2024,
       "venue_name": "CVPR 2025",
@@ -2338,10 +2525,59 @@
         "open-world generalization",
         "spatial grounding"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: ROCKET-1."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Affordance as Action Tokens / Segmentation Mask). Alias: ROCKET-1.",
+      "authors": [
+        {
+          "full_name": "Shaofei Cai",
+          "affiliations": [
+            "Institute for Artificial Intelligence, Peking University",
+            "School of Intelligence Science and Technology, Peking University"
+          ]
+        },
+        {
+          "full_name": "Zihao Wang",
+          "affiliations": [
+            "Institute for Artificial Intelligence, Peking University",
+            "School of Intelligence Science and Technology, Peking University"
+          ]
+        },
+        {
+          "full_name": "Kewei Lian",
+          "affiliations": [
+            "Institute for Artificial Intelligence, Peking University"
+          ]
+        },
+        {
+          "full_name": "Zhancun Mu",
+          "affiliations": [
+            "Institute for Artificial Intelligence, Peking University"
+          ]
+        },
+        {
+          "full_name": "Xiaojian Ma",
+          "affiliations": [
+            "Beijing Institute for General Artificial Intelligence"
+          ]
+        },
+        {
+          "full_name": "Anji Liu",
+          "affiliations": [
+            "University of California, Los Angeles"
+          ]
+        },
+        {
+          "full_name": "Yitao Liang",
+          "affiliations": [
+            "Institute for Artificial Intelligence, Peking University"
+          ]
+        }
+      ]
     },
     {
       "alias": "SoFar",
+      "model_names": [
+        "SoFar"
+      ],
       "title": "SoFar: Language-Grounded Orientation Bridges Spatial Reasoning and Object Manipulation",
       "year": 2025,
       "venue_name": null,
@@ -2435,6 +2671,9 @@
     },
     {
       "alias": "RoboDexVLM",
+      "model_names": [
+        "RoboDexVLM"
+      ],
       "title": "RoboDexVLM: Visual Language Model-Enabled Task Planning and Motion Control for Dexterous Robot Manipulation",
       "year": 2025,
       "venue_name": null,
@@ -2480,6 +2719,9 @@
     },
     {
       "alias": "CLIPort",
+      "model_names": [
+        "CLIPort"
+      ],
       "title": "CLIPort: What and Where Pathways for Robotic Manipulation",
       "year": 2021,
       "venue_name": "CoRL 2021",
@@ -2512,6 +2754,9 @@
     },
     {
       "alias": "VoxPoser",
+      "model_names": [
+        "VoxPoser"
+      ],
       "title": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models",
       "year": 2023,
       "venue_name": "CoRL 2023 Oral",
@@ -2557,6 +2802,9 @@
     },
     {
       "alias": "ManipLLM",
+      "model_names": [
+        "ManipLLM"
+      ],
       "title": "ManipLLM: Embodied Multimodal Large Language Model for Object-Centric Robotic Manipulation",
       "year": 2023,
       "venue_name": "CVPR 2024",
@@ -2613,6 +2861,9 @@
     },
     {
       "alias": "ManiFoundation",
+      "model_names": [
+        "ManiFoundation"
+      ],
       "title": "ManiFoundation Model for General-Purpose Robotic Manipulation of Contact Synthesis with Arbitrary Objects and Robots",
       "year": 2024,
       "venue_name": "IROS 2024 Oral",
@@ -2685,6 +2936,9 @@
     },
     {
       "alias": "MOKA",
+      "model_names": [
+        "MOKA"
+      ],
       "title": "MOKA: Open-World Robotic Manipulation through Mark-Based Visual Prompting",
       "year": 2024,
       "venue_name": "RSS 2024",
@@ -2722,6 +2976,9 @@
     },
     {
       "alias": "AVDC",
+      "model_names": [
+        "AVDC"
+      ],
       "title": "Learning to Act from Actionless Videos through Dense Correspondences",
       "year": 2023,
       "venue_name": "ICLR 2024 spotlight",
@@ -2761,6 +3018,9 @@
     },
     {
       "alias": "RT-Trajectory",
+      "model_names": [
+        "RT-Trajectory"
+      ],
       "title": "RT-Trajectory: Robotic Task Generalization via Hindsight Trajectory Sketches",
       "year": 2023,
       "venue_name": "ICLR 2024 (Spotlight)",
@@ -2848,6 +3108,9 @@
     },
     {
       "alias": "ATM",
+      "model_names": [
+        "ATM"
+      ],
       "title": "Any-point Trajectory Modeling for Policy Learning",
       "year": 2023,
       "venue_name": "RSS 2024",
@@ -2895,6 +3158,9 @@
     },
     {
       "alias": "LLARVA",
+      "model_names": [
+        "LLARVA"
+      ],
       "title": "LLARVA: Vision-Action Instruction Tuning Enhances Robot Learning",
       "year": 2024,
       "venue_name": "CoRL 2024",
@@ -2946,6 +3212,9 @@
     },
     {
       "alias": "Im2Flow2Act",
+      "model_names": [
+        "Im2Flow2Act"
+      ],
       "title": "Flow as the Cross-Domain Manipulation Interface",
       "year": 2024,
       "venue_name": "CoRL 2024",
@@ -2993,6 +3262,9 @@
     },
     {
       "alias": "FLIP",
+      "model_names": [
+        "FLIP"
+      ],
       "title": "FLIP : Flow-Centric Generative Planning as General-Purpose Manipulation World Model",
       "year": 2024,
       "venue_name": "ICLR 2025 Poster",
@@ -3032,6 +3304,9 @@
     },
     {
       "alias": "HAMSTER",
+      "model_names": [
+        "HAMSTER"
+      ],
       "title": "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
       "year": 2025,
       "venue_name": "ICLR 2025",
@@ -3100,6 +3375,9 @@
     },
     {
       "alias": "ARM4R",
+      "model_names": [
+        "ARM4R"
+      ],
       "title": "Pre-training Auto-regressive Robotic Models with 4D Representations",
       "year": 2025,
       "venue_name": null,
@@ -3151,6 +3429,9 @@
     },
     {
       "alias": "SuSIE",
+      "model_names": [
+        "SuSIE"
+      ],
       "title": "Zero-Shot Robotic Manipulation with Pretrained Image-Editing Diffusion Models",
       "year": 2023,
       "venue_name": "ICLR 2024",
@@ -3199,6 +3480,9 @@
     },
     {
       "alias": "CoTDiffusion",
+      "model_names": [
+        "CoTDiffusion"
+      ],
       "title": "Generate Subgoal Images before Act: Unlocking the Chain-of-Thought Reasoning in Diffusion Model for Robot Manipulation with Multimodal Prompts",
       "year": 2024,
       "venue_name": "CVPR 2024",
@@ -3214,10 +3498,63 @@
         "reasoning",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: CoTDiffusion."
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Goal State as Action Tokens / Single-Frame Image / Point Cloud). Alias: CoTDiffusion.",
+      "authors": [
+        {
+          "full_name": "Fei Ni",
+          "affiliations": [
+            "Tianjin University"
+          ]
+        },
+        {
+          "full_name": "Jianye Hao",
+          "affiliations": [
+            "Tianjin University"
+          ]
+        },
+        {
+          "full_name": "Shiguang Wu",
+          "affiliations": [
+            "Huawei Noah's Ark Lab"
+          ]
+        },
+        {
+          "full_name": "Longxin Kou",
+          "affiliations": [
+            "Tianjin University"
+          ]
+        },
+        {
+          "full_name": "Jiashun Liu",
+          "affiliations": [
+            "Tianjin University"
+          ]
+        },
+        {
+          "full_name": "Yan Zheng",
+          "affiliations": [
+            "Tianjin University"
+          ]
+        },
+        {
+          "full_name": "Bin Wang",
+          "affiliations": [
+            "Huawei Noah's Ark Lab"
+          ]
+        },
+        {
+          "full_name": "Yuzheng Zhuang",
+          "affiliations": [
+            "Huawei Noah's Ark Lab"
+          ]
+        }
+      ]
     },
     {
       "alias": "CoT-VLA",
+      "model_names": [
+        "CoT-VLA"
+      ],
       "title": "CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models",
       "year": 2025,
       "venue_name": "CVPR 2025",
@@ -3298,6 +3635,9 @@
     },
     {
       "alias": "UniPi",
+      "model_names": [
+        "UniPi"
+      ],
       "title": "Learning Universal Policies via Text-Guided Video Generation",
       "year": 2023,
       "venue_name": "NeurIPS 2023 spotlight",
@@ -3348,6 +3688,9 @@
     },
     {
       "alias": "VLP",
+      "model_names": [
+        "VLP"
+      ],
       "title": "Video Language Planning",
       "year": 2023,
       "venue_name": null,
@@ -3419,6 +3762,9 @@
     },
     {
       "alias": "Gen2Act",
+      "model_names": [
+        "Gen2Act"
+      ],
       "title": "Gen2Act: Human Video Generation in Novel Scenarios enables Generalizable Robot Manipulation",
       "year": 2024,
       "venue_name": "CoRL-X-Embodiment-WS 2024",
@@ -3478,6 +3824,9 @@
     },
     {
       "alias": "Video Prediction Policy",
+      "model_names": [
+        "Video Prediction Policy"
+      ],
       "title": "Video Prediction Policy: A Generalist Robot Policy with Predictive Visual Representations",
       "year": 2024,
       "venue_name": "ICML 2025 Spotlight",
@@ -3533,6 +3882,9 @@
     },
     {
       "alias": "FLIP",
+      "model_names": [
+        "FLIP"
+      ],
       "title": "FLIP: Flow-Centric Generative Planning as General-Purpose Manipulation World Model",
       "year": 2024,
       "venue_name": "ICLR 2025",
@@ -3572,6 +3924,9 @@
     },
     {
       "alias": "GEVRM",
+      "model_names": [
+        "GEVRM"
+      ],
       "title": "GEVRM: Goal-Expressive Video Generation Model For Robust Visual Manipulation",
       "year": 2025,
       "venue_name": "ICLR 2025",
@@ -3611,6 +3966,9 @@
     },
     {
       "alias": "OmniJARVIS",
+      "model_names": [
+        "OmniJARVIS"
+      ],
       "title": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
       "year": 2024,
       "venue_name": "NeurIPS 2024",
@@ -3670,6 +4028,9 @@
     },
     {
       "alias": "QueST",
+      "model_names": [
+        "QueST"
+      ],
       "title": "QueST: Self-Supervised Skill Abstractions for Learning Continuous Control",
       "year": 2024,
       "venue_name": "NeurIPS 2024",
@@ -3708,6 +4069,9 @@
     },
     {
       "alias": "LAPA",
+      "model_names": [
+        "LAPA"
+      ],
       "title": "LAPA: Latent Action Pretraining from Videos",
       "year": 2024,
       "venue_name": "ICLR 2025",
@@ -3791,6 +4155,9 @@
     },
     {
       "alias": "GROOT-2",
+      "model_names": [
+        "GROOT-2"
+      ],
       "title": "GROOT-2: Weakly Supervised Multi-Modal Instruction Following Agents",
       "year": 2024,
       "venue_name": "ICLR 2025",
@@ -3837,6 +4204,9 @@
     },
     {
       "alias": "UniVLA",
+      "model_names": [
+        "UniVLA"
+      ],
       "title": "UniVLA: Learning to Act Anywhere with Task-centric Latent Actions",
       "year": 2025,
       "venue_name": "RSS 2025",
@@ -3887,6 +4257,9 @@
     },
     {
       "alias": "LangLfP",
+      "model_names": [
+        "LangLfP"
+      ],
       "title": "Language-Conditioned Imitation Learning over Unstructured Data",
       "year": 2020,
       "venue_name": "RSS 2021",
@@ -3913,6 +4286,9 @@
     },
     {
       "alias": "BC-Z",
+      "model_names": [
+        "BC-Z"
+      ],
       "title": "Zero-Shot Task Generalization with Robotic Imitation Learning",
       "year": 2022,
       "venue_name": "CoRL 2021",
@@ -3963,6 +4339,9 @@
     },
     {
       "alias": "Gato",
+      "model_names": [
+        "Gato"
+      ],
       "title": "A Generalist Agent",
       "year": 2022,
       "venue_name": "TMLR 2022",
@@ -4061,6 +4440,9 @@
     },
     {
       "alias": "VIMA",
+      "model_names": [
+        "VIMA"
+      ],
       "title": "VIMA: General Robot Manipulation with Multimodal Prompts",
       "year": 2022,
       "venue_name": "ICML 2023",
@@ -4119,6 +4501,9 @@
     },
     {
       "alias": "RT-1",
+      "model_names": [
+        "RT-1"
+      ],
       "title": "RT-1: Robotics Transformer for Real-World Control at Scale",
       "year": 2022,
       "venue_name": "RSS 2023",
@@ -4341,6 +4726,9 @@
     },
     {
       "alias": "RT-2",
+      "model_names": [
+        "RT-2"
+      ],
       "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
       "year": 2023,
       "venue_name": "CoRL 2023",
@@ -4575,6 +4963,9 @@
     },
     {
       "alias": "RT-X",
+      "model_names": [
+        "RT-X"
+      ],
       "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
       "year": 2023,
       "venue_name": "ICRA 2024",
@@ -5770,6 +6161,9 @@
     },
     {
       "alias": "RoboFlamingo",
+      "model_names": [
+        "RoboFlamingo"
+      ],
       "title": "Vision-Language Foundation Models as Effective Robot Imitators",
       "year": 2023,
       "venue_name": "ICLR 2024",
@@ -5786,56 +6180,85 @@
       "authors": [
         {
           "full_name": "Xinghang Li",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research",
+            "Tsinghua University"
+          ]
         },
         {
           "full_name": "Minghuan Liu",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research",
+            "Shanghai Jiao Tong University"
+          ]
         },
         {
           "full_name": "Hanbo Zhang",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Cunjun Yu",
-          "affiliations": []
+          "affiliations": [
+            "National University of Singapore"
+          ]
         },
         {
           "full_name": "Jie Xu",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Hongtao Wu",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Chilam Cheang",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Ya Jing",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Weinan Zhang",
-          "affiliations": []
+          "affiliations": [
+            "Shanghai Jiao Tong University"
+          ]
         },
         {
           "full_name": "Huaping Liu",
-          "affiliations": []
+          "affiliations": [
+            "Tsinghua University"
+          ]
         },
         {
           "full_name": "Hang Li",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Tao Kong",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         }
       ]
     },
     {
       "alias": "LEO",
+      "model_names": [
+        "LEO"
+      ],
       "title": "An Embodied Generalist Agent in 3D World",
       "year": 2023,
       "venue_name": "ICML 2024",
@@ -5895,6 +6318,9 @@
     },
     {
       "alias": "GR-1",
+      "model_names": [
+        "GR-1"
+      ],
       "title": "Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation",
       "year": 2023,
       "venue_name": "ICLR 2024",
@@ -5950,6 +6376,9 @@
     },
     {
       "alias": "Octo",
+      "model_names": [
+        "Octo"
+      ],
       "title": "Octo: An Open-Source Generalist Robot Policy",
       "year": 2024,
       "venue_name": "ICRA 2024",
@@ -5970,81 +6399,127 @@
         },
         {
           "full_name": "Dibya Ghosh",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley"
+          ]
         },
         {
           "full_name": "Homer Walke",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley"
+          ]
         },
         {
           "full_name": "Karl Pertsch",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley",
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Kevin Black",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley"
+          ]
         },
         {
           "full_name": "Oier Mees",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley"
+          ]
         },
         {
           "full_name": "Sudeep Dasari",
-          "affiliations": []
+          "affiliations": [
+            "Carnegie Mellon University"
+          ]
         },
         {
           "full_name": "Joey Hejna",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Tobias Kreiman",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley"
+          ]
+        },
+        {
+          "full_name": "Ria Doshi",
+          "affiliations": [
+            "UC Berkeley"
+          ]
         },
         {
           "full_name": "Charles Xu",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley"
+          ]
         },
         {
           "full_name": "Jianlan Luo",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley"
+          ]
         },
         {
           "full_name": "You Liang Tan",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley"
+          ]
         },
         {
           "full_name": "Lawrence Yunliang Chen",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley"
+          ]
         },
         {
           "full_name": "Pannag Sanketi",
-          "affiliations": []
+          "affiliations": [
+            "Google DeepMind"
+          ]
         },
         {
           "full_name": "Quan Vuong",
-          "affiliations": []
+          "affiliations": [
+            "Google DeepMind"
+          ]
         },
         {
           "full_name": "Ted Xiao",
-          "affiliations": []
+          "affiliations": [
+            "Google DeepMind"
+          ]
         },
         {
           "full_name": "Dorsa Sadigh",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Chelsea Finn",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Sergey Levine",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley"
+          ]
         }
       ]
     },
     {
       "alias": "OpenVLA",
-      "title": "OpenVLA: An open-source vision-language-action model",
+      "model_names": [
+        "OpenVLA"
+      ],
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
       "year": 2024,
       "venue_name": "CoRL 2024",
       "publication_type": "conference",
@@ -6060,35 +6535,53 @@
       "authors": [
         {
           "full_name": "Moo Jin Kim",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Karl Pertsch",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University",
+            "UC Berkeley"
+          ]
         },
         {
           "full_name": "Siddharth Karamcheti",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University",
+            "Toyota Research Institute"
+          ]
         },
         {
           "full_name": "Ted Xiao",
-          "affiliations": []
+          "affiliations": [
+            "Google DeepMind"
+          ]
         },
         {
           "full_name": "Ashwin Balakrishna",
-          "affiliations": []
+          "affiliations": [
+            "Toyota Research Institute"
+          ]
         },
         {
           "full_name": "Suraj Nair",
-          "affiliations": []
+          "affiliations": [
+            "Toyota Research Institute"
+          ]
         },
         {
           "full_name": "Rafael Rafailov",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Ethan Foster",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Grace Lam",
@@ -6096,44 +6589,66 @@
         },
         {
           "full_name": "Pannag Sanketi",
-          "affiliations": []
+          "affiliations": [
+            "Google DeepMind"
+          ]
         },
         {
           "full_name": "Quan Vuong",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Thomas Kollar",
-          "affiliations": []
+          "affiliations": [
+            "Toyota Research Institute"
+          ]
         },
         {
           "full_name": "Benjamin Burchfiel",
-          "affiliations": []
+          "affiliations": [
+            "Toyota Research Institute"
+          ]
         },
         {
           "full_name": "Russ Tedrake",
-          "affiliations": []
+          "affiliations": [
+            "Toyota Research Institute",
+            "MIT"
+          ]
         },
         {
           "full_name": "Dorsa Sadigh",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Sergey Levine",
-          "affiliations": []
+          "affiliations": [
+            "UC Berkeley"
+          ]
         },
         {
           "full_name": "Percy Liang",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Chelsea Finn",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         }
       ]
     },
     {
       "alias": "TinyVLA",
+      "model_names": [
+        "TinyVLA"
+      ],
       "title": "TinyVLA: Towards Fast, Data-Efficient Vision-Language-Action Models for Robotic Manipulation",
       "year": 2024,
       "venue_name": "RA-L 2025",
@@ -6200,6 +6715,9 @@
     },
     {
       "alias": "HiRT",
+      "model_names": [
+        "HiRT"
+      ],
       "title": "HiRT: Enhancing Robotic Control with Hierarchical Robot Transformers",
       "year": 2024,
       "venue_name": "CoRL 2024",
@@ -6246,6 +6764,9 @@
     },
     {
       "alias": "GR-2",
+      "model_names": [
+        "GR-2"
+      ],
       "title": "GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge for Robot Manipulation",
       "year": 2024,
       "venue_name": null,
@@ -6263,56 +6784,83 @@
       "authors": [
         {
           "full_name": "Chi-Lam Cheang",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Guangzeng Chen",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Ya Jing",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Tao Kong",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Hang Li",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Yifeng Li",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Yuxiao Liu",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Hongtao Wu",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Jiafeng Xu",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Yichu Yang",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Hanbo Zhang",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         },
         {
           "full_name": "Minzhao Zhu",
-          "affiliations": []
+          "affiliations": [
+            "ByteDance Research"
+          ]
         }
       ]
     },
     {
       "alias": "RDT-1B",
+      "model_names": [
+        "RDT-1B"
+      ],
       "title": "RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation",
       "year": 2024,
       "venue_name": "ICLR 2025",
@@ -6320,7 +6868,7 @@
       "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2410.07864",
       "project_url": "https://rdt-robotics.github.io/rdt-robotics/",
-      "code_url": "https://rdt-robotics.github.io/rdt-robotics/",
+      "code_url": "https://github.com/thu-ml/RoboticsDiffusionTransformer",
       "topics": [
         "bimanual manipulation",
         "generalist manipulation",
@@ -6330,162 +6878,230 @@
       "authors": [
         {
           "full_name": "Songming Liu",
-          "affiliations": []
+          "affiliations": [
+            "Tsinghua University"
+          ]
         },
         {
           "full_name": "Lingxuan Wu",
-          "affiliations": []
+          "affiliations": [
+            "Tsinghua University"
+          ]
         },
         {
           "full_name": "Bangguo Li",
-          "affiliations": []
+          "affiliations": [
+            "Tsinghua University"
+          ]
         },
         {
           "full_name": "Hengkai Tan",
-          "affiliations": []
+          "affiliations": [
+            "Tsinghua University"
+          ]
         },
         {
           "full_name": "Huayu Chen",
-          "affiliations": []
+          "affiliations": [
+            "Tsinghua University"
+          ]
         },
         {
           "full_name": "Zhengyi Wang",
-          "affiliations": []
+          "affiliations": [
+            "Tsinghua University"
+          ]
         },
         {
           "full_name": "Ke Xu",
-          "affiliations": []
+          "affiliations": [
+            "Tsinghua University"
+          ]
         },
         {
           "full_name": "Hang Su",
-          "affiliations": []
+          "affiliations": [
+            "Tsinghua University"
+          ]
         },
         {
           "full_name": "Jun Zhu",
-          "affiliations": []
+          "affiliations": [
+            "Tsinghua University"
+          ]
         }
       ]
     },
     {
       "alias": "pi_0",
-      "title": "A Vision-Language-Action Flow Model for General Robot Control",
+      "model_names": [
+        "pi0"
+      ],
+      "title": "pi0: A Vision-Language-Action Flow Model for General Robot Control",
       "year": 2024,
       "venue_name": "RSS 2025",
       "publication_type": "conference",
       "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2410.24164",
-      "project_url": "https://www.roboticsproceedings.org/rss21/p010.html",
+      "project_url": "https://www.physicalintelligence.company/blog/pi0",
       "code_url": null,
       "topics": [
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi_0.",
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: pi_0. Checked against RSS 2025 proceedings.",
       "authors": [
         {
           "full_name": "Kevin Black",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Noah Brown",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Danny Driess",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Adnan Esmail",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
-          "full_name": "Michael Robert Equi",
-          "affiliations": []
+          "full_name": "Michael Equi",
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Chelsea Finn",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Niccolo Fusai",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Lachy Groom",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Karol Hausman",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Brian Ichter",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Szymon Jakubczak",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Tim Jones",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Liyiming Ke",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Sergey Levine",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Adrian Li-Bell",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Mohith Mothukuri",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Suraj Nair",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Karl Pertsch",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Lucy Xiaoyang Shi",
-          "affiliations": []
-        },
-        {
-          "full_name": "Laura Smith",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "James Tanner",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Quan Vuong",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Anna Walling",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Haohuan Wang",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         },
         {
           "full_name": "Ury Zhilinsky",
-          "affiliations": []
+          "affiliations": [
+            "Physical Intelligence"
+          ]
         }
       ]
     },
     {
       "alias": "CogACT",
+      "model_names": [
+        "CogACT"
+      ],
       "title": "CogACT: A Foundational Vision-Language-Action Model for Synergizing Cognition and Action in Robotic Manipulation",
       "year": 2024,
       "venue_name": null,
@@ -6576,6 +7192,9 @@
     },
     {
       "alias": "pi_0-FAST",
+      "model_names": [
+        "pi0-FAST"
+      ],
       "title": "FAST: Efficient Action Tokenization for Vision-Language-Action Models",
       "year": 2025,
       "venue_name": "RSS 2025",
@@ -6630,6 +7249,9 @@
     },
     {
       "alias": "UniAct",
+      "model_names": [
+        "UniAct"
+      ],
       "title": "Universal Actions for Enhanced Embodied Foundation Models",
       "year": 2025,
       "venue_name": "CVPR 2025",
@@ -6688,36 +7310,48 @@
     },
     {
       "alias": "OpenVLA-OFT",
+      "model_names": [
+        "OpenVLA-OFT"
+      ],
       "title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
       "year": 2025,
       "venue_name": "RSS 2025",
       "publication_type": "conference",
       "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2502.19645",
-      "project_url": "https://www.roboticsproceedings.org/rss21/p017.html",
+      "project_url": "https://openvla-oft.github.io/",
       "code_url": "https://github.com/moojink/openvla-oft",
       "topics": [
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA-OFT.",
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: OpenVLA-OFT. Checked against RSS 2025 proceedings and the official project page.",
       "authors": [
         {
           "full_name": "Moo Jin Kim",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Chelsea Finn",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Percy Liang",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         }
       ]
     },
     {
       "alias": "JARVIS-VLA",
+      "model_names": [
+        "JARVIS-VLA"
+      ],
       "title": "Post-Training Large-Scale Vision Language Models to Play Visual Games with Keyboards and Mouse",
       "year": 2025,
       "venue_name": null,
@@ -6756,11 +7390,14 @@
     },
     {
       "alias": "HybridVLA",
+      "model_names": [
+        "HybridVLA"
+      ],
       "title": "HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model",
       "year": 2025,
-      "venue_name": null,
-      "publication_type": "arXiv preprint",
-      "publication_status": "unknown",
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
       "arxiv_url": "https://arxiv.org/abs/2503.10631",
       "project_url": "https://hybrid-vla.github.io",
       "code_url": "https://github.com/PKU-HMI-Lab/Hybrid-VLA",
@@ -6768,7 +7405,7 @@
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HybridVLA.",
+      "notes": "Listed in Psi-Robot/Awesome-VLA-Papers (Raw Action as Action Tokens). Alias: HybridVLA. Venue/status checked against the official ICLR 2026 virtual proceedings.",
       "authors": [
         {
           "full_name": "Jiaming Liu",
@@ -6819,7 +7456,7 @@
           "affiliations": []
         },
         {
-          "full_name": "KC alex Zhou",
+          "full_name": "KC Alex Zhou",
           "affiliations": []
         },
         {
@@ -6834,6 +7471,9 @@
     },
     {
       "alias": "MoManipVLA",
+      "model_names": [
+        "MoManipVLA"
+      ],
       "title": "MoManipVLA: Transferring Vision-Language-Action Models for General Mobile Manipulation",
       "year": 2025,
       "venue_name": "CVPR 2025",
@@ -6872,6 +7512,9 @@
     },
     {
       "alias": "GR00T N1",
+      "model_names": [
+        "GR00T N1"
+      ],
       "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
       "year": 2025,
       "venue_name": null,
@@ -7063,6 +7706,9 @@
     },
     {
       "alias": "pi_0+KI",
+      "model_names": [
+        "pi0+KI"
+      ],
       "title": "Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better",
       "year": 2025,
       "venue_name": "NeurIPS 2025",
@@ -7125,6 +7771,9 @@
     },
     {
       "alias": "RTC",
+      "model_names": [
+        "RTC"
+      ],
       "title": "Real-Time Execution of Action Chunking Flow Policies",
       "year": 2025,
       "venue_name": null,
@@ -7156,6 +7805,9 @@
     },
     {
       "alias": "ECoT",
+      "model_names": [
+        "ECoT"
+      ],
       "title": "Robotic Control via Embodied Chain-of-Thought Reasoning",
       "year": 2024,
       "venue_name": "CoRL 2024",
@@ -7199,6 +7851,9 @@
     },
     {
       "alias": "RAD",
+      "model_names": [
+        "RAD"
+      ],
       "title": "Action-Free Reasoning for Policy Generalization",
       "year": 2025,
       "venue_name": null,
@@ -7215,24 +7870,35 @@
       "authors": [
         {
           "full_name": "Jaden Clark",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Suvir Mirchandani",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Dorsa Sadigh",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         },
         {
           "full_name": "Suneel Belkhale",
-          "affiliations": []
+          "affiliations": [
+            "Stanford University"
+          ]
         }
       ]
     },
     {
       "alias": "Cosmos-Reason1",
+      "model_names": [
+        "Cosmos-Reason1"
+      ],
       "title": "Cosmos-Reason1: From Physical Common Sense To Embodied Reasoning",
       "year": 2025,
       "venue_name": null,
@@ -7467,6 +8133,9 @@
     },
     {
       "alias": "BYOVLA",
+      "model_names": [
+        "BYOVLA"
+      ],
       "title": "Run-time Observation Interventions Make Vision-Language-Action Models More Visually Robust",
       "year": 2025,
       "venue_name": "ICRA 2025",
@@ -7498,6 +8167,9 @@
     },
     {
       "alias": "Long-VLA",
+      "model_names": [
+        "Long-VLA"
+      ],
       "title": "Long-VLA: Unleashing Long-Horizon Capability of Vision Language Action Model for Robot Manipulation",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -7569,6 +8241,9 @@
     },
     {
       "alias": "ControlVLA",
+      "model_names": [
+        "ControlVLA"
+      ],
       "title": "ControlVLA: Few-shot Object-centric Adaptation for Pre-trained Vision-Language-Action Models",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -7632,6 +8307,9 @@
     },
     {
       "alias": "3DS-VLA",
+      "model_names": [
+        "3DS-VLA"
+      ],
       "title": "3DS-VLA: A 3D Spatial-Aware Vision Language Action Model for Robust Multi-Task Manipulation",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -7699,6 +8377,9 @@
     },
     {
       "alias": "GraspVLA",
+      "model_names": [
+        "GraspVLA"
+      ],
       "title": "GraspVLA: a Grasping Foundation Model Pre-trained on Billion-scale Synthetic Action Data",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -7766,6 +8447,9 @@
     },
     {
       "alias": "DexVLA",
+      "model_names": [
+        "DexVLA"
+      ],
       "title": "DexVLA: Vision-Language Model with Plug-In Diffusion Expert for General Robot Control",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -7809,6 +8493,9 @@
     },
     {
       "alias": "RoboMonkey",
+      "model_names": [
+        "RoboMonkey"
+      ],
       "title": "RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -7860,6 +8547,9 @@
     },
     {
       "alias": "FLOWER",
+      "model_names": [
+        "FLOWER"
+      ],
       "title": "FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Action Flow Policies",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -7903,6 +8593,9 @@
     },
     {
       "alias": "Oat-VLA",
+      "model_names": [
+        "Oat-VLA"
+      ],
       "title": "Focusing on What Matters: Object-Agent-centric Tokenization for Vision Language Action models",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -7942,6 +8635,9 @@
     },
     {
       "alias": "TA-VLA",
+      "model_names": [
+        "TA-VLA"
+      ],
       "title": "TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -7993,6 +8689,9 @@
     },
     {
       "alias": "EndoVLA",
+      "model_names": [
+        "EndoVLA"
+      ],
       "title": "EndoVLA: Dual-Phase Vision-Language-Action Model for Autonomous Tracking in Endoscopy",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -8048,6 +8747,9 @@
     },
     {
       "alias": "RICL",
+      "model_names": [
+        "RICL"
+      ],
       "title": "RICL: Adding In-Context Adaptability to Pre-Trained Vision-Language-Action Models",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -8083,6 +8785,9 @@
     },
     {
       "alias": "VLA Steering",
+      "model_names": [
+        "VLA Steering"
+      ],
       "title": "Mechanistic Interpretability for Steering Vision-Language-Action Models",
       "year": 2025,
       "venue_name": "CoRL 2025",
@@ -8118,6 +8823,9 @@
     },
     {
       "alias": "ReBot",
+      "model_names": [
+        "ReBot"
+      ],
       "title": "ReBot: Scaling Robot Learning with Real-to-Sim-to-Real Robotic Video Synthesis",
       "year": 2025,
       "venue_name": "IROS 2025",
@@ -8165,6 +8873,9 @@
     },
     {
       "alias": "CLAP",
+      "model_names": [
+        "CLAP"
+      ],
       "title": "CLAP: A Closed-Loop Diffusion Transformer Action Foundation Model for Robotic Manipulation",
       "year": 2025,
       "venue_name": "IROS 2025",
@@ -8178,10 +8889,39 @@
         "real-time control",
         "task-centric"
       ],
-      "notes": "Model or method paper; IROS 2025 checked against conference PDF."
+      "notes": "Model or method paper; IROS 2025 metadata and affiliations checked against the conference PDF.",
+      "authors": [
+        {
+          "full_name": "Mu Li",
+          "affiliations": [
+            "South China University of Technology"
+          ]
+        },
+        {
+          "full_name": "Yubo Dong",
+          "affiliations": [
+            "South China University of Technology"
+          ]
+        },
+        {
+          "full_name": "Yang Zhou",
+          "affiliations": [
+            "Huawei Technologies"
+          ]
+        },
+        {
+          "full_name": "Chenguang Yang",
+          "affiliations": [
+            "South China University of Technology"
+          ]
+        }
+      ]
     },
     {
       "alias": "PD-VLA",
+      "model_names": [
+        "PD-VLA"
+      ],
       "title": "PD-VLA: Accelerating Vision-Language-Action Model Integrated with Action Chunking via Parallel Decoding",
       "year": 2025,
       "venue_name": "IROS 2025",
@@ -8249,6 +8989,9 @@
     },
     {
       "alias": "RPD",
+      "model_names": [
+        "RPD"
+      ],
       "title": "Refined Policy Distillation: From VLA Generalists to RL Experts",
       "year": 2025,
       "venue_name": "IROS 2025",
@@ -8280,30 +9023,80 @@
     },
     {
       "alias": "CapsDT",
+      "model_names": [
+        "CapsDT"
+      ],
       "title": "CapsDT: Diffusion-Transformer for Capsule Robot Manipulation",
       "year": 2025,
       "venue_name": "IROS 2025",
       "publication_type": "conference",
       "publication_status": "published",
-      "arxiv_url": null,
+      "arxiv_url": "https://arxiv.org/abs/2506.16263",
       "project_url": "https://research.cuhk.edu.hk/en/publications/capsdt-diffusion-transformer-for-capsule-robot-manipulation/",
       "code_url": null,
       "topics": [
         "generalist manipulation",
         "task-centric"
       ],
-      "notes": "Model or method paper; IROS 2025 checked against institutional publication page."
+      "notes": "Model or method paper; IROS 2025 metadata checked against the CUHK publication page and arXiv author block.",
+      "authors": [
+        {
+          "full_name": "Xiting He",
+          "affiliations": [
+            "The Chinese University of Hong Kong",
+            "CUHK Shenzhen Research Institute"
+          ]
+        },
+        {
+          "full_name": "Mingwu Su",
+          "affiliations": [
+            "The Chinese University of Hong Kong",
+            "CUHK Shenzhen Research Institute"
+          ]
+        },
+        {
+          "full_name": "Xinqi Jiang",
+          "affiliations": [
+            "The Chinese University of Hong Kong",
+            "CUHK Shenzhen Research Institute"
+          ]
+        },
+        {
+          "full_name": "Long Bai",
+          "affiliations": [
+            "The Chinese University of Hong Kong",
+            "CUHK Shenzhen Research Institute"
+          ]
+        },
+        {
+          "full_name": "Jiewen Lai",
+          "affiliations": [
+            "The Chinese University of Hong Kong",
+            "CUHK Shenzhen Research Institute"
+          ]
+        },
+        {
+          "full_name": "Hongliang Ren",
+          "affiliations": [
+            "The Chinese University of Hong Kong",
+            "CUHK Shenzhen Research Institute"
+          ]
+        }
+      ]
     },
     {
       "alias": "SpatialVLA",
+      "model_names": [
+        "SpatialVLA"
+      ],
       "title": "SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models",
       "year": 2025,
       "venue_name": "RSS 2025",
       "publication_type": "conference",
       "publication_status": "published",
-      "arxiv_url": null,
-      "project_url": "https://www.roboticsproceedings.org/rss21/p011.html",
-      "code_url": null,
+      "arxiv_url": "https://arxiv.org/abs/2501.15830",
+      "project_url": "https://spatialvla.github.io/",
+      "code_url": "https://github.com/SpatialVLA/SpatialVLA",
       "topics": [
         "generalist manipulation",
         "task-centric"
@@ -8312,52 +9105,78 @@
       "authors": [
         {
           "full_name": "Delin Qu",
-          "affiliations": []
+          "affiliations": [
+            "Shanghai AI Laboratory"
+          ]
         },
         {
           "full_name": "Haoming Song",
-          "affiliations": []
+          "affiliations": [
+            "Shanghai AI Laboratory"
+          ]
         },
         {
           "full_name": "Qizhi Chen",
-          "affiliations": []
+          "affiliations": [
+            "Shanghai AI Laboratory"
+          ]
         },
         {
           "full_name": "Yuanqi Yao",
-          "affiliations": []
+          "affiliations": [
+            "Shanghai AI Laboratory"
+          ]
         },
         {
           "full_name": "Xinyi Ye",
-          "affiliations": []
-        },
-        {
-          "full_name": "Jiayuan Gu",
-          "affiliations": []
-        },
-        {
-          "full_name": "Zhigang Wang",
-          "affiliations": []
+          "affiliations": [
+            "Shanghai AI Laboratory"
+          ]
         },
         {
           "full_name": "Yan Ding",
-          "affiliations": []
+          "affiliations": [
+            "Shanghai AI Laboratory"
+          ]
+        },
+        {
+          "full_name": "Zhigang Wang",
+          "affiliations": [
+            "Shanghai AI Laboratory"
+          ]
+        },
+        {
+          "full_name": "Jiayuan Gu",
+          "affiliations": [
+            "ShanghaiTech"
+          ]
         },
         {
           "full_name": "Bin Zhao",
-          "affiliations": []
+          "affiliations": [
+            "Shanghai AI Laboratory"
+          ]
         },
         {
           "full_name": "Dong Wang",
-          "affiliations": []
+          "affiliations": [
+            "Shanghai AI Laboratory"
+          ]
         },
         {
           "full_name": "Xuelong Li",
-          "affiliations": []
+          "affiliations": [
+            "Shanghai AI Laboratory",
+            "TeleAI"
+          ]
         }
       ]
     },
     {
       "alias": "Uni-NaVid",
+      "model_names": [
+        "Uni-NaVid"
+      ],
       "title": "Uni-NaVid: A Video-based Vision-Language-Action Model for Unifying Embodied Navigation Tasks",
       "year": 2025,
       "venue_name": "RSS 2025",
@@ -8413,6 +9232,9 @@
     },
     {
       "alias": "CLIP-RT",
+      "model_names": [
+        "CLIP-RT"
+      ],
       "title": "CLIP-RT: Learning Language-Conditioned Robotic Policies from Natural Language Supervision",
       "year": 2025,
       "venue_name": "RSS 2025",
@@ -8452,6 +9274,9 @@
     },
     {
       "alias": "ConRFT",
+      "model_names": [
+        "ConRFT"
+      ],
       "title": "ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy",
       "year": 2025,
       "venue_name": "RSS 2025",
@@ -8495,6 +9320,9 @@
     },
     {
       "alias": "RLDG",
+      "model_names": [
+        "RLDG"
+      ],
       "title": "RLDG: Robotic Generalist Policy Distillation via Reinforcement Learning",
       "year": 2025,
       "venue_name": "RSS 2025",
@@ -8525,6 +9353,1544 @@
         {
           "full_name": "Sergey Levine",
           "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "FASTer",
+      "model_names": [
+        "FASTer"
+      ],
+      "title": "FASTer: Toward Powerful and Efficient Autoregressive Vision-Language-Action Models with Learnable Action Tokenizer and Block-wise Decoding",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10007824",
+      "code_url": null,
+      "topics": [
+        "real-time control",
+        "task-centric",
+        "generalist manipulation"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Yicheng Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shiduo Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zibin Dong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Baijun Ye",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianyuan Yuan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaopeng Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Linqi Yin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chenhao Lu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Junhao Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Luca Jiang-Tao Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Liangtao Zheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jingjing Gong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tao Jiang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xipeng Qiu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hang Zhao",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "Spatial Forcing",
+      "model_names": [
+        "Spatial Forcing"
+      ],
+      "title": "Spatial Forcing: Implicit Spatial Representation Alignment for Vision-language-action Model",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10008280",
+      "code_url": null,
+      "topics": [
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Fuhao Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenxuan Song",
+          "affiliations": []
+        },
+        {
+          "full_name": "Han Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jingbo Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pengxiang Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Donglin Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Long ZENG",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoang Li",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "Verifier-free TTS",
+      "model_names": [
+        "Verifier-free TTS"
+      ],
+      "title": "Verifier-free Test-Time Sampling for Vision-Language-Action Models",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10009251",
+      "code_url": null,
+      "topics": [
+        "reasoning",
+        "open-world generalization"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Suhyeok Jang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dongyoung Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Changyeon Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Youngsuk Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jinwoo Shin",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "HAMLET",
+      "model_names": [
+        "HAMLET"
+      ],
+      "title": "HAMLET: Switch Your Vision-Language-Action Model into a History-Aware Policy",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10010110",
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Myungkyu Koo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Daewon Choi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Taeyoung Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kyungmin Lee",
+          "affiliations": []
+        },
+        {
+          "full_name": "Changyeon Kim",
+          "affiliations": []
+        },
+        {
+          "full_name": "Younggyo Seo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jinwoo Shin",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "MemoryVLA",
+      "model_names": [
+        "MemoryVLA"
+      ],
+      "title": "MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10011504",
+      "code_url": null,
+      "topics": [
+        "long-horizon",
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Hao Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bin Xie",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yingfei Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lin Sun",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fengrong Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tiancai Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Erjin Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoqiang Fan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiangyu Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gao Huang",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "TwinVLA",
+      "model_names": [
+        "TwinVLA"
+      ],
+      "title": "TwinVLA: Data-Efficient Bimanual Manipulation with Twin Single-Arm Vision-Language-Action Models",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10007898",
+      "code_url": null,
+      "topics": [
+        "bimanual manipulation",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "HoKyun Im",
+          "affiliations": []
+        },
+        {
+          "full_name": "Euijin Jeong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andrey Kolobov",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianlong Fu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Youngwoon Lee",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "VLA Instruction Tuning",
+      "model_names": [
+        "VLA Instruction Tuning"
+      ],
+      "title": "Vision-Language-Action Instruction Tuning: From Understanding to Manipulation",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10006944",
+      "code_url": null,
+      "topics": [
+        "task-centric",
+        "generalist manipulation"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Shuai Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hao Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bin Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yilun Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yang Tian",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tai Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hanqing Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Feng Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yiyi Liao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiangmiao Pang",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "Hybrid Training",
+      "model_names": [
+        "Hybrid Training"
+      ],
+      "title": "Hybrid Training for Vision-Language-Action Models",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10010325",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Pietro Mazzaglia",
+          "affiliations": []
+        },
+        {
+          "full_name": "Cansu Sancaktar",
+          "affiliations": []
+        },
+        {
+          "full_name": "Markus Peschl",
+          "affiliations": []
+        },
+        {
+          "full_name": "Daniel Dijkman",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "AutoFly",
+      "model_names": [
+        "AutoFly"
+      ],
+      "title": "AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10011229",
+      "code_url": null,
+      "topics": [
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Xiaolou Sun",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wufei Si",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenhui Ni",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuntian Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dongming Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fei Xie",
+          "affiliations": []
+        },
+        {
+          "full_name": "Runwei Guan",
+          "affiliations": []
+        },
+        {
+          "full_name": "He-Yang Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Henghui Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuan Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yutao Yue",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yongming Huang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hui Xiong",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "Unified VLA",
+      "model_names": [
+        "Unified VLA"
+      ],
+      "title": "Unified Vision-Language-Action Model",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10009646",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Yuqi Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinghang Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenxuan Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Junbo Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yingyan Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuntao Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinlong Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhaoxiang Zhang",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "Vlaser",
+      "model_names": [
+        "Vlaser"
+      ],
+      "title": "Vlaser: Vision-Language-Action Model with Synergistic Embodied Reasoning",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10011161",
+      "code_url": null,
+      "topics": [
+        "reasoning",
+        "long-horizon",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Ganlin Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tianyi Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoran Hao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Weiyun Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yibin Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dehui Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guanzhou Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zijian Cai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Junting Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Weijie Su",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wengang Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yu Qiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jifeng Dai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiangmiao Pang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gen Luo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenhai Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao Mu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhi Hou",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "From Spatial to Actions",
+      "model_names": [
+        "From Spatial to Actions"
+      ],
+      "title": "From Spatial to Actions: Grounding Vision-Language-Action Model in Spatial Foundation Priors",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10008188",
+      "code_url": null,
+      "topics": [
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Zhengshen Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "昊 李",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yalun Dai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhengbang Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Lei Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chenchen Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dong Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Francis Tay",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sijin Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ziwei Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuxiao Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinghang Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pan Zhou",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "Unified Diffusion VLA",
+      "model_names": [
+        "Unified Diffusion VLA"
+      ],
+      "title": "Unified Diffusion VLA: Vision-Language-Action Model via Joint Discrete Denosing Diffusion Process",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10009185",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "JIAYI CHEN",
+          "affiliations": []
+        },
+        {
+          "full_name": "Wenxuan Song",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pengxiang Ding",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ziyang Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Han Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Barrett Tang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Donglin Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoang Li",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "VLA Parameter Merging",
+      "model_names": [
+        "VLA Parameter Merging"
+      ],
+      "title": "Robust Fine-tuning of Vision-Language-Action Robot Policies via Parameter Merging",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10006890",
+      "code_url": null,
+      "topics": [
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Yajat Yadav",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhiyuan Zhou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andrew Wagenmaker",
+          "affiliations": []
+        },
+        {
+          "full_name": "Karl Pertsch",
+          "affiliations": []
+        },
+        {
+          "full_name": "Sergey Levine",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "Action-aware Dynamic Pruning",
+      "model_names": [
+        "Action-aware Dynamic Pruning"
+      ],
+      "title": "Action-aware Dynamic Pruning for Efficient Vision-Language-Action Manipulation",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10008304",
+      "code_url": null,
+      "topics": [
+        "real-time control",
+        "generalist manipulation"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Xiaohuan Pei",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuxing Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Siyu Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yunke Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuheng Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chang Xu",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "villa-X",
+      "model_names": [
+        "villa-X"
+      ],
+      "title": "villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10006594",
+      "code_url": null,
+      "topics": [
+        "task-centric",
+        "generalist manipulation"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Xiaoyu Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Hangxing Wei",
+          "affiliations": []
+        },
+        {
+          "full_name": "Pushi Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chuheng Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kaixin Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yanjiang Guo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Rushuai Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yucen Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xinquan Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Li Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianyu Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiang Bian",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "QVLA",
+      "model_names": [
+        "QVLA"
+      ],
+      "title": "QVLA: Not All Channels Are Equal in Vision-Language-Action Model's Quantization",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10009282",
+      "code_url": null,
+      "topics": [
+        "real-time control",
+        "generalist manipulation"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Yuhao Xu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yantai Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhenyang Fan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yufan Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuming Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bing Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhipeng Zhang",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "Self-Improving VLA",
+      "model_names": [
+        "Self-Improving VLA"
+      ],
+      "title": "Self-Improving Vision-Language-Action Models with Data Generation via Residual RL",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10008318",
+      "code_url": null,
+      "topics": [
+        "open-world generalization",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Wenli Xiao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haotian Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Andy Peng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Haoru Xue",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tairan He",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhengyi Luo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuqi Xie",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fengyuan Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jim Fan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Guanya Shi",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuke Zhu",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "PixelVLA",
+      "model_names": [
+        "PixelVLA"
+      ],
+      "title": "PixelVLA: Advancing Pixel-level Understanding in Vision-Language-Action Model",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10011308",
+      "code_url": null,
+      "topics": [
+        "object-centric",
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Wenqi Liang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Gan Sun",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yao He",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiahua Dong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Suyan Dai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ivan Laptev",
+          "affiliations": []
+        },
+        {
+          "full_name": "Salman Khan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yang Cong",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "WMPO",
+      "model_names": [
+        "WMPO"
+      ],
+      "title": "WMPO: World Model-based Policy Optimization for Vision-Language-Action Models",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10007263",
+      "code_url": null,
+      "topics": [
+        "reasoning",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Fangqi Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhengyang Yan",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zicong Hong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Quanxin Shou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiao Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Song Guo",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "VLM4VLA",
+      "model_names": [
+        "VLM4VLA"
+      ],
+      "title": "VLM4VLA: Revisiting Vision-Language-Models in Vision-Language-Action Models",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10006964",
+      "code_url": null,
+      "topics": [
+        "reasoning",
+        "generalist manipulation"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Jianke Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiaoyu Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yanjiang Guo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yucheng Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianyu Chen",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "OneTwoVLA",
+      "model_names": [
+        "OneTwoVLA"
+      ],
+      "title": "OneTwoVLA: A Unified Vision-Language-Action Model with Adaptive Reasoning",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10006973",
+      "code_url": null,
+      "topics": [
+        "reasoning",
+        "task-centric",
+        "generalist manipulation"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Fanqi Lin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ruiqian Nai",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yingdong Hu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiacheng You",
+          "affiliations": []
+        },
+        {
+          "full_name": "Junming Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yang Gao",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "X-VLA",
+      "model_names": [
+        "X-VLA"
+      ],
+      "title": "X-VLA: Soft-Prompted Transformer as Scalable Cross-Embodiment Vision-Language-Action Model",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10007740",
+      "code_url": null,
+      "topics": [
+        "generalist manipulation",
+        "sim2real",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Jinliang Zheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jianxiong Li",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhihao Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Dongxiu Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xirui Kang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuchun Feng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yinan Zheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiayin Zou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yilun Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jia Zeng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Tai Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ya-Qin Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jingjing Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xianyuan Zhan",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "Spatially Guided Training",
+      "model_names": [
+        "Spatially Guided Training"
+      ],
+      "title": "Spatially Guided Training for Vision-Language-Action Model",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10008327",
+      "code_url": null,
+      "topics": [
+        "spatial grounding",
+        "task-centric"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Jinhui Ye",
+          "affiliations": []
+        },
+        {
+          "full_name": "Fangjing Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Ning Gao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Junqiu Yu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yangkun Zhu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Bin Wang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jinyu Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Weiyang Jin",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yanwei Fu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Feng Zheng",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yilun Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiangmiao Pang",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "VLA Robustness",
+      "model_names": [
+        "VLA Robustness"
+      ],
+      "title": "On Robustness of Vision-Language-Action Model against Multi-Modal Perturbations",
+      "year": 2026,
+      "venue_name": "ICLR 2026",
+      "publication_type": "conference",
+      "publication_status": "published",
+      "arxiv_url": null,
+      "project_url": "https://iclr.cc/virtual/2026/poster/10008503",
+      "code_url": null,
+      "topics": [
+        "safety",
+        "open-world generalization"
+      ],
+      "notes": "Added from the official ICLR 2026 virtual proceedings; affiliations were not exposed on the public page.",
+      "authors": [
+        {
+          "full_name": "Jianing Guo",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhenhong Wu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Chang Tu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yiyao Ma",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xiangqi Kong",
+          "affiliations": []
+        },
+        {
+          "full_name": "Zhiqian Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Jiaming Ji",
+          "affiliations": []
+        },
+        {
+          "full_name": "Shuning Zhang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yuanpei Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Kai Chen",
+          "affiliations": []
+        },
+        {
+          "full_name": "Qi Dou",
+          "affiliations": []
+        },
+        {
+          "full_name": "Yaodong Yang",
+          "affiliations": []
+        },
+        {
+          "full_name": "Xianglong Liu",
+          "affiliations": []
+        },
+        {
+          "full_name": "Huijie Zhao",
+          "affiliations": []
+        },
+        {
+          "full_name": "Weifeng Lv",
+          "affiliations": []
+        },
+        {
+          "full_name": "Simin Li",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "alias": "AR-VLA",
+      "model_names": [
+        "AR-VLA"
+      ],
+      "title": "AR-VLA: Autoregressive Action Expert for Vision-Language-Action Models",
+      "year": 2026,
+      "venue_name": "RSS 2026",
+      "publication_type": "conference",
+      "publication_status": "accepted",
+      "arxiv_url": "https://arxiv.org/abs/2603.10126",
+      "project_url": "https://arvla.insait.ai/",
+      "code_url": null,
+      "topics": [
+        "real-time control",
+        "long-horizon",
+        "generalist manipulation"
+      ],
+      "notes": "Accepted at RSS 2026; author affiliations checked against the arXiv PDF author block.",
+      "authors": [
+        {
+          "full_name": "Yutong Hu",
+          "affiliations": [
+            "INSAIT",
+            "KU Leuven",
+            "Flanders Make@KU Leuven"
+          ]
+        },
+        {
+          "full_name": "Jan-Nico Zaech",
+          "affiliations": [
+            "INSAIT"
+          ]
+        },
+        {
+          "full_name": "Nikolay Nikolov",
+          "affiliations": [
+            "INSAIT"
+          ]
+        },
+        {
+          "full_name": "Yuanqi Yao",
+          "affiliations": [
+            "INSAIT"
+          ]
+        },
+        {
+          "full_name": "Sombit Dey",
+          "affiliations": [
+            "INSAIT"
+          ]
+        },
+        {
+          "full_name": "Giuliano Albanese",
+          "affiliations": [
+            "INSAIT"
+          ]
+        },
+        {
+          "full_name": "Renaud Detry",
+          "affiliations": [
+            "KU Leuven",
+            "Flanders Make@KU Leuven"
+          ]
+        },
+        {
+          "full_name": "Luc Van Gool",
+          "affiliations": [
+            "INSAIT"
+          ]
+        },
+        {
+          "full_name": "Danda Paudel",
+          "affiliations": [
+            "INSAIT"
+          ]
         }
       ]
     }

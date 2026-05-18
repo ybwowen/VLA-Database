@@ -107,7 +107,7 @@
   <article class="panel">
   <div class="panel-header">
     <h2>Authors and Affiliations</h2>
-    <p>Selected author records for this paper.</p>
+    <p>Author records for the linked paper; affiliations are source-backed per-paper snapshots when available.</p>
   </div>
   {% if model.paper %}
   <div class="section-actions">
@@ -146,10 +146,10 @@
               </div>
             </td>
             <td>
-              {% if link.author.author_affiliations %}
+              {% if link.affiliation_names %}
               <div class="compact-tags">
-                {% for author_aff in link.author.author_affiliations %}
-                <span class="tag">{{ author_aff.affiliation.name }}</span>
+                {% for affiliation_name in link.affiliation_names %}
+                <span class="tag">{{ affiliation_name }}</span>
                 {% endfor %}
               </div>
               {% else %}
@@ -168,7 +168,7 @@
     </div>
     {% else %}
     <div class="empty-state">
-    <p>No selected author rows for this model yet.</p>
+    <p>No author rows for this model yet.</p>
     </div>
     {% endif %}
   </article>

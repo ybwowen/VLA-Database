@@ -92,7 +92,7 @@
 <section class="panel">
   <div class="panel-header">
     <h2>Authors and Affiliations</h2>
-    <p>Selected author rows exist for model-linked papers; index-only papers can be expanded later.</p>
+    <p>Author rows from the paper index; affiliations appear only when a checked source gives a reliable mapping.</p>
   </div>
 
   {% if current_authors %}
@@ -126,8 +126,8 @@
           </td>
           <td>
             <div class="compact-tags">
-              {% for author_aff in link.author.author_affiliations %}
-              <span class="tag">{{ author_aff.affiliation.name }}</span>
+              {% for affiliation_name in link.affiliation_names %}
+              <span class="tag">{{ affiliation_name }}</span>
               {% endfor %}
             </div>
           </td>
@@ -138,7 +138,7 @@
   </div>
   {% else %}
   <div class="empty-state">
-    <p>No selected author rows are stored for this paper yet.</p>
+    <p>No author rows are stored for this paper yet.</p>
   </div>
   {% endif %}
 </section>
